@@ -4,12 +4,12 @@ Hand this whole file to Claude Code. Read it fully before writing any code. Work
 
 ## 1. What we're building
 
-A marketing site for **Opperiod LLC**, a small holdings company that owns and operates a growing set of ventures. The site has two jobs:
+A marketing site for **Opperiod LLC**, a diversified holdings company. The site has two jobs:
 
 1. Present Opperiod as a credible, organized parent company.
 2. Give each venture ("project") its own page, and make adding a new project later about as easy as creating one file.
 
-Owner: Samuel Ferrenburg, a fire lieutenant based in Westlake, Louisiana (Lake Charles area). The fire service background is part of the identity of the company and should come through in tone, but this is not a fire department website.
+Owner: Samuel Ferrenburg, a fire lieutenant based in Westlake, Louisiana (Lake Charles area). The fire service background is part of the identity of the company and should come through in tone, but this is not a fire department website. Don't name the owner's town on the site, and describe the company only as a diversified holdings company (no "growing group of businesses").
 
 Starting projects:
 

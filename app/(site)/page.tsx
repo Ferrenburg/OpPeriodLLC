@@ -68,10 +68,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd(projects)).replace(/</g, "\\u003c") }}
       />
       <section className="container-site py-14 md:py-24">
-        <p className="text-sm font-semibold uppercase tracking-wider text-muted">
-          {company.city}, {company.state}
-        </p>
-        <h1 className="mt-4">
+        <h1>
           <Logo
             logo={logos.opperiod}
             className="h-14 sm:h-20 md:h-24"

@@ -6,7 +6,6 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 
 - [ ] Favicon / app icon. `app/icon.png` and `app/apple-icon.png` are placeholders cut from the logo's red-barred "O". Replace them with a proper icon when there is one (same file names).
 - [ ] Light versions of the logos for dark backgrounds (`opperiod-logo-light.png`, `box-alarm-builders-logo-light.png`), or SVGs.
-- [ ] Confirm the one line company description in `lib/brand.ts`: "Opperiod LLC owns and operates a growing group of businesses, run out of Westlake, Louisiana." It shows in the home hero, the footer, and search results.
 - [ ] The Sheridan, WY address shows on the privacy page as the company's address. If that's a registered agent address that doesn't forward regular mail, swap in a mailing address that does (`company.address` in `lib/brand.ts`).
 - [ ] Confirm each project really sits under Opperiod LLC. Project pages say "<name> is one of the projects under Opperiod LLC." StationScore's own docs still list "which entity owns this" as open.
 
@@ -35,12 +34,11 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 
 ## StationScore (`content/projects/stationscore.mdx`)
 
-- [ ] Logo. Until then it uses a letter badge.
-- [ ] Accent color `#2B6CB0` is a placeholder. StationScore's own site uses red `#C8102E`, which would clash with Opperiod and Box Alarm on the grid.
+- [ ] Logo is redrawn from the app icon image (`public/brand/stationscore-logo.png`), since the original file wasn't in the repo. Swap in the original PNG or SVG with the same name if anything looks off.
+- [ ] Accent color is the red from the logo, `#C4262A`. It's close to the Opperiod and Box Alarm reds on the project grid. Change `accentColor` if they should look more distinct.
 - [ ] Review the page copy and the four highlights against what the product actually ships with.
 
 ## IAPassist (`content/projects/iapassist.mdx`)
 
-- [ ] Logo. Until then it uses a letter badge.
-- [ ] Accent color `#B45309` is a placeholder.
+- [ ] Logo is redrawn from the app icon image (`public/brand/iapassist-logo.png`), since the original file wasn't in the repo. Swap in the original PNG or SVG with the same name if anything looks off.
 - [ ] Review the page copy. It only covers what's known so far: it helps emergency managers build Incident Action Plans with less typing.

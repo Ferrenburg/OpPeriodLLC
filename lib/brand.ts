@@ -14,15 +14,11 @@ export const company = {
     postalCode: "82801",
     country: "US",
   },
-  // Where the owner runs things day to day.
-  city: "Westlake",
-  state: "Louisiana",
   url: "https://opperiod.com",
   // Every project routes here until one gets its own inbox.
   email: "sales@opperiod.com",
   // One line used in metadata and the home hero. Plain on purpose.
-  description:
-    "Opperiod LLC owns and operates a growing group of businesses, run out of Westlake, Louisiana.",
+  description: "Opperiod LLC is a diversified holdings company.",
 } as const;
 
 export function formatAddress(address = company.address): string {

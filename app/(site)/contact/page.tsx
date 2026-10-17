@@ -40,7 +40,7 @@ export default function ContactPage() {
             {company.email}
           </a>
           <p className="mt-6 text-sm text-muted">
-            {company.legalName}, {company.city}, {company.state}
+            {company.legalName}
           </p>
         </div>
       </div>
