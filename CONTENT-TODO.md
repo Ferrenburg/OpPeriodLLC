@@ -23,7 +23,14 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 ## Privacy (`app/(site)/privacy/page.tsx`)
 
 - [ ] Effective date.
-- [ ] Review before launch. It's written from how the site works today (contact form through Resend, hosting on Vercel, no analytics, no cookies). If analytics or Turnstile get added, it needs updating.
+- [ ] Review before launch. It's written from how the site works today (contact form through Resend, hosting on Vercel, no analytics, no cookies). Turnstile is handled automatically; analytics or anything else new needs an update.
+
+## Contact form setup (see README, "Setting up the contact form")
+
+- [ ] Resend account, opperiod.com verified with the DNS records added at Porkbun.
+- [ ] Vercel settings: `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_EMAIL_DEFAULT`.
+- [ ] Turnstile keys (recommended before launch).
+- [ ] Send a test message for each project from the live site.
 
 ## Box Alarm Builders (`content/projects/box-alarm-builders.mdx`)
 

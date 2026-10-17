@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Todo } from "@/components/todo";
 import { company } from "@/lib/brand";
+import { turnstileSiteKey } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "Privacy policy",
@@ -13,6 +14,8 @@ export const metadata: Metadata = {
 // hosting, Resend email, no analytics). Update it whenever any of that
 // changes, and have it reviewed before launch. See CONTENT-TODO.md.
 export default function PrivacyPage() {
+  // Cloudflare only gets mentioned while the Turnstile spam check is on.
+  const turnstile = Boolean(turnstileSiteKey());
   const email = (
     <a href={`mailto:${company.email}`}>{company.email}</a>
   );
@@ -45,6 +48,13 @@ export default function PrivacyPage() {
           as your IP address and browser type, to deliver pages and protect the site from abuse. The contact
           form also uses your IP address for a short time to stop repeated spam submissions.
         </p>
+        {turnstile && (
+          <p>
+            The contact form uses Cloudflare Turnstile to check that a person, not a bot, is sending the
+            message. To do that, Cloudflare looks at information about your browser and device under its own
+            privacy policy.
+          </p>
+        )}
         <p>
           If you switch between light and dark mode, your choice is saved in your own browser. It never gets
           sent to us.
@@ -59,6 +69,7 @@ export default function PrivacyPage() {
         <ul>
           <li>Vercel, which hosts the website.</li>
           <li>Resend, which delivers contact form messages to our email inbox.</li>
+          {turnstile && <li>Cloudflare, which runs the spam check on the contact form.</li>}
         </ul>
         <p>We may also share information if the law requires it.</p>
 

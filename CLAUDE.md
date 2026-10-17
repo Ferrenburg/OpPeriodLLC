@@ -1,3 +1,5 @@
+@AGENTS.md
+
 # Opperiod site conventions
 
 - Read `docs/PLAN.md` before building anything. It holds the content model, page specs, and build phases.
@@ -10,4 +12,6 @@
 - Adding a project must only take a file in `content/projects/` and an optional logo. Never make it require editing nav, pages, or components.
 - Project content is validated by the zod schema in `lib/project-loader.ts`. A content problem should fail the build with a message a non-developer can act on.
 - Read projects through `lib/projects.ts` (`getListedProjects` for anything public facing, which leaves out retired ones).
+- The contact form posts JSON to `app/api/contact/route.ts`; validation, routing, spam checks, and sending live in `lib/contact.ts`. Inputs are uncontrolled and never reset on an error, so nothing typed is lost.
+- Secrets and recipient addresses come from environment variables (see `.env.example`), never code.
 - Run `npm run check` and `npm run build` before pushing.

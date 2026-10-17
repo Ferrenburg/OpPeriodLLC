@@ -20,6 +20,52 @@ Before pushing, run `npm run check` (lint and type check) and `npm run build`.
 - `public/brand/`: logo files
 - `docs/PLAN.md`: the full build plan
 
+## Setting up the contact form
+
+The form at /contact sends each message to email through Resend. Replies go straight to the person who wrote in, so you can answer from Gmail like any other email. The subject line starts with the project name, like `[Box Alarm Builders] New message from Jane`, so a Gmail filter on that text can label them.
+
+### 1. Resend
+
+1. Make a free account at resend.com.
+2. Go to Domains, add `opperiod.com`, and leave the page open. It lists a few DNS records to add.
+3. Go to API Keys and make a key with "Sending access". Copy it somewhere safe; it's only shown once.
+
+### 2. DNS at Porkbun
+
+Gmail already uses some records on opperiod.com. Resend's records go on their own names (`send` and `resend._domainkey`), so nothing conflicts as long as you only add, never change, what's there.
+
+1. In Porkbun, open opperiod.com, then DNS.
+2. Add each record exactly as Resend shows it. In Porkbun's "Host" box, type only the part before opperiod.com (for example `send` or `resend._domainkey`).
+3. Don't touch the existing MX records or the existing `v=spf1` TXT record on the bare domain. Those are Gmail's.
+4. Back in Resend, click Verify. It can take a few minutes, sometimes up to an hour.
+
+### 3. Vercel settings
+
+In Vercel, open the project, then Settings, then Environment Variables, and add these for Production (and Preview if you want previews to send email too):
+
+| Name | Value |
+| --- | --- |
+| `RESEND_API_KEY` | the key from Resend |
+| `CONTACT_FROM_EMAIL` | `Opperiod Website <website@opperiod.com>` |
+| `CONTACT_EMAIL_DEFAULT` | `sales@opperiod.com` |
+
+Then redeploy (Deployments, the three dots on the latest one, Redeploy). Settings only take effect on a new deploy.
+
+`.env.example` lists every setting. For local development, copy it to `.env.local`. Without a Resend key, local dev prints messages in the terminal instead of sending them.
+
+### 4. Spam protection (Turnstile)
+
+The form already has a hidden trap field for bots and a limit of 5 messages per 10 minutes from one connection. The limit is per server instance, so it only slows down one noisy sender. For real bot protection, turn on Cloudflare Turnstile. It's free, and most people never see a challenge.
+
+1. Make a free Cloudflare account, open Turnstile, and add a widget for `opperiod.com`.
+2. Add `TURNSTILE_SITE_KEY` and `TURNSTILE_SECRET_KEY` in Vercel, then redeploy.
+
+The privacy page mentions Cloudflare automatically once Turnstile is on.
+
+### Testing it
+
+After deploying, send yourself a message from the live site with each project picked. If one doesn't arrive, check Vercel, then Logs, for a line starting with `[contact]`, and Resend's Emails page.
+
 ## Logos on dark backgrounds
 
 The current logos are black, so on dark backgrounds they sit on a white plate. To use a proper light version instead, save it next to the original with `-light` before the extension (for example `public/brand/opperiod-logo-light.png`). The site picks it up on the next deploy with no code changes.
