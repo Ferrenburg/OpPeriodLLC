@@ -15,12 +15,6 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 - [ ] "How we operate": four values drafted from the plan's theme (Show up, Do the job right, Take care of people, Keep it straight). Rewrite in your own words or approve.
 - [ ] Contact strip shows sales@opperiod.com publicly. Make sure that inbox exists and is watched.
 
-## About (`app/(site)/about/page.tsx`)
-
-- [ ] The story of why Opperiod exists, what got it started, and where the name comes from (shown as a TODO box on the page).
-- [ ] Approve the two draft paragraphs, which mention Westlake and that you serve as a fire lieutenant.
-- [ ] Owner photo. Put it in `public/brand/` and set `owner.photo` in `lib/brand.ts`.
-
 ## Privacy (`app/(site)/privacy/page.tsx`)
 
 - [ ] Effective date.

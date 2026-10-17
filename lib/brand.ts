@@ -29,14 +29,6 @@ export function formatAddress(address = company.address): string {
   return `${address.street}, ${address.city}, ${address.region} ${address.postalCode}`;
 }
 
-export const owner = {
-  name: "Samuel Ferrenburg",
-  role: "Fire lieutenant",
-  // Path under /public, like "/brand/owner.jpg". Until there is one, the
-  // About page shows a placeholder where the photo goes.
-  photo: undefined as string | undefined,
-} as const;
-
 // SITE_URL overrides the domain, which is only useful for testing a preview
 // deploy's social previews. Production always uses opperiod.com.
 export function siteUrl(): URL {
@@ -71,7 +63,6 @@ export const logos = {
 export const mainNav = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
-  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;
 

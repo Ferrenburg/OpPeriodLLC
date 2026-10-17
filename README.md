@@ -32,7 +32,7 @@ Before pushing, run `npm run check` (lint and type check) and `npm run build`.
 
 ## Placeholders (TODO boxes)
 
-Copy the owner still needs to write shows as a dashed "TODO: owner to provide" box in local development and on Vercel previews. On the live site those boxes are hidden, and the About page leaves out the photo spot until a photo is added. `CONTENT-TODO.md` lists every one, so check it before calling the site finished.
+Copy the owner still needs to write shows as a dashed "TODO: owner to provide" box in local development and on Vercel previews. On the live site those boxes are hidden. `CONTENT-TODO.md` lists every one, so check it before calling the site finished.
 
 ## Search engines and link previews
 

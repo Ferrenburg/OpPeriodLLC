@@ -6,7 +6,7 @@ import { getListedProjects } from "@/lib/projects";
 // Retired projects are left out (their pages are noindex).
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteUrl();
-  const pages = ["/", "/projects", "/about", "/contact", "/privacy"];
+  const pages = ["/", "/projects", "/contact", "/privacy"];
   const projects = getListedProjects().map((project) => project.href);
   return [...pages, ...projects].map((path) => ({ url: new URL(path, base).toString() }));
 }
