@@ -70,7 +70,7 @@ export function ContactForm({ options, email, turnstileSiteKey }: Props) {
   function renderTurnstile() {
     if (!turnstileSiteKey || !turnstileBox.current || !window.turnstile) return;
     if (turnstileId.current) window.turnstile.remove(turnstileId.current);
-    turnstileId.current = window.turnstile.render(turnstileBox.current, { sitekey: turnstileSiteKey, theme: "auto" });
+    turnstileId.current = window.turnstile.render(turnstileBox.current, { sitekey: turnstileSiteKey, theme: "light" });
   }
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {

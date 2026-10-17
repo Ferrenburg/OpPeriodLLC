@@ -5,7 +5,6 @@ import { Logo } from "./logo";
 import { MobileMenu } from "./mobile-menu";
 import { NavLink } from "./nav-link";
 import { ProjectsMenu } from "./projects-menu";
-import { ThemeToggle } from "./theme-toggle";
 
 export function Header({ projects }: { projects: NavProject[] }) {
   return (
@@ -29,10 +28,7 @@ export function Header({ projects }: { projects: NavProject[] }) {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-1">
-          <ThemeToggle />
-          <MobileMenu projects={projects} />
-        </div>
+        <MobileMenu projects={projects} />
       </div>
     </header>
   );

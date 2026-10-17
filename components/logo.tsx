@@ -7,7 +7,7 @@ type Props = {
   logo: LogoConfig;
   // Rendered height in CSS, for example "h-9 md:h-10". Width follows.
   className?: string;
-  // The section behind the logo is dark in both themes (like a band).
+  // The section behind the logo is dark (like a band).
   onDark?: boolean;
   priority?: boolean;
   // Roughly how wide the logo shows, so the browser downloads a small file
@@ -15,13 +15,13 @@ type Props = {
   sizes?: string;
 };
 
-// Picks the right logo for the background. With a "-light" file, dark
-// backgrounds get the light version. Without one, the normal logo sits on a
-// white plate so the black type never disappears.
+// The site is light only, so the normal logo is used everywhere except dark
+// bands. There, a "-light" file is used if one exists. Without one, the
+// normal logo sits on a white plate so the black type never disappears.
 export function Logo({ logo, className = "h-10", onDark = false, priority = false, sizes = "320px" }: Props) {
   const resolved = resolveLogo(logo);
   const { light } = resolved;
-  const img = (src: PublicImage, extra = "") => (
+  const img = (src: PublicImage) => (
     <Image
       src={src.src}
       width={src.width}
@@ -29,24 +29,11 @@ export function Logo({ logo, className = "h-10", onDark = false, priority = fals
       alt={resolved.alt}
       priority={priority}
       sizes={sizes}
-      className={`${className} w-auto max-w-full ${extra}`}
+      className={`${className} w-auto max-w-full`}
     />
   );
 
-  if (light) {
-    if (onDark) return img(light);
-    return (
-      <>
-        {img(resolved, "dark:hidden")}
-        {img(light, "hidden dark:block")}
-      </>
-    );
-  }
-
-  const plate = "inline-flex rounded-sm bg-paper px-3 py-2";
-  return (
-    <span className={onDark ? plate : `inline-flex dark:rounded-sm dark:bg-paper dark:px-3 dark:py-2`}>
-      {img(resolved)}
-    </span>
-  );
+  if (!onDark) return img(resolved);
+  if (light) return img(light);
+  return <span className="inline-flex rounded-sm bg-paper px-3 py-2">{img(resolved)}</span>;
 }

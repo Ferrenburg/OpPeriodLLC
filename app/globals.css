@@ -1,21 +1,6 @@
 @import "tailwindcss";
 
-/*
-  Dark mode follows the visitor's system setting unless they pick a theme
-  with the toggle, which sets data-theme on <html> (see app/layout.tsx).
-*/
-@custom-variant dark {
-  &:where([data-theme="dark"], [data-theme="dark"] *) {
-    @slot;
-  }
-  @media (prefers-color-scheme: dark) {
-    &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
-      @slot;
-    }
-  }
-}
-
-/* Theme aware tokens. Light values are the brand palette from docs/PLAN.md. */
+/* Site tokens, from the brand palette in docs/PLAN.md. The site is light only. */
 :root {
   color-scheme: light;
   --bg: #ffffff; /* paper */
@@ -30,37 +15,6 @@
   --band-fg: #f3f3f1;
   --band-muted: #a3a9ae;
   --band-accent: #f06a6a;
-}
-
-/*
-  Opperiod red on ink is only 2:1, so dark mode uses a lighter red for text
-  and links. Buttons keep the deep red fill with white text.
-*/
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --bg: #0e1010;
-    --surface: #171a1b;
-    --fg: #ededea;
-    --muted: #a3a9ae;
-    --line: #2b3032;
-    --accent: #f06a6a;
-    --accent-fill: #a31112;
-    --accent-fill-hover: #8e0d0e;
-    --band: #1d2122;
-  }
-}
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #0e1010;
-  --surface: #171a1b;
-  --fg: #ededea;
-  --muted: #a3a9ae;
-  --line: #2b3032;
-  --accent: #f06a6a;
-  --accent-fill: #a31112;
-  --accent-fill-hover: #8e0d0e;
-  --band: #1d2122;
 }
 
 @theme inline {
@@ -81,7 +35,7 @@
   --color-band-accent: var(--band-accent);
 }
 
-/* Fixed brand colors, the same in both themes. */
+/* Fixed brand colors. */
 @theme {
   --color-ink: #0e1010;
   --color-opperiod-red: #8e0d0e;

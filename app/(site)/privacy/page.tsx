@@ -56,10 +56,6 @@ export default function PrivacyPage() {
           </p>
         )}
         <p>
-          If you switch between light and dark mode, your choice is saved in your own browser. It never gets
-          sent to us.
-        </p>
-        <p>
           We don&apos;t use advertising trackers or analytics tools, and we don&apos;t set cookies. If that
           changes, we&apos;ll update this page first.
         </p>

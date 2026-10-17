@@ -35,8 +35,8 @@ export function siteUrl(): URL {
   return new URL(process.env.SITE_URL || company.url);
 }
 
-// Fixed brand colors, sampled from the logos. Theme aware versions (for
-// text, backgrounds, and dark mode) are CSS variables in app/globals.css.
+// Fixed brand colors, sampled from the logos. The versions pages use (for
+// text and backgrounds) are CSS variables in app/globals.css.
 // These raw values are for places CSS can't reach, like OG images.
 export const colors = {
   ink: "#0E1010",
@@ -52,10 +52,10 @@ export type LogoConfig = {
   alt: string;
 };
 
-// A light version for dark backgrounds is picked up automatically: drop a
-// file next to the original with "-light" before the extension (for example
-// /public/brand/opperiod-logo-light.png). Until one exists, the dark logo
-// sits on a white plate whenever the background is dark.
+// The site is light only. For a logo on a dark band, a light version is
+// picked up automatically: drop a file next to the original with "-light"
+// before the extension (for example /public/brand/opperiod-logo-light.png).
+// Until one exists, the dark logo sits on a white plate there.
 export const logos = {
   opperiod: { src: "/brand/opperiod-logo.png", alt: "Opperiod LLC" },
 } satisfies Record<string, LogoConfig>;
