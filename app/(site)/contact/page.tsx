@@ -33,7 +33,7 @@ export default function ContactPage() {
           </noscript>
         </div>
 
-        <aside className="h-fit bg-surface p-6">
+        <div className="h-fit bg-surface p-6">
           <h2 className="font-display text-2xl font-bold uppercase italic">Rather email?</h2>
           <p className="mt-2 text-muted">Write to us directly at</p>
           <a href={`mailto:${company.email}`} className="mt-1 inline-block text-lg font-semibold text-accent underline underline-offset-4">
@@ -42,7 +42,7 @@ export default function ContactPage() {
           <p className="mt-6 text-sm text-muted">
             {company.legalName}, {company.city}, {company.state}
           </p>
-        </aside>
+        </div>
       </div>
     </section>
   );

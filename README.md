@@ -13,12 +13,37 @@ Then open http://localhost:3000.
 
 Before pushing, run `npm run check` (lint and type check) and `npm run build`.
 
+## Branches and deploys
+
+- `main` is the live site. Anything merged or pushed to `main` deploys to opperiod.com.
+- Every other branch gets its own Vercel preview link, so changes can be checked before they go live. Previews are hidden from search engines automatically.
+- A failed build never replaces the live site. If a deploy fails, the old version stays up until the fix is pushed.
+
 ## Where things live
 
-- `lib/brand.ts`: company name, colors, logo paths, and nav links
+- `lib/brand.ts`: company name, legal details, address, colors, logo paths, and nav links
+- `content/projects/`: one file per project (see "How to add a new project")
 - `app/globals.css`: theme colors for light and dark mode
 - `public/brand/`: logo files
-- `docs/PLAN.md`: the full build plan
+- `app/icon.png`, `app/apple-icon.png`: the browser tab and phone home screen icons
+- `assets/fonts/`: fonts used to draw the link preview images
+- `CONTENT-TODO.md`: everything still waiting on the owner
+- `docs/PLAN.md`: the original build plan
+
+## Placeholders (TODO boxes)
+
+Copy the owner still needs to write shows as a dashed "TODO: owner to provide" box in local development and on Vercel previews. On the live site those boxes are hidden, and the About page leaves out the photo spot until a photo is added. `CONTENT-TODO.md` lists every one, so check it before calling the site finished.
+
+## Search engines and link previews
+
+All of this updates on its own when projects change:
+
+- `/sitemap.xml` lists every page and every listed project. Retired projects are left out.
+- `/robots.txt` points search engines at the sitemap.
+- The home page describes Opperiod LLC to search engines (name, address, email, and its projects) using details from `lib/brand.ts`.
+- Sharing a link (text, Facebook, LinkedIn, and so on) shows a preview image. Project pages get their own, built from the project's name, tagline, color, and logo.
+
+After launch, add the site to Google Search Console (search.google.com/search-console), verify it through Porkbun DNS, and submit `https://opperiod.com/sitemap.xml`.
 
 ## Setting up the contact form
 

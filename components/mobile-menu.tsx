@@ -35,7 +35,9 @@ export function MobileMenu({ projects }: { projects: NavProject[] }) {
       href={href}
       aria-current={pathname === href ? "page" : undefined}
       onClick={() => setOpen(false)}
-      className={`block py-3 font-display text-xl font-semibold uppercase italic tracking-wide aria-[current=page]:text-accent ${nested ? "pl-4 text-lg normal-case not-italic text-muted aria-[current=page]:text-accent" : ""}`}
+      className={`block py-3 font-semibold aria-[current=page]:text-accent ${
+        nested ? "pl-4 text-lg text-muted" : "font-display text-xl uppercase italic tracking-wide"
+      }`}
     >
       {label}
     </Link>

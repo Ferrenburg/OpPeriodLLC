@@ -76,7 +76,7 @@ export function ProjectsMenu({ projects }: { projects: NavProject[] }) {
                 href={item.href}
                 aria-current={pathname === item.href ? "page" : undefined}
                 onClick={() => setOpen(false)}
-                className="block px-4 py-2.5 font-medium hover:bg-surface aria-[current=page]:text-accent"
+                className="block px-4 py-2.5 font-semibold hover:bg-surface aria-[current=page]:text-accent"
               >
                 {item.name}
               </Link>

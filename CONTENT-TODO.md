@@ -4,7 +4,7 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 
 ## Site wide
 
-- [ ] Favicon / app icon. None provided yet.
+- [ ] Favicon / app icon. `app/icon.png` and `app/apple-icon.png` are placeholders cut from the logo's red-barred "O". Replace them with a proper icon when there is one (same file names).
 - [ ] Light versions of the logos for dark backgrounds (`opperiod-logo-light.png`, `box-alarm-builders-logo-light.png`), or SVGs.
 - [ ] Confirm the one line company description in `lib/brand.ts`: "Opperiod LLC owns and operates a growing group of businesses, run out of Westlake, Louisiana." It shows in the home hero, the footer, and search results.
 - [ ] The Sheridan, WY address shows on the privacy page as the company's address. If that's a registered agent address that doesn't forward regular mail, swap in a mailing address that does (`company.address` in `lib/brand.ts`).

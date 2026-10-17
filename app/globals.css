@@ -175,6 +175,7 @@ body {
   margin-top: 2rem;
   font-family: var(--font-display);
   font-size: 1.5rem;
+  font-style: italic;
   font-weight: 600;
 }
 .mdx-body :where(ul):not(:where(.not-prose, .not-prose *)) {

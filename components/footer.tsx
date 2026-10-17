@@ -21,7 +21,7 @@ export function Footer() {
           <ul className="grid grid-cols-2 gap-x-10 gap-y-3 sm:flex sm:gap-8">
             {footerNav.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="font-medium hover:text-accent">
+                <Link href={item.href} className="font-semibold hover:text-accent">
                   {item.label}
                 </Link>
               </li>

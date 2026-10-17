@@ -4,18 +4,20 @@ import { company, siteUrl } from "@/lib/brand";
 import "./globals.css";
 
 // Condensed italic headings echo the forward slant of the wordmark. Both
-// fonts are downloaded at build time and served from this site.
+// fonts are downloaded at build time and served from this site. Each
+// weight is its own file, so only the four the design uses are loaded:
+// headings are always italic, and body text is regular or semibold.
 const heading = Barlow_Condensed({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["600", "700"],
-  style: ["normal", "italic"],
+  style: ["italic"],
 });
 
 const body = Barlow({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "600"],
 });
 
 export const metadata: Metadata = {
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
     siteName: company.legalName,
     type: "website",
   },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {

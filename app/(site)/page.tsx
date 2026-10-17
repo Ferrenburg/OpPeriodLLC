@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/button";
 import { Logo } from "@/components/logo";
 import { ProjectCard } from "@/components/project-card";
-import { company, logos } from "@/lib/brand";
+import { company, logos, siteUrl } from "@/lib/brand";
 import { getListedProjects } from "@/lib/projects";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 // Draft copy, flagged in CONTENT-TODO.md for the owner to rewrite or approve.
 const values = [
@@ -25,11 +30,43 @@ const values = [
   },
 ];
 
+// Tells search engines who the company is. Facts come from lib/brand.ts.
+function organizationJsonLd(projects: ReturnType<typeof getListedProjects>) {
+  const base = siteUrl();
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: company.name,
+    legalName: company.legalName,
+    url: base.toString(),
+    logo: new URL(logos.opperiod.src, base).toString(),
+    email: company.email,
+    description: company.description,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: company.address.street,
+      addressLocality: company.address.city,
+      addressRegion: company.address.region,
+      postalCode: company.address.postalCode,
+      addressCountry: company.address.country,
+    },
+    brand: projects.map((project) => ({
+      "@type": "Brand",
+      name: project.name,
+      url: new URL(project.href, base).toString(),
+    })),
+  };
+}
+
 export default function HomePage() {
   const projects = getListedProjects();
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd(projects)).replace(/</g, "\\u003c") }}
+      />
       <section className="container-site py-14 md:py-24">
         <p className="text-sm font-semibold uppercase tracking-wider text-muted">
           {company.city}, {company.state}

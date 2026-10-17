@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ButtonLink } from "@/components/button";
-import { Todo } from "@/components/todo";
+import { Todo, showTodos } from "@/components/todo";
 import { company, owner } from "@/lib/brand";
 import { readPublicImage } from "@/lib/images";
 
@@ -20,7 +20,7 @@ export default function AboutPage() {
         <span className="slant-bar" aria-hidden="true" />
         <h1 className="mt-3 font-display text-5xl font-bold uppercase italic md:text-6xl">About</h1>
 
-        <div className="mt-10 grid gap-10 md:grid-cols-[1fr_20rem] md:gap-16">
+        <div className={`mt-10 grid gap-10 md:gap-16 ${photo || showTodos ? "md:grid-cols-[1fr_20rem]" : ""}`}>
           <div className="max-w-2xl space-y-5 text-lg leading-relaxed">
             {/* Draft, flagged in CONTENT-TODO.md. */}
             <p>
@@ -39,26 +39,28 @@ export default function AboutPage() {
             </Todo>
           </div>
 
-          <figure>
-            {photo ? (
-              <Image
-                src={photo.src}
-                width={photo.width}
-                height={photo.height}
-                alt={owner.name}
-                sizes="(min-width: 768px) 20rem, 100vw"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            ) : (
-              <div className="flex aspect-[4/5] w-full items-center justify-center bg-surface p-6 text-center">
-                <Todo>A photo of {owner.name}. Portrait orientation works best.</Todo>
-              </div>
-            )}
-            <figcaption className="mt-3">
-              <span className="block font-display text-xl font-bold uppercase italic">{owner.name}</span>
-              <span className="text-muted">Owner, {company.legalName}</span>
-            </figcaption>
-          </figure>
+          {(photo || showTodos) && (
+            <figure>
+              {photo ? (
+                <Image
+                  src={photo.src}
+                  width={photo.width}
+                  height={photo.height}
+                  alt={owner.name}
+                  sizes="(min-width: 768px) 20rem, 100vw"
+                  className="aspect-[4/5] w-full object-cover"
+                />
+              ) : (
+                <div className="flex aspect-[4/5] w-full items-center justify-center bg-surface p-6 text-center">
+                  <Todo>A photo of {owner.name}. Portrait orientation works best.</Todo>
+                </div>
+              )}
+              <figcaption className="mt-3">
+                <span className="block font-display text-xl font-bold uppercase italic">{owner.name}</span>
+                <span className="text-muted">Owner, {company.legalName}</span>
+              </figcaption>
+            </figure>
+          )}
         </div>
       </section>
 

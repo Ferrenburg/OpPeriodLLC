@@ -40,10 +40,10 @@ export function FeatureGrid({ items = [], children }: { items?: Feature[]; child
 
 export function Callout({ title, children }: { title?: string; children: ReactNode }) {
   return (
-    <aside className="not-prose my-8 border-l-4 bg-surface p-5 [border-color:var(--project-accent,var(--accent-fill))]">
+    <div role="note" className="not-prose my-8 border-l-4 bg-surface p-5 [border-color:var(--project-accent,var(--accent-fill))]">
       {title && <p className="font-display text-xl font-bold uppercase italic">{title}</p>}
       <div className="mt-1 space-y-3 text-fg [&_a]:font-semibold [&_a]:underline">{children}</div>
-    </aside>
+    </div>
   );
 }
 
