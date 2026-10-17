@@ -125,7 +125,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
               Part of the {company.name} family
             </h2>
             <p className="mt-2 text-muted">
-              {project.name} is owned and run by {company.legalName}.
+              {project.name} is one of the projects under {company.legalName}.
             </p>
           </div>
           <Link href="/projects" className="font-semibold text-accent underline underline-offset-4">

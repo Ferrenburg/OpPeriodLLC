@@ -6,7 +6,7 @@ import { getListedProjects } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: `The businesses and products ${company.legalName} owns and runs.`,
+  description: `The businesses and products under ${company.legalName}.`,
   alternates: { canonical: "/projects" },
 };
 
@@ -17,7 +17,7 @@ export default function ProjectsPage() {
       <span className="slant-bar" aria-hidden="true" />
       <h1 className="mt-3 font-display text-5xl font-bold uppercase italic md:text-6xl">Projects</h1>
       <p className="mt-4 max-w-2xl text-lg text-muted">
-        Everything {company.legalName} owns and runs, in one place.
+        Everything under the {company.name} name, in one place.
       </p>
       <div className="mt-10">
         {projects.length === 0 && <p className="text-muted">Nothing to show yet. Check back soon.</p>}

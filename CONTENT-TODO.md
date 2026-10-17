@@ -6,7 +6,24 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 
 - [ ] Favicon / app icon. None provided yet.
 - [ ] Light versions of the logos for dark backgrounds (`opperiod-logo-light.png`, `box-alarm-builders-logo-light.png`), or SVGs.
-- [ ] Confirm the one line company description in `lib/brand.ts`: "Opperiod LLC is a small Louisiana company that owns and operates a growing group of businesses."
+- [ ] Confirm the one line company description in `lib/brand.ts`: "Opperiod LLC is a small Louisiana company that owns and operates a growing group of businesses." It shows in the home hero, the footer, and search results.
+- [ ] Confirm each project really sits under Opperiod LLC. Project pages say "<name> is one of the projects under Opperiod LLC." StationScore's own docs still list "which entity owns this" as open.
+
+## Home (`app/(site)/page.tsx`)
+
+- [ ] "How we operate": four values drafted from the plan's theme (Show up, Do the job right, Take care of people, Keep it straight). Rewrite in your own words or approve.
+- [ ] Contact strip shows sales@opperiod.com publicly. Make sure that inbox exists and is watched.
+
+## About (`app/(site)/about/page.tsx`)
+
+- [ ] The story of why Opperiod exists, what got it started, and where the name comes from (shown as a TODO box on the page).
+- [ ] Approve the two draft paragraphs, which mention Westlake and that you serve as a fire lieutenant.
+- [ ] Owner photo. Put it in `public/brand/` and set `owner.photo` in `lib/brand.ts`.
+
+## Privacy (`app/(site)/privacy/page.tsx`)
+
+- [ ] Effective date.
+- [ ] Review before launch. It's written from how the site works today (contact form through Resend, hosting on Vercel, no analytics, no cookies). If analytics or Turnstile get added, it needs updating.
 
 ## Box Alarm Builders (`content/projects/box-alarm-builders.mdx`)
 

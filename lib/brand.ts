@@ -5,12 +5,21 @@ export const company = {
   name: "Opperiod",
   legalName: "Opperiod LLC",
   state: "Louisiana",
+  city: "Westlake",
   url: "https://opperiod.com",
   // Every project routes here until one gets its own inbox.
   email: "sales@opperiod.com",
   // One line used in metadata and the home hero. Plain on purpose.
   description:
     "Opperiod LLC is a small Louisiana company that owns and operates a growing group of businesses.",
+} as const;
+
+export const owner = {
+  name: "Samuel Ferrenburg",
+  role: "Fire lieutenant",
+  // Path under /public, like "/brand/owner.jpg". Until there is one, the
+  // About page shows a placeholder where the photo goes.
+  photo: undefined as string | undefined,
 } as const;
 
 // SITE_URL overrides the domain, which is only useful for testing a preview
