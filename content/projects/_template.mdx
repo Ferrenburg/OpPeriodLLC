@@ -1,0 +1,96 @@
+---
+# HOW TO USE THIS FILE
+# 1. Copy it, and name the copy after the project, like my-project.mdx.
+#    (Files starting with _ are ignored, so this template never shows up.)
+# 2. Fill in the fields below. Lines starting with # are notes and can stay or go.
+# 3. Write the page below the second --- line.
+# If a field is wrong, the build stops and tells you which file and field.
+
+# REQUIRED FIELDS
+
+# The project's name as it should appear everywhere.
+name: My Project
+
+# Lowercase letters, numbers, and dashes. Must match the file name
+# (my-project.mdx means my-project). This becomes the web address:
+# opperiod.com/projects/my-project (opperiod.com/my-project also works).
+slug: my-project
+
+# One line, 70 characters or fewer. Shows under the name on cards and the page.
+tagline: One short line about what this is
+
+# One or two sentences. Used on the page, in search results, and in link previews.
+summary: >
+  A plain description of what the project does and who it's for.
+
+# Any label. Projects with the same category are grouped by the filter on /projects.
+# Examples: Construction, Software, Services
+category: Software
+
+# One of:
+#   active          normal card and page
+#   in-development  shows an "In development" badge, page still visible
+#   coming-soon     shows a "Coming soon" badge, page shows only the summary
+#                   and a button to get notified
+#   retired         hidden from lists and menus, page still works with a notice
+status: in-development
+
+# Sort order on grids and menus. Lower numbers come first.
+order: 10
+
+# false hides the project everywhere, including its page.
+published: false
+
+# OPTIONAL FIELDS (delete any you don't need, or leave them blank)
+
+# Path to a logo in public/brand/. Without one, the name is shown as a styled badge.
+# For dark backgrounds, add a light version named like my-project-logo-light.png
+# and it gets used automatically.
+logo: /brand/my-project-logo.png
+
+# The project's color, in quotes. Used for borders, accents, and its main button.
+# Without one, Opperiod red is used.
+accentColor: "#2B6CB0"
+
+# If the project has its own website, a "Visit site" button links here.
+externalUrl:
+
+# Sends this project's contact form messages to a different inbox. BOX_ALARM
+# means the address in the CONTACT_EMAIL_BOX_ALARM setting in Vercel.
+# Without one, messages go to CONTACT_EMAIL_DEFAULT.
+contactEmailKey:
+
+# Shown on the page under the tagline.
+serviceArea:
+
+# 3 to 6 short points, shown as a grid on the page.
+highlights:
+  - First point
+  - Second point
+  - Third point
+
+# The main button on the page.
+cta:
+  label: Get in touch
+  href: /contact?project=my-project
+---
+
+Write the page here in plain text. A blank line starts a new paragraph.
+
+## A heading
+
+These building blocks work without any setup:
+
+<Section title="A titled section">
+  Text inside a section.
+</Section>
+
+<FeatureGrid items={["First thing", "Second thing", "Third thing"]} />
+
+<Callout title="Worth knowing">
+  A highlighted note.
+</Callout>
+
+<ImageBlock src="/brand/my-project-photo.jpg" alt="Describe the photo for people who can't see it" caption="Optional caption" />
+
+<CTA label="Get in touch" href="/contact?project=my-project" />

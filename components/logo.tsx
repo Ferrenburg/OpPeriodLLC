@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { LogoConfig } from "@/lib/brand";
+import type { PublicImage } from "@/lib/images";
 import { resolveLogo } from "@/lib/logos";
 
 type Props = {
@@ -9,21 +10,25 @@ type Props = {
   // The section behind the logo is dark in both themes (like a band).
   onDark?: boolean;
   priority?: boolean;
+  // Roughly how wide the logo shows, so the browser downloads a small file
+  // instead of the full size original. Same format as the <img> sizes attribute.
+  sizes?: string;
 };
 
 // Picks the right logo for the background. With a "-light" file, dark
 // backgrounds get the light version. Without one, the normal logo sits on a
 // white plate so the black type never disappears.
-export function Logo({ logo, className = "h-10", onDark = false, priority = false }: Props) {
+export function Logo({ logo, className = "h-10", onDark = false, priority = false, sizes = "320px" }: Props) {
   const resolved = resolveLogo(logo);
   const { light } = resolved;
-  const img = (src: { src: string; width: number; height: number }, extra = "") => (
+  const img = (src: PublicImage, extra = "") => (
     <Image
       src={src.src}
       width={src.width}
       height={src.height}
       alt={resolved.alt}
       priority={priority}
+      sizes={sizes}
       className={`${className} w-auto max-w-full ${extra}`}
     />
   );

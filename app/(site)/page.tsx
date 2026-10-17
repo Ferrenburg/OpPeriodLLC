@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <>
       <section className="container-site py-14 md:py-24">
-        <Logo logo={logos.opperiod} className="h-14 sm:h-20 md:h-24" priority />
+        <Logo logo={logos.opperiod} className="h-14 sm:h-20 md:h-24" sizes="(min-width: 768px) 400px, 330px" priority />
         <p className="mt-8 max-w-2xl text-xl leading-relaxed md:text-2xl">{company.description}</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <ButtonLink href="/projects">View projects</ButtonLink>
@@ -95,7 +95,7 @@ function StyleCheck() {
             they sit on a white plate:
           </p>
           <div className="mt-6">
-            <Logo logo={logos.opperiod} className="h-10" onDark />
+            <Logo logo={logos.opperiod} className="h-10" sizes="170px" onDark />
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/contact">Primary</ButtonLink>

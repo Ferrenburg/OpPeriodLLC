@@ -152,3 +152,50 @@ body {
     transform: skewX(-24deg);
   }
 }
+
+/* Body text written in MDX on project pages. Building blocks opt out with .not-prose. */
+.mdx-body {
+  max-width: 44rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+.mdx-body :where(p, ul, ol, blockquote, figure):not(:where(.not-prose, .not-prose *)) {
+  margin-block: 1.25rem;
+}
+.mdx-body :where(h2):not(:where(.not-prose, .not-prose *)) {
+  margin-top: 2.5rem;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.mdx-body :where(h3):not(:where(.not-prose, .not-prose *)) {
+  margin-top: 2rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.mdx-body :where(ul):not(:where(.not-prose, .not-prose *)) {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.mdx-body :where(ol):not(:where(.not-prose, .not-prose *)) {
+  list-style: decimal;
+  padding-left: 1.25rem;
+}
+.mdx-body :where(a):not(:where(.not-prose, .not-prose *)) {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.mdx-body :where(blockquote):not(:where(.not-prose, .not-prose *)) {
+  border-left: 4px solid var(--line);
+  padding-left: 1rem;
+  color: var(--muted);
+}
+.mdx-body > :first-child {
+  margin-top: 0;
+}

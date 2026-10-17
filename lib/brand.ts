@@ -5,20 +5,18 @@ export const company = {
   name: "Opperiod",
   legalName: "Opperiod LLC",
   state: "Louisiana",
+  url: "https://opperiod.com",
+  // Every project routes here until one gets its own inbox.
+  email: "sales@opperiod.com",
   // One line used in metadata and the home hero. Plain on purpose.
   description:
     "Opperiod LLC is a small Louisiana company that owns and operates a growing group of businesses.",
 } as const;
 
-// The production domain is still an open question (see docs/PLAN.md). Set
-// SITE_URL in Vercel once it is decided; until then Vercel's own production
-// URL is used, then localhost for local builds.
+// SITE_URL overrides the domain, which is only useful for testing a preview
+// deploy's social previews. Production always uses opperiod.com.
 export function siteUrl(): URL {
-  const configured = process.env.SITE_URL;
-  if (configured) return new URL(configured);
-  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL;
-  if (vercel) return new URL(`https://${vercel}`);
-  return new URL("http://localhost:3000");
+  return new URL(process.env.SITE_URL || company.url);
 }
 
 // Fixed brand colors, sampled from the logos. Theme aware versions (for

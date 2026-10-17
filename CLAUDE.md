@@ -8,4 +8,6 @@
 - Theme colors are CSS variables in `app/globals.css`. Use the semantic utilities (`bg-bg`, `text-fg`, `text-muted`, `text-accent`, `bg-accent-fill`, `bg-band`) so dark mode keeps working.
 - Opperiod red fails contrast as text on dark backgrounds. Use `text-accent` (which lightens in dark mode) for text, never `text-opperiod-red`.
 - Adding a project must only take a file in `content/projects/` and an optional logo. Never make it require editing nav, pages, or components.
+- Project content is validated by the zod schema in `lib/project-loader.ts`. A content problem should fail the build with a message a non-developer can act on.
+- Read projects through `lib/projects.ts` (`getListedProjects` for anything public facing, which leaves out retired ones).
 - Run `npm run check` and `npm run build` before pushing.

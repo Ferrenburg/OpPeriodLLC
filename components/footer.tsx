@@ -12,7 +12,7 @@ export function Footer() {
       <div className="container-site grid gap-10 py-12 md:grid-cols-[1fr_auto] md:py-16">
         <div className="max-w-sm">
           <Link href="/" className="inline-block">
-            <Logo logo={logos.opperiod} className="h-8" />
+            <Logo logo={logos.opperiod} className="h-8" sizes="140px" />
           </Link>
           <p className="mt-4 text-muted">{company.description}</p>
         </div>

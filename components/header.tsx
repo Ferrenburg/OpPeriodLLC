@@ -12,7 +12,7 @@ export function Header({ projects }: { projects: NavProject[] }) {
     <header className="sticky top-0 z-30 border-b border-line bg-bg">
       <div className="container-site relative flex h-16 items-center justify-between gap-4 md:h-20">
         <Link href="/" className="shrink-0">
-          <Logo logo={logos.opperiod} className="h-7 md:h-9" priority />
+          <Logo logo={logos.opperiod} className="h-7 md:h-9" sizes="160px" priority />
         </Link>
 
         <nav aria-label="Main" className="hidden md:block">

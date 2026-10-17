@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
+import { loadProjects } from "./lib/project-loader";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Short links: opperiod.com/<slug> goes to opperiod.com/projects/<slug>.
+  // Built from the content folder, so new projects get one automatically.
+  async redirects() {
+    return loadProjects()
+      .filter((project) => project.published)
+      .map((project) => ({ source: `/${project.slug}`, destination: project.href, permanent: true }));
+  },
   async headers() {
     return [
       {
