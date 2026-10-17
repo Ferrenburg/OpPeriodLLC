@@ -35,26 +35,12 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0e1010" },
-  ],
+  themeColor: "#ffffff",
 };
-
-// Applies a saved theme before the first paint so there is no flash.
-// No saved theme means the CSS follows the system setting.
-const themeScript = `(function(){try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}})()`;
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${heading.variable} ${body.variable} antialiased`}
-      suppressHydrationWarning
-    >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
+    <html lang="en" className={`${heading.variable} ${body.variable} antialiased`}>
       <body className="flex min-h-dvh flex-col font-sans">{children}</body>
     </html>
   );

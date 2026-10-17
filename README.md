@@ -23,7 +23,7 @@ Before pushing, run `npm run check` (lint and type check) and `npm run build`.
 
 - `lib/brand.ts`: company name, legal details, address, colors, logo paths, and nav links
 - `content/projects/`: one file per project (see "How to add a new project")
-- `app/globals.css`: theme colors for light and dark mode
+- `app/globals.css`: site colors (the site is light mode only)
 - `public/brand/`: logo files
 - `app/icon.png`, `app/apple-icon.png`: the browser tab and phone home screen icons
 - `assets/fonts/`: fonts used to draw the link preview images
@@ -93,7 +93,7 @@ After deploying, send yourself a message from the live site with each project pi
 
 ## Logos on dark backgrounds
 
-The current logos are black, so on dark backgrounds they sit on a white plate. To use a proper light version instead, save it next to the original with `-light` before the extension (for example `public/brand/opperiod-logo-light.png`). The site picks it up on the next deploy with no code changes.
+The site is light mode only, so logos normally sit on white. The only dark areas are the dark bands, and the current logos are black, so a logo placed on one sits on a white plate. To use a proper light version instead, save it next to the original with `-light` before the extension (for example `public/brand/opperiod-logo-light.png`). The site picks it up on the next deploy with no code changes.
 
 ## How to add a new project
 

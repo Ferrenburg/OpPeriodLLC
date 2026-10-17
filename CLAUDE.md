@@ -6,9 +6,10 @@
 - Never invent facts (licenses, years, clients, stats, prices, contact info). Use `TODO: owner to provide` and list it in `CONTENT-TODO.md`.
 - No em dashes anywhere in site copy. No decorative `<hr>` between sections; use spacing and background changes.
 - Company facts, colors, logos, and nav links live in `lib/brand.ts`. Pages never hard code them.
-- Render logos with `components/logo.tsx`, which handles dark backgrounds and picks up `-light` variants automatically.
-- Theme colors are CSS variables in `app/globals.css`. Use the semantic utilities (`bg-bg`, `text-fg`, `text-muted`, `text-accent`, `bg-accent-fill`, `bg-band`) so dark mode keeps working.
-- Opperiod red fails contrast as text on dark backgrounds. Use `text-accent` (which lightens in dark mode) for text, never `text-opperiod-red`.
+- Render logos with `components/logo.tsx`. Pass `onDark` on dark bands; it picks up `-light` variants automatically.
+- The site is light mode only (no dark theme, no toggle) so the black logos always sit on a light background. Don't add `dark:` classes or a theme switch.
+- Theme colors are CSS variables in `app/globals.css`. Use the semantic utilities (`bg-bg`, `text-fg`, `text-muted`, `text-accent`, `bg-accent-fill`, `bg-band`).
+- Opperiod red fails contrast as text on dark bands. Use `text-band-accent` there, never `text-opperiod-red`.
 - Adding a project must only take a file in `content/projects/` and an optional logo. Never make it require editing nav, pages, or components.
 - Project content is validated by the zod schema in `lib/project-loader.ts`. A content problem should fail the build with a message a non-developer can act on.
 - Read projects through `lib/projects.ts` (`getListedProjects` for anything public facing, which leaves out retired ones).

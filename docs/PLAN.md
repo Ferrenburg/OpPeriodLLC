@@ -64,7 +64,7 @@ Each project gets its own `accentColor` in its frontmatter (Box Alarm is `#C6001
 - Typography: a bold condensed or italic-leaning sans for headings that echoes the forward slant of the Opperiod wordmark (something like Barlow Condensed or Saira Condensed, self-hosted through `next/font`), and a clean readable sans for body text.
 - Generous whitespace, strong grid, square or slightly rounded corners, subtle slanted edges or angled accent bars as a nod to the red bar in the logo. Use that motif sparingly.
 - Must look great on a phone first. Most visitors will be on mobile.
-- Support both light and dark mode using CSS variables, with logos handled as described above.
+- Light mode only, using CSS variables. Dark mode was dropped so the black logos always sit on a light background.
 
 ## 5. Site map
 
@@ -223,7 +223,7 @@ The README must include a section called **"How to add a new project"** written 
 
 ## 12. Build phases
 
-**Phase 1: Foundation.** Project setup, Tailwind config with brand tokens, fonts, layout, header, footer, light/dark handling. Stop for review.
+**Phase 1: Foundation.** Project setup, Tailwind config with brand tokens, fonts, layout, header, footer, light/dark handling (dark mode later removed). Stop for review.
 
 **Phase 2: Content system.** Project loader, zod schema, template file, the three project files, `/projects` and `/projects/[slug]`. Prove it works by adding a fake fourth project, confirming it appears everywhere automatically, then deleting it. Stop for review.
 
