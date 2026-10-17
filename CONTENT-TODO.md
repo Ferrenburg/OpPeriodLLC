@@ -6,7 +6,8 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 
 - [ ] Favicon / app icon. None provided yet.
 - [ ] Light versions of the logos for dark backgrounds (`opperiod-logo-light.png`, `box-alarm-builders-logo-light.png`), or SVGs.
-- [ ] Confirm the one line company description in `lib/brand.ts`: "Opperiod LLC is a small Louisiana company that owns and operates a growing group of businesses." It shows in the home hero, the footer, and search results.
+- [ ] Confirm the one line company description in `lib/brand.ts`: "Opperiod LLC owns and operates a growing group of businesses, run out of Westlake, Louisiana." It shows in the home hero, the footer, and search results.
+- [ ] The Sheridan, WY address shows on the privacy page as the company's address. If that's a registered agent address that doesn't forward regular mail, swap in a mailing address that does (`company.address` in `lib/brand.ts`).
 - [ ] Confirm each project really sits under Opperiod LLC. Project pages say "<name> is one of the projects under Opperiod LLC." StationScore's own docs still list "which entity owns this" as open.
 
 ## Home (`app/(site)/page.tsx`)

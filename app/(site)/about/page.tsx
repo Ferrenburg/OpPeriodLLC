@@ -24,8 +24,9 @@ export default function AboutPage() {
           <div className="max-w-2xl space-y-5 text-lg leading-relaxed">
             {/* Draft, flagged in CONTENT-TODO.md. */}
             <p>
-              {company.legalName} is a small company based in {company.city}, {company.state}. It&apos;s
-              the home for a handful of businesses and products, each with its own job to do.
+              {company.legalName} is a small {company.formedIn} company run out of {company.city},{" "}
+              {company.state}. It&apos;s the home for a handful of businesses and products, each with its
+              own job to do.
             </p>
             <p>
               It&apos;s run by {owner.name}, who also serves as a {owner.role.toLowerCase()}. The fire

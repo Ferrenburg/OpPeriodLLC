@@ -4,15 +4,30 @@
 export const company = {
   name: "Opperiod",
   legalName: "Opperiod LLC",
-  state: "Louisiana",
+  // Where the company is formed, which is not where it works from.
+  formedIn: "Wyoming",
+  // Registered address of the LLC.
+  address: {
+    street: "30 N Gould St Ste R",
+    city: "Sheridan",
+    region: "WY",
+    postalCode: "82801",
+    country: "US",
+  },
+  // Where the owner runs things day to day.
   city: "Westlake",
+  state: "Louisiana",
   url: "https://opperiod.com",
   // Every project routes here until one gets its own inbox.
   email: "sales@opperiod.com",
   // One line used in metadata and the home hero. Plain on purpose.
   description:
-    "Opperiod LLC is a small Louisiana company that owns and operates a growing group of businesses.",
+    "Opperiod LLC owns and operates a growing group of businesses, run out of Westlake, Louisiana.",
 } as const;
+
+export function formatAddress(address = company.address): string {
+  return `${address.street}, ${address.city}, ${address.region} ${address.postalCode}`;
+}
 
 export const owner = {
   name: "Samuel Ferrenburg",

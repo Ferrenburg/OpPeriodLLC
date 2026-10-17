@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Todo } from "@/components/todo";
-import { company } from "@/lib/brand";
+import { company, formatAddress } from "@/lib/brand";
 import { turnstileSiteKey } from "@/lib/contact";
 
 export const metadata: Metadata = {
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
 
         <h2>Contact</h2>
         <p>
-          {company.legalName}, {company.state}. Email {email}.
+          {company.legalName}, {formatAddress()}. Email {email}.
         </p>
       </div>
     </section>

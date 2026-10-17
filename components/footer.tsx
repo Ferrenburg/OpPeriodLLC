@@ -35,7 +35,9 @@ export function Footer() {
           &copy; <span id="copyright-year" suppressHydrationWarning>{new Date().getFullYear()}</span>{" "}
           {company.legalName}. All rights reserved.
         </p>
-        <p>{company.state}</p>
+        <p>
+          {company.legalName} is a {company.formedIn} limited liability company.
+        </p>
         <script dangerouslySetInnerHTML={{ __html: yearScript }} />
       </div>
     </footer>
