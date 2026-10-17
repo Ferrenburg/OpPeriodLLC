@@ -169,13 +169,13 @@ Create these three files. Write real draft copy only where it can be done honest
 - CTA: Request an estimate, routed through the contact form.
 
 **stationscore.mdx**
-- Category: Software. Status: `in-development`.
+- Category: Software. Status: `active`.
 - Description you can write from: helps small and volunteer fire departments get organized and ready for their insurance rating evaluation.
 - Do NOT name ISO or any rating organization as a partner, and do not claim score improvements. Keep it to what the product helps a department do.
 - No logo yet, use the text badge fallback. Pick a placeholder accent color and flag it.
 
 **iapassist.mdx**
-- Category: Software. Status: `in-development`.
+- Category: Software. Status: `active`.
 - Description: TODO, owner to provide. Do not guess what the product does.
 - No logo yet, text badge fallback, placeholder accent flagged.
 
@@ -237,7 +237,7 @@ The README must include a section called **"How to add a new project"** written 
 
 1. What is IAPassist, in one or two sentences, and does it have a logo or domain?
 2. Is Box Alarm Builders taking work yet, and what services and area should be listed?
-3. Do any projects already have their own domains (for `externalUrl`)?
+3. Do any projects already have their own domains (for `externalUrl`)? StationScore is at stationscore.opperiod.com and IAPassist is at iapassist.opperiod.com.
 4. What email addresses should each project's contact form route to?
 5. Should the website services business I run under Opperiod also be listed as a project?
 6. What domain is this site going on?
