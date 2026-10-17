@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+/*
+  Dark mode follows the visitor's system setting unless they pick a theme
+  with the toggle, which sets data-theme on <html> (see app/layout.tsx).
+*/
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+}
+
+/* Theme aware tokens. Light values are the brand palette from docs/PLAN.md. */
+:root {
+  color-scheme: light;
+  --bg: #ffffff; /* paper */
+  --surface: #f3f3f1; /* smoke */
+  --fg: #0e1010; /* ink */
+  --muted: #5b6166; /* steel, 6.3:1 on paper */
+  --line: #dcdcd8;
+  --accent: #8e0d0e; /* opperiod red as text, 9.5:1 on paper */
+  --accent-fill: #8e0d0e; /* buttons, white text is 9.5:1 */
+  --accent-fill-hover: #6f0a0b;
+  --band: #0e1010; /* always dark sections */
+  --band-fg: #f3f3f1;
+  --band-muted: #a3a9ae;
+  --band-accent: #f06a6a;
+}
+
+/*
+  Opperiod red on ink is only 2:1, so dark mode uses a lighter red for text
+  and links. Buttons keep the deep red fill with white text.
+*/
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0e1010;
+    --surface: #171a1b;
+    --fg: #ededea;
+    --muted: #a3a9ae;
+    --line: #2b3032;
+    --accent: #f06a6a;
+    --accent-fill: #a31112;
+    --accent-fill-hover: #8e0d0e;
+    --band: #1d2122;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0e1010;
+  --surface: #171a1b;
+  --fg: #ededea;
+  --muted: #a3a9ae;
+  --line: #2b3032;
+  --accent: #f06a6a;
+  --accent-fill: #a31112;
+  --accent-fill-hover: #8e0d0e;
+  --band: #1d2122;
+}
+
+@theme inline {
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), var(--font-body), ui-sans-serif, sans-serif;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-fill: var(--accent-fill);
+  --color-accent-fill-hover: var(--accent-fill-hover);
+  --color-band: var(--band);
+  --color-band-fg: var(--band-fg);
+  --color-band-muted: var(--band-muted);
+  --color-band-accent: var(--band-accent);
+}
+
+/* Fixed brand colors, the same in both themes. */
+@theme {
+  --color-ink: #0e1010;
+  --color-opperiod-red: #8e0d0e;
+  --color-paper: #ffffff;
+  --color-smoke: #f3f3f1;
+  --color-steel: #5b6166;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@utility container-site {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 72rem;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2rem;
+  }
+}
+
+/*
+  The forward leaning bar from the logo. Used as a small accent beside
+  headings and on cards, not as decoration everywhere.
+*/
+@utility slant-bar {
+  display: inline-block;
+  height: 0.375rem;
+  width: 2.5rem;
+  background: var(--slant-color, var(--accent-fill));
+  transform: skewX(-24deg);
+}
+
+@layer components {
+  .nav-link {
+    position: relative;
+    padding-block: 0.5rem;
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    &:hover {
+      color: var(--accent);
+    }
+  }
+  /* Current page gets a short slanted bar underneath, like the logo. */
+  .nav-link-active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 1.75rem;
+    background: var(--accent-fill);
+    transform: skewX(-24deg);
+  }
+}
