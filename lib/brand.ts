@@ -18,7 +18,7 @@ export const company = {
   // Every project routes here until one gets its own inbox.
   email: "sales@opperiod.com",
   // One line used in metadata and the home hero. Plain on purpose.
-  description: "Opperiod LLC is a diversified holdings company.",
+  description: "OpPeriod LLC is a diversified holding company.",
 } as const;
 
 export function formatAddress(address = company.address): string {
