@@ -43,10 +43,10 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 - [ ] Logo is redrawn from the app icon image (`public/brand/iapassist-logo.png`), since the original file wasn't in the repo. Swap in the original PNG or SVG with the same name if anything looks off.
 - [ ] Review the page copy. It only covers what's known so far: it helps emergency managers build Incident Action Plans with less typing.
 
-## Engine Bay Supply Co. (`app/(engine-bay)/engine-bay/`, `lib/engine-bay.ts`)
+## Engine Bay Supply Co. (`app/(engine-bay)/engine-bay/`, `lib/engine-bay.ts`, `content/engine-bay/products/`)
 
-- [ ] Brands Engine Bay distributes. Add them to `brands` in `lib/engine-bay.ts` and the Brands section shows up on the live site.
-- [ ] Product photos, one per category (halligans, axes, hooks, irons, forcible entry, straps and mounts). These are the biggest upgrade left. Save them in `public/engine-bay/` and set `image` on each category.
-- [ ] Confirm the six categories and the "put this on your quote request" checklists on the Tools page. They're written from common fire service tool specs, not from a product list.
+- [ ] Council Tool: confirm their go-ahead covers using their product photos and descriptions word for word, not just selling the tools. Get it in writing (an email is fine) before this goes live.
+- [ ] Council Tool: confirm the 41 products are all ones Engine Bay can actually get. The list is everything in Council's Firefighting category as of October 2026, including wildland tools and replacement parts.
+- [ ] Decide whether to say "authorized Council Tool dealer" anywhere. The site doesn't say it now. Only add it if Council says Engine Bay can use that wording.
 - [ ] Review the copy: the hero ("Halligans to hooks."), "By firefighters, for firefighters ... someone who has swung one," and the three ordering steps.
 - [ ] Optional: its own inbox for quote requests. Add `contactEmailKey: ENGINE_BAY` to `content/projects/engine-bay.mdx` and set `CONTACT_EMAIL_ENGINE_BAY` in Vercel.

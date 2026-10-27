@@ -57,7 +57,7 @@ export function ContactForm({ options, email, turnstileSiteKey, quote }: Props) 
   useEffect(() => {
     const tool = new URLSearchParams(window.location.search).get("tool");
     const el = message.current;
-    if (quote && tool && el && !el.value) el.value = `${tool.slice(0, 80)}: `;
+    if (quote && tool && el && !el.value) el.value = `${tool.slice(0, 160)}: `;
   }, [quote]);
 
   useEffect(() => {

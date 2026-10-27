@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { CategoryImage } from "@/components/engine-bay/category-image";
 import { Logo } from "@/components/logo";
-import { Todo } from "@/components/todo";
 import { company, engineBay } from "@/lib/brand";
-import { brands, orderingSteps, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { orderingSteps, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { brandPath, categoryPhoto, getBrandProducts, getBrands, getProductsIn } from "@/lib/engine-bay-catalog";
 import { readPublicImage } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -19,6 +19,7 @@ const heading = "font-display text-4xl font-bold uppercase italic leading-none m
 
 export default function EngineBayHome() {
   const lockup = readPublicImage("/brand/engine-bay-lockup.webp");
+  const brands = getBrands();
 
   return (
     <>
@@ -33,7 +34,7 @@ export default function EngineBayHome() {
               to hooks.
             </h1>
             <p className="mt-6 max-w-xl text-xl leading-relaxed text-white/85">
-              Forcible entry and overhaul tools for fire departments. Send us your list and we&apos;ll quote it.
+              Forcible entry, overhaul, and wildland tools for fire departments. Send us your list and we&apos;ll quote it.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={quoteHref()} className={redButton}>
@@ -64,27 +65,37 @@ export default function EngineBayHome() {
             </Link>
           </div>
           <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {toolCategories.map((category) => (
-              <li key={category.slug} className="flex flex-col border border-line bg-bg">
-                <CategoryImage category={category} sizes="(min-width: 1024px) 24rem, (min-width: 640px) 50vw, 100vw">
-                  <h3 className="font-display text-4xl font-bold uppercase italic leading-[0.9] text-white md:text-5xl">
-                    <Link href={`${engineBay.path}/tools#${category.slug}`} className="hover:underline">
-                      {category.short}
-                    </Link>
-                  </h3>
-                </CategoryImage>
-                <div className="flex flex-1 flex-col p-6">
-                  <p className="flex-1 text-muted">{category.blurb}</p>
-                  <Link
-                    href={quoteHref(category.name)}
-                    className="mt-5 self-start font-display text-lg font-semibold uppercase italic tracking-wide text-accent hover:underline"
-                  >
-                    Get pricing <span aria-hidden="true">&rarr;</span>
-                  </Link>
-                </div>
-              </li>
-            ))}
+            {toolCategories.filter((category) => !category.minor).map((category) => {
+              const count = getProductsIn(category.slug).length;
+              const href = count > 0 ? `${engineBay.path}/tools#${category.slug}` : quoteHref(category.name);
+              return (
+                <li key={category.slug} className="group relative flex flex-col border border-line bg-bg transition-shadow hover:shadow-lg">
+                  <CategoryImage photo={categoryPhoto(category)} sizes="(min-width: 1024px) 24rem, (min-width: 640px) 50vw, 100vw" />
+                  <div className="flex flex-1 flex-col p-6">
+                    <h3 className="font-display text-3xl font-bold uppercase italic leading-none">
+                      <Link href={href} className="after:absolute after:inset-0 group-hover:text-accent">
+                        {category.name}
+                      </Link>
+                    </h3>
+                    <p className="mt-2 flex-1 text-muted">{category.blurb}</p>
+                    <p className="mt-5 font-display text-lg font-semibold uppercase italic tracking-wide text-accent">
+                      {count > 0 ? `Shop ${count} ${count === 1 ? "item" : "items"}` : "Get pricing"} <span aria-hidden="true">&rarr;</span>
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
+          {toolCategories
+            .filter((category) => category.minor && getProductsIn(category.slug).length > 0)
+            .map((category) => (
+              <p key={category.slug} className="mt-6 text-lg">
+                {category.blurb}{" "}
+                <Link href={`${engineBay.path}/tools#${category.slug}`} className="font-semibold text-accent underline underline-offset-4">
+                  Shop {category.name.toLowerCase()}
+                </Link>
+              </p>
+            ))}
         </div>
       </section>
 
@@ -132,25 +143,27 @@ export default function EngineBayHome() {
         </div>
       </section>
 
-      {brands.length > 0 ? (
+      {brands.length > 0 && (
         <section aria-labelledby="brands" className="border-t border-line py-14 md:py-20">
           <div className="container-site">
             <h2 id="brands" className={heading}>
               Brands we carry
             </h2>
-            <ul className="mt-8 flex flex-wrap gap-3">
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {brands.map((brand) => (
-                <li key={brand} className="border-2 border-line px-5 py-3 font-display text-xl font-semibold uppercase italic">
-                  {brand}
+                <li key={brand.slug}>
+                  <Link href={brandPath(brand)} className="group block h-full border-2 border-line p-6 hover:border-eb-red">
+                    <p className="font-display text-3xl font-bold uppercase italic group-hover:text-accent">{brand.name}</p>
+                    {brand.about[0] && <p className="mt-2 text-muted">{brand.about[0]}</p>}
+                    <p className="mt-4 font-semibold text-accent">
+                      {getBrandProducts(brand.slug).length} tools and parts <span aria-hidden="true">&rarr;</span>
+                    </p>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
         </section>
-      ) : (
-        <div className="container-site pb-14">
-          <Todo>Brands Engine Bay distributes. Add them to `brands` in lib/engine-bay.ts and this section appears.</Todo>
-        </div>
       )}
 
       <section className="bg-eb-red py-12 text-white md:py-16">

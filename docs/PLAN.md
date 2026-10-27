@@ -256,17 +256,28 @@ Departments buy on purchase orders, so there is no store, cart, or checkout. Eve
 It's built to look like a fire equipment dealer (reference: Dinges Fire, All Hands Fire, Fire Service Inc.), not like an OpPeriod project page:
 
 - Its own layout at `app/(engine-bay)/engine-bay/`: black utility bar (phone, email, Request a Quote), dark header with the EB mark, red category bar, dark footer that says it's a division of OpPeriod LLC. Its own tab icon and link preview image.
-- `/engine-bay`: diamond plate hero ("Halligans to hooks."), shop by category, how ordering works, "By firefighters, for firefighters" (don't mention the owner's rank), brands (hidden until there are some), and a red "Got a list?" band.
-- `/engine-bay/tools`: each category with what it's for and what to put on a quote request, plus a Get Pricing button.
-- `/engine-bay/quote`: the quote form. It's the contact form in quote mode: name, email, department or agency (required), phone, tools and quantities, needed by. Get Pricing links prefill the tool. It routes through the `engine-bay` project, so `contactEmailKey` in that file sets its inbox.
+- `/engine-bay`: diamond plate hero ("Halligans to hooks."), shop by category (six cards with product photos, plus a line for handles and parts), how ordering works, "By firefighters, for firefighters" (don't mention the owner's rank), brands we carry, and a red "Got a list?" band.
+- `/engine-bay/tools`: every product, grouped by category. The red bar links jump to each group.
+- `/engine-bay/products/<slug>`: one page per product with photos, model number, summary, Get Pricing and Call buttons, features, details, the manufacturer's Prop 65 warning, and more from the same category. Product structured data for search, with no price.
+- `/engine-bay/brands/<slug>`: a brand's short intro and its products by category.
+- `/engine-bay/quote`: the quote form. It's the contact form in quote mode: name, email, department or agency (required), phone, tools and quantities, needed by. Get Pricing on a product prefills "Brand MODEL, Name". It routes through the `engine-bay` project, so `contactEmailKey` in that file sets its inbox.
 - `content/projects/engine-bay.mdx` has `sitePath: /engine-bay`, so the OpPeriod grid, menus, and sitemap link to the section, and `/projects/engine-bay` redirects there.
-- Content lives in `lib/engine-bay.ts`: `toolCategories` (with an optional `image` per category), `brands`, `orderingSteps`. Brand colors are `eb-*` in `app/globals.css`, and `.eb-theme` swaps the shared accent colors inside the section.
-- Copy rules: short and specific, the way someone who works the floor would say it. No filler, no stacked adjectives. No brands, models, prices, lead times, warranties, or stock claims until the owner provides them.
+- Categories, nav, and ordering steps live in `lib/engine-bay.ts`. Brand colors are `eb-*` in `app/globals.css`, and `.eb-theme` swaps the shared accent colors inside the section.
+- Copy rules: short and specific, the way someone who works the floor would say it. No filler, no stacked adjectives. No prices, lead times, or stock claims. Product facts come from the manufacturer and nowhere else.
+
+### The catalog
+
+- One JSON file per brand in `content/engine-bay/products/` (`council-tool.json` now). It holds the brand (`slug`, `name`, `about`, `website`) and its `products`.
+- Each product: `slug`, `sku` (exactly as the manufacturer prints it), `name`, `category` (a slug from `toolCategories`), `summary`, `details` (paragraphs), `features` (bullets), optional `prop65`, `images` (paths under `public/catalog/`), and `source` (the manufacturer's page, not shown).
+- `lib/engine-bay-catalog.ts` loads and checks every file. A bad category, a missing photo, or a duplicate slug stops the build with the file, product, and field.
+- Each category's card photo is its `featured` product's first photo.
+
+### Council Tool (added October 2026)
+
+All 41 products in Council Tool's Firefighting category, with Council's go-ahead. Pulled from their product pages: names, model numbers, descriptions, features, Prop 65 warnings, and up to four photos each (converted to WebP in `public/catalog/`). Cleanup only: removed links to Council's flyers and videos, customer testimonials, repeated lines, and dashes, and fixed obvious typos ("ect.", "Ashe"). Facts are as Council wrote them. Council's prices are not used anywhere.
 
 ### Next steps
 
-1. Brands: add them to `brands` in `lib/engine-bay.ts`. The section appears on its own.
-2. Product photos: one per category, saved under `public/engine-bay/`, then set `image` on that category. The diamond plate panel turns into the photo.
-3. Confirm the six categories and their quote checklists match what Engine Bay will actually carry.
-4. Its own inbox for quote requests: `contactEmailKey: ENGINE_BAY` in the project file plus `CONTACT_EMAIL_ENGINE_BAY` in Vercel.
-5. Later, if the catalog grows: a page per category with individual products.
+1. More brands: add a JSON file per brand and photos in `public/catalog/`. Nothing else changes.
+2. Its own inbox for quote requests: `contactEmailKey: ENGINE_BAY` in the project file plus `CONTACT_EMAIL_ENGINE_BAY` in Vercel.
+3. When the catalog gets big: search on the tools page, and filters by brand.
