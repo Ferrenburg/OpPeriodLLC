@@ -1,6 +1,6 @@
-# Opperiod LLC website
+# OpPeriod LLC website
 
-Marketing site for Opperiod LLC and its projects. Built with Next.js, Tailwind CSS, and MDX, hosted on Vercel.
+Marketing site for OpPeriod LLC and its projects. Built with Next.js, Tailwind CSS, and MDX, hosted on Vercel.
 
 ## Running it locally
 
@@ -40,7 +40,7 @@ All of this updates on its own when projects change:
 
 - `/sitemap.xml` lists every page and every listed project. Retired projects are left out.
 - `/robots.txt` points search engines at the sitemap.
-- The home page describes Opperiod LLC to search engines (name, address, email, and its projects) using details from `lib/brand.ts`.
+- The home page describes OpPeriod LLC to search engines (name, address, email, and its projects) using details from `lib/brand.ts`.
 - Sharing a link (text, Facebook, LinkedIn, and so on) shows a preview image. Project pages get their own, built from the project's name, tagline, color, and logo.
 
 After launch, add the site to Google Search Console (search.google.com/search-console), verify it through Porkbun DNS, and submit `https://opperiod.com/sitemap.xml`.
@@ -71,7 +71,7 @@ In Vercel, open the project, then Settings, then Environment Variables, and add 
 | Name | Value |
 | --- | --- |
 | `RESEND_API_KEY` | the key from Resend |
-| `CONTACT_FROM_EMAIL` | `Opperiod Website <website@opperiod.com>` |
+| `CONTACT_FROM_EMAIL` | `OpPeriod Website <website@opperiod.com>` |
 | `CONTACT_EMAIL_DEFAULT` | `sales@opperiod.com` |
 
 Then redeploy (Deployments, the three dots on the latest one, Redeploy). Settings only take effect on a new deploy.

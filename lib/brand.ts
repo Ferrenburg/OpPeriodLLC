@@ -2,8 +2,8 @@
 // code them. If something about the business changes, change it once here.
 
 export const company = {
-  name: "Opperiod",
-  legalName: "Opperiod LLC",
+  name: "OpPeriod",
+  legalName: "OpPeriod LLC",
   // Where the company is formed, which is not where it works from.
   formedIn: "Wyoming",
   // Registered address of the LLC.
@@ -53,7 +53,7 @@ export type LogoConfig = {
 // before the extension (for example /public/brand/opperiod-logo-light.png).
 // Until one exists, the dark logo sits on a white plate there.
 export const logos = {
-  opperiod: { src: "/brand/opperiod-logo.png", alt: "Opperiod LLC" },
+  opperiod: { src: "/brand/opperiod-logo.png", alt: "OpPeriod LLC" },
 } satisfies Record<string, LogoConfig>;
 
 export const mainNav = [
