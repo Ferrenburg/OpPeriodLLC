@@ -10,7 +10,7 @@ export function EbHeader() {
     <header className="bg-eb-ink text-white">
       <div className="border-b border-white/10 bg-black">
         <div className="container-site flex h-9 items-center justify-between gap-4 text-sm">
-          <p className="hidden text-white/70 sm:block">Fire service hand tools for departments</p>
+          <p className="hidden text-white/70 sm:block">Questions about a tool? Give us a call.</p>
           <div className="flex items-center gap-5">
             <a href={engineBay.phone.href} className="font-semibold text-white hover:underline">
               {engineBay.phone.display}
