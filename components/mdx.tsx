@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 import { readPublicImage } from "@/lib/images";
 import { ButtonLink } from "./button";
+import { Todo } from "./todo";
 
 // Building blocks project pages can use in MDX without importing anything.
 // Colors come from --project-accent, set by the project page.
@@ -80,4 +81,4 @@ function MdxLink({ href = "", ...props }: ComponentProps<"a">) {
   return <a href={href} rel="noopener noreferrer" target="_blank" {...props} />;
 }
 
-export const mdxComponents = { Section, FeatureGrid, Callout, ImageBlock, CTA, a: MdxLink };
+export const mdxComponents = { Section, FeatureGrid, Callout, ImageBlock, CTA, Todo, a: MdxLink };

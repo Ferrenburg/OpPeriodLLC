@@ -16,7 +16,7 @@ Starting projects:
 - **Box Alarm Builders**, a general contracting branch (logo provided)
 - **StationScore**, a SaaS product that helps small fire departments prepare for insurance rating evaluations
 - **IAPassist**, a software product (details to be provided, see Open Questions)
-- **Engine Bay Supply Co.**, the OpPeriod division that will sell firefighting hand tools (see section 14)
+- **Engine Bay Supply Co.**, the OpPeriod division that supplies firefighting hand tools to fire departments (see section 14)
 
 ## 2. Hard rules for Claude Code
 
@@ -245,27 +245,23 @@ The README must include a section called **"How to add a new project"** written 
 
 ## 14. Engine Bay Supply Co.
 
-Engine Bay Supply Co. is the OpPeriod division that will sell firefighting hand tools. Logo provided: the "EB" mark with a flame, and a full lockup with the line "Hand tools / Fire service / Built to last". Accent `#E2241B`, the flame red.
+Engine Bay Supply Co. is the OpPeriod division that supplies firefighting hand tools to fire departments, from halligans to New York hooks. The brands it will distribute aren't confirmed yet. Logo provided: the "EB" mark with a flame, and a full lockup with the line "Hand tools / Fire service / Built to last". Accent `#E2241B`, the flame red.
 
-### Phase 1: on the site now
+### How it sells
 
-- `content/projects/engine-bay.mdx`, status `coming-soon`, category Retail. Short link `opperiod.com/engine-bay`.
-- The page shows the summary and a "Get notified" button to the contact form, preselected to Engine Bay. Messages go to `CONTACT_EMAIL_DEFAULT` until a `contactEmailKey` is set.
-- Logos: `public/brand/engine-bay-logo.png` (the EB mark, transparent) and `engine-bay-logo-light.png` (white letters, for dark bands).
-- Do NOT list products, prices, brands, materials, warranties, or shipping terms until the owner provides them.
+Departments buy on purchase orders only, so there is no store or checkout. The site's job is to get a department to request a quote through the contact form. Do NOT say on the site that it sells by PO only, or that it doesn't sell to individuals. Frame everything as "request a quote" for "your department".
 
-### Phase 2: the store
+### The page (`content/projects/engine-bay.mdx`)
 
-Selling means payments, sales tax, inventory, shipping, and returns. Don't build a checkout into this marketing site. Run the store on a hosted platform (Shopify or similar) at its own address, the same way IAPassist and StationScore live on their own subdomains. When it opens:
+- Status `active`, category Equipment. Short link `opperiod.com/engine-bay`.
+- Main button: Request a quote, to `/contact?project=engine-bay`.
+- Body: short intro, the dark logo lockup, "What we carry" (forcible entry like halligans, hooks like New York hooks, more as brands are confirmed), "Brands" (being finalized, with a `<Todo>` for the list), "Ordering for your department", and a closing Request a quote button.
+- Logos: `public/brand/engine-bay-logo.png` (EB mark, transparent), `engine-bay-logo-light.png` (white letters for dark bands), `engine-bay-lockup.webp` (full lockup on dark).
+- Do NOT list specific brands, models, prices, lead times, warranties, or materials until the owner provides them.
 
-1. Set `status: active` in `engine-bay.mdx`.
-2. Add `cta` with label "Shop Engine Bay" and the store's address, like the IAPassist file does.
-3. Add `highlights` once the product lines are known.
+### Next steps
 
-### Open questions
-
-1. Store platform and address (for example `shop.opperiod.com`, `enginebay.opperiod.com`, or its own domain).
-2. Product lines at launch, and whether the tools are your own design, private label, or resold brands.
-3. Who it sells to: individual firefighters, departments (purchase orders, tax exempt sales), or both.
-4. Launch timing, and whether a notify list should be more than the contact form.
-5. Its own inbox for messages (a `CONTACT_EMAIL_ENGINE_BAY` setting).
+1. Brands: list them in the Brands section and drop the `<Todo>`.
+2. Product categories: once the lineup is known, update the "What we carry" grid. Product photos can go in with `<ImageBlock>`.
+3. Optional: its own inbox for quote requests (`contactEmailKey: ENGINE_BAY` plus `CONTACT_EMAIL_ENGINE_BAY` in Vercel).
+4. If the catalog gets large, a product list page could come later. Keep it to one project file until then.
