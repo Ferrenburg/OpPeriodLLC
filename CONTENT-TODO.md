@@ -49,5 +49,4 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 - [ ] Product photos, one per category (halligans, axes, hooks, irons, forcible entry, straps and mounts). These are the biggest upgrade left. Save them in `public/engine-bay/` and set `image` on each category.
 - [ ] Confirm the six categories and the "put this on your quote request" checklists on the Tools page. They're written from common fire service tool specs, not from a product list.
 - [ ] Review the copy: the hero ("Halligans to hooks."), "By firefighters, for firefighters ... someone who has swung one," and the three ordering steps.
-- [ ] Phone number for the utility bar, if Engine Bay will have one. Only email shows now.
 - [ ] Optional: its own inbox for quote requests. Add `contactEmailKey: ENGINE_BAY` to `content/projects/engine-bay.mdx` and set `CONTACT_EMAIL_ENGINE_BAY` in Vercel.

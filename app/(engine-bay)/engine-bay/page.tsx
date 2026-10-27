@@ -158,7 +158,11 @@ export default function EngineBayHome() {
           <div>
             <h2 className="font-display text-4xl font-bold uppercase italic leading-none md:text-5xl">Got a list?</h2>
             <p className="mt-3 text-lg text-white">
-              Send it over and we&apos;ll price it out, or email{" "}
+              Send it over and we&apos;ll price it out. Or call{" "}
+              <a href={engineBay.phone.href} className="font-semibold underline underline-offset-4">
+                {engineBay.phone.display}
+              </a>{" "}
+              or email{" "}
               <a href={`mailto:${engineBay.email}`} className="font-semibold underline underline-offset-4">
                 {engineBay.email}
               </a>

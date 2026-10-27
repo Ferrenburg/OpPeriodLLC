@@ -42,8 +42,11 @@ export default function QuotePage() {
             <li>Sizes, materials, or brands your department has standardized on</li>
             <li>When you need them, especially if it&apos;s tied to a budget year</li>
           </ul>
-          <h2 className="mt-8 font-display text-2xl font-bold uppercase italic">Rather email?</h2>
-          <p className="mt-2 text-muted">Send your list to</p>
+          <h2 className="mt-8 font-display text-2xl font-bold uppercase italic">Rather call or email?</h2>
+          <p className="mt-2 text-muted">Call us or send your list to</p>
+          <a href={engineBay.phone.href} className="mt-1 block text-lg font-semibold text-accent underline underline-offset-4">
+            {engineBay.phone.display}
+          </a>
           <a href={`mailto:${engineBay.email}`} className="mt-1 inline-block text-lg font-semibold text-accent underline underline-offset-4">
             {engineBay.email}
           </a>

@@ -255,7 +255,7 @@ Departments buy on purchase orders, so there is no store, cart, or checkout. Eve
 
 It's built to look like a fire equipment dealer (reference: Dinges Fire, All Hands Fire, Fire Service Inc.), not like an OpPeriod project page:
 
-- Its own layout at `app/(engine-bay)/engine-bay/`: black utility bar (email, Request a Quote), dark header with the EB mark, red category bar, dark footer that says it's a division of OpPeriod LLC. Its own tab icon and link preview image.
+- Its own layout at `app/(engine-bay)/engine-bay/`: black utility bar (phone, email, Request a Quote), dark header with the EB mark, red category bar, dark footer that says it's a division of OpPeriod LLC. Its own tab icon and link preview image.
 - `/engine-bay`: diamond plate hero ("Halligans to hooks."), shop by category, how ordering works, "By firefighters, for firefighters" (don't mention the owner's rank), brands (hidden until there are some), and a red "Got a list?" band.
 - `/engine-bay/tools`: each category with what it's for and what to put on a quote request, plus a Get Pricing button.
 - `/engine-bay/quote`: the quote form. It's the contact form in quote mode: name, email, department or agency (required), phone, tools and quantities, needed by. Get Pricing links prefill the tool. It routes through the `engine-bay` project, so `contactEmailKey` in that file sets its inbox.
@@ -269,5 +269,4 @@ It's built to look like a fire equipment dealer (reference: Dinges Fire, All Han
 2. Product photos: one per category, saved under `public/engine-bay/`, then set `image` on that category. The diamond plate panel turns into the photo.
 3. Confirm the six categories and their quote checklists match what Engine Bay will actually carry.
 4. Its own inbox for quote requests: `contactEmailKey: ENGINE_BAY` in the project file plus `CONTACT_EMAIL_ENGINE_BAY` in Vercel.
-5. A phone number in the utility bar, if there will be one.
-6. Later, if the catalog grows: a page per category with individual products.
+5. Later, if the catalog grows: a page per category with individual products.

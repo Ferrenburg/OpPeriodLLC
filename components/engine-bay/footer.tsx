@@ -20,9 +20,14 @@ export function EbFooter() {
             </Link>
             .
           </p>
-          <a href={`mailto:${engineBay.email}`} className="mt-4 inline-block font-semibold text-white underline underline-offset-4">
-            {engineBay.email}
-          </a>
+          <p className="mt-4 flex flex-col gap-1">
+            <a href={engineBay.phone.href} className="self-start font-semibold text-white underline underline-offset-4">
+              {engineBay.phone.display}
+            </a>
+            <a href={`mailto:${engineBay.email}`} className="self-start font-semibold text-white underline underline-offset-4">
+              {engineBay.email}
+            </a>
+          </p>
         </div>
 
         <nav aria-label="Tools">

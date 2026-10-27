@@ -12,7 +12,10 @@ export function EbHeader() {
         <div className="container-site flex h-9 items-center justify-between gap-4 text-sm">
           <p className="hidden text-white/70 sm:block">Fire service hand tools for departments</p>
           <div className="flex items-center gap-5">
-            <a href={`mailto:${engineBay.email}`} className="text-white/80 hover:text-white">
+            <a href={engineBay.phone.href} className="font-semibold text-white hover:underline">
+              {engineBay.phone.display}
+            </a>
+            <a href={`mailto:${engineBay.email}`} className="hidden text-white/80 hover:text-white md:inline">
               {engineBay.email}
             </a>
             <Link href={quoteHref()} className="font-semibold uppercase tracking-wider text-white hover:underline">

@@ -75,6 +75,7 @@ export const engineBay = {
     "Fire service hand tools for departments, from halligans to New York hooks. Engine Bay Supply Co. is a division of OpPeriod LLC.",
   // Quote requests go here until Engine Bay gets its own inbox.
   email: company.email,
+  phone: { display: "(337) 313-2812", href: "tel:+13373132812" },
   // Sampled from the logo. The CSS versions are the eb-* colors in app/globals.css.
   colors: {
     red: "#E2241B",
