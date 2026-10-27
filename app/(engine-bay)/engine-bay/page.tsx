@@ -109,11 +109,11 @@ export default function EngineBayHome() {
         <div className="container-site grid items-center gap-10 lg:grid-cols-2">
           <div>
             <h2 id="about-heading" className={heading}>
-              Run by a fire lieutenant
+              By firefighters, for firefighters
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed">
-              {engineBay.name} is a division of {company.legalName}, and it&apos;s run by a fire lieutenant. When you ask
-              about a tool, you&apos;re talking to someone who has swung one.
+              {engineBay.name} is a division of {company.legalName}, run by people who work in the fire service. When
+              you ask about a tool, you&apos;re talking to someone who has swung one.
             </p>
             <Link href={quoteHref()} className={`${redButton} mt-8`}>
               Request a Quote
