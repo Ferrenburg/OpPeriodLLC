@@ -245,23 +245,28 @@ The README must include a section called **"How to add a new project"** written 
 
 ## 14. Engine Bay Supply Co.
 
-Engine Bay Supply Co. is the OpPeriod division that supplies firefighting hand tools to fire departments, from halligans to New York hooks. The brands it will distribute aren't confirmed yet. Logo provided: the "EB" mark with a flame, and a full lockup with the line "Hand tools / Fire service / Built to last". Accent `#E2241B`, the flame red.
+Engine Bay Supply Co. is the OpPeriod division that supplies fire service hand tools to departments, from halligans to New York hooks. The brands it will distribute aren't confirmed yet. Logo provided: the "EB" mark with a flame, and a full lockup with the line "Hand tools / Fire service / Built to last". Colors from the logo: red `#E2241B`, dark red `#A9141B`, ink `#121418`, paper `#F4F3F0`.
 
 ### How it sells
 
-Departments buy on purchase orders only, so there is no store or checkout. The site's job is to get a department to request a quote through the contact form. Do NOT say on the site that it sells by PO only, or that it doesn't sell to individuals. Frame everything as "request a quote" for "your department".
+Departments buy on purchase orders, so there is no store, cart, or checkout. Every page pushes toward Request a Quote. Do NOT say on the site that it sells by PO only, or that it doesn't sell to individuals.
 
-### The page (`content/projects/engine-bay.mdx`)
+### The section
 
-- Status `active`, category Equipment. Short link `opperiod.com/engine-bay`.
-- Main button: Request a quote, to `/contact?project=engine-bay`.
-- Body: short intro, the dark logo lockup, "What we carry" (forcible entry like halligans, hooks like New York hooks, more as brands are confirmed), "Brands" (being finalized, with a `<Todo>` for the list), "Ordering for your department", and a closing Request a quote button.
-- Logos: `public/brand/engine-bay-logo.png` (EB mark, transparent), `engine-bay-logo-light.png` (white letters for dark bands), `engine-bay-lockup.webp` (full lockup on dark).
-- Do NOT list specific brands, models, prices, lead times, warranties, or materials until the owner provides them.
+It's built to look like a fire equipment dealer (reference: Dinges Fire, All Hands Fire, Fire Service Inc.), not like an OpPeriod project page:
+
+- Its own layout at `app/(engine-bay)/engine-bay/`: black utility bar (phone, email, Request a Quote), dark header with the EB mark, red category bar, dark footer that says it's a division of OpPeriod LLC. Its own tab icon and link preview image.
+- `/engine-bay`: diamond plate hero ("Halligans to hooks."), shop by category, how ordering works, "By firefighters, for firefighters" (don't mention the owner's rank), brands (hidden until there are some), and a red "Got a list?" band.
+- `/engine-bay/tools`: each category with what it's for and what to put on a quote request, plus a Get Pricing button.
+- `/engine-bay/quote`: the quote form. It's the contact form in quote mode: name, email, department or agency (required), phone, tools and quantities, needed by. Get Pricing links prefill the tool. It routes through the `engine-bay` project, so `contactEmailKey` in that file sets its inbox.
+- `content/projects/engine-bay.mdx` has `sitePath: /engine-bay`, so the OpPeriod grid, menus, and sitemap link to the section, and `/projects/engine-bay` redirects there.
+- Content lives in `lib/engine-bay.ts`: `toolCategories` (with an optional `image` per category), `brands`, `orderingSteps`. Brand colors are `eb-*` in `app/globals.css`, and `.eb-theme` swaps the shared accent colors inside the section.
+- Copy rules: short and specific, the way someone who works the floor would say it. No filler, no stacked adjectives. No brands, models, prices, lead times, warranties, or stock claims until the owner provides them.
 
 ### Next steps
 
-1. Brands: list them in the Brands section and drop the `<Todo>`.
-2. Product categories: once the lineup is known, update the "What we carry" grid. Product photos can go in with `<ImageBlock>`.
-3. Optional: its own inbox for quote requests (`contactEmailKey: ENGINE_BAY` plus `CONTACT_EMAIL_ENGINE_BAY` in Vercel).
-4. If the catalog gets large, a product list page could come later. Keep it to one project file until then.
+1. Brands: add them to `brands` in `lib/engine-bay.ts`. The section appears on its own.
+2. Product photos: one per category, saved under `public/engine-bay/`, then set `image` on that category. The diamond plate panel turns into the photo.
+3. Confirm the six categories and their quote checklists match what Engine Bay will actually carry.
+4. Its own inbox for quote requests: `contactEmailKey: ENGINE_BAY` in the project file plus `CONTACT_EMAIL_ENGINE_BAY` in Vercel.
+5. Later, if the catalog grows: a page per category with individual products.

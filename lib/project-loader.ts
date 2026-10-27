@@ -37,6 +37,7 @@ export const frontmatterSchema = z.strictObject({
   logo: optional(z.string().startsWith("/", "must be a path starting with /brand/ or another folder in public/")),
   accentColor: optional(z.string().regex(/^#[0-9a-fA-F]{6}$/, 'must be a hex color in quotes, like "#C60014"')),
   externalUrl: optional(z.url({ protocol: /^https?$/, error: "must be a full web address starting with https://" })),
+  sitePath: optional(z.string().regex(/^\/[a-z0-9-]+$/, "must be a path on this site, like /engine-bay")),
   contactEmailKey: optional(z.string().regex(/^[A-Z0-9_]+$/, "use capital letters, numbers, and underscores, like BOX_ALARM")),
   serviceArea: optional(text),
   highlights: optional(z.array(text).min(3, "list at least 3, or remove the field").max(6, "list 6 at most")),
@@ -44,6 +45,8 @@ export const frontmatterSchema = z.strictObject({
 });
 
 export type Project = z.infer<typeof frontmatterSchema> & {
+  // Where cards and menus link: sitePath when the project has its own
+  // section on this site, otherwise /projects/<slug>.
   href: string;
   // accentColor, or OpPeriod red when none is set.
   accent: string;
@@ -54,6 +57,17 @@ export type Project = z.infer<typeof frontmatterSchema> & {
   // Repo relative path, for error messages.
   file: string;
 };
+
+// True when app/ has a page folder for the path, directly or inside a route
+// group like app/(engine-bay)/engine-bay.
+function sectionExists(sitePath: string): boolean {
+  const appDir = path.join(root, "app");
+  const name = sitePath.slice(1);
+  const dirs = [appDir, ...fs.readdirSync(/*turbopackIgnore: true*/ appDir)
+    .filter((entry) => entry.startsWith("("))
+    .map((entry) => path.join(appDir, entry))];
+  return dirs.some((dir) => fs.existsSync(/*turbopackIgnore: true*/ path.join(dir, name, "page.tsx")));
+}
 
 // A slug can't shadow a real page, or its short link (/<slug>) would hijack it.
 function reservedSlugs(): Set<string> {
@@ -117,6 +131,9 @@ export function loadProjects(): Project[] {
     if (reserved.has(data.slug)) {
       fileProblems.push(`slug: "${data.slug}" is already used by a page or folder on the site. Pick another.`);
     }
+    if (data.sitePath && !sectionExists(data.sitePath)) {
+      fileProblems.push(`sitePath: there's no page at ${data.sitePath}. Remove the field, or ask a developer to build that section.`);
+    }
     if (data.logo && !fs.existsSync(path.join(root, "public", data.logo))) {
       fileProblems.push(`logo: no file at public${data.logo}`);
     }
@@ -128,7 +145,7 @@ export function loadProjects(): Project[] {
     const accent = data.accentColor?.toUpperCase() ?? colors.opperiodRed;
     projects.push({
       ...data,
-      href: `/projects/${data.slug}`,
+      href: data.sitePath ?? `/projects/${data.slug}`,
       accent,
       accentText: readableOn(accent),
       body: parsed.content,

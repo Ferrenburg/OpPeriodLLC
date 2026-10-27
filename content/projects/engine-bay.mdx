@@ -1,10 +1,10 @@
 ---
 name: Engine Bay Supply Co.
 slug: engine-bay
-tagline: Hand tools for the fire service, built to last
+tagline: Fire service hand tools. Halligans to New York hooks.
 summary: >
-  Engine Bay Supply Co. is the OpPeriod division that supplies firefighting
-  hand tools to fire departments, from halligans to New York hooks.
+  Fire service hand tools for departments, from halligans to New York hooks.
+  Engine Bay Supply Co. is a division of OpPeriod LLC.
 category: Equipment
 status: active
 order: 4
@@ -12,33 +12,9 @@ published: true
 logo: /brand/engine-bay-logo.png
 # The flame red from the Engine Bay logo.
 accentColor: "#E2241B"
-cta:
-  label: Request a quote
-  href: /contact?project=engine-bay
+# Engine Bay has its own section of the site, so cards and menus go there.
+# Its pages live in app/(engine-bay) and its catalog in lib/engine-bay.ts.
+sitePath: /engine-bay
 ---
 
-Engine Bay Supply Co. supplies firefighting hand tools to fire departments. It's part of OpPeriod and run by a fire lieutenant.
-
-<ImageBlock src="/brand/engine-bay-lockup.webp" alt="Engine Bay Supply Co. logo with the line Hand tools, Fire service, Built to last" />
-
-<Section title="What we carry">
-  Hand tools for the work crews do on a call, from forcing a door to opening up a ceiling.
-
-  <FeatureGrid items={[
-    { title: "Forcible entry", text: "Halligans and other forcible entry tools." },
-    { title: "Hooks", text: "New York hooks and other hooks for overhaul." },
-    { title: "And more on the way", text: "The lineup grows as we confirm the brands we carry." },
-  ]} />
-</Section>
-
-<Section title="Brands">
-  We're finalizing the brands we carry now. If your department is looking for a specific tool, ask and we'll tell you whether we can get it.
-
-  <Todo>List the brands Engine Bay distributes once they're confirmed (see CONTENT-TODO.md).</Todo>
-</Section>
-
-<Section title="Ordering for your department">
-  Send us the tools and quantities your department needs, along with any specs, and we'll get back to you with a quote.
-</Section>
-
-<CTA label="Request a quote" href="/contact?project=engine-bay" />
+{/* Not shown: /projects/engine-bay redirects to the Engine Bay section. */}

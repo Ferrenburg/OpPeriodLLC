@@ -9,6 +9,9 @@ type Props = {
   email: string;
   // Set when Turnstile is turned on.
   turnstileSiteKey?: string;
+  // A quote request for one project (the Engine Bay quote page): no project
+  // dropdown, plus department and needed-by fields.
+  quote?: { project: string };
 };
 
 type Result = { ok: true } | { ok: false; error: string; fieldErrors?: FieldErrors };
@@ -28,9 +31,10 @@ const input =
 
 // The inputs are never reset or re-rendered on an error, so whatever someone
 // typed stays put until the message actually goes through.
-export function ContactForm({ options, email, turnstileSiteKey }: Props) {
+export function ContactForm({ options, email, turnstileSiteKey, quote }: Props) {
   const form = useRef<HTMLFormElement>(null);
   const select = useRef<HTMLSelectElement>(null);
+  const message = useRef<HTMLTextAreaElement>(null);
   const alert = useRef<HTMLDivElement>(null);
   const done = useRef<HTMLDivElement>(null);
   const turnstileBox = useRef<HTMLDivElement>(null);
@@ -47,6 +51,14 @@ export function ContactForm({ options, email, turnstileSiteKey }: Props) {
     const el = select.current;
     if (wanted && el && el.selectedIndex === 0 && options.some((o) => o.value === wanted)) el.value = wanted;
   }, [options]);
+
+  // ?tool=<name> (from a "Get pricing" link) starts the tool list, unless
+  // something is already typed there.
+  useEffect(() => {
+    const tool = new URLSearchParams(window.location.search).get("tool");
+    const el = message.current;
+    if (quote && tool && el && !el.value) el.value = `${tool.slice(0, 80)}: `;
+  }, [quote]);
 
   useEffect(() => {
     if (sent) done.current?.focus();
@@ -109,8 +121,12 @@ export function ContactForm({ options, email, turnstileSiteKey }: Props) {
   if (sent) {
     return (
       <div ref={done} tabIndex={-1} role="status" className="border-l-4 border-accent-fill bg-surface p-6 focus:outline-none">
-        <p className="font-display text-3xl font-bold uppercase italic">Message sent</p>
-        <p className="mt-2 text-lg">Thanks for reaching out. We&apos;ll get back to you at the email you gave us.</p>
+        <p className="font-display text-3xl font-bold uppercase italic">{quote ? "Quote request sent" : "Message sent"}</p>
+        <p className="mt-2 text-lg">
+          {quote
+            ? "Thanks. We'll get back to you with pricing at the email you gave us."
+            : "Thanks for reaching out. We'll get back to you at the email you gave us."}
+        </p>
         <button
           type="button"
           onClick={() => {
@@ -119,7 +135,7 @@ export function ContactForm({ options, email, turnstileSiteKey }: Props) {
           }}
           className="mt-4 font-semibold text-accent underline underline-offset-4"
         >
-          Send another message
+          {quote ? "Send another request" : "Send another message"}
         </button>
       </div>
     );
@@ -161,6 +177,16 @@ export function ContactForm({ options, email, turnstileSiteKey }: Props) {
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2">
+        {quote && (
+          <div>
+            <label htmlFor="organization" className="font-semibold">
+              Department or agency
+            </label>
+            <input id="organization" name="organization" type="text" required maxLength={150} autoComplete="organization"
+              aria-invalid={!!fieldErrors.organization} aria-describedby={describe("organization")} className={input} />
+            {fieldError("organization")}
+          </div>
+        )}
         <div>
           <label htmlFor="phone" className="font-semibold">
             Phone <span className="font-normal text-muted">(optional)</span>
@@ -169,30 +195,58 @@ export function ContactForm({ options, email, turnstileSiteKey }: Props) {
             aria-invalid={!!fieldErrors.phone} aria-describedby={describe("phone")} className={input} />
           {fieldError("phone")}
         </div>
-        <div>
-          <label htmlFor="project" className="font-semibold">
-            What&apos;s this about?
-          </label>
-          <select ref={select} id="project" name="project" defaultValue={options[0]?.value}
-            aria-invalid={!!fieldErrors.project} aria-describedby={describe("project")} className={input}>
-            {options.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-          {fieldError("project")}
-        </div>
+        {!quote && (
+          <div>
+            <label htmlFor="project" className="font-semibold">
+              What&apos;s this about?
+            </label>
+            <select ref={select} id="project" name="project" defaultValue={options[0]?.value}
+              aria-invalid={!!fieldErrors.project} aria-describedby={describe("project")} className={input}>
+              {options.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+            {fieldError("project")}
+          </div>
+        )}
       </div>
+
+      {quote && (
+        <>
+          <input type="hidden" name="project" value={quote.project} />
+          <input type="hidden" name="kind" value="quote" />
+        </>
+      )}
 
       <div>
         <label htmlFor="message" className="font-semibold">
-          Message
+          {quote ? "Tools and quantities" : "Message"}
         </label>
-        <textarea id="message" name="message" required rows={6} maxLength={5000}
-          aria-invalid={!!fieldErrors.message} aria-describedby={describe("message")} className={input} />
+        {quote && (
+          <p id="message-hint" className="mt-1 text-muted">
+            One line per tool. Add sizes or brands if your department has a standard.
+          </p>
+        )}
+        <textarea ref={message} id="message" name="message" required rows={quote ? 8 : 6} maxLength={5000}
+          placeholder={quote ? "4 x 30 inch halligan bar\n2 x 6 ft New York hook" : undefined}
+          aria-invalid={!!fieldErrors.message}
+          aria-describedby={[quote && "message-hint", describe("message")].filter(Boolean).join(" ") || undefined}
+          className={input} />
         {fieldError("message")}
       </div>
+
+      {quote && (
+        <div className="max-w-xs">
+          <label htmlFor="neededBy" className="font-semibold">
+            Needed by <span className="font-normal text-muted">(optional)</span>
+          </label>
+          <input id="neededBy" name="neededBy" type="text" maxLength={60} placeholder="A date, or end of the fiscal year"
+            aria-invalid={!!fieldErrors.neededBy} aria-describedby={describe("neededBy")} className={input} />
+          {fieldError("neededBy")}
+        </div>
+      )}
 
       {/* Honeypot. Hidden from people and screen readers; bots fill it in. */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
@@ -216,7 +270,7 @@ export function ContactForm({ options, email, turnstileSiteKey }: Props) {
         disabled={sending}
         className="inline-flex min-h-12 items-center justify-center rounded-sm bg-accent-fill px-8 font-display text-lg font-semibold uppercase italic tracking-wide text-white hover:bg-accent-fill-hover disabled:opacity-60"
       >
-        {sending ? "Sending..." : "Send message"}
+        {sending ? "Sending..." : quote ? "Request quote" : "Send message"}
       </button>
     </form>
   );
