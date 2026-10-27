@@ -23,31 +23,42 @@ const text = (max: number, label: string) =>
     .min(1, `${label} is required.`)
     .max(max, `${label} is too long (${max} characters max).`);
 
-export const contactSchema = z.object({
-  name: text(100, "Name"),
-  email: z
-    .string("Email is required.")
-    .trim()
-    .min(1, "Email is required.")
-    .max(254, "That email address is too long.")
-    .pipe(z.email("Enter a valid email address, like name@example.com.")),
-  phone: z
-    .string()
-    .trim()
-    .max(40, "That phone number is too long.")
-    .regex(/^[0-9+().\-\sxX]*$/, "Use only numbers, spaces, and ( ) + - in the phone number.")
-    .optional()
-    .default(""),
-  project: z.string().default(GENERAL),
-  message: text(5000, "Message"),
-  // Honeypot: hidden from people, filled in by bots.
-  website: z.string().optional().default(""),
-  "cf-turnstile-response": z.string().optional(),
-});
+export const contactSchema = z
+  .object({
+    name: text(100, "Name"),
+    email: z
+      .string("Email is required.")
+      .trim()
+      .min(1, "Email is required.")
+      .max(254, "That email address is too long.")
+      .pipe(z.email("Enter a valid email address, like name@example.com.")),
+    phone: z
+      .string()
+      .trim()
+      .max(40, "That phone number is too long.")
+      .regex(/^[0-9+().\-\sxX]*$/, "Use only numbers, spaces, and ( ) + - in the phone number.")
+      .optional()
+      .default(""),
+    project: z.string().default(GENERAL),
+    message: text(5000, "Message"),
+    // Quote requests (the Engine Bay quote form) also send these.
+    kind: z.enum(["message", "quote"]).optional().default("message"),
+    organization: z.string().trim().max(150, "That name is too long (150 characters max).").optional().default(""),
+    neededBy: z.string().trim().max(60, "Keep it short, like a date or \"end of the month\".").optional().default(""),
+    // Honeypot: hidden from people, filled in by bots.
+    website: z.string().optional().default(""),
+    "cf-turnstile-response": z.string().optional(),
+  })
+  .refine((input) => input.kind !== "quote" || input.organization, {
+    path: ["organization"],
+    message: "Department or agency is required.",
+  });
 
 export type ContactInput = z.infer<typeof contactSchema>;
 
-export type FieldErrors = Partial<Record<"name" | "email" | "phone" | "project" | "message", string>>;
+export type FieldErrors = Partial<
+  Record<"name" | "email" | "phone" | "project" | "message" | "organization" | "neededBy", string>
+>;
 
 export function fieldErrorsFrom(error: z.ZodError): FieldErrors {
   const errors: FieldErrors = {};
@@ -112,16 +123,23 @@ function oneLine(value: string): string {
 }
 
 export async function sendContactEmail(input: ContactInput, to: string, projectName: string): Promise<void> {
-  const subject = `[${projectName}] New message from ${oneLine(input.name)}`;
+  const quote = input.kind === "quote";
+  const subject = quote
+    ? `[${projectName}] Quote request from ${oneLine(input.organization)} (${oneLine(input.name)})`
+    : `[${projectName}] New message from ${oneLine(input.name)}`;
   const text = [
-    `New message from the ${company.url.replace("https://", "")} contact form.`,
+    quote
+      ? `New quote request from the ${company.url.replace("https://", "")} quote form.`
+      : `New message from the ${company.url.replace("https://", "")} contact form.`,
     "",
     `About: ${projectName}`,
     `Name: ${input.name}`,
+    ...(input.organization ? [`Department or agency: ${input.organization}`] : []),
     `Email: ${input.email}`,
     `Phone: ${input.phone || "(not given)"}`,
+    ...(quote ? [`Needed by: ${input.neededBy || "(not given)"}`] : []),
     "",
-    "Message:",
+    quote ? "Tools and quantities:" : "Message:",
     input.message,
     "",
     "Hit reply to answer them directly.",

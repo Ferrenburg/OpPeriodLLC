@@ -17,6 +17,17 @@
   --band-accent: #f06a6a;
 }
 
+/*
+  The Engine Bay section (app/(engine-bay)) swaps in its own reds, so shared
+  pieces like the contact form and focus rings match its brand. Dark red for
+  text is 7.5:1 on white; the brighter red is for fills with white text.
+*/
+.eb-theme {
+  --accent: #a9141b;
+  --accent-fill: #e2241b;
+  --accent-fill-hover: #a9141b;
+}
+
 @theme inline {
   --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-heading), var(--font-body), ui-sans-serif, sans-serif;
@@ -42,6 +53,13 @@
   --color-paper: #ffffff;
   --color-smoke: #f3f3f1;
   --color-steel: #5b6166;
+
+  /* Engine Bay Supply Co., sampled from its logo (see engineBay in lib/brand.ts). */
+  --color-eb-red: #e2241b; /* white text is 4.6:1; don't use as text on eb-ink */
+  --color-eb-red-dark: #a9141b;
+  --color-eb-ink: #121418;
+  --color-eb-steel: #1d2026;
+  --color-eb-paper: #f4f3f0;
 }
 
 html {
@@ -78,6 +96,13 @@ body {
   width: 2.5rem;
   background: var(--slant-color, var(--accent-fill));
   transform: skewX(-24deg);
+}
+
+/* Diamond plate, like an engine bay floor or a running board. Dark bands only. */
+@utility diamond-plate {
+  background-color: var(--color-eb-ink);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cg fill='%23fff' fill-opacity='.07'%3E%3Crect x='1' y='5.25' width='12' height='3.5' rx='1.75' transform='rotate(45 7 7)'/%3E%3Crect x='15' y='19.25' width='12' height='3.5' rx='1.75' transform='rotate(-45 21 21)'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 28px 28px;
 }
 
 @layer components {

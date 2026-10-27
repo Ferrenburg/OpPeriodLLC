@@ -63,3 +63,24 @@ export const mainNav = [
 ] as const;
 
 export const footerNav = [...mainNav, { label: "Privacy", href: "/privacy" }] as const;
+
+// Engine Bay Supply Co., the OpPeriod division that supplies fire service
+// hand tools. It has its own section at /engine-bay with its own header and
+// footer. Its catalog content lives in lib/engine-bay.ts.
+export const engineBay = {
+  name: "Engine Bay Supply Co.",
+  shortName: "Engine Bay",
+  path: "/engine-bay",
+  description:
+    "Fire service hand tools for departments, from halligans to New York hooks. Engine Bay Supply Co. is a division of OpPeriod LLC.",
+  // Quote requests go here until Engine Bay gets its own inbox.
+  email: company.email,
+  // Sampled from the logo. The CSS versions are the eb-* colors in app/globals.css.
+  colors: {
+    red: "#E2241B",
+    redDark: "#A9141B",
+    ink: "#121418",
+    paper: "#F4F3F0",
+  },
+  logo: { src: "/brand/engine-bay-logo.png", alt: "Engine Bay Supply Co." },
+} as const;
