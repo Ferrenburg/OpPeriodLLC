@@ -42,3 +42,11 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 
 - [ ] Logo is redrawn from the app icon image (`public/brand/iapassist-logo.png`), since the original file wasn't in the repo. Swap in the original PNG or SVG with the same name if anything looks off.
 - [ ] Review the page copy. It only covers what's known so far: it helps emergency managers build Incident Action Plans with less typing.
+
+## Engine Bay Supply Co. (`content/projects/engine-bay.mdx`)
+
+- [ ] Review the summary and tagline. The tagline comes from the logo's own line ("Built to last").
+- [ ] Product lines to list as `highlights` once the store is close. Nothing is listed until then.
+- [ ] Store address. When it opens, switch `status` to `active` and add a `cta` to the store (see `docs/PLAN.md`, section 14).
+- [ ] Accent color is the flame red from the logo, `#E2241B`. It's the fourth red on the project grid next to OpPeriod, Box Alarm, and StationScore.
+- [ ] Optional: its own inbox. Add `contactEmailKey: ENGINE_BAY` and set `CONTACT_EMAIL_ENGINE_BAY` in Vercel.

@@ -16,6 +16,7 @@ Starting projects:
 - **Box Alarm Builders**, a general contracting branch (logo provided)
 - **StationScore**, a SaaS product that helps small fire departments prepare for insurance rating evaluations
 - **IAPassist**, a software product (details to be provided, see Open Questions)
+- **Engine Bay Supply Co.**, the OpPeriod division that will sell firefighting hand tools (see section 14)
 
 ## 2. Hard rules for Claude Code
 
@@ -241,3 +242,30 @@ The README must include a section called **"How to add a new project"** written 
 4. What email addresses should each project's contact form route to?
 5. Should the website services business I run under OpPeriod also be listed as a project?
 6. What domain is this site going on?
+
+## 14. Engine Bay Supply Co.
+
+Engine Bay Supply Co. is the OpPeriod division that will sell firefighting hand tools. Logo provided: the "EB" mark with a flame, and a full lockup with the line "Hand tools / Fire service / Built to last". Accent `#E2241B`, the flame red.
+
+### Phase 1: on the site now
+
+- `content/projects/engine-bay.mdx`, status `coming-soon`, category Retail. Short link `opperiod.com/engine-bay`.
+- The page shows the summary and a "Get notified" button to the contact form, preselected to Engine Bay. Messages go to `CONTACT_EMAIL_DEFAULT` until a `contactEmailKey` is set.
+- Logos: `public/brand/engine-bay-logo.png` (the EB mark, transparent) and `engine-bay-logo-light.png` (white letters, for dark bands).
+- Do NOT list products, prices, brands, materials, warranties, or shipping terms until the owner provides them.
+
+### Phase 2: the store
+
+Selling means payments, sales tax, inventory, shipping, and returns. Don't build a checkout into this marketing site. Run the store on a hosted platform (Shopify or similar) at its own address, the same way IAPassist and StationScore live on their own subdomains. When it opens:
+
+1. Set `status: active` in `engine-bay.mdx`.
+2. Add `cta` with label "Shop Engine Bay" and the store's address, like the IAPassist file does.
+3. Add `highlights` once the product lines are known.
+
+### Open questions
+
+1. Store platform and address (for example `shop.opperiod.com`, `enginebay.opperiod.com`, or its own domain).
+2. Product lines at launch, and whether the tools are your own design, private label, or resold brands.
+3. Who it sells to: individual firefighters, departments (purchase orders, tax exempt sales), or both.
+4. Launch timing, and whether a notify list should be more than the contact form.
+5. Its own inbox for messages (a `CONTACT_EMAIL_ENGINE_BAY` setting).
