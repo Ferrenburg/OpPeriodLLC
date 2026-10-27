@@ -45,7 +45,7 @@ export const frontmatterSchema = z.strictObject({
 
 export type Project = z.infer<typeof frontmatterSchema> & {
   href: string;
-  // accentColor, or Opperiod red when none is set.
+  // accentColor, or OpPeriod red when none is set.
   accent: string;
   // White or ink, whichever is readable on the accent color.
   accentText: string;

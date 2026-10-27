@@ -8,7 +8,7 @@ export const GENERAL = "general";
 
 export type ContactOption = { value: string; label: string };
 
-// "General / Opperiod" first, then every listed project in its usual order.
+// "General / OpPeriod" first, then every listed project in its usual order.
 export function getContactOptions(): ContactOption[] {
   return [
     { value: GENERAL, label: `General / ${company.name}` },

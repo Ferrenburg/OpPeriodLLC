@@ -1,12 +1,12 @@
-# Opperiod LLC Website Build Plan (v1)
+# OpPeriod LLC Website Build Plan (v1)
 
 Hand this whole file to Claude Code. Read it fully before writing any code. Work in the phases at the bottom and stop for my review at the end of each phase.
 
 ## 1. What we're building
 
-A marketing site for **Opperiod LLC**, a diversified holdings company. The site has two jobs:
+A marketing site for **OpPeriod LLC**, a diversified holdings company. The site has two jobs:
 
-1. Present Opperiod as a credible, organized parent company.
+1. Present OpPeriod as a credible, organized parent company.
 2. Give each venture ("project") its own page, and make adding a new project later about as easy as creating one file.
 
 Owner: Samuel Ferrenburg, a fire lieutenant based in Westlake, Louisiana (Lake Charles area). The fire service background is part of the identity of the company and should come through in tone, but this is not a fire department website. Don't name the owner's town on the site, and describe the company only as a diversified holdings company (no "growing group of businesses").
@@ -61,7 +61,7 @@ Each project gets its own `accentColor` in its frontmatter (Box Alarm is `#C6001
 ### Look and feel
 
 - Industrial and disciplined, not flashy. Think apparatus floor, not tech startup.
-- Typography: a bold condensed or italic-leaning sans for headings that echoes the forward slant of the Opperiod wordmark (something like Barlow Condensed or Saira Condensed, self-hosted through `next/font`), and a clean readable sans for body text.
+- Typography: a bold condensed or italic-leaning sans for headings that echoes the forward slant of the OpPeriod wordmark (something like Barlow Condensed or Saira Condensed, self-hosted through `next/font`), and a clean readable sans for body text.
 - Generous whitespace, strong grid, square or slightly rounded corners, subtle slanted edges or angled accent bars as a nod to the red bar in the logo. Use that motif sparingly.
 - Must look great on a phone first. Most visitors will be on mobile.
 - Light mode only, using CSS variables. Dark mode was dropped so the black logos always sit on a light background.
@@ -72,7 +72,7 @@ Each project gets its own `accentColor` in its frontmatter (Box Alarm is `#C6001
 /                     Home
 /projects             All projects (portfolio grid)
 /projects/[slug]      Individual project page (generated from content files)
-/about                About Opperiod and the owner
+/about                About OpPeriod and the owner
 /contact              Contact form with routing by project
 /privacy              Privacy policy (basic, placeholder text flagged in CONTENT-TODO.md)
 ```
@@ -126,11 +126,11 @@ Include `content/projects/_template.mdx` with every field documented in comments
 
 ### Home `/`
 
-1. Hero: Opperiod logo, one sentence on what Opperiod is, two buttons (View projects, Contact).
+1. Hero: OpPeriod logo, one sentence on what OpPeriod is, two buttons (View projects, Contact).
 2. "What we run" section: grid of project cards pulled from content, sorted by `order`. Each card shows logo or text badge, name, tagline, status badge, and uses the project's accent color as a thin top border or angled corner.
 3. Short "How we operate" section: three or four values, written in plain language. The theme is the fire service mindset applied to business (show up, do the job right, take care of people). Placeholder copy is fine, flagged in `CONTENT-TODO.md`.
 4. Simple contact call to action strip.
-5. Footer: logo, nav links, copyright with the current year generated automatically, "Opperiod LLC" legal name, Louisiana.
+5. Footer: logo, nav links, copyright with the current year generated automatically, "OpPeriod LLC" legal name, Louisiana.
 
 ### Projects `/projects`
 
@@ -141,17 +141,17 @@ Grid of all published, non-retired projects. Optional filter chips by `category`
 1. Header band using the project's accent color as an accent (not a full flood of color), logo, name, tagline, status badge, CTA button and/or "Visit site" button.
 2. MDX body.
 3. Highlights grid (if provided).
-4. "Part of the Opperiod family" footer block linking back to `/projects`, plus 2 other project cards.
+4. "Part of the OpPeriod family" footer block linking back to `/projects`, plus 2 other project cards.
 5. Per-page metadata and Open Graph image generated from name, tagline, and accent color (use Next.js OG image generation).
 
 ### About `/about`
 
-Short story of why Opperiod exists and who runs it. Placeholder text only, flagged. Leave space for a photo.
+Short story of why OpPeriod exists and who runs it. Placeholder text only, flagged. Leave space for a photo.
 
 ### Contact `/contact`
 
 - Fields: name, email, phone (optional), "What's this about?" dropdown, message.
-- Dropdown options are generated from published projects plus "General / Opperiod".
+- Dropdown options are generated from published projects plus "General / OpPeriod".
 - `?project=<slug>` in the URL preselects the dropdown.
 - Submissions route to the email for that project via `contactEmailKey` (for example `CONTACT_EMAIL_BOX_ALARM`), falling back to `CONTACT_EMAIL_DEFAULT`.
 - Spam protection: honeypot field plus basic rate limiting in the route handler. Leave a clean hook to add Cloudflare Turnstile later.
@@ -183,7 +183,7 @@ Create these three files. Write real draft copy only where it can be done honest
 
 - Auto-generated `sitemap.xml` and `robots.txt` from the content folder.
 - Unique title and meta description on every page.
-- `Organization` JSON-LD on the home page for Opperiod LLC.
+- `Organization` JSON-LD on the home page for OpPeriod LLC.
 - Lighthouse 95+ on performance, accessibility, best practices, and SEO on mobile.
 - All images through `next/image`. Logos need proper alt text.
 - WCAG AA contrast, especially red on white and anything on the accent colors. If an accent color fails contrast for text, use it only for borders and shapes.
@@ -239,5 +239,5 @@ The README must include a section called **"How to add a new project"** written 
 2. Is Box Alarm Builders taking work yet, and what services and area should be listed?
 3. Do any projects already have their own domains (for `externalUrl`)? StationScore is at stationscore.opperiod.com and IAPassist is at iapassist.opperiod.com.
 4. What email addresses should each project's contact form route to?
-5. Should the website services business I run under Opperiod also be listed as a project?
+5. Should the website services business I run under OpPeriod also be listed as a project?
 6. What domain is this site going on?
