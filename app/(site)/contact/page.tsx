@@ -18,7 +18,7 @@ export default function ContactPage() {
       <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_18rem]">
         <div className="max-w-2xl">
           <p className="mb-8 text-lg text-muted">
-            Estimates, questions, or anything about one of our projects. Pick what it&apos;s about and your
+            Estimates, quotes, questions, or anything about one of our projects. Pick what it&apos;s about and your
             message comes straight to us.
           </p>
           <ContactForm options={getContactOptions()} email={company.email} turnstileSiteKey={turnstileSiteKey()} />

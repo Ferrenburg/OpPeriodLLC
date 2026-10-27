@@ -42,3 +42,11 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 
 - [ ] Logo is redrawn from the app icon image (`public/brand/iapassist-logo.png`), since the original file wasn't in the repo. Swap in the original PNG or SVG with the same name if anything looks off.
 - [ ] Review the page copy. It only covers what's known so far: it helps emergency managers build Incident Action Plans with less typing.
+
+## Engine Bay Supply Co. (`content/projects/engine-bay.mdx`)
+
+- [ ] Brands Engine Bay will distribute. The Brands section says they're being finalized and has a TODO box for the list.
+- [ ] Confirm the "What we carry" grid: forcible entry (halligans), hooks (New York hooks), and more on the way. Add categories as the lineup firms up.
+- [ ] Review the page copy, especially "run by a fire lieutenant" and the tagline from the logo ("Built to last").
+- [ ] Accent color is the flame red from the logo, `#E2241B`. It's the fourth red on the project grid next to OpPeriod, Box Alarm, and StationScore.
+- [ ] Optional: its own inbox for quote requests. Add `contactEmailKey: ENGINE_BAY` and set `CONTACT_EMAIL_ENGINE_BAY` in Vercel.
