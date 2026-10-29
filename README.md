@@ -23,7 +23,8 @@ Before pushing, run `npm run check` (lint and type check) and `npm run build`.
 
 - `lib/brand.ts`: company name, legal details, address, colors, logo paths, and nav links
 - `content/projects/`: one file per project (see "How to add a new project")
-- `app/(engine-bay)/engine-bay/` and `lib/engine-bay.ts`: the Engine Bay Supply Co. section and its tool categories, brands, and ordering steps
+- `app/(engine-bay)/engine-bay/` and `lib/engine-bay.ts`: the Engine Bay Supply Co. section, its tool categories, and ordering steps
+- `content/engine-bay/products/`: one JSON file per brand Engine Bay carries (Council Tool now), with photos in `public/catalog/`. See `docs/PLAN.md` section 14 for the fields.
 - `app/globals.css`: site colors (the site is light mode only)
 - `public/brand/`: logo files
 - `app/icon.png`, `app/apple-icon.png`: the browser tab and phone home screen icons
