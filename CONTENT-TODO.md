@@ -50,3 +50,10 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 - [ ] Decide whether to say "authorized Council Tool dealer" anywhere. The site doesn't say it now. Only add it if Council says Engine Bay can use that wording.
 - [ ] Review the copy: the hero ("Halligans to hooks."), "By firefighters, for firefighters ... someone who has swung one," and the three ordering steps.
 - [ ] Optional: its own inbox for quote requests. Add `contactEmailKey: ENGINE_BAY` to `content/projects/engine-bay.mdx` and set `CONTACT_EMAIL_ENGINE_BAY` in Vercel.
+
+## Coworking (`content/projects/coworking.mdx`)
+
+- [ ] Kept vague on purpose: no location, pricing, hours, or amenities. Add any of these only when you want them public.
+- [ ] Logo. Until then it uses a letter badge.
+- [ ] Accent color `#3F5A6B` is a placeholder.
+- [ ] Optional: its own inbox. Add `contactEmailKey: COWORKING` and set `CONTACT_EMAIL_COWORKING` in Vercel. Until then, messages go to the default inbox.
