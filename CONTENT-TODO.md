@@ -50,3 +50,6 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 - [ ] Decide whether to say "authorized Council Tool dealer" anywhere. The site doesn't say it now. Only add it if Council says Engine Bay can use that wording.
 - [ ] Review the copy: the hero ("Halligans to hooks."), "By firefighters, for firefighters ... someone who has swung one," and the three ordering steps.
 - [ ] Optional: its own inbox for quote requests. Add `contactEmailKey: ENGINE_BAY` to `content/projects/engine-bay.mdx` and set `CONTACT_EMAIL_ENGINE_BAY` in Vercel.
+- [ ] The two PDF catalogs (`public/downloads/`) show prices good through 12/31/26. Replace them before then with the 2027 files, using the same file names, or update `printCatalogs` in `lib/engine-bay.ts` if names or page counts change.
+- [ ] The Council Tool catalog says "Authorized Distributor of Council Tool" and uses Council's 1886 badge. Make sure Council has okayed both, in writing.
+- [ ] Fire Hooks Unlimited is only in the PDF for now. If it should get product pages like Council Tool, it needs its own file in `content/engine-bay/products/` and permission to use FHU's photos and descriptions.

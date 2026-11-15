@@ -113,6 +113,13 @@ export default function EngineBayHome() {
               </li>
             ))}
           </ol>
+          <p className="mt-10 text-lg">
+            Rather have it on paper? Our 2026 catalogs and price guides are{" "}
+            <Link href={`${engineBay.path}/catalogs`} className="font-semibold text-accent underline underline-offset-4">
+              ready to view and download
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

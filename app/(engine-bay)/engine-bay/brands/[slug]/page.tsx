@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { EbPageHero } from "@/components/engine-bay/page-hero";
 import { ProductCard } from "@/components/engine-bay/product-card";
 import { engineBay } from "@/lib/brand";
-import { quoteHref, toolCategories } from "@/lib/engine-bay";
+import { catalogPath, printCatalogs, quoteHref, toolCategories } from "@/lib/engine-bay";
 import { brandPath, getBrand, getBrandProducts, getBrands } from "@/lib/engine-bay-catalog";
 
 export const dynamicParams = false;
@@ -27,6 +27,7 @@ export default async function BrandPage({ params }: PageProps<"/engine-bay/brand
   const brand = getBrand((await params).slug);
   if (!brand) notFound();
   const products = getBrandProducts(brand.slug);
+  const printCatalog = printCatalogs.find((c) => c.brandSlug === brand.slug);
 
   return (
     <>
@@ -34,6 +35,13 @@ export default async function BrandPage({ params }: PageProps<"/engine-bay/brand
         {brand.about.map((line) => (
           <p key={line}>{line}</p>
         ))}
+        {printCatalog && (
+          <p className="mt-3">
+            <Link href={catalogPath(printCatalog)} className="font-semibold text-white underline underline-offset-4">
+              View the {printCatalog.title.toLowerCase().replace(brand.name.toLowerCase(), brand.name)}
+            </Link>
+          </p>
+        )}
       </EbPageHero>
 
       <div className="container-site">

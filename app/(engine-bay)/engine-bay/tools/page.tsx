@@ -25,6 +25,13 @@ export default function ToolsPage() {
           </Link>{" "}
           and we&apos;ll track it down.
         </p>
+        <p className="mt-3">
+          Want the full price guides?{" "}
+          <Link href={`${engineBay.path}/catalogs`} className="font-semibold text-white underline underline-offset-4">
+            See the catalogs
+          </Link>
+          .
+        </p>
       </EbPageHero>
 
       <div className="container-site">

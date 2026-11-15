@@ -83,8 +83,50 @@ export const orderingSteps = [
   },
 ];
 
+// Printable catalogs and price guides, as PDFs in public/downloads/. The
+// owner makes these; swap the files (same names) when a new year's comes out.
+export type PrintCatalog = {
+  slug: string;
+  title: string;
+  brand: string;
+  // Brand page slug in content/engine-bay/products/, when there is one.
+  brandSlug?: string;
+  blurb: string;
+  file: string;
+  cover: string;
+  pages: number;
+  note: string;
+};
+
+export const printCatalogs: PrintCatalog[] = [
+  {
+    slug: "council-tool",
+    title: "Council Tool Catalog",
+    brand: "Council Tool",
+    brandSlug: "council-tool",
+    blurb: "Halligans, irons, axes, hooks, and wildland tools.",
+    file: "/downloads/engine-bay-council-tool-catalog-2026.pdf",
+    cover: "/downloads/engine-bay-council-tool-catalog-2026-cover.webp",
+    pages: 9,
+    note: "2026 catalog and price guide. Prices good through 12/31/26.",
+  },
+  {
+    slug: "fire-hooks-unlimited",
+    title: "Fire Hooks Unlimited Catalog",
+    brand: "Fire Hooks Unlimited",
+    blurb: "Halligans, hooks, axes, forcible entry, mounting, wildland, and saws.",
+    file: "/downloads/engine-bay-fire-hooks-unlimited-catalog-2026.pdf",
+    cover: "/downloads/engine-bay-fire-hooks-unlimited-catalog-2026-cover.webp",
+    pages: 46,
+    note: "2026 catalog and price guide. Prices good through 12/31/26.",
+  },
+];
+
+export const catalogPath = (catalog: PrintCatalog) => `${engineBay.path}/catalogs/${catalog.slug}`;
+
 export const ebNav = [
   { label: "Tools", href: `${engineBay.path}/tools` },
+  { label: "Catalogs", href: `${engineBay.path}/catalogs` },
   { label: "How to Order", href: `${engineBay.path}#ordering` },
   { label: "About", href: `${engineBay.path}#about` },
 ] as const;
@@ -92,4 +134,10 @@ export const ebNav = [
 export const quoteHref = (tool?: string) =>
   tool ? `${engineBay.path}/quote?tool=${encodeURIComponent(tool)}` : `${engineBay.path}/quote`;
 
-export const ebPages = [engineBay.path, `${engineBay.path}/tools`, `${engineBay.path}/quote`];
+export const ebPages = [
+  engineBay.path,
+  `${engineBay.path}/tools`,
+  `${engineBay.path}/quote`,
+  `${engineBay.path}/catalogs`,
+  ...printCatalogs.map(catalogPath),
+];
