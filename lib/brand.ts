@@ -58,6 +58,8 @@ export const logos = {
 
 export const mainNav = [
   { label: "Home", href: "/" },
+  // Engine Bay is the lead business, so it gets its own spot in the menu.
+  { label: "Engine Bay", href: "/engine-bay" },
   { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
 ] as const;

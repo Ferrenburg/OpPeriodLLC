@@ -247,6 +247,10 @@ The README must include a section called **"How to add a new project"** written 
 
 Engine Bay Supply Co. is the OpPeriod division that supplies fire service hand tools to departments, from halligans to New York hooks. The brands it will distribute aren't confirmed yet. Logo provided: the "EB" mark with a flame, and a full lockup with the line "Hand tools / Fire service / Built to last". Colors from the logo: red `#E2241B`, dark red `#A9141B`, ink `#121418`, paper `#F4F3F0`.
 
+### On opperiod.com
+
+Engine Bay is OpPeriod's lead business. The OpPeriod home page opens with an Engine Bay hero (diamond plate, "Halligans to hooks.", Shop and Request a Quote buttons, phone, catalogs), then six Engine Bay categories, then the brands with their catalogs, then OpPeriod's other projects, "How we operate", and the contact band. "Engine Bay" is in the main OpPeriod menu between Home and Projects.
+
 ### How it sells
 
 Departments buy on purchase orders, so there is no store, cart, or checkout. Every page pushes toward Request a Quote. Do NOT say on the site that it sells by PO only, or that it doesn't sell to individuals.
