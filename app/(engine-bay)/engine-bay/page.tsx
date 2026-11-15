@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CategoryImage } from "@/components/engine-bay/category-image";
+import { CategoryCard } from "@/components/engine-bay/category-card";
 import { Logo } from "@/components/logo";
 import { company, engineBay } from "@/lib/brand";
-import { orderingSteps, quoteHref, toolCategories } from "@/lib/engine-bay";
-import { brandPath, categoryPhoto, getBrandProducts, getBrands, getProductsIn } from "@/lib/engine-bay-catalog";
+import { categoryPath, orderingSteps, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { brandPath, getBrandProducts, getBrands, getProductsIn } from "@/lib/engine-bay-catalog";
 import { readPublicImage } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -65,33 +65,20 @@ export default function EngineBayHome() {
             </Link>
           </div>
           <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {toolCategories.filter((category) => !category.minor).map((category) => {
-              const count = getProductsIn(category.slug).length;
-              const href = count > 0 ? `${engineBay.path}/tools#${category.slug}` : quoteHref(category.name);
-              return (
-                <li key={category.slug} className="group relative flex flex-col border border-line bg-bg transition-shadow hover:shadow-lg">
-                  <CategoryImage photo={categoryPhoto(category)} sizes="(min-width: 1024px) 24rem, (min-width: 640px) 50vw, 100vw" />
-                  <div className="flex flex-1 flex-col p-6">
-                    <h3 className="font-display text-3xl font-bold uppercase italic leading-none">
-                      <Link href={href} className="after:absolute after:inset-0 group-hover:text-accent">
-                        {category.name}
-                      </Link>
-                    </h3>
-                    <p className="mt-2 flex-1 text-muted">{category.blurb}</p>
-                    <p className="mt-5 font-display text-lg font-semibold uppercase italic tracking-wide text-accent">
-                      {count > 0 ? `Shop ${count} ${count === 1 ? "item" : "items"}` : "Get pricing"} <span aria-hidden="true">&rarr;</span>
-                    </p>
-                  </div>
+            {toolCategories
+              .filter((category) => !category.minor)
+              .map((category) => (
+                <li key={category.slug}>
+                  <CategoryCard category={category} />
                 </li>
-              );
-            })}
+              ))}
           </ul>
           {toolCategories
             .filter((category) => category.minor && getProductsIn(category.slug).length > 0)
             .map((category) => (
               <p key={category.slug} className="mt-6 text-lg">
                 {category.blurb}{" "}
-                <Link href={`${engineBay.path}/tools#${category.slug}`} className="font-semibold text-accent underline underline-offset-4">
+                <Link href={categoryPath(category)} className="font-semibold text-accent underline underline-offset-4">
                   Shop {category.name.toLowerCase()}
                 </Link>
               </p>

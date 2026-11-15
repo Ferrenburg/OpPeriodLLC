@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { engineBay } from "@/lib/brand";
-import { ebNav, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { categoryPath, ebNav, quoteHref, toolCategories } from "@/lib/engine-bay";
 import { EbMobileMenu } from "./mobile-menu";
 
 // Utility bar, logo and nav, then the red category bar, like a dealer site.
@@ -62,7 +62,7 @@ export function EbHeader() {
           {toolCategories.map((category) => (
             <li key={category.slug}>
               <Link
-                href={`${engineBay.path}/tools#${category.slug}`}
+                href={categoryPath(category)}
                 className="font-display text-base font-semibold uppercase italic tracking-wide text-white hover:underline md:text-lg"
               >
                 {category.short}

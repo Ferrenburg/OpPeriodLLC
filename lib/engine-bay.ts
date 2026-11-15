@@ -27,14 +27,14 @@ export const toolCategories: ToolCategory[] = [
     slug: "axes",
     name: "Fire axes",
     short: "Axes",
-    blurb: "Flathead and pickhead axes on hickory or fiberglass handles.",
+    blurb: "Flathead, pickhead, and combo axes on hickory or fiberglass handles, plus sheaths.",
     featured: "60f32dg",
   },
   {
     slug: "hooks",
-    name: "Hooks",
+    name: "Hooks and pike poles",
     short: "Hooks",
-    blurb: "New York style roof hooks and FSV hooks in 4, 5, and 6 ft.",
+    blurb: "Roof hooks, pike poles, drywall and Boston rake hooks, and more, by length.",
     featured: "rhfsv-4",
   },
   {
@@ -48,7 +48,7 @@ export const toolCategories: ToolCategory[] = [
     slug: "forcible-entry",
     name: "Forcible entry",
     short: "Forcible Entry",
-    blurb: "Lock pullers and pry bars for when the door needs more than the irons.",
+    blurb: "Hydraulic rams, through-the-lock tools and keys, officer's tools, sledges, and pry bars.",
     featured: "lxt-24",
   },
   {
@@ -59,10 +59,31 @@ export const toolCategories: ToolCategory[] = [
     featured: "38pe136",
   },
   {
+    slug: "straps-mounts",
+    name: "Straps and mounts",
+    short: "Straps & Mounts",
+    blurb: "Irons straps, tool loops, harnesses, and brackets to mount tools on the rig.",
+    featured: "iss-82",
+  },
+  {
+    slug: "rescue",
+    name: "Hydrant and rescue tools",
+    short: "Rescue",
+    blurb: "Hydrant wrenches, spanners, punches, and other tools for the rig.",
+    featured: "hw-1",
+  },
+  {
+    slug: "saws",
+    name: "Saws and blades",
+    short: "Saws",
+    blurb: "Husqvarna rescue and battery saws, batteries, chargers, and blades.",
+    featured: "k12fd",
+  },
+  {
     slug: "parts",
     name: "Handles and parts",
     short: "Parts",
-    blurb: "Replacement handles, rake heads, teeth, and swatter flaps to keep tools in service.",
+    blurb: "Replacement poles, handles, rake heads, teeth, and swatter flaps to keep tools in service.",
     featured: "70-32dg-b",
     minor: true,
   },
@@ -82,6 +103,8 @@ export const orderingSteps = [
     text: "Your department sends the order and we get the tools headed your way.",
   },
 ];
+
+export const categoryPath = (category: { slug: string }) => `${engineBay.path}/tools/${category.slug}`;
 
 // Printable catalogs and price guides, as PDFs in public/downloads/. The
 // owner makes these; swap the files (same names) when a new year's comes out.
@@ -114,6 +137,7 @@ export const printCatalogs: PrintCatalog[] = [
     slug: "fire-hooks-unlimited",
     title: "Fire Hooks Unlimited Catalog",
     brand: "Fire Hooks Unlimited",
+    brandSlug: "fire-hooks-unlimited",
     blurb: "Halligans, hooks, axes, forcible entry, mounting, wildland, and saws.",
     file: "/downloads/engine-bay-fire-hooks-unlimited-catalog-2026.pdf",
     cover: "/downloads/engine-bay-fire-hooks-unlimited-catalog-2026-cover.webp",
@@ -140,4 +164,5 @@ export const ebPages = [
   `${engineBay.path}/quote`,
   `${engineBay.path}/catalogs`,
   ...printCatalogs.map(catalogPath),
+  ...toolCategories.map(categoryPath),
 ];

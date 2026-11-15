@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { company, engineBay } from "@/lib/brand";
-import { ebNav, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { categoryPath, ebNav, quoteHref, toolCategories } from "@/lib/engine-bay";
 
 const yearScript = `document.getElementById("eb-copyright-year").textContent=new Date().getFullYear()`;
 
@@ -35,7 +35,7 @@ export function EbFooter() {
           <ul className="mt-4 space-y-2">
             {toolCategories.map((category) => (
               <li key={category.slug}>
-                <Link href={`${engineBay.path}/tools#${category.slug}`} className="text-white/70 hover:text-white">
+                <Link href={categoryPath(category)} className="text-white/70 hover:text-white">
                   {category.name}
                 </Link>
               </li>

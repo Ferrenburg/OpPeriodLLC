@@ -1,0 +1,333 @@
+{
+  "brand": {
+    "slug": "husqvarna",
+    "name": "Husqvarna",
+    "about": [
+      "Rescue saws, battery saws, batteries, and chargers for the fire service."
+    ]
+  },
+  "products": [
+    {
+      "slug": "ftcs",
+      "sku": "FTCS",
+      "name": "Fire Tuff Chainsaw",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "Husqvarna Rancher 455 20\" chainsaw. Has large D-handle pull start.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ftcs.webp"
+      ]
+    },
+    {
+      "slug": "ftcsb",
+      "sku": "FTCSB",
+      "name": "Fire Tuff Chainsaw Box",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "Orange plastic carry box for Husqvarna Rancher 455.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ftcsb.webp"
+      ]
+    },
+    {
+      "slug": "fd770pkg",
+      "sku": "FD770PKG",
+      "name": "FD 770 12\" Rescue Package",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "12\" K770 rescue with LED flashlight attached to belt guard, large D-handle pull start, heavy duty saw harness strap, choice of 12\" 12 or 24 tooth blade.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fd770pkg.webp"
+      ]
+    },
+    {
+      "slug": "k970-14",
+      "sku": "K970-14",
+      "name": "K970 14\"",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K970 contractor grade rotary saw only.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-k970-14.webp"
+      ]
+    },
+    {
+      "slug": "k12fd",
+      "sku": "K12FD",
+      "name": "K12 FD Rescue Saw",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K970 rescue saw (K12) rotary saw only. Comes with rescue decals, heavy duty adjustable saw harness, large D-handle pull start.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-k12fd.webp"
+      ]
+    },
+    {
+      "slug": "k12fdpkg",
+      "sku": "K12FDPKG",
+      "name": "K12 FD Rescue Package",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K970 rescue saw with choice of 12x24 or 14x30 blade. Includes LED flashlight, large D-handle pull start, and heavy duty adjustable saw harness.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-k12fdpkg.webp"
+      ]
+    },
+    {
+      "slug": "k770-ii",
+      "name": "K770 II",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "12\" K770 contractor grade rotary saw only.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "K770-12",
+          "option": "12 in."
+        },
+        {
+          "sku": "K770-14",
+          "option": "14 in."
+        }
+      ]
+    },
+    {
+      "slug": "k535i-14in-battery-powered-chainsaw-package",
+      "name": "K535I 14\" Battery Powered Chainsaw Package",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K535i chainsaw package includes (2) B330X batteries, (1) C500X charger, and (1) chain",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-k535i-14in-battery-powered-chainsaw-package.webp"
+      ],
+      "variants": [
+        {
+          "sku": "BPCHAINFD",
+          "option": "14\" K535i chainsaw package includes (2) B330X batteries, (1) C500X charger, and (1) chain"
+        },
+        {
+          "sku": "BPCHAINFD-OLD",
+          "option": "14\" K535i chainsaw package includes (2) BLi200 batteries, (1) QC330W charger, and (1) chain *. Limited qty. Available, call to inquire.*"
+        }
+      ]
+    },
+    {
+      "slug": "bpc-pkg",
+      "sku": "BPC PKG",
+      "name": "K540I 10\" Battery Powered Cutter Package",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "10\" K540i rotary saw package includes (1) B330X battery, (1) C500X charger, (1) CBT 9x18t, (1) 10\" s35 Tacticut, (1) 10\" FR3 Vari-Cut, (1) 7/8\" arbor, & reflective shoulder strap with mounting kit.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-bpc-pkg.webp"
+      ]
+    },
+    {
+      "slug": "b380pp",
+      "sku": "B380PP",
+      "name": "B380X Powerpack",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "Powerpack contains (2) B380X batteries, (1) C900X charger.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-b380pp.webp"
+      ]
+    },
+    {
+      "slug": "k1-pace-rescue-saw",
+      "name": "K1 Pace Rescue Saw",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "12\" K1 PACE rescue saw only.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-k1-pace-rescue-saw.webp"
+      ],
+      "variants": [
+        {
+          "sku": "PACEK1-12",
+          "option": "12 in."
+        },
+        {
+          "sku": "PACEK1-14",
+          "option": "14 in."
+        }
+      ]
+    },
+    {
+      "slug": "k770-12res",
+      "sku": "K770-12RES",
+      "name": "K770 II 12\" Rescue Saw",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "12\" K770 rescue saw only with large D-handle pull start & adjustable heavy duty saw harness.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "k770-12x24",
+      "sku": "K770-12X24",
+      "name": "K770 II 14\" with 12x24 Blade",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K770 contractor grade rotary saw with 12x24 carbide tip blade.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "k770-14x30",
+      "sku": "K770- 14X30",
+      "name": "K770 II 14\" with 14x30 Blade",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K770 contractor grade rotary saw with 14x30 carbide tip blade.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "k970-12x24",
+      "sku": "K970-12X24",
+      "name": "K970 14\" with 12x24 Blade",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K970 contractor grade rotary saw with 12x24 carbide tip blade.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "k970-14x30",
+      "sku": "K970-14X30",
+      "name": "K970 14\" with 14x30 Blade",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K970 contractor grade rotary saw with 14x30 carbide tip blade.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "k12fd-12x24",
+      "sku": "K12FD 12X24",
+      "name": "K12 FD Rescue Saw with 12x24 Blade",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K970 rescue saw (K12) rotary saw with 12x24 blade. Comes with rescue decals, heavy duty adjustable saw harness, large D-handle pull start.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "k12fd-14x30",
+      "sku": "K12FD 14X30",
+      "name": "K12 FD Rescue Saw with 14x30 Blade",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "14\" K970 rescue saw (K12) rotary saw with 14x30 blade. Comes with rescue decals, heavy duty adjustable saw harness, large D-handle pull start.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "b750pp",
+      "sku": "B750PP",
+      "name": "B750X Powerpack",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "Powerpack contains (2) B750X batteries, (1) C1800X charger.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "b330x",
+      "sku": "B330X",
+      "name": "B330X Battery",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "B330X battery for Husqvarna K535i & K540i saws.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "c500x",
+      "sku": "C500X",
+      "name": "C500X Charger",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "500w charger for BLi batteries.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "b380x",
+      "sku": "B380X",
+      "name": "B380X Battery",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "B380X battery for Husqvarna PACE saws.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "b750x",
+      "sku": "B750X",
+      "name": "B750X Battery",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "B750X battery for Husqvarna PACE saws.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "c900x",
+      "sku": "C900X",
+      "name": "C900X Charger",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "900w charger for PACE batteries.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "c1800x",
+      "sku": "C1800X",
+      "name": "C1800X Charger",
+      "category": "saws",
+      "group": "Husqvarna saws and batteries",
+      "summary": "1800w charger for PACE batteries.",
+      "details": [],
+      "features": [],
+      "images": []
+    }
+  ]
+}

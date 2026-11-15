@@ -19,21 +19,29 @@ const categorySlugs = toolCategories.map((c) => c.slug) as [string, ...string[]]
 const text = z.string().trim().min(1, "can't be empty");
 const slug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, "use lowercase letters, numbers, and single dashes");
 
-const productSchema = z.strictObject({
+const productSchema = z
+  .strictObject({
   slug,
-  // The manufacturer's model or part number, exactly as they print it.
-  sku: text,
+  // The manufacturer's model or part number, exactly as they print it. A
+  // product sold in several sizes leaves this out and lists variants instead.
+  sku: text.optional(),
   name: text,
   category: z.enum(categorySlugs, `must be one of: ${categorySlugs.join(", ")}`),
+  // Optional heading inside the category, like "Through-the-lock tools and keys".
+  group: text.optional(),
   summary: text,
   details: z.array(text).default([]),
   features: z.array(text).default([]),
   // California Prop 65 warning from the manufacturer, shown on the product page.
   prop65: text.optional(),
-  images: z.array(z.string().startsWith("/", "must be a path in public/, like /catalog/photo.webp")).min(1, "add at least one photo"),
+  // Photos, main one first. Can be empty; the site shows a placeholder.
+  images: z.array(z.string().startsWith("/", "must be a path in public/, like /catalog/photo.webp")).default([]),
+  // Sizes or options, each with its own part number, like a hook in 4, 5, and 6 ft.
+  variants: z.array(z.strictObject({ sku: text, option: text })).default([]),
   // Where the product details came from, for checking later. Not shown.
   source: z.url().optional(),
-});
+  })
+  .refine((p) => p.sku || p.variants.length > 0, { path: ["sku"], message: "add a part number, or list variants with their own" });
 
 const fileSchema = z.strictObject({
   brand: z.strictObject({
@@ -77,11 +85,11 @@ export const loadCatalog = cache((): { brands: Brand[]; products: Product[] } =>
     brands.push(brand);
     for (const product of result.data.products) {
       if (products.some((p) => p.slug === product.slug)) {
-        problems.push(`${file}\n  - ${product.sku}: slug "${product.slug}" is already used by another product`);
+        problems.push(`${file}\n  - ${product.name}: slug "${product.slug}" is already used by another product`);
       }
       for (const image of product.images) {
         if (!fs.existsSync(/*turbopackIgnore: true*/ path.join(root, "public", image))) {
-          problems.push(`${file}\n  - ${product.sku}: no photo at public${image}`);
+          problems.push(`${file}\n  - ${product.name}: no photo at public${image}`);
         }
       }
       products.push({ ...product, brand, href: productPath(product) });
@@ -130,5 +138,18 @@ export function categoryPhoto(category: ToolCategory): string | undefined {
 
 export const brandPath = (brand: Brand) => `/engine-bay/brands/${brand.slug}`;
 
-// What a Get Pricing link puts at the top of the quote form.
-export const quoteLabel = (product: Product) => `${product.brand.name} ${product.sku}, ${product.name}`;
+// What a Get Pricing link puts at the top of the quote form. Pass a variant
+// for one size of a product sold in several.
+export const quoteLabel = (product: Product, variant?: { sku: string; option: string }) => {
+  if (variant) return `${product.brand.name} ${variant.sku}, ${product.name} (${variant.option})`;
+  return product.sku ? `${product.brand.name} ${product.sku}, ${product.name}` : `${product.brand.name} ${product.name}`;
+};
+
+// The part number line on cards: the model, or the range of a product's sizes.
+export function partNumbers(product: Product): string {
+  if (product.sku) return product.sku;
+  const skus = product.variants.map((v) => v.sku);
+  return skus.length > 2 ? `${skus[0]} to ${skus[skus.length - 1]}` : skus.join(", ");
+}
+
+export { categoryPath } from "./engine-bay";
