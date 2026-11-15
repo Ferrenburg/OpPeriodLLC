@@ -1,65 +1,50 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CategoryCard } from "@/components/engine-bay/category-card";
 import { EbPageHero } from "@/components/engine-bay/page-hero";
-import { ProductCard } from "@/components/engine-bay/product-card";
 import { engineBay } from "@/lib/brand";
 import { quoteHref, toolCategories } from "@/lib/engine-bay";
-import { getProducts, getProductsIn } from "@/lib/engine-bay-catalog";
+import { getBrands, getProducts } from "@/lib/engine-bay-catalog";
 
 export const metadata: Metadata = {
   title: "Tools",
-  description: `Halligan bars, fire axes, roof hooks, irons, forcible entry, and wildland tools from ${engineBay.name}.`,
+  description: `Halligans, axes, hooks and pike poles, irons, forcible entry, straps and mounts, rescue, wildland, and saws from ${engineBay.name}.`,
   alternates: { canonical: `${engineBay.path}/tools` },
 };
 
 export default function ToolsPage() {
   const count = getProducts().length;
+  const brands = getBrands().map((b) => b.name);
 
   return (
     <>
       <EbPageHero title="Tools">
         <p>
-          {count} tools and parts. Pick what you need and hit Get Pricing, or send us a list. Don&apos;t see something?{" "}
+          {count} tools and parts from {brands.slice(0, -1).join(", ")} and {brands.at(-1)}. Pick a category, find what you
+          need, and hit Get Pricing. Don&apos;t see something?{" "}
           <Link href={quoteHref()} className="font-semibold text-white underline underline-offset-4">
             Ask
           </Link>{" "}
           and we&apos;ll track it down.
         </p>
+        <p className="mt-3">
+          Want the full price guides?{" "}
+          <Link href={`${engineBay.path}/catalogs`} className="font-semibold text-white underline underline-offset-4">
+            See the catalogs
+          </Link>
+          .
+        </p>
       </EbPageHero>
 
-      <div className="container-site">
-        {toolCategories.map((category) => {
-          const products = getProductsIn(category.slug);
-          if (products.length === 0) return null;
-          return (
-            <section
-              key={category.slug}
-              id={category.slug}
-              aria-labelledby={`${category.slug}-heading`}
-              className="scroll-mt-4 border-b border-line py-12 last:border-b-0 md:py-14"
-            >
-              <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
-                <div>
-                  <h2 id={`${category.slug}-heading`} className="font-display text-3xl font-bold uppercase italic md:text-4xl">
-                    {category.name}
-                  </h2>
-                  <p className="mt-2 text-lg text-muted">{category.blurb}</p>
-                </div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-muted">
-                  {products.length} {products.length === 1 ? "item" : "items"}
-                </p>
-              </div>
-              <ul className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-                {products.map((product) => (
-                  <li key={product.slug}>
-                    <ProductCard product={product} />
-                  </li>
-                ))}
-              </ul>
-            </section>
-          );
-        })}
-      </div>
+      <section aria-label="Categories" className="container-site py-12 md:py-16">
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {toolCategories.map((category) => (
+            <li key={category.slug}>
+              <CategoryCard category={category} headingLevel="h2" />
+            </li>
+          ))}
+        </ul>
+      </section>
     </>
   );
 }

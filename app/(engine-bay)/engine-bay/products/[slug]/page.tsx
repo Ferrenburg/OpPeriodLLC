@@ -4,8 +4,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProductCard } from "@/components/engine-bay/product-card";
 import { engineBay, siteUrl } from "@/lib/brand";
-import { quoteHref, toolCategories } from "@/lib/engine-bay";
-import { brandPath, getProduct, getProducts, getProductsIn, quoteLabel } from "@/lib/engine-bay-catalog";
+import { ProductPhoto } from "@/components/engine-bay/product-photo";
+import { categoryPath, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { brandPath, getProduct, getProducts, getProductsIn, partNumbers, quoteLabel } from "@/lib/engine-bay-catalog";
 import { readPublicImage } from "@/lib/images";
 
 // Only products in the catalog files exist. Anything else is a 404.
@@ -20,9 +21,9 @@ export async function generateMetadata({ params }: PageProps<"/engine-bay/produc
   if (!product) return {};
   return {
     title: `${product.brand.name} ${product.name}`,
-    description: `${product.summary} Model ${product.sku}. Request a quote from ${engineBay.name}.`,
+    description: `${product.summary} ${product.sku ? "Model" : "Part numbers"} ${partNumbers(product)}. Request a quote from ${engineBay.name}.`,
     alternates: { canonical: product.href },
-    openGraph: { images: [{ url: product.images[0], alt: product.name }] },
+    openGraph: product.images[0] ? { images: [{ url: product.images[0], alt: product.name }] } : undefined,
   };
 }
 
@@ -31,7 +32,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
   if (!product) notFound();
 
   const category = toolCategories.find((c) => c.slug === product.category)!;
-  const [main, ...more] = product.images.map((src) => readPublicImage(src)!);
+  const more = product.images.slice(1).map((src) => readPublicImage(src)!);
   const related = getProductsIn(product.category)
     .filter((p) => p.slug !== product.slug)
     .slice(0, 4);
@@ -40,8 +41,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
-    sku: product.sku,
-    mpn: product.sku,
+    ...(product.sku ? { sku: product.sku, mpn: product.sku } : {}),
     brand: { "@type": "Brand", name: product.brand.name },
     description: product.summary,
     image: product.images.map((src) => new URL(src, base).toString()),
@@ -62,13 +62,13 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
             </li>
             <li aria-hidden="true">/</li>
             <li>
-              <Link href={`${engineBay.path}/tools#${category.slug}`} className="hover:text-fg hover:underline">
+              <Link href={categoryPath(category)} className="hover:text-fg hover:underline">
                 {category.name}
               </Link>
             </li>
             <li aria-hidden="true">/</li>
             <li aria-current="page" className="text-fg">
-              {product.sku}
+              {product.sku ?? product.name}
             </li>
           </ol>
         </nav>
@@ -76,15 +76,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
         <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
           <div>
             <div className="relative aspect-square border border-line bg-white">
-              <Image
-                src={main.src}
-                width={main.width}
-                height={main.height}
-                alt={product.name}
-                sizes="(min-width: 1024px) 36rem, 100vw"
-                priority
-                className="absolute inset-0 size-full object-contain p-6"
-              />
+              <ProductPhoto src={product.images[0]} name={product.name} alt={product.name} sizes="(min-width: 1024px) 36rem, 100vw" priority padding="p-6" />
             </div>
             {more.length > 0 && (
               <ul className="mt-4 grid grid-cols-3 gap-4">
@@ -110,7 +102,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
             </Link>
             <h1 className="mt-2 font-display text-4xl font-bold uppercase italic leading-none md:text-5xl">{product.name}</h1>
             <p className="mt-4 inline-block border-2 border-line px-3 py-1 text-sm">
-              Model <span className="font-semibold">{product.sku}</span>
+              {product.sku ? "Model" : `${product.variants.length} options:`} <span className="font-semibold">{partNumbers(product)}</span>
             </p>
             <p className="mt-5 text-lg leading-relaxed">{product.summary}</p>
 
@@ -132,6 +124,42 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
                 </a>
               </div>
             </div>
+
+            {product.variants.length > 0 && (
+              <section aria-labelledby="options" className="mt-10">
+                <h2 id="options" className="font-display text-2xl font-bold uppercase italic">
+                  Sizes and options
+                </h2>
+                <div className="mt-4 overflow-x-auto">
+                  <table className="w-full min-w-[22rem] border-collapse text-left">
+                    <thead>
+                      <tr className="bg-eb-ink text-sm uppercase tracking-wider text-white">
+                        <th scope="col" className="px-3 py-2 font-semibold">Part #</th>
+                        <th scope="col" className="px-3 py-2 font-semibold">Size or option</th>
+                        <th scope="col" className="px-3 py-2">
+                          <span className="sr-only">Get pricing</span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {product.variants.map((variant) => (
+                        <tr key={variant.sku} className="border-b border-line align-top">
+                          <th scope="row" className="whitespace-nowrap px-3 py-3 font-semibold text-accent">
+                            {variant.sku}
+                          </th>
+                          <td className="px-3 py-3">{variant.option}</td>
+                          <td className="whitespace-nowrap px-3 py-3 text-right">
+                            <Link href={quoteHref(quoteLabel(product, variant))} className="font-semibold text-accent underline underline-offset-4">
+                              Get pricing<span className="sr-only"> for {variant.sku}</span>
+                            </Link>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            )}
 
             {product.features.length > 0 && (
               <section aria-labelledby="features" className="mt-10">
@@ -178,7 +206,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
               <h2 id="related" className="font-display text-3xl font-bold uppercase italic md:text-4xl">
                 More {category.name.toLowerCase()}
               </h2>
-              <Link href={`${engineBay.path}/tools#${category.slug}`} className="font-semibold text-accent underline underline-offset-4">
+              <Link href={categoryPath(category)} className="font-semibold text-accent underline underline-offset-4">
                 See all
               </Link>
             </div>

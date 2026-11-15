@@ -1,0 +1,5049 @@
+{
+  "brand": {
+    "slug": "fire-hooks-unlimited",
+    "name": "Fire Hooks Unlimited",
+    "about": [
+      "Halligans, hooks, axes, forcible entry, mounting, wildland tools, and saws."
+    ]
+  },
+  "products": [
+    {
+      "slug": "pb-30",
+      "sku": "PB-30",
+      "name": "Pro-Bar 30\"",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "One-piece Halligan made from drop-forged aircraft steel. All Pro-Bars are rust-resistant zinc plated. 2\" adz, 30\" OAL preferred bar of the FDNY.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pb-30.webp"
+      ]
+    },
+    {
+      "slug": "pb-30-w-r",
+      "sku": "PB-30 W/R",
+      "name": "Pro-Bar with Ring",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "One ring welded on fork end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pb-30-w-r.webp"
+      ]
+    },
+    {
+      "slug": "rpb",
+      "sku": "RPB",
+      "name": "Roof Pro-Bar",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "30\" PB-30 with 2 rings welded and reflective shoulder strap.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-rpb.webp"
+      ]
+    },
+    {
+      "slug": "wa-pro-30",
+      "sku": "WA-PRO-30",
+      "name": "Wide Adz Pro-Bar",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "Added 1\" to adz to make 3\" wide adz.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-wa-pro-30.webp"
+      ]
+    },
+    {
+      "slug": "mx",
+      "sku": "MX",
+      "name": "Maxximus",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "30\" one piece drop-forged Halligan with 2 3/4\" adz. Pre-tuned with ThermoRubber grip.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mx.webp"
+      ]
+    },
+    {
+      "slug": "mx-rex",
+      "sku": "MX-REX",
+      "name": "Maxximus-REX",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "30\" one piece drop-forged Halligan with 2 3/4\" adz with REX lock pulling feature. Not for gapping doors.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mx-rex.webp"
+      ]
+    },
+    {
+      "slug": "mx-mod",
+      "sku": "MX-MOD",
+      "name": "Maxximus-MOD",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "30\" one piece drop-forged Halligan with 2\" adz. Pre-tuned with ThermoRubber grip. One of FHU's best sellers.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mx-mod.webp"
+      ]
+    },
+    {
+      "slug": "mm-24",
+      "sku": "MM-24",
+      "name": "Mini-Mod",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "24\" mini modified Maxximus. One piece drop-forged.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mm-24.webp"
+      ]
+    },
+    {
+      "slug": "mx-ii",
+      "sku": "MX-II",
+      "name": "Maxximus-II",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "New! Reworked adz, thinned out forks. Weighs approx. 8.5 lb.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mx-ii.webp"
+      ]
+    },
+    {
+      "slug": "pbhh-30",
+      "sku": "PBHH-30",
+      "name": "Pro-Bar Hammerhead",
+      "category": "halligans",
+      "group": "Drop-forged Halligans",
+      "summary": "30\" PB-30 with welded sledge head.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "hdst-30",
+      "sku": "HDST-30",
+      "name": "House Developed 30\" Halligan",
+      "category": "halligans",
+      "group": "House-developed Halligans",
+      "summary": "Drop-forged head & forks welded onto steel shaft with Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hdst-30.webp"
+      ]
+    },
+    {
+      "slug": "jpb-54",
+      "sku": "JPB-54",
+      "name": "Jumbo Pro-Bar 54\"",
+      "category": "halligans",
+      "group": "House-developed Halligans",
+      "summary": "Drop-forged head & forks welded onto steel shaft with Celtex grips. 1 ring on fork end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-jpb-54.webp"
+      ]
+    },
+    {
+      "slug": "kelly",
+      "sku": "KELLY",
+      "name": "Kelly Tool",
+      "category": "halligans",
+      "group": "House-developed Halligans",
+      "summary": "Drop forged working ends. Forks rotated 90 degrees, no spike. 30\" OAL with Celtex grip.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-kelly.webp"
+      ]
+    },
+    {
+      "slug": "adz-bar",
+      "sku": "ADZ BAR",
+      "name": "Adz Bar",
+      "category": "halligans",
+      "group": "House-developed Halligans",
+      "summary": "Choice of 24\" or 30\" house developed Halligan with adz end instead of fork end. 1 ring is added for venting from above.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-adz-bar.webp"
+      ]
+    },
+    {
+      "slug": "farrmx",
+      "sku": "FARRMX",
+      "name": "FarrMaxx",
+      "category": "halligans",
+      "group": "House-developed Halligans",
+      "summary": "30\" Kelly tool with sledge head welded to back of adz.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-farrmx.webp"
+      ]
+    },
+    {
+      "slug": "hyh-30",
+      "sku": "HYH-30",
+      "name": "Hybrid Halligan",
+      "category": "halligans",
+      "group": "House-developed Halligans",
+      "summary": "Forged working ends fixed to a fiberglass shaft. For working on hybrid vehicles with 600v batteries.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hyh-30.webp"
+      ]
+    },
+    {
+      "slug": "pro-bar-24in",
+      "name": "Pro-Bar 24\"",
+      "category": "halligans",
+      "group": "House-developed Halligans",
+      "summary": "Drop-forged head & forks welded onto steel shaft with Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pro-bar-24in.webp"
+      ],
+      "variants": [
+        {
+          "sku": "PB-24",
+          "option": "Pro-Bar 24\""
+        },
+        {
+          "sku": "PB-24 W/R",
+          "option": "Pro-Bar 24\" with Ring. 1 ring welded to shaft on fork end."
+        },
+        {
+          "sku": "PB-24 W/2R",
+          "option": "Pro-Bar 24\" with 2 Rings & Shoulder Strap. 2 rings welded to shaft, includes reflective shoulder strap."
+        }
+      ]
+    },
+    {
+      "slug": "pro-bar",
+      "name": "Pro-Bar",
+      "category": "halligans",
+      "group": "House-developed Halligans",
+      "summary": "Drop-forged head & forks welded onto steel shaft with Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pro-bar.webp"
+      ],
+      "variants": [
+        {
+          "sku": "PB-36",
+          "option": "36 in."
+        },
+        {
+          "sku": "PB-42",
+          "option": "42 in."
+        }
+      ]
+    },
+    {
+      "slug": "pro-8-m28-b",
+      "sku": "PRO-8-M28-B",
+      "name": "Pro-Bar Maul Set",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "30\" Pro-Bar, 28\" 8 lb sledge with adz bracket, clips & reflective shoulder strap.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pro-8-m28-b.webp"
+      ]
+    },
+    {
+      "slug": "pro-smg-8-b",
+      "sku": "PRO-SMG-8-B",
+      "name": "Pro-Bar Splitting Maul Set",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "30\" Pro-Bar, 28\" 8 lb splitting maul with adz bracket, clips & strap.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pro-smg-8-b.webp"
+      ]
+    },
+    {
+      "slug": "dyn-duo",
+      "sku": "DYN-DUO",
+      "name": "Dynamic Duo",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "Maxximus with LockSlot 8.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-dyn-duo.webp"
+      ]
+    },
+    {
+      "slug": "dyn-duo-mod",
+      "sku": "DYN-DUO-MOD",
+      "name": "Dynamic Duo Mod",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "Maxximus mod with LockSlot 8.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-dyn-duo-mod.webp"
+      ]
+    },
+    {
+      "slug": "dt-3",
+      "sku": "DT-3",
+      "name": "Dynamic Trio",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "30\" Pro-Bar, 8 lb force axe, marrying strap.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-dt-3.webp"
+      ]
+    },
+    {
+      "slug": "df-4",
+      "sku": "DF-4",
+      "name": "Dynamic Foursome",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "30\" Pro-Bar, 8 lb force axe, marrying strap, K-Tool kit.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-df-4.webp"
+      ]
+    },
+    {
+      "slug": "roof-duo",
+      "sku": "ROOF-DUO",
+      "name": "Roof Duo",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "24\" mini modified Maxximus with 1 ring, 32\" Maxx-Axe on black handle (MA32B)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-roof-duo.webp"
+      ]
+    },
+    {
+      "slug": "promx",
+      "sku": "PROMX",
+      "name": "ProMaxx 24\" Set",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "24\" Pro-Bar & 26\" FireMaxx with 2 yellow glove holder straps & reflective shoulder strap to marry the pair.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-promx.webp"
+      ]
+    },
+    {
+      "slug": "dyn-duo-rex",
+      "sku": "DYN-DUO-REX",
+      "name": "Dynamic Duo REX",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "Maxximus REX with lockpuller adz & LockSlot 8. Not for gapping doors.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "mightymx2",
+      "sku": "MIGHTYMX2",
+      "name": "Mighty Max II Set",
+      "category": "irons",
+      "group": "Halligan and irons sets",
+      "summary": "30\" Maxximus-II, 6 lb LockSlot axe on plain black handle.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "hr-1",
+      "sku": "HR-1",
+      "name": "Hydra Ram I",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "One person 11 lb hydraulic forcible entry tool with 4\" max thrust opening at 10,000 lb of force. Includes carrying case and rubber mallet.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hr-1.webp"
+      ]
+    },
+    {
+      "slug": "hr-2",
+      "sku": "HR-2",
+      "name": "Hydra Ram II",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "One person 13 lb hydraulic forcible entry tool with 6\" max thrust opening at 10,000 lb of force. Includes carrying case and rubber mallet.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hr-2.webp"
+      ]
+    },
+    {
+      "slug": "wedge-al",
+      "sku": "WEDGE-AL",
+      "name": "Aluminum Wedge",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Aluminum wedge made from 6061 aluminum with bungee.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-wedge-al.webp"
+      ]
+    },
+    {
+      "slug": "firemx26",
+      "sku": "FIREMX26",
+      "name": "26\" FireMaxx",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "One piece drop forged 14-in-1 multi-tool.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-firemx26.webp"
+      ]
+    },
+    {
+      "slug": "hmax",
+      "sku": "HMAX",
+      "name": "26\" HammerMaxx",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "One piece drop forged 14-in-1 multi-tool with sledge head welded.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hmax.webp"
+      ]
+    },
+    {
+      "slug": "jake-rake",
+      "sku": "JAKE RAKE",
+      "name": "44\" Jake Rake",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Halligan head on one end, Boston rake on the other. Aircraft steel handle with Celtex grip 44\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-jake-rake.webp"
+      ]
+    },
+    {
+      "slug": "nwk-44",
+      "sku": "NWK-44",
+      "name": "Newark 44",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "44\" combination forcible entry and overhaul tool. Pro-Bar head on one end, NY roof hook on the other. 2 rings and strap. 3 piece welded. For light to medium duty forcible entry needs.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-nwk-44.webp"
+      ]
+    },
+    {
+      "slug": "in-forcer",
+      "sku": "IN-FORCER",
+      "name": "Inforcer Bar",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "30\" sledge head with REX lock puller and a fork end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-in-forcer.webp"
+      ]
+    },
+    {
+      "slug": "kelly-maul",
+      "sku": "KELLY-MAUL",
+      "name": "Kelly Maul",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "36\" Kelly head with welded sledge hammer head set on tactical black fiberglass handle.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-kelly-maul.webp"
+      ]
+    },
+    {
+      "slug": "buster",
+      "sku": "BUSTER",
+      "name": "Buster",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "4 lb sledge head, REX lock puller with Celtex grip and gas shutoff. 18\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-buster.webp"
+      ]
+    },
+    {
+      "slug": "buster-mod",
+      "sku": "BUSTER MOD",
+      "name": "Buster Modification",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "4 lb sledge head, REX lock puller with Celtex grip, ring, and fork end. 18\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-buster-mod.webp"
+      ]
+    },
+    {
+      "slug": "all-axx",
+      "sku": "ALL-AXX",
+      "name": "All-Axx",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "11 lb steel handle, 6 lb pickhead, Halligan fork. Celtex grips on red painted steel shaft.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-all-axx.webp"
+      ]
+    },
+    {
+      "slug": "ulb-1",
+      "sku": "ULB-1",
+      "name": "Unlimited Padlock Breaker (duckbill)",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Used for breaking padlocks. Save the jaws on your bolt cutters and use this to shock the shackle open.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ulb-1.webp"
+      ]
+    },
+    {
+      "slug": "brs-28",
+      "sku": "BRS-28",
+      "name": "Barracuda Rescue Saw",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Rescue saw capable of cutting windshields, tin roof, trailers, ice, and other building materials.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-brs-28.webp"
+      ]
+    },
+    {
+      "slug": "bolt-cutter",
+      "name": "Bolt Cutter",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "18\" bolt cutter with Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-bolt-cutter.webp"
+      ],
+      "variants": [
+        {
+          "sku": "BC-18",
+          "option": "18 in."
+        },
+        {
+          "sku": "BC-24",
+          "option": "24 in."
+        },
+        {
+          "sku": "BC-36",
+          "option": "36 in."
+        }
+      ]
+    },
+    {
+      "slug": "non-conductive-bolt-cutter",
+      "name": "Non-Conductive Bolt Cutter",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Like our regular bolt cutters, but with yellow fiberglass handles for added electrical resistance and Celtex grips. Fiberglass handles can withstand 25,000 volts per square inch *. This is not a guarantee. As always take extra caution when working around electricity.*.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-non-conductive-bolt-cutter.webp"
+      ],
+      "variants": [
+        {
+          "sku": "NCBC-18",
+          "option": "18 in."
+        },
+        {
+          "sku": "NCBC-24",
+          "option": "24 in."
+        },
+        {
+          "sku": "NCBC-36",
+          "option": "36 in."
+        }
+      ]
+    },
+    {
+      "slug": "cable-cutter",
+      "name": "Cable Cutter",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "7/8\" jaw capacity, 10\" handle, great for battery terminals and small, cable and wires.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-cable-cutter.webp"
+      ],
+      "variants": [
+        {
+          "sku": "CC-10",
+          "option": "10 in."
+        },
+        {
+          "sku": "CC-28",
+          "option": "28 in. 1 1/4\" jaw capacity, 28\" handles, Celtex grips."
+        }
+      ]
+    },
+    {
+      "slug": "hexbar-28",
+      "sku": "HEXBAR-28",
+      "name": "Hex Bar",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "28\" unbreakable striking tool with 8 lb sledge head complete with adz bracket and gunbarrel steel shaft. Approx. 12 lb.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hexbar-28.webp"
+      ]
+    },
+    {
+      "slug": "nccc-28",
+      "sku": "NCCC-28",
+      "name": "Non-Conductive Cable Cutter 28\"",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Same as above just with fiberglass handles & Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-nccc-28.webp"
+      ]
+    },
+    {
+      "slug": "hplb",
+      "sku": "HPLB",
+      "name": "Hockey Puck Lock Breaker",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "36\" pipe wrench with Celtex grips for extended leverage.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hplb.webp"
+      ]
+    },
+    {
+      "slug": "cb-51",
+      "sku": "CB-51",
+      "name": "Crow Bar",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Pinch point only 51\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-cb-51.webp"
+      ]
+    },
+    {
+      "slug": "htd",
+      "sku": "HTD",
+      "name": "Hold the Door",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Approx. 44\" OAL 31\" cable.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-htd.webp"
+      ]
+    },
+    {
+      "slug": "ram-1",
+      "sku": "RAM-1",
+      "name": "One-Man Battering Ram",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "One man 30\" long with cable handles approx. 40 lb.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ram-1.webp"
+      ]
+    },
+    {
+      "slug": "kayo",
+      "sku": "KAYO",
+      "name": "Two-Man Battering Ram",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "One or two man 30\" long with cable handles approx. 40 lb.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-kayo.webp"
+      ]
+    },
+    {
+      "slug": "stinger",
+      "sku": "STINGER",
+      "name": "The Stinger",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "All steel battering ram 30\" overall length. Also available in 24\"",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-stinger.webp"
+      ]
+    },
+    {
+      "slug": "hrb",
+      "sku": "HRB",
+      "name": "Replacement Bag For Hydra Rams",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Specify HRB-1 or HRB-2 depending on what unit you have.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "nwk-44gbs",
+      "sku": "NWK-44GBS",
+      "name": "Newark 44 with Gunbarrel Steel",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "44\" combination forcible entry and overhaul tool. Pro-Bar head on one end, NY roof hook on the other. 2 rings and strap. 3 piece welded. Order this part# if you plan to use for heavy duty forcible entry.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "nipper",
+      "sku": "NIPPER",
+      "name": "Nipper",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "7\" long. Easy to carry in your pocket.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "vb",
+      "sku": "VB",
+      "name": "Vunder Bar",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "15\" utility prybar.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "gnpb-36",
+      "sku": "GNPB-36",
+      "name": "Goose Neck Pinch Bar",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Standard drop-forged goose neck crowbar 36\" OAL with Celtex grips. Can be ordered without grips.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "hingeh",
+      "sku": "HINGEH",
+      "name": "Hinge Hook",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Used to prop door open by hinges after gaining access.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "htpl",
+      "sku": "HTPL",
+      "name": "Hold the Padlock",
+      "category": "forcible-entry",
+      "group": "Forcible entry tools",
+      "summary": "Approx. 31\" OAL 18\" cable.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "rext",
+      "sku": "REXT",
+      "name": "REX Tool",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "The REX tool is a new style U-shaped lock puller. 24\" OAL complete with allen key, kerry key, and shove knife, Celtex grip and a chisel end. One of FHU's best sellers and used by FDNY.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-rext.webp"
+      ]
+    },
+    {
+      "slug": "sdrex",
+      "sku": "SDREX",
+      "name": "S&D REX",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Combination of truckman's tool and REX tool.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-sdrex.webp"
+      ]
+    },
+    {
+      "slug": "ktkit",
+      "sku": "KTKIT",
+      "name": "K-Tool Kit",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "K-Tool, leather pouch, 2 lock key tools, shove knife, & instructions. Fits 2\" adz.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ktkit.webp"
+      ]
+    },
+    {
+      "slug": "rtk",
+      "sku": "RTK",
+      "name": "R-Tool Kit",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "The R-Tool is designed to pull all types of lock cylinders too big for the K-Tool. The R-Tool kit consists of the R-Tool, leather pouch with carry strap, set of lock tool keys and a shove knife. Fits 2 3/4\" adz.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-rtk.webp"
+      ]
+    },
+    {
+      "slug": "lilrexadz",
+      "sku": "LILREXADZ",
+      "name": "Lil REX Adz",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Pocket, shoulder, waist carry with leather sheath and strap. Adz bracket for Halligan.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-lilrexadz.webp"
+      ]
+    },
+    {
+      "slug": "lilrextube",
+      "sku": "LILREXTUBE",
+      "name": "Lil REX Tube",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Pocket, shoulder, waist carry with leather sheath and strap. Spike tube for Halligan.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-lilrextube.webp"
+      ]
+    },
+    {
+      "slug": "sk-1",
+      "sku": "SK-1",
+      "name": "Shove Knife",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "6\" in length. Used to trip the spring latch on inward/outward doors.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-sk-1.webp"
+      ]
+    },
+    {
+      "slug": "j-hook",
+      "sku": "J-HOOK",
+      "name": "J Hook",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Opens double panic doors found in schools, stores, places of assembly.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-j-hook.webp"
+      ]
+    },
+    {
+      "slug": "sl-30",
+      "sku": "SL-30",
+      "name": "Unlimited Slip Lock",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Automotive unlocking tool for older model vehicles.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-sl-30.webp"
+      ]
+    },
+    {
+      "slug": "eks-12",
+      "sku": "EKS-12",
+      "name": "Elevator Key Set",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Manufactured to conform to most elevator manufacturer's access keys. Includes: volt resistant key, swing door access key, rib T-style key, vandal proof access key, large half moon key, small half moon key, adjustable single drop key, side exit key, \"z\"",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-eks-12.webp"
+      ]
+    },
+    {
+      "slug": "ark",
+      "sku": "ARK",
+      "name": "Auto Rescue Kit",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Includes kerry key, spring loaded center punch, shove knife and seatbelt cutter on a large ring.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ark.webp"
+      ]
+    },
+    {
+      "slug": "pdek",
+      "sku": "PDEK",
+      "name": "Pocket Door Elevator Key",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Designed to open new pocket doors.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pdek.webp"
+      ]
+    },
+    {
+      "slug": "pdek-set",
+      "sku": "PDEK-SET",
+      "name": "Pocket Door Elevator Key Set",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Pocket door elevator key with 3 additional wire keys 1/4\" diameter.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pdek-set.webp"
+      ]
+    },
+    {
+      "slug": "dd-key",
+      "sku": "DD-KEY",
+      "name": "Double Drop Key",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Double drop elevator key. Stainless steel 3/8\" diameter.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-dd-key.webp"
+      ]
+    },
+    {
+      "slug": "td-key",
+      "sku": "TD-KEY",
+      "name": "Triple Drop Key",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Triple drop elevator key. Stainless steel 5/16\" diameter.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-td-key.webp"
+      ]
+    },
+    {
+      "slug": "fek",
+      "sku": "FEK",
+      "name": "Freight Elevator Key",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Freight elevator key.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fek.webp"
+      ]
+    },
+    {
+      "slug": "ktpouch",
+      "sku": "KTPOUCH",
+      "name": "Replacement K-Tool Pouch",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Replacement leather pouch.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ktblades",
+      "sku": "KTBLADES",
+      "name": "Replacement K-Tool Blades",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Replacement blades with screws.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ktkeytools2",
+      "sku": "KTKEYTOOLS2",
+      "name": "Replacement Key Tools (set Of 2)",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Allen key, flat silver L-key.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ktonly",
+      "sku": "KTONLY",
+      "name": "Replacement K-Tool",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "K-Tool only.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "rtp",
+      "sku": "RTP",
+      "name": "Replacement R-Tool Pouch",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Replacement black leather pouch.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "rtblades",
+      "sku": "RTBLADES",
+      "name": "Replacement R-Tool Blades",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Replacement blades with screws.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "kk-7",
+      "sku": "KK-7",
+      "name": "Kerry Key",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Used to manipulate locking mechanism.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "eks-keyonly",
+      "sku": "EKS-KEYONLY",
+      "name": "Replacement Keys For Elevator Set",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Use part# EKS-KEY-ONLY-1 thru 10.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "wire-pdek",
+      "sku": "WIRE PDEK",
+      "name": "Pocket Door Elevator Wire Key Set",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Set of 3 wire keys. 1/8\" diameter.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "sd-key",
+      "sku": "SD-KEY",
+      "name": "Single Drop Key",
+      "category": "forcible-entry",
+      "group": "Through-the-lock tools and keys",
+      "summary": "Single drop elevator key. Zinc plated, 3/8\" diameter.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "lpb-12",
+      "sku": "LPB-12",
+      "name": "Lil Pro-Bar",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "12\" mini Pro-Bar designed for the individual firefighter. A perfect truckie tool.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-lpb-12.webp"
+      ]
+    },
+    {
+      "slug": "otk-16",
+      "sku": "OTK-16",
+      "name": "Officer's Tool Kit (aka A-Tool)",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "16\" officer tool with grip, shove knife,kerry key and a chisel end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-otk-16.webp"
+      ]
+    },
+    {
+      "slug": "mini-pro-bar",
+      "name": "Mini Pro-Bar",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "A-type lockpuller on adz end, gas shutoff on fork end, diamond-knurled grip 16\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mini-pro-bar.webp"
+      ],
+      "variants": [
+        {
+          "sku": "MPB-16",
+          "option": "16 in."
+        },
+        {
+          "sku": "MPB-20",
+          "option": "20 in. A-type lockpuller on adz end, gas shutoff on fork end, diamond-knurled grip 20\" OAL. One of FHU's best sellers."
+        }
+      ]
+    },
+    {
+      "slug": "mini-pro-bar-kit",
+      "name": "Mini Pro-Bar Kit",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "Same as above plus Celtex grip, shove knife, and kerry key stored in grip 16\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mini-pro-bar-kit.webp"
+      ],
+      "variants": [
+        {
+          "sku": "MPBK-16",
+          "option": "16 in."
+        },
+        {
+          "sku": "MPBK-20",
+          "option": "20 in."
+        }
+      ]
+    },
+    {
+      "slug": "truckman-s-tool",
+      "name": "Truckman's Tool",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "2.5 lb with diamond knurled grip, A-type lockpuller on adz end, gas shutoff on fork end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-truckman-s-tool.webp"
+      ],
+      "variants": [
+        {
+          "sku": "TT-12",
+          "option": "12 in."
+        },
+        {
+          "sku": "TT-16",
+          "option": "16 in."
+        }
+      ]
+    },
+    {
+      "slug": "obk-16",
+      "sku": "OBK-16",
+      "name": "O-Bar Kit",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "Just like the OTK-16, but comes with Halligan spike on adz end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-obk-16.webp"
+      ]
+    },
+    {
+      "slug": "prorx24",
+      "sku": "PRORX24",
+      "name": "Pro REX 24\"",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "24\" officer tool with a REX head, steel tubular shaft with Celtex grip, and Pro-Bar forks oriented like a Kelly tool.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-prorx24.webp"
+      ]
+    },
+    {
+      "slug": "jrodrex",
+      "sku": "JRODREX",
+      "name": "J-Rod REX",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "Modified version of REX tool, but with spike, mini fork, ring, kerry key & shove knife.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-jrodrex.webp"
+      ]
+    },
+    {
+      "slug": "ofh-17",
+      "sku": "OFH-17",
+      "name": "Officer's Hook",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "Roof hook head on a 17\" steel shaft with gas shutoff end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ofh-17.webp"
+      ]
+    },
+    {
+      "slug": "ch-24",
+      "sku": "CH-24",
+      "name": "Captain's Hook",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "24\" roof hook complete with Celtex grip and chisel end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ch-24.webp"
+      ]
+    },
+    {
+      "slug": "ot-16",
+      "sku": "OT-16",
+      "name": "Officer Tool (o-Tool)",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "16\" officer tool only, no grip or accessories A-type lockpuller with chisel end.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ob-16",
+      "sku": "OB-16",
+      "name": "O-Bar Only",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "Just like the OT-16, but comes with Halligan spike on adz end.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "short-rex",
+      "sku": "SHORT REX",
+      "name": "Short REX",
+      "category": "forcible-entry",
+      "group": "Officer's tools",
+      "summary": "Same as REX tool, but on a 16.5\" shaft, comes with shove knife, short kerry key, & allen key.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "8-m28-b",
+      "sku": "8-M28-B",
+      "name": "The Eight Maul with Adz Bracket",
+      "category": "forcible-entry",
+      "group": "Sledgehammers and mauls",
+      "summary": "With adz bracket. 8 lb sledge head on 28\" handle with Celtex grips. Will fit any truckman's belt.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-8-m28-b.webp"
+      ]
+    },
+    {
+      "slug": "8-m28",
+      "sku": "8-M28",
+      "name": "The Eight Maul",
+      "category": "forcible-entry",
+      "group": "Sledgehammers and mauls",
+      "summary": "No adz bracket. 8 lb sledge head on 28\" handle with Celtex grips. Will fit any truckman's belt.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-8-m28.webp"
+      ]
+    },
+    {
+      "slug": "fiberglass-sledgehammer",
+      "name": "Fiberglass Sledgehammer",
+      "category": "forcible-entry",
+      "group": "Sledgehammers and mauls",
+      "summary": "Yellow or tactical black. Specify when ordering 34\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fiberglass-sledgehammer.webp"
+      ],
+      "variants": [
+        {
+          "sku": "SHF-8",
+          "option": "8 lb"
+        },
+        {
+          "sku": "SHF-10",
+          "option": "10 lb"
+        }
+      ]
+    },
+    {
+      "slug": "wood-sledgehammer",
+      "name": "Wood Sledgehammer",
+      "category": "forcible-entry",
+      "group": "Sledgehammers and mauls",
+      "summary": "34\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-wood-sledgehammer.webp"
+      ],
+      "variants": [
+        {
+          "sku": "SHW-8",
+          "option": "8 lb"
+        },
+        {
+          "sku": "SHW-10",
+          "option": "10 lb"
+        }
+      ]
+    },
+    {
+      "slug": "8-lb-splitting-maul",
+      "name": "8 lb Splitting Maul",
+      "category": "forcible-entry",
+      "group": "Sledgehammers and mauls",
+      "summary": "8 lb splitting maul on 34\" fiberglass handle",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-8-lb-splitting-maul.webp"
+      ],
+      "variants": [
+        {
+          "sku": "SMF-8",
+          "option": "8 lb splitting maul on 34\" fiberglass handle"
+        },
+        {
+          "sku": "8-SMG-28-B",
+          "option": "8 lb splitting maul on 28\" fiberglass handle with Celtex grips & adz bracket"
+        }
+      ]
+    },
+    {
+      "slug": "ham-3",
+      "sku": "HAM-3",
+      "name": "The Hammer-3",
+      "category": "forcible-entry",
+      "group": "Sledgehammers and mauls",
+      "summary": "3 lb sledgehammer on 12\" fiberglass handle with Celtex grip.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ham-3.webp"
+      ]
+    },
+    {
+      "slug": "blmx",
+      "sku": "BLMX",
+      "name": "The BlackMaxx",
+      "category": "forcible-entry",
+      "group": "Sledgehammers and mauls",
+      "summary": "8.5 lb striking head with sledge face & pointed spike. Great for roof work.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-blmx.webp"
+      ]
+    },
+    {
+      "slug": "adz-hammer",
+      "name": "Adz Hammer",
+      "category": "forcible-entry",
+      "group": "Sledgehammers and mauls",
+      "summary": "3 lb sledge head on 17\" handle with chisel end, Celtex grip & 2\" adz bracket.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "ADZ-HAM3",
+          "option": "3 lb"
+        },
+        {
+          "sku": "ADZ-HAM4",
+          "option": "4 lb"
+        }
+      ]
+    },
+    {
+      "slug": "lockslot",
+      "name": "LockSlot",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "8 lb zinc-plated flathead axe with LockSlot on yellow fiberglass handle with overstrike. 36\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-lockslot.webp"
+      ],
+      "variants": [
+        {
+          "sku": "LS-8",
+          "option": "8 lb"
+        },
+        {
+          "sku": "LS-6B",
+          "option": "6 lb. 6 lb zinc-plated flathead axe with LockSlot on black fiberglass handle with overstrike. 36\" OAL."
+        }
+      ]
+    },
+    {
+      "slug": "8-lb-force-axe",
+      "name": "8 lb Force Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "8 lb flathead axe on yellow fiberglass handle. 36\"OAL",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-8-lb-force-axe.webp"
+      ],
+      "variants": [
+        {
+          "sku": "FA-8",
+          "option": "8 lb flathead axe on yellow fiberglass handle. 36\"OAL"
+        },
+        {
+          "sku": "WA-8",
+          "option": "8 lb flathead axe on hickory wood handle. 36\" OAL"
+        }
+      ]
+    },
+    {
+      "slug": "8-lb-pickhead-axe",
+      "name": "8 lb Pickhead Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "8 lb pickhead axe on yellow fiberglass handle. 36\" OAL",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-8-lb-pickhead-axe.webp"
+      ],
+      "variants": [
+        {
+          "sku": "FAP-8",
+          "option": "8 lb pickhead axe on yellow fiberglass handle. 36\" OAL"
+        },
+        {
+          "sku": "WAP-8",
+          "option": "8 lb pickhead axe on hickory wood handle. 36\" OAL"
+        }
+      ]
+    },
+    {
+      "slug": "6-lb-flathead-axe",
+      "name": "6 lb Flathead Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "6 lb flathead axe on yellow fiberglass handle. 36\" OAL \"dayton\" style head",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-6-lb-flathead-axe.webp"
+      ],
+      "variants": [
+        {
+          "sku": "FA-6",
+          "option": "6 lb flathead axe on yellow fiberglass handle. 36\" OAL \"dayton\" style head"
+        },
+        {
+          "sku": "WA-6",
+          "option": "6 lb flathead axe on hickory wood handle. 36\" OAL"
+        }
+      ]
+    },
+    {
+      "slug": "wpa",
+      "sku": "WPA",
+      "name": "Parade Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "4 lb polished aluminum axe head on a hickory wood handle. 36\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-wpa.webp"
+      ]
+    },
+    {
+      "slug": "aa-8",
+      "sku": "AA-8",
+      "name": "Adz Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "8 lb force axe with adz bracket on a 32\" yellow fiberglass handle.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-aa-8.webp"
+      ]
+    },
+    {
+      "slug": "tr-28",
+      "sku": "TR-28",
+      "name": "Pickhead Truckman's Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "6 lb pickhead on yellow fiberglass handle with Celtex grip. 28\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-tr-28.webp"
+      ]
+    },
+    {
+      "slug": "lls-8",
+      "sku": "LLS-8",
+      "name": "8 lb Luminous LockSlot",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "8 lb LockSlot head on luminous fiberglass handle. 36\" OAL. One of FHU's best sellers.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-lls-8.webp"
+      ]
+    },
+    {
+      "slug": "6-lb-pickhead-axe",
+      "name": "6 lb Pickhead Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "6 lb pickhead axe on yellow fiberglass handle. 36\" OAL",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-6-lb-pickhead-axe.webp"
+      ],
+      "variants": [
+        {
+          "sku": "FAP-6",
+          "option": "6 lb pickhead axe on yellow fiberglass handle. 36\" OAL"
+        },
+        {
+          "sku": "WAP-6",
+          "option": "6 lb pickhead axe on hickory wood handle. 36\" OAL"
+        }
+      ]
+    },
+    {
+      "slug": "6-lb-chrome-working-axe",
+      "name": "6 lb Chrome Working Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "6 lb chrome-plated pickhead axe on hickory wood handle. 36\" OAL",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-6-lb-chrome-working-axe.webp"
+      ],
+      "variants": [
+        {
+          "sku": "CPA-6W",
+          "option": "6 lb chrome-plated pickhead axe on hickory wood handle. 36\" OAL"
+        },
+        {
+          "sku": "CPA-6F",
+          "option": "6 lb chrome-plated pickhead axe on yellow fiberglass handle. 36\" OAL"
+        }
+      ]
+    },
+    {
+      "slug": "maxx-axe",
+      "name": "Maxx-Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "Combo axe and sledge head on 28\" black handle with overstrike. 32\" OAL",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-maxx-axe.webp"
+      ],
+      "variants": [
+        {
+          "sku": "MA32B",
+          "option": "Combo axe and sledge head on 28\" black handle with overstrike. 32\" OAL"
+        },
+        {
+          "sku": "MA36B",
+          "option": "Combo axe and sledge head on 34\" black handle with overstrike. 36\" OAL"
+        },
+        {
+          "sku": "MA32Y",
+          "option": "Combo axe and sledge head on 28\" plain yellow fiberglass handle with deer hook. 36\" OAL"
+        },
+        {
+          "sku": "MA36Y",
+          "option": "Combo axe and sledge head on 34\" yellow fiberglass handle with overstrike. 36\" OAL"
+        }
+      ]
+    },
+    {
+      "slug": "pul-axe",
+      "sku": "PUL-AXE",
+      "name": "Pulaski Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "Pulaski axe on 36\" yellow double bit fiberglass handle.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pul-axe.webp"
+      ]
+    },
+    {
+      "slug": "firemx-sh",
+      "sku": "FIREMX SH",
+      "name": "FireMaxx Sheath",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "For FIREMX26.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-firemx-sh.webp"
+      ]
+    },
+    {
+      "slug": "fap6-8-sheath-sw",
+      "sku": "FAP6-8 SHEATH SW",
+      "name": "Pickaxe Swivel Sheath",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "Fits 6 or 8 lb pickhead axes.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fap6-8-sheath-sw.webp"
+      ]
+    },
+    {
+      "slug": "fa-sheath-sw",
+      "sku": "FA SHEATH SW",
+      "name": "Flathead Swivel Sheath",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "Fits 6 or 8 lb flathead axes.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fa-sheath-sw.webp"
+      ]
+    },
+    {
+      "slug": "taxsb",
+      "sku": "TAXSB",
+      "name": "Taxe Sheath",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "Fits, TAXE, 3 lb heads, FireMaxx, comes with quick release belt.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-taxsb.webp"
+      ]
+    },
+    {
+      "slug": "bfa-6",
+      "sku": "BFA-6",
+      "name": "Boston Flat Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "6 lb flathead on Boston style yellow handle with deer hoof. 36\" OAL.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "bfap-6",
+      "sku": "BFAP-6",
+      "name": "Boston Pick Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "6 lb pickhead on Boston style yellow handle with deer hoof. 36\" OAL.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "fhg-28",
+      "sku": "FHG-28",
+      "name": "Flathead Truckman's Axe",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "6 lb flathead on yellow fiberglass handle with cletex grip. 28\" OAL.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "lfa-6",
+      "sku": "LFA-6",
+      "name": "6 lb Luminous Flathead",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "6 lb flathead on luminous fiberglass handle. 36\" OAL.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "lpa-6",
+      "sku": "LPA-6",
+      "name": "6 lb Luminous Pickhead",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "6 lb pickhead on luminous fiberglass handle. 36\" OAL.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "lpa-8",
+      "sku": "LPA-8",
+      "name": "8 lb Luminous Pickhead",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "8 lb pickhead on luminous fiberglass handle. 36\" OAL.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "axe-cap",
+      "sku": "AXE CAP",
+      "name": "Axe Cap",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "Red protective cover for pickhead axes.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "fap6-8-sheath-fx",
+      "sku": "FAP6-8 SHEATH FX",
+      "name": "Pickaxe Fixed Sheath",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "Fits 6 or 8LB.PICKHEAD axes.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "fa-sheath-fx",
+      "sku": "FA SHEATH FX",
+      "name": "Flathead Fixed Sheath",
+      "category": "axes",
+      "group": "Axes and sheaths",
+      "summary": "Fits 6 or 8 lb flathead axes.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "hook-options-add-ons",
+      "name": "Hook Options & Add-Ons",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Add these to a hook when you order it. Ask if you are not sure which option fits.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hook-options-add-ons.webp"
+      ],
+      "variants": [
+        {
+          "sku": "W/D",
+          "option": "D-Handle - Add a D-handle to any hook"
+        },
+        {
+          "sku": "W/R",
+          "option": "Ring - Add a ring to any steel hook on the chisel end"
+        },
+        {
+          "sku": "W/2R",
+          "option": "Rings - Add 2 rings to any steel hook (1 on chisel end, one closer to head)"
+        },
+        {
+          "sku": "2 RINGS/STRAP",
+          "option": "2 Rings & Strap - Add 2 rings and a shoulder strap to any steel hook"
+        },
+        {
+          "sku": "W/ CHISEL END",
+          "option": "Pry/Chisel End - Change end to chisel end on any fiberglass hook"
+        },
+        {
+          "sku": "W/ RAMKNOB",
+          "option": "Ramknob - Change end to ramknob on any fiberglass hook"
+        },
+        {
+          "sku": "W/ GSO",
+          "option": "Gas Shutoff - Change end to gas shutoff on any fiberglass hook"
+        }
+      ]
+    },
+    {
+      "slug": "roof-hook",
+      "name": "Roof Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "1\" dia. Aircraft steel with standard chisel (pry) end & fire-retardant Celtex grips (also available in fiberglass, must request) GSO or ramknob no extra charge on rh model. Our most popular hook currently in use by FDNY.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-roof-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "RH-3",
+          "option": "3 ft"
+        },
+        {
+          "sku": "RH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "RH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "RH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "RH-7.5",
+          "option": "7.5 ft"
+        },
+        {
+          "sku": "RH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "RH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "RH-12",
+          "option": "12 ft. 12' not available in steel."
+        }
+      ]
+    },
+    {
+      "slug": "gh-36",
+      "sku": "GH-36",
+      "name": "Griff Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "3' NY roof hook head on 1\" steel dia. Shaft with Celtex grips, 2 rings & reflective shoulder strap. Great personal tool.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-gh-36.webp"
+      ]
+    },
+    {
+      "slug": "tal",
+      "sku": "TAL",
+      "name": "Talon Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "New York roof hook head with Pro-Bar fork on 1\" dia steel shaft. Any size from 2'-8' (must specify)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-tal.webp"
+      ]
+    },
+    {
+      "slug": "talf",
+      "sku": "TALF",
+      "name": "Talon Hook Fiberglass",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "New York roof hook head with Pro-Bar fork on 1\" dia fiberglass shaft. Any size from 2'-8' (must specify)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-talf.webp"
+      ]
+    },
+    {
+      "slug": "colorado",
+      "sku": "COLORADO-[size]",
+      "name": "Colorado Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "NY roof hook & 5/8\" trash hook ends. 4'-8' must specify size.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-colorado.webp"
+      ]
+    },
+    {
+      "slug": "sounding-ball-roof-hook",
+      "name": "Sounding Ball Roof Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "5' steel roof hook with sounding ball end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-sounding-ball-roof-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "SBRH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "SBRH-6",
+          "option": "6 ft"
+        }
+      ]
+    },
+    {
+      "slug": "sounding-ball-boston-rake-hook",
+      "name": "Sounding Ball Boston Rake Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "5' steel Boston rake hook with sounding ball end.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "SBRST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "SBRST-6",
+          "option": "6 ft"
+        }
+      ]
+    },
+    {
+      "slug": "adz-hook",
+      "name": "Adz Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "4' steel NY roof hook with adz end.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "ADZST-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "ADZST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "ADZST-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "ADZST-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "ADZST-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "georgia",
+      "sku": "GEORGIA-[size]",
+      "name": "Georgia Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "NY roof hook & drywall ends. 4'-8' must specify size.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-georgia.webp"
+      ]
+    },
+    {
+      "slug": "tristate",
+      "sku": "TRISTATE-[size]",
+      "name": "Tristate Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "NY roof hook & Boston rake ends. 4'-8' must specify size.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-tristate.webp"
+      ]
+    },
+    {
+      "slug": "denver",
+      "sku": "DENVER-[size]",
+      "name": "Denver Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "NY roof hook & gatorback ends. 4'-8' must specify size.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-denver.webp"
+      ]
+    },
+    {
+      "slug": "eagle",
+      "sku": "EAGLE-[size]",
+      "name": "Eagle Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Boston rake & universal ends. 4'-8' must specify size.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-eagle.webp"
+      ]
+    },
+    {
+      "slug": "pompier-hook",
+      "name": "Pompier Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "6.5 ft pompier hook with 2 rungs. NY roof hook & modified trash hook.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "POMPHOOK-6.5",
+          "option": "6.5 ft"
+        },
+        {
+          "sku": "POMPHOOK-7.5",
+          "option": "7.5 ft. 7.5 ft pompier hook with 3 rungs. NY roof hook & modified trash hook."
+        }
+      ]
+    },
+    {
+      "slug": "all-purpose-hook",
+      "name": "All Purpose Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "The specified all purpose hook of the FDNY. 1\" solid fiberglass, stainless wear sleeve, Celtex grip, and gas shutoff with directional slot. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d. If steel version is required, use part# rh for the roof hook models.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-all-purpose-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "APH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "APH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "APH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "APH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "APH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "APH-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "APH-14",
+          "option": "14 ft. Extra fiberglass for added rigidity."
+        },
+        {
+          "sku": "APH-32 W/D",
+          "option": "32 in. with D-handle. Extra fiberglass for added rigidity."
+        },
+        {
+          "sku": "APH-40 W/D",
+          "option": "40 in. with D-handle. Extra fiberglass for added rigidity."
+        }
+      ]
+    },
+    {
+      "slug": "multi-purpose-hook",
+      "name": "Multi Purpose Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "1\" solid fiberglass, all purpose head, stainless wear sleeve, gas shutoff with directional slot. No Celtex grips. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "MPH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "MPH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "MPH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "MPH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "MPH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "MPH-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "MPH-14",
+          "option": "14 ft. Extra fiberglass for added rigidity."
+        },
+        {
+          "sku": "MPH-32 W/D",
+          "option": "32 in. with D-handle. Extra fiberglass for added rigidity."
+        },
+        {
+          "sku": "MPH-40 W/D",
+          "option": "40 in. with D-handle. Extra fiberglass for added rigidity."
+        }
+      ]
+    },
+    {
+      "slug": "drywall-hook",
+      "name": "Drywall Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "1\" solid fiberglass, drywall head welded to stainless wear sleeve, gas shutoff with directional slot. Celtex grips. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-drywall-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "DWHS-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "DWHS-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "DWHS-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "DWHS-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "DWHS-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "DWHS-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "DWHS-14",
+          "option": "14 ft. Extra fiberglass for added rigidity."
+        },
+        {
+          "sku": "DWHS-32 W/D",
+          "option": "32 in. with D-handle. Extra fiberglass for added rigidity."
+        },
+        {
+          "sku": "DWHS-40 W/D",
+          "option": "40 in. with D-handle. Extra fiberglass for added rigidity."
+        }
+      ]
+    },
+    {
+      "slug": "drywall-hook-steel",
+      "name": "Drywall Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Steel drywall hook with chisel end & Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "DWST-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "DWST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "DWST-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "DWST-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "DWST-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "sheetrock-hook",
+      "name": "Sheetrock Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "1 1/4\" solid white ash handle.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "SRH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "SRH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "SRH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "SRH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "SRH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "SRH-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "SRH-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "SRH-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "SRH-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "sheetrock-hook-fiberglass",
+      "name": "Sheetrock Hook Fiberglass",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "1 1/4\" fiberglass handle with white ash core.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "SRF-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "SRF-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "SRF-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "SRF-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "SRF-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "SRF-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "SRF-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "SRF-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "SRF-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "sheetrock-hook-fiberglass-super",
+      "name": "Sheetrock Hook Fiberglass Super",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "1 1/4\" fiberglass handle with white ash core & Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "SRFS-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "SRFS-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "SRFS-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "SRFS-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "SRFS-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "SRFS-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "SRFS-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "SRFS-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "SRFS-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "new-yorker",
+      "name": "New Yorker",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "New Yorker pike pole head. 1 3/8\" diameter solid white ash wood handle tapered to 1 1/4\"",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "NY-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "NY-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "NY-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "NY-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "NY-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "NY-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "NY-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "NY-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "new-yorker-fiberglass",
+      "name": "New Yorker Fiberglass",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "New Yorker pike pole head on 1 1/4\" yellow fiberglass with ash core and plastic end cap.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-new-yorker-fiberglass.webp"
+      ],
+      "variants": [
+        {
+          "sku": "NYF-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "NYF-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "NYF-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "NYF-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "NYF-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "NYF-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "NYF-14",
+          "option": "14 ft"
+        }
+      ]
+    },
+    {
+      "slug": "new-yorker-fiberglass-with-grips-ram-knob",
+      "name": "New Yorker Fiberglass with Grips & Ram Knob",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "New Yorker pike pole head on 1 1/4\" fiberglass with ash core, Celtex grips & ram knob end. One of FHU's best sellers.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "NYFG-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "NYFG-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "NYFG-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "NYFG-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "NYFG-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "NYFG-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "NYFG-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "NYFG-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "NYFG-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "lightweight-new-yorker",
+      "name": "Lightweight New Yorker",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Lightweight aluminum alloy head on a solid white ash pole 1 3/8\" tapered to 1 1/4\"",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "LW-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "LW-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "LW-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "LW-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "LW-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "LW-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "LW-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "LW-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "LW-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "lightweight-new-yorker-fiberglass",
+      "name": "Lightweight New Yorker Fiberglass",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Lightweight aluminum alloy head on 1 1/4\" fiberglass pole with ash core. Includes Celtex grips & ramknob.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "LWFG-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "LWFG-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "LWFG-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "LWFG-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "LWFG-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "LWFG-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "LWFG-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "LWFG-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "LWFG-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "national-hook",
+      "name": "National Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Industry standard \"pike pole\" used nationwide. National head on solid white ash handle with plastic end cap 1 3/8\" diameter.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "NH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "NH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "NH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "NH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "NH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "NH-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "NH-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "NH-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "NH-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "national-hook-fiberglass",
+      "name": "National Hook Fiberglass",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Industry standard \"pike pole\". National head on 1 1/4\" fiberglass shaft with plastic end cap.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "NHF-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "NHF-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "NHF-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "NHF-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "NHF-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "NHF-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "NHF-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "NHF-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "NHF-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "national-hook-fiberglass-super",
+      "name": "National Hook Fiberglass Super",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Industry standard \"pike pole\". National head on 1 1/4\" fiberglass shaft, Celtex grips & ram knob.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "NHFG-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "NHFG-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "NHFG-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "NHFG-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "NHFG-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "NHFG-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "NHFG-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "NHFG-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "NHFG-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "boston-rake-hook",
+      "name": "Boston Rake Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Boston rake head, stainless wear sleeves, gas shutoff end on 1\" solid fiberglass shaft with Celtex grips. Used by Boston FD. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-boston-rake-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "BRH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "BRH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "BRH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "BRH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "BRH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "BRH-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "BRH-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "BRH-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "BRH-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "boston-rake-hook-steel",
+      "name": "Boston Rake Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Boston rake head & chisel end on 1\" steel shaft with Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "BRST-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "BRST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "BRST-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "BRST-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "BRST-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "providence-pierce-hook",
+      "name": "Providence Pierce Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "An update of the arrow type hook used by Providence, RI fire dept. This tapered hook is great for opening ceilings, walls, and flooring. Providence pierce head, stainless wear sleeves, gas shutoff end on 1\" solid fiberglass shaft with Celtex grips. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-providence-pierce-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "PPH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "PPH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "PPH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "PPH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "PPH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "PPH-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "PPH-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "PPH-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "PPH-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "providence-pierce-hook-steel",
+      "name": "Providence Pierce Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Providence pierce head with stainless wear sleeve on 1\" dia. Steel shaft with chisel end & Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "PPST-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "PPST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "PPST-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "PPST-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "PPST-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "eckert-hook",
+      "name": "Eckert Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "The pride of midtown Manhattan. Great for opening up restaurant & ventilation ducts. Eckert head on 1\" solid fiberglass shaft with gas shutoff & Celtex grips. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-eckert-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "EK-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "EK-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "EK-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "EK-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "EK-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "EK-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "EK-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "EK-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "EK-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "eckert-hook-steel",
+      "name": "Eckert Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Eckert head with stainless wear sleeve on 1\" dia. Steel shaft with chisel end and Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "EKST-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "EKST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "EKST-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "EKST-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "EKST-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "san-francisco-hook",
+      "name": "San Francisco Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "San Francisco head, stainless wear sleeves, gas shutoff end on 1\" dia. Fiberglass shaft with Celtex grips. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-san-francisco-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "FH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "FH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "FH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "FH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "FH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "FH-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "FH-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "FH-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "FH-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "san-francisco-hook-steel",
+      "name": "San Francisco Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "San Francisco head with stainless wear sleeve on 1\" dia. Steel shaft chisel end with Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "FHST-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "FHST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "FHST-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "FHST-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "FHST-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "universal-hook",
+      "name": "Universal Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Universal head, stainless wear sleeves on a 1\" dia. Fiberglass shaft, gas shutoff end with Celtex grips. Works great on tin ceilings. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-universal-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "UH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "UH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "UH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "UH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "UH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "UH-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "UH-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "UH-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "UH-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "universal-hook-steel",
+      "name": "Universal Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Universal head with stainless wear sleeve on 1\" dia. Steel shaft, chisel end & Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "UHST-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "UHST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "UHST-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "UHST-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "UHST-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "gatorback-hook",
+      "name": "Gatorback Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Gatorback head consists of tapered pike head with 10-pointed crosscutting teeth on its back. 1\" fiberglass shaft with stainless wear sleeves, gas shutoff end & Celtex grips. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d. Not to be used for prying.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-gatorback-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "GBH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "GBH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "GBH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "GBH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "GBH-10",
+          "option": "10 ft"
+        },
+        {
+          "sku": "GBH-12",
+          "option": "12 ft"
+        },
+        {
+          "sku": "GBH-14",
+          "option": "14 ft"
+        },
+        {
+          "sku": "GBH-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "GBH-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "gatorback-hook-steel",
+      "name": "Gatorback Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Gatorback head with stainless wear sleeve on 1\" dia. Steel shaft, chisel end & Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "GBST-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "GBST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "GBST-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "GBST-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "GBST-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "trash-hook",
+      "name": "Trash Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "1/2\" tines trash hook head welded to stainless wear sleeve on a 1\" fiberglass shaft with D-handle & Celtex grips. 10' and above is 1.25\" o.d. 10' and below is 1\" o.d. *. Standard orientation of D-handle is perpendicular from head.* must request \"rotate D-handle 90 degrees\" to have the hook lay flat when mounting.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-trash-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "TRH-4 W/D",
+          "option": "4 ft"
+        },
+        {
+          "sku": "TRH-5 W/D",
+          "option": "5 ft"
+        },
+        {
+          "sku": "TRH-6 W/D",
+          "option": "6 ft"
+        },
+        {
+          "sku": "TRH-8 W/D",
+          "option": "8 ft"
+        },
+        {
+          "sku": "TRH-10 W/D",
+          "option": "10 ft"
+        },
+        {
+          "sku": "TRH-32 W/D",
+          "option": "32 in. with D-handle"
+        },
+        {
+          "sku": "TRH-40 W/D",
+          "option": "40 in. with D-handle"
+        }
+      ]
+    },
+    {
+      "slug": "fbp48",
+      "sku": "FBP48",
+      "name": "FarrBarr Pick 48\"",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Roof hook head welded to steel shaft, adz and pick end with 2 rings and strap. 48\" OAL.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fbp48.webp"
+      ]
+    },
+    {
+      "slug": "manhole-36",
+      "sku": "MANHOLE-36",
+      "name": "Manhole Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "36\" OAL manhole cover hook.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-manhole-36.webp"
+      ]
+    },
+    {
+      "slug": "hose-hk",
+      "sku": "HOSE-HK",
+      "name": "Hose Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "4' hose hook on 1\" dia. Fiberglass shaft with Celtex grips & D-handle. Perfect for moving ldh.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hose-hk.webp"
+      ]
+    },
+    {
+      "slug": "xlock-6-12",
+      "sku": "XLOCK 6-12",
+      "name": "X-Lock Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Providence pierce head on 1 1/4\" dia. Fiberglass extension pole. 85\" stowed length.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-xlock-6-12.webp"
+      ]
+    },
+    {
+      "slug": "trash-hook-steel",
+      "name": "Trash Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "1/2\" trash hook head welded to steel shaft with chisel end & Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "TRST-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "TRST-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "TRST-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "TRST-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "TRST-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "t-hook",
+      "name": "T-Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "T-style head great for residential roof work, has 2 sharpened teeth on either side of the \"t\" head. 1\" dia. Steel shaft, Celtex grips & chisel end.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-t-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "TH-3",
+          "option": "3 ft"
+        },
+        {
+          "sku": "TH-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "TH-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "TH-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "TH-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "TH-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "ch-824",
+      "sku": "CH-824",
+      "name": "Chimney Hook Fiberglass",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "4 1/2\" square head used for sweeping chimneys. Extendable fiberglass shaft. 110\" stowed length. 8' to 24'.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ch-824.webp"
+      ]
+    },
+    {
+      "slug": "rng-36",
+      "sku": "RNG-36",
+      "name": "The Ringer",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "2 versatile heads (roof hook & tristate heads) with stainless wear sleeves on fiberglass shaft. With 2 rings and shoulder strap.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-rng-36.webp"
+      ]
+    },
+    {
+      "slug": "hsystem",
+      "sku": "HSYSTEM",
+      "name": "The Hook System",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Combination of hooks with 4 heads & 2 handles. For engine companies with limited sPACE. 1\" & 1 1/4\" fiberglass shafts with ram knob end standard. Can change out for any heads except the New Yorker & national.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hsystem.webp"
+      ]
+    },
+    {
+      "slug": "tri-twister-hook",
+      "name": "Tri-Twister Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "All purpose head on 6' fiberglass shaft with threaded sleeves to add 4' section to increase reach. 1\" solid fiberglass.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-tri-twister-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "TTH- 6'/10'",
+          "option": "6 ft 10 ft"
+        },
+        {
+          "sku": "TTH-6'/12'",
+          "option": "6 ft 12 ft"
+        },
+        {
+          "sku": "TTH-6'/14'",
+          "option": "6 ft 14 ft. All purpose head on 6' fiberglass shaft with threaded sleeves to add 8' section to increase reach. 1 1/4\" diameter pole."
+        }
+      ]
+    },
+    {
+      "slug": "downtown",
+      "sku": "DOWNTOWN-[size]",
+      "name": "Downtown Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "NY roof hook & Eckert ends. 4'-8' must specify size.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "bicoastal",
+      "sku": "BICOASTAL-[size]",
+      "name": "Bicoastal Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "NY roof hook & San Francisco ends. 4'-8' must specify size.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "nytrh-6",
+      "sku": "NYTRH-6",
+      "name": "New York Trash Hook 6'",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "5/8\" tines trash hook head, stainless wear sleeves with ram knob on 1\" solid fiberglass with Celtex grips. FDNY spec trash hook.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "hdtrst-6",
+      "sku": "HDTRST-6",
+      "name": "Heavy Duty Steel Trash Hook 6'",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "5/8\" tines trash hook head, on a 1\" dia steel shaft with D-handle & Celtex grips. D-handle comes standard perpendicular from head.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ch-824st",
+      "sku": "CH-824ST",
+      "name": "Chimney Hook Steel",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "4 1/2\" square head on steel shaft. 3 sections of 8' steel shaft joined by heavy duty stainless threaded sleeves. Ram knob end. 8' to 24'.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "hyb-6",
+      "sku": "HYB-6",
+      "name": "Hybrid Hook",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "Fiberglass hook with large loop to pull victims from hybrid/electric vehicles. Gas shutoff end 1\" dia. Solid fiberglass with Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "hsystem-dhandle",
+      "sku": "HSYSTEM DHANDLE",
+      "name": "D-Handle For The Hook System",
+      "category": "hooks",
+      "group": "Hooks and pike poles",
+      "summary": "D-handle for the hook system instead of ram knob.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "white-ash-replacement-handle",
+      "name": "White Ash Replacement Handle",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "4' replacement white ash handle. 1 1/4\" dia. Straight only (NH)",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "WP-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "WP-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "WP-6",
+          "option": "6 ft. 6' replacement white ash handle. 1 1/4\" dia. Straight (NH) or pointed (NY)"
+        },
+        {
+          "sku": "WP-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "WP-10",
+          "option": "10 ft. 10' replacement white ash handle. 1 1/4\" dia. Straight (NH) or pointed (NY)"
+        }
+      ]
+    },
+    {
+      "slug": "fiberglass-with-ash-replacement-handle",
+      "name": "Fiberglass with Ash Replacement Handle",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "4' replacement fiberglass handle with ash core. 1 1/4\" dia.",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "FWP-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "FWP-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "FWP-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "FWP-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "FWP-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "fiberglass-with-celtex-grip-ramknob",
+      "name": "Fiberglass with Celtex Grip & Ramknob",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "4' replacement fiberglass handle with ash core, Celtex grips, & ram knob. 1\" or 1 1/4\" dia. Available (must specify)",
+      "details": [],
+      "features": [],
+      "images": [],
+      "variants": [
+        {
+          "sku": "FP-4",
+          "option": "4 ft"
+        },
+        {
+          "sku": "FP-5",
+          "option": "5 ft"
+        },
+        {
+          "sku": "FP-6",
+          "option": "6 ft"
+        },
+        {
+          "sku": "FP-8",
+          "option": "8 ft"
+        },
+        {
+          "sku": "FP-10",
+          "option": "10 ft"
+        }
+      ]
+    },
+    {
+      "slug": "fah-36",
+      "sku": "FAH-36",
+      "name": "32\" Fiberglass Axe Handle",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "Replacement axe handle for our standard 6 lb axes. Approx. 36\" overall length when mounted.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "fmh-36",
+      "sku": "FMH-36",
+      "name": "32\" Fiberglass Maul Handle",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "Replacement maul handle for our sledge hammers & splitting mauls. Approx 34\" overall when mounted.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ah-36",
+      "sku": "AH-36",
+      "name": "32\" Hickory Axe Handle",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "Replacement hickory axe handle for all single bit axes. 32\" handle, approx. 36\" overall when mounted.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "mh-36",
+      "sku": "MH-36",
+      "name": "32\" Hickory Maul Handle",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "Replacement hickory maul handle for sledge hammers. 32\" handle, approx. 34\" overall when mounted.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "fah-dh",
+      "sku": "FAH-DH",
+      "name": "33\" Fiberglass Axe Handle with Deer Hoof",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "Replacement fiberglass axe handle with deer hoof for our 8 lb axes. 33\" handle, approx. 36\" overall when mounted. 28\" also available.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "lh",
+      "sku": "LH",
+      "name": "32\" Luminous Axe Handle",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "Replacement luminous fiberglass handle. 32\" handle, approx. 36\" overall when mounted.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "lsah",
+      "sku": "LSAH",
+      "name": "LockSlot Axe Handle",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "Replacement LockSlot axe handle. 28\" or 32\" available. 32\" & 36\" overall lengths when mounted. Must specify. Black or yellow with overstrike.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "glue-kit",
+      "sku": "GLUE KIT",
+      "name": "Epoxy Glue Kit",
+      "category": "parts",
+      "group": "Replacement poles and handles",
+      "summary": "Epoxy glue kit (separate). FYI: all replacement axe handles come with 1 epoxy glue kit.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ms-1",
+      "sku": "MS-1",
+      "name": "Marrying Strap",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "A strap designed to marry the flathead axe & Halligan (the irons). Black nylon with yellow stripe.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ms-1.webp"
+      ]
+    },
+    {
+      "slug": "ch-312",
+      "sku": "CH-312",
+      "name": "Can Harness",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "A carrying strap for 2.5 gal water cans. Heavy duty nylon with 2 large velcro straps secure the water can inside this harness. Comes complete with d-ring, key ring for easy stow of nozzle, and can be carried vertically or horizontally with included",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ch-312.webp"
+      ]
+    },
+    {
+      "slug": "rss",
+      "sku": "RSS",
+      "name": "Reflective Shoulder Strap",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Reflective shoulder strap with chrome snap hooks.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-rss.webp"
+      ]
+    },
+    {
+      "slug": "iss-82",
+      "sku": "ISS-82",
+      "name": "Irons Strap",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Heavy duty black and yellow nylon carrying strap for the irons. Securely carry the irons over your shoulder with this strap system.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-iss-82.webp"
+      ]
+    },
+    {
+      "slug": "tool-lp",
+      "sku": "TOOL-LP",
+      "name": "Tool Loop",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Tool loop with premium carabineer NFPA 1983 approved.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-tool-lp.webp"
+      ]
+    },
+    {
+      "slug": "kev-gh",
+      "sku": "KEV-GH",
+      "name": "Black Kevlar Glove Holder Strap",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Black glove strap with premium chrome trigger snaps.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-kev-gh.webp"
+      ]
+    },
+    {
+      "slug": "light-drop",
+      "name": "Light Drop",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Safest holder for any hand-held flashlight. Made with glove friendly buckle release.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-light-drop.webp"
+      ],
+      "variants": [
+        {
+          "sku": "LD-Y",
+          "option": "yellow"
+        },
+        {
+          "sku": "LD-O",
+          "option": "orange"
+        }
+      ]
+    },
+    {
+      "slug": "glv-pn",
+      "sku": "GLV-PN",
+      "name": "Yellow Poly Nylon Glove Holder Strap",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Yelow glove strap with premium chrome trigger snaps.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-glv-pn.webp"
+      ]
+    },
+    {
+      "slug": "fdny-saw-harness",
+      "sku": "FDNY SAW HARNESS",
+      "name": "FDNY Saw Harness",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Fire & rescue carrying strap for Husqvarna K12 saw complete with strap and mounting brackets.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fdny-saw-harness.webp"
+      ]
+    },
+    {
+      "slug": "ez-cb",
+      "sku": "EZ-CB",
+      "name": "EZ Can Bracket",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Holds various types of extinguishers. 2\" nylon strap with velcro and aluminum bracket allows you to mount virtually anywhere 33\" long.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ez-cb.webp"
+      ]
+    },
+    {
+      "slug": "ez-wj",
+      "sku": "EZ-WJ",
+      "name": "EZ Water Jug Bracket",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Same as above, larger strap for 5 gallon water jugs. 53\" long.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ez-wj.webp"
+      ]
+    },
+    {
+      "slug": "fs-27",
+      "sku": "FS-27",
+      "name": "Footman's Strap Only",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "No brackets. 27\" long.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fs-27.webp"
+      ]
+    },
+    {
+      "slug": "fss",
+      "sku": "FSS",
+      "name": "Footman's Strap System",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Designed to hold various extinguishers, scba bottles, & more. 2\" poly strap with velcro and footmans brackets allow for easy mounting.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fss.webp"
+      ]
+    },
+    {
+      "slug": "light-loop",
+      "name": "Light Loop",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "For any hand-held flashlight. Loops around handle and attached to belt or scba strap with 2 snap buttons.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-light-loop.webp"
+      ],
+      "variants": [
+        {
+          "sku": "LL-Y",
+          "option": "yellow"
+        },
+        {
+          "sku": "LL-O",
+          "option": "orange"
+        }
+      ]
+    },
+    {
+      "slug": "fidney-tool-belt",
+      "name": "Fidney Tool Belt",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Yellow tool belt designed to carry flashlight on one side, and tool on the other. Not for rappelling",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fidney-tool-belt.webp"
+      ],
+      "variants": [
+        {
+          "sku": "FTB-Y",
+          "option": "Yellow tool belt designed to carry flashlight on one side, and tool on the other. Not for rappelling"
+        },
+        {
+          "sku": "FTB-O",
+          "option": "Orange tool belt designed to carry flashlight on one side, and tool on the other. Not for rappelling"
+        }
+      ]
+    },
+    {
+      "slug": "qrfs",
+      "sku": "QRFS",
+      "name": "Quick Release Foldup Strap",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Secure your folded hose for hirise ops. Yellow nylon with seatbelt quick release. Holds 50' hose bundle.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-qrfs.webp"
+      ]
+    },
+    {
+      "slug": "fidfold",
+      "sku": "FIDFOLD",
+      "name": "Fidney Fold Up Board Strap System",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Two seatbelt straps mounted on flexible nylon covered board so fold-ups can be easily shouldered during hirise operations. Holds 50' bundles.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fidfold.webp"
+      ]
+    },
+    {
+      "slug": "ch-312-deluxe",
+      "sku": "CH-312 DELUXE",
+      "name": "Can Harness Deluxe",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Same as above, plus wedge pouch with wedge & bungee cord.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ss-w-bh",
+      "sku": "SS W/BH",
+      "name": "Reflective Shoulder Strap with Brass Hooks",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Reflective shoulder strap with heavy duty brass hooks. A great option for a saw sling.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "sssys",
+      "sku": "SSSYS",
+      "name": "Shoulder Strap System",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "2 light drops with rings & reflective shoulder strap. Marries forcible entry tools together.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "fdny-saw-loop",
+      "sku": "FDNY-SAW LOOP",
+      "name": "FDNY Saw Loop",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "5' continuous power saw loop/ safety harness. 2\" wide.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "fdnyshso",
+      "sku": "FDNYSHSO",
+      "name": "FDNY Saw Harness Strap Only",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Replacement adjustable strap with locking carabiners.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "qrlss",
+      "sku": "QRLSS",
+      "name": "Quick Release Strap",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Quick release strap with black hooks.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "lqrs",
+      "sku": "LQRS",
+      "name": "FireMaxx Quick Release Strap",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "Quick release strap with seatbelt release and black hooks for FireMaxx sheath.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "fss-wj",
+      "sku": "FSS-WJ",
+      "name": "Footman's Strap Water Jug System",
+      "category": "straps-mounts",
+      "group": "Straps, loops, and harnesses",
+      "summary": "System for mounting a 5 gal. Water jug. Same design as the footman system, just longer strap.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "hn",
+      "sku": "HN-[size]",
+      "name": "Hooks Nest",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Custom fabricated mounting brackets made from stainless steel. Can be mounted horizontally or vertically. (hooks nest 1-5 specify when ordering). *. Hn-4 now comes w/ 1 mtb for mounting instead of the bracket w/ pin.*.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hn.webp"
+      ]
+    },
+    {
+      "slug": "in-1",
+      "sku": "IN-1",
+      "name": "Irons Nest",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Custom fabricated mounting bracket made from stainless steel. Horizontal or vertical mounting for the irons.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-in-1.webp"
+      ]
+    },
+    {
+      "slug": "pbn",
+      "sku": "PBN",
+      "name": "Pro-Bar Nest",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Custom fabricated mounting bracket made from stainless steel for the Pro-Bar or any Halligan.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-pbn.webp"
+      ]
+    },
+    {
+      "slug": "psn",
+      "sku": "PSN",
+      "name": "Partner Saw Nest",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Heavy duty aluminum. Has adjustable nylon strap with quick release.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-psn.webp"
+      ]
+    },
+    {
+      "slug": "rcb",
+      "sku": "RCB",
+      "name": "Ranger Carrying Bracket",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Carrying bracket for ranger tanks made from aluminum. Includes quick release strap.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-rcb.webp"
+      ]
+    },
+    {
+      "slug": "ext-h",
+      "sku": "EXT-H",
+      "name": "Extinguisher Holder with Hinge",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "8\" round aluminum with hinge for compartment mounting.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ext-h.webp"
+      ]
+    },
+    {
+      "slug": "hb-1",
+      "sku": "HB-1",
+      "name": "Holding Bracket",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "PAC Tools #1004-b. Made to secure our tools.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hb-1.webp"
+      ]
+    },
+    {
+      "slug": "tl-1",
+      "sku": "TL-1",
+      "name": "Tool Lock",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "PAC Tools #1003-HD-B. Made to secure our hooks.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-tl-1.webp"
+      ]
+    },
+    {
+      "slug": "mtb",
+      "sku": "MTB",
+      "name": "Master Tool Bracket",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "PAC Tools #1001. Made to secure our tools with 1\" diameter. (sold as 2PC. Set)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mtb.webp"
+      ]
+    },
+    {
+      "slug": "tb",
+      "sku": "TB",
+      "name": "Tool Bracket Flat Mount",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Chrome sets. Fits all our 1\" dia hooks (2PC. Set)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-tb.webp"
+      ]
+    },
+    {
+      "slug": "tbs",
+      "sku": "TBS",
+      "name": "Tool Bracket Side Mount",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Chrome sets. Fits all our 1\" dia hooks (2PC. Set)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-tbs.webp"
+      ]
+    },
+    {
+      "slug": "ppb",
+      "sku": "PPB",
+      "name": "Pike Pole Flat Mount",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Designed to fit our pike poles with 1 1/4\" dia. Max dia. 1 1/2\" (2 pc. Set)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ppb.webp"
+      ]
+    },
+    {
+      "slug": "ppbs",
+      "sku": "PPBS",
+      "name": "Pike Pole Side Mount",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Designed to fit our pike poles with 1 1/4\" dia. Max dia. 1 1/2\" (2 pc. Set)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ppbs.webp"
+      ]
+    },
+    {
+      "slug": "ppbr",
+      "sku": "PPBR",
+      "name": "Pike Pole Flat Mount with Ring",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Designed to fit our pike poles with 1 1/4\" dia. Max dia. 1 1/2\". (2 pc. Set)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ppbr.webp"
+      ]
+    },
+    {
+      "slug": "ppbrs",
+      "sku": "PPBRS",
+      "name": "Pike Pole Side Mount with Ring",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Designed to fit our pike poles with 1 1/4\" dia. Max dia. 1 1/2\" (2 pc. Set)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ppbrs.webp"
+      ]
+    },
+    {
+      "slug": "cbhb",
+      "sku": "CBHB",
+      "name": "Crow Bar Holding Bracket",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Chrome set for mounting our pinch point crow bar (2 pc. Set)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-cbhb.webp"
+      ]
+    },
+    {
+      "slug": "cah",
+      "sku": "CAH",
+      "name": "Chrome Plated Axe Holder",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "2 piece chrome plated axe mounting set. Includes blade holder & side mount for handle. Will fit all flat & pick head axes.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-cah.webp"
+      ]
+    },
+    {
+      "slug": "asb",
+      "sku": "ASB",
+      "name": "Aluminum Saw Box",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Dimensions: 34x12x18. Made from diamond plate aluminum.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "sub",
+      "sku": "SUB",
+      "name": "Saw Utility Box",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "Dimensions: 16x9x15 made from diamond plate aluminum.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ext-h-312",
+      "sku": "EXT-H-312",
+      "name": "Extinguisher Holder with Can Harness Hinge",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "8\" octagon aluminum with hinge for compartment mounting. Can fit a can with can harness.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ext-s",
+      "sku": "EXT-S",
+      "name": "Extinguisher Holder Step Mount",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "8\" round aluminum fixed or step mounting.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ext-s-312",
+      "sku": "EXT-S-312",
+      "name": "Extinguisher Holder with Harness Step Mount",
+      "category": "straps-mounts",
+      "group": "Mounting and brackets",
+      "summary": "8\" octagon aluminum for fixed mounting. Can fit a can with can harness.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "hw-1",
+      "sku": "HW-1",
+      "name": "Hydrant Wrench",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Adjustable zinc plated hydrant wrench with Celtex grip. 20 1/2\" approx 5 lb.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hw-1.webp"
+      ]
+    },
+    {
+      "slug": "hhplug",
+      "sku": "HHPLUG",
+      "name": "Hydrant Helper Plug",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Seals hydrant outlets (2.5\" or 4.5\") with damaged or missing nipples.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-hhplug.webp"
+      ]
+    },
+    {
+      "slug": "ufs",
+      "sku": "UFS",
+      "name": "Unlimited Folding Spanner",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Folding spanner made of high tensile Almag. Non-sparking.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ufs.webp"
+      ]
+    },
+    {
+      "slug": "sp-1",
+      "sku": "SP-1",
+      "name": "Spring Loaded Center Punch",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Brass spring loaded center punch.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-sp-1.webp"
+      ]
+    },
+    {
+      "slug": "crs",
+      "sku": "CRS",
+      "name": "Collapsible Rescue Shovel",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Collapsible shovel.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-crs.webp"
+      ]
+    },
+    {
+      "slug": "ab",
+      "sku": "AB",
+      "name": "Apparatus Wash Brush",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Extendable fiberglass handle (4'-8'), soft bristle brush head.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ab.webp"
+      ]
+    },
+    {
+      "slug": "wb",
+      "sku": "WB",
+      "name": "Apparatus Wheel Wash Brush",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Light and durable poly bristle wheel brush.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-wb.webp"
+      ]
+    },
+    {
+      "slug": "gzp",
+      "sku": "GZP",
+      "name": "Ground Zero Pump",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Great all around pump that pumps down to 1/12 of an inch.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-gzp.webp"
+      ]
+    },
+    {
+      "slug": "grapnel-hook",
+      "name": "Grapnel Hook",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "3 lb grapnel hook. Forged steel hooks welded to shaft. Rings on both ends.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-grapnel-hook.webp"
+      ],
+      "variants": [
+        {
+          "sku": "ASSAULT",
+          "option": "3 lb"
+        },
+        {
+          "sku": "DRAG",
+          "option": "5 lb"
+        }
+      ]
+    },
+    {
+      "slug": "gwk",
+      "sku": "GWK",
+      "name": "Gas Water Key",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "48\" t-style gas water key.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "cm-2",
+      "sku": "CM-2",
+      "name": "Connection Mallet",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "A 2 lb rubber mallet head attached to 11\" fiberglass hande with Celtex grip.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "sbc",
+      "sku": "SBC",
+      "name": "Seat Belt Cutter",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Fire hooks unlimited yellow seat belt cutter.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "shore",
+      "sku": "SHORE",
+      "name": "Shoreman's Rescue Hook",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Shoremans hook.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ffpump",
+      "sku": "FFPUMP",
+      "name": "Flood Fighter Pump",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Soon to be discontinued, call now for a deal!",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "gas-can",
+      "sku": "GAS CAN",
+      "name": "Gas Can",
+      "category": "rescue",
+      "group": "Hydrant, rescue, and misc. tools",
+      "summary": "Sizes vary.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "shv-p55",
+      "sku": "SHV-P55",
+      "name": "55\" Pointed Shovel",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "55\" pointed shovel with Celtex grips. 1 1/4\" fiberglass shaft with ash core.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-shv-p55.webp"
+      ]
+    },
+    {
+      "slug": "shv-f55",
+      "sku": "SHV-F55",
+      "name": "55\" Flat Shovel",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "55\" flat shovel with Celtex grips. 1 1/4\" fiberglass shaft with ash core.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-shv-f55.webp"
+      ]
+    },
+    {
+      "slug": "ranger-d",
+      "sku": "RANGER-D",
+      "name": "The Ranger",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Includes padded straps, back rest, & pistol grip pump. 5 gallon capacity.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-ranger-d.webp"
+      ]
+    },
+    {
+      "slug": "spbp",
+      "sku": "SPBP",
+      "name": "Soft Pack Brush Pump",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Soft pack bag with pistol grip pump, accessory pouch, and padded straps. 5 gallon capacity.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-spbp.webp"
+      ]
+    },
+    {
+      "slug": "brw-5",
+      "sku": "BRW-5",
+      "name": "Brush Rake Wood",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Wood handle brush rake. 54\" overall length.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-brw-5.webp"
+      ]
+    },
+    {
+      "slug": "brf-5",
+      "sku": "BRF-5",
+      "name": "Brush Rake Fiberglass",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Fiberglass handle brush rake. 54\" overall length.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-brf-5.webp"
+      ]
+    },
+    {
+      "slug": "mclw",
+      "sku": "MCLW",
+      "name": "McCloud Tool Wood",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Wood handle forestry rake and hoe in one tool. 54\" overall length.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mclw.webp"
+      ]
+    },
+    {
+      "slug": "mclf",
+      "sku": "MCLF",
+      "name": "McCloud Tool Fiberglass",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Fiberglass handle forestry rake and hoe in one tool. 54\" overall length.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-mclf.webp"
+      ]
+    },
+    {
+      "slug": "bbr-5",
+      "sku": "BBR-5",
+      "name": "Brush Broom",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "10\" dyed Palmyra brush broom.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-bbr-5.webp"
+      ]
+    },
+    {
+      "slug": "sho-hoe",
+      "sku": "SHO-HOE",
+      "name": "Sho-Hoe",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "It’s a shovel, hoe, pick, grub axe, brush hook, weed axe, ditch hook and trenching tool. Fiberglass handle with Celtex grips.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-sho-hoe.webp"
+      ]
+    },
+    {
+      "slug": "bft-5",
+      "sku": "BFT-5",
+      "name": "Brush Fire Tool System",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Choice of 5 interchangeable heads. (options: McCloud, brush rake, 14 tine hard rake, pointed shovel, flat shovel, sho-hoe, trash hook, brush broom)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-bft-5.webp"
+      ]
+    },
+    {
+      "slug": "shv-p27",
+      "sku": "SHV-P27",
+      "name": "27\" Pointed Shovel withD",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "27\" pointed shovel with d handle & Celtex grips. 1 1/4\" fiberglass shaft with ash core.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "shv-f27",
+      "sku": "SHV-F27",
+      "name": "27\" Flat Shovel withD",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "27\" flat shovel with d handle & Celtex grips. 1 1/4\" fiberglass shaft with ash core.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "shv-s27",
+      "sku": "SHV-S27",
+      "name": "27\" Scoop Shovel withD",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "27\" aluminum scoop shovel with d handle & Celtex grips. 1 1/4\" fiberglass shaft with ash core.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ranger-dd",
+      "sku": "RANGER-DD",
+      "name": "The Ranger Double Deluxe",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Includes everything from the deluxe model, plus brass quick connect fittings for easy storage.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "spsl-90",
+      "sku": "SPSL-90",
+      "name": "Soft Pack Supply Line",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "90\" of supply line for spbp complete with shutoff valve and fittings.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "bladder",
+      "sku": "BLADDER",
+      "name": "Replacement Soft Pack Bladder",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Collapsible replacement bladder for soft pack brush pump.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "spbp-repair",
+      "sku": "SPBP REPAIR",
+      "name": "Softpack Brush Pump Repair Kit",
+      "category": "wildland",
+      "group": "Wildland equipment",
+      "summary": "Includes replacement gaskets, springs, check balls for soft pack & ranger hand pumps.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "cbt-9x18t",
+      "sku": "CBT- 9X18T",
+      "name": "9 X 18 Carbide Tip Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "9\" diameter 18 tooth blade with 7/8\" arbor standard.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-cbt-9x18t.webp"
+      ]
+    },
+    {
+      "slug": "cbt-12x12",
+      "sku": "CBT- 12X12",
+      "name": "12 X 12 Carbide Tip Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "12\" diameter 12 tooth blade with 1\" arbor standard (available with 7/8\" or 20MM arbor depending on stock)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-cbt-12x12.webp"
+      ]
+    },
+    {
+      "slug": "cbt-12x24",
+      "sku": "CBT- 12X24",
+      "name": "12 X 24 Carbide Tip Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "12\" diameter 24 tooth blade with 1\" arbor standard (available with 7/8\" or 20MM arbor depending on stock)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-cbt-12x24.webp"
+      ]
+    },
+    {
+      "slug": "cbt-14x30",
+      "sku": "CBT- 14X30",
+      "name": "14 X 30 Carbide Tip Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "14\" diameter 30 tooth blade with 1\" arbor standard (available with 20MM arbor depending on stock)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-cbt-14x30.webp"
+      ]
+    },
+    {
+      "slug": "scb-12",
+      "sku": "SCB-12",
+      "name": "12\" Steel Cutting Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "High quality silicon carbide bonded abrasive steel cutting blade. 12\" diameter standard with 1\" arbor. (other arbor sizes available upon request)",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-scb-12.webp"
+      ]
+    },
+    {
+      "slug": "bpc-tacticut",
+      "sku": "BPC TACTICUT",
+      "name": "9\" Tacticut",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "9\" Tacticut diamond blade from Husqvarna for use on masonry. 7/8\" arbor standard.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-bpc-tacticut.webp"
+      ]
+    },
+    {
+      "slug": "husky-diamond-blade",
+      "name": "Husky Diamond Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "12\" diamond blade made of diamond, carbide, & tungsten. Cuts any material found on the fireground. Cuts both steel & masonry. 20MM knockout to 1\" arbor.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-husky-diamond-blade.webp"
+      ],
+      "variants": [
+        {
+          "sku": "HUSKY-12",
+          "option": "12 in."
+        },
+        {
+          "sku": "HUSKY-14",
+          "option": "14 in."
+        }
+      ]
+    },
+    {
+      "slug": "fang-diamond-blade",
+      "name": "Fang Diamond Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "4.5\" diamond blade for angle grinders. 5/8\" knockout to 7/8\" arbor.",
+      "details": [],
+      "features": [],
+      "images": [
+        "/catalog/fhu-fang-diamond-blade.webp"
+      ],
+      "variants": [
+        {
+          "sku": "FANG-4.5",
+          "option": "4.5 in."
+        },
+        {
+          "sku": "FANG-5",
+          "option": "5 in."
+        },
+        {
+          "sku": "FANG-12",
+          "option": "12 in. 12\" diamond blade with more diamond, carbide & tungsten added for increased heat dissipation and durability. Sanding surface is added to reduce binding during cutting operations. 1\" arbor standard."
+        },
+        {
+          "sku": "FANG-14",
+          "option": "14 in. 14\" diamond blade with more diamond, carbide & tungsten added for increased heat dissipation and durability. Sanding surface is added to reduce binding during cutting operations. 1\" arbor standard."
+        }
+      ]
+    },
+    {
+      "slug": "ccb-12",
+      "sku": "CCB-12",
+      "name": "12\" Concrete Cutting Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "High quality silicon carbide bonded abrasive concrete cutting blade. 12\" diameter standard with 1\" arbor. (other arbor sizes available upon request)",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "scb-14",
+      "sku": "SCB-14",
+      "name": "14\" Steel Cutting Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "High quality silicon carbide bonded abrasive steel cutting blade. 14\" diameter standard with 1\" arbor. (other arbor sizes available upon request)",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "ccb-14",
+      "sku": "CCB-14",
+      "name": "14\" Concrete Cutting Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "High quality silicon carbide bonded abrasive concrete cutting blade. 14\" diameter standard with 1\" arbor. (other arbor sizes available upon request)",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "bpc-varicut",
+      "sku": "BPC VARICUT",
+      "name": "9\" Varicut FR3",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "9\" Vari-Cut diamond blade from Husqvarna for use on steel. 7/8\" arbor standard.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "bpc-abrasive",
+      "sku": "BPC ABRASIVE",
+      "name": "9\" Abrasive Blade",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "9\" bonded abrasive blade for Husqvarna rotary saws. 7/8\" arbor standard.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "bpc-varicut-10",
+      "sku": "BPC VARICUT-10",
+      "name": "10\" Varicut FR3",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "10\" Vari-Cut diamond blade from Husqvarna for use on steel. 1\" arbor standard.",
+      "details": [],
+      "features": [],
+      "images": []
+    },
+    {
+      "slug": "bushing",
+      "sku": "BUSHING",
+      "name": "Bushing",
+      "category": "saws",
+      "group": "Saw blades",
+      "summary": "Plastic bushing. 1\" to 20MM or 1\" to 7/8\" available. Must specify when ordering.",
+      "details": [],
+      "features": [],
+      "images": []
+    }
+  ]
+}

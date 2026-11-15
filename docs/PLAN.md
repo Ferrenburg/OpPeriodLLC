@@ -247,6 +247,10 @@ The README must include a section called **"How to add a new project"** written 
 
 Engine Bay Supply Co. is the OpPeriod division that supplies fire service hand tools to departments, from halligans to New York hooks. The brands it will distribute aren't confirmed yet. Logo provided: the "EB" mark with a flame, and a full lockup with the line "Hand tools / Fire service / Built to last". Colors from the logo: red `#E2241B`, dark red `#A9141B`, ink `#121418`, paper `#F4F3F0`.
 
+### On opperiod.com
+
+Engine Bay is OpPeriod's lead business. The OpPeriod home page opens with an Engine Bay hero (diamond plate, "Halligans to hooks.", Shop and Request a Quote buttons, phone, catalogs), then six Engine Bay categories, then the brands with their catalogs, then OpPeriod's other projects, "How we operate", and the contact band. "Engine Bay" is in the main OpPeriod menu between Home and Projects.
+
 ### How it sells
 
 Departments buy on purchase orders, so there is no store, cart, or checkout. Every page pushes toward Request a Quote. Do NOT say on the site that it sells by PO only, or that it doesn't sell to individuals.
@@ -257,9 +261,10 @@ It's built to look like a fire equipment dealer (reference: Dinges Fire, All Han
 
 - Its own layout at `app/(engine-bay)/engine-bay/`: black utility bar (phone, email, Request a Quote), dark header with the EB mark, red category bar, dark footer that says it's a division of OpPeriod LLC. Its own tab icon and link preview image.
 - `/engine-bay`: diamond plate hero ("Halligans to hooks."), shop by category (six cards with product photos, plus a line for handles and parts), how ordering works, "By firefighters, for firefighters" (don't mention the owner's rank), brands we carry, and a red "Got a list?" band.
-- `/engine-bay/tools`: every product, grouped by category. The red bar links jump to each group.
+- `/engine-bay/tools`: category cards. `/engine-bay/tools/<category>`: that category's products, by brand, then by the catalog's own section (`group`). The red bar links go to the category pages.
 - `/engine-bay/products/<slug>`: one page per product with photos, model number, summary, Get Pricing and Call buttons, features, details, the manufacturer's Prop 65 warning, and more from the same category. Product structured data for search, with no price.
 - `/engine-bay/brands/<slug>`: a brand's short intro and its products by category.
+- `/engine-bay/catalogs`: the owner's printable 2026 catalogs and price guides (Council Tool, Fire Hooks Unlimited), each with a viewer page at `/engine-bay/catalogs/<slug>` that embeds the PDF on desktop and shows the cover with Open and Download buttons on phones. Files live in `public/downloads/`; the list is `printCatalogs` in `lib/engine-bay.ts`. The site sends `X-Frame-Options: SAMEORIGIN` so the embed works.
 - `/engine-bay/quote`: the quote form. It's the contact form in quote mode: name, email, department or agency (required), phone, tools and quantities, needed by. Get Pricing on a product prefills "Brand MODEL, Name". It routes through the `engine-bay` project, so `contactEmailKey` in that file sets its inbox.
 - `content/projects/engine-bay.mdx` has `sitePath: /engine-bay`, so the OpPeriod grid, menus, and sitemap link to the section, and `/projects/engine-bay` redirects there.
 - Categories, nav, and ordering steps live in `lib/engine-bay.ts`. Brand colors are `eb-*` in `app/globals.css`, and `.eb-theme` swaps the shared accent colors inside the section.
@@ -268,13 +273,17 @@ It's built to look like a fire equipment dealer (reference: Dinges Fire, All Han
 ### The catalog
 
 - One JSON file per brand in `content/engine-bay/products/` (`council-tool.json` now). It holds the brand (`slug`, `name`, `about`, `website`) and its `products`.
-- Each product: `slug`, `sku` (exactly as the manufacturer prints it), `name`, `category` (a slug from `toolCategories`), `summary`, `details` (paragraphs), `features` (bullets), optional `prop65`, `images` (paths under `public/catalog/`), and `source` (the manufacturer's page, not shown).
+- Each product: `slug`, `sku` (exactly as the manufacturer prints it), `name`, `category` (a slug from `toolCategories`), optional `group` (a heading inside the category), `summary`, `details` (paragraphs), `features` (bullets), optional `prop65`, `images` (paths under `public/catalog/`; can be empty, which shows a placeholder), optional `variants` (`sku` and `option` for each size of a product sold in several, shown as a table with its own Get Pricing link per size; such a product can leave `sku` out), and `source` (the manufacturer's page, not shown).
 - `lib/engine-bay-catalog.ts` loads and checks every file. A bad category, a missing photo, or a duplicate slug stops the build with the file, product, and field.
 - Each category's card photo is its `featured` product's first photo.
 
 ### Council Tool (added October 2026)
 
 All 41 products in Council Tool's Firefighting category, with Council's go-ahead. Pulled from their product pages: names, model numbers, descriptions, features, Prop 65 warnings, and up to four photos each (converted to WebP in `public/catalog/`). Cleanup only: removed links to Council's flyers and videos, customer testimonials, repeated lines, and dashes, and fixed obvious typos ("ect.", "Ashe"). Facts are as Council wrote them. Council's prices are not used anywhere.
+
+### Fire Hooks Unlimited and Husqvarna (added November 2026)
+
+Built from the owner's Engine Bay FHU catalog PDF (`public/downloads/engine-bay-fire-hooks-unlimited-catalog-2026.pdf`), not FHU's website: product cards, the "More..." table rows, and hook families with a size table each. 297 FHU products and 25 Husqvarna products (the catalog's Husqvarna section). Photos are the originals embedded in the PDF, checked against the shape printed on the page, in `public/catalog/fhu-*.webp`. Prices are never copied. Three categories were added for this line: Straps and mounts, Hydrant and rescue tools, Saws and blades.
 
 ### Next steps
 
