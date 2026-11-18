@@ -13,7 +13,7 @@ export function generateStaticParams() {
   return toolCategories.map((category) => ({ category: category.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps<"/engine-bay/tools/[category]">): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps<"/engine-bay/equipment/[category]">): Promise<Metadata> {
   const { category: slug } = await params;
   const category = toolCategories.find((c) => c.slug === slug);
   if (!category) return {};
@@ -34,7 +34,7 @@ function byGroup(products: Product[]): [string | undefined, Product[]][] {
   return [...groups.entries()];
 }
 
-export default async function CategoryPage({ params }: PageProps<"/engine-bay/tools/[category]">) {
+export default async function CategoryPage({ params }: PageProps<"/engine-bay/equipment/[category]">) {
   const { category: slug } = await params;
   const category = toolCategories.find((c) => c.slug === slug);
   if (!category) notFound();

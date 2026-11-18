@@ -4,7 +4,7 @@ import { EbHeader } from "@/components/engine-bay/header";
 import { engineBay } from "@/lib/brand";
 
 // Engine Bay has its own header and footer instead of the OpPeriod ones, so
-// it reads like a tool supplier's site. It still runs inside the root layout
+// it reads like an equipment supplier's site. It still runs inside the root layout
 // (fonts, html, body).
 export const metadata: Metadata = {
   title: { default: engineBay.name, template: `%s | ${engineBay.name}` },

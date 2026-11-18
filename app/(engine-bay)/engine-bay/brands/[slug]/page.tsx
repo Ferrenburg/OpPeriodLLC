@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: PageProps<"/engine-bay/brands
   if (!brand) return {};
   return {
     title: brand.name,
-    description: `${brand.name} fire service tools from ${engineBay.name}. ${brand.about[0] ?? ""}`.trim(),
+    description: `${brand.name} fire department equipment from ${engineBay.name}. ${brand.about[0] ?? ""}`.trim(),
     alternates: { canonical: brandPath(brand) },
   };
 }
@@ -64,7 +64,7 @@ export default async function BrandPage({ params }: PageProps<"/engine-bay/brand
           );
         })}
         <p className="pb-14 text-lg">
-          Need a {brand.name} tool that isn&apos;t listed?{" "}
+          Need something from {brand.name} that isn&apos;t listed?{" "}
           <Link href={quoteHref(brand.name)} className="font-semibold text-accent underline underline-offset-4">
             Ask us
           </Link>

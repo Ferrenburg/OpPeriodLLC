@@ -48,7 +48,8 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 - [ ] Council Tool: confirm their go-ahead covers using their product photos and descriptions word for word, not just selling the tools. Get it in writing (an email is fine) before this goes live.
 - [ ] Council Tool: confirm the 41 products are all ones Engine Bay can actually get. The list is everything in Council's Firefighting category as of October 2026, including wildland tools and replacement parts.
 - [ ] Decide whether to say "authorized Council Tool dealer" anywhere. The site doesn't say it now. Only add it if Council says Engine Bay can use that wording.
-- [ ] Review the copy: the hero ("Halligans to hooks."), "By firefighters, for firefighters ... someone who has swung one," and the three ordering steps.
+- [ ] The Engine Bay logo lockup (and the 2026 catalog covers) still read "Hand tools / Fire service / Built to last". Now that Engine Bay covers hose, saws, and other loose equipment, consider new artwork, like "Loose equipment / Fire service / Built to last". Drop it in `public/brand/engine-bay-lockup.webp` and `app/(engine-bay)/engine-bay/opengraph-image.png`.
+- [ ] Review the copy: the hero ("Stock the rig."), "By firefighters, for firefighters ... someone who has used it on a call," and the three ordering steps.
 - [ ] Optional: its own inbox for quote requests. Add `contactEmailKey: ENGINE_BAY` to `content/projects/engine-bay.mdx` and set `CONTACT_EMAIL_ENGINE_BAY` in Vercel.
 - [ ] The two PDF catalogs (`public/downloads/`) show prices good through 12/31/26. Replace them before then with the 2027 files, using the same file names, or update `printCatalogs` in `lib/engine-bay.ts` if names or page counts change.
 - [ ] The Council Tool catalog says "Authorized Distributor of Council Tool" and uses Council's 1886 badge. Make sure Council has okayed both, in writing.

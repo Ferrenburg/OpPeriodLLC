@@ -1,21 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/button";
-import { CategoryCard } from "@/components/engine-bay/category-card";
+import { AreaGrid } from "@/components/engine-bay/area-grid";
 import { Logo } from "@/components/logo";
 import { ProjectCard } from "@/components/project-card";
 import { company, engineBay, logos, siteUrl } from "@/lib/brand";
-import { catalogPath, printCatalogs, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { catalogPath, equipmentPath, printCatalogs, quoteHref } from "@/lib/engine-bay";
 import { brandPath, getBrandProducts, getBrands, getProducts } from "@/lib/engine-bay-catalog";
 import { getListedProjects } from "@/lib/projects";
 
 export const metadata: Metadata = {
-  description: `${company.description} Home of ${engineBay.name}, fire service hand tools for departments.`,
+  description: `${company.description} Home of ${engineBay.name}, loose equipment for fire departments.`,
   alternates: { canonical: "/" },
 };
 
-// How many Engine Bay categories the landing page shows before "All tools".
-const FEATURED_CATEGORIES = 6;
 
 // Draft copy, flagged in CONTENT-TODO.md for the owner to rewrite or approve.
 const values = [
@@ -72,7 +70,7 @@ export default function HomePage() {
   const others = projects.filter((project) => project.sitePath !== engineBay.path);
   const brands = getBrands();
   const brandNames = brands.map((b) => b.name);
-  const toolCount = getProducts().length;
+  const itemCount = getProducts().length;
 
   return (
     <>
@@ -91,20 +89,20 @@ export default function HomePage() {
               </p>
               <h1 className="mt-4 font-display text-6xl font-bold uppercase italic leading-[0.9] sm:text-7xl md:text-8xl">
                 <span className="sr-only">{engineBay.name}: </span>
-                Halligans
+                Stock
                 <br />
-                to hooks.
+                the rig.
               </h1>
               <p className="mt-6 max-w-xl text-xl leading-relaxed text-white/85">
-                Fire service hand tools and hose for departments, from {brandNames.slice(0, -1).join(", ")} and {brandNames.at(-1)}.
-                Send us your list and we&apos;ll quote it.
+                Loose equipment for fire departments, from {brandNames.slice(0, -1).join(", ")} and {brandNames.at(-1)}. Send us
+                your list and we&apos;ll quote it.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
-                  href={`${engineBay.path}/tools`}
+                  href={equipmentPath}
                   className="inline-flex min-h-12 items-center justify-center rounded-sm bg-eb-red px-7 font-display text-lg font-semibold uppercase italic tracking-wide text-white hover:bg-eb-red-dark"
                 >
-                  Shop {toolCount} tools
+                  Shop {itemCount} items
                 </Link>
                 <Link
                   href={quoteHref()}
@@ -133,23 +131,19 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section aria-labelledby="shop-by-category" className="py-14 md:py-20">
+        <section aria-labelledby="what-we-supply" className="py-14 md:py-20">
           <div className="container-site">
             <div className="flex flex-wrap items-end justify-between gap-4">
-              <h2 id="shop-by-category" className="font-display text-4xl font-bold uppercase italic leading-none md:text-5xl">
-                Shop by category
+              <h2 id="what-we-supply" className="font-display text-4xl font-bold uppercase italic leading-none md:text-5xl">
+                What we supply
               </h2>
-              <Link href={`${engineBay.path}/tools`} className="font-semibold text-accent underline underline-offset-4">
-                All {toolCategories.length} categories
+              <Link href={equipmentPath} className="font-semibold text-accent underline underline-offset-4">
+                All equipment
               </Link>
             </div>
-            <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {toolCategories.slice(0, FEATURED_CATEGORIES).map((category) => (
-                <li key={category.slug}>
-                  <CategoryCard category={category} />
-                </li>
-              ))}
-            </ul>
+            <div className="mt-10">
+              <AreaGrid />
+            </div>
           </div>
         </section>
 
@@ -158,7 +152,7 @@ export default function HomePage() {
             <h2 id="brands-catalogs" className="font-display text-4xl font-bold uppercase italic leading-none md:text-5xl">
               Brands we carry
             </h2>
-            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {brands.map((brand) => {
                 const catalog = printCatalogs.find((c) => c.brandSlug === brand.slug);
                 return (
@@ -171,7 +165,7 @@ export default function HomePage() {
                     {brand.about[0] && <p className="mt-2 flex-1 text-muted">{brand.about[0]}</p>}
                     <p className="mt-4 flex flex-wrap gap-x-5 gap-y-1 font-semibold">
                       <Link href={brandPath(brand)} className="text-accent underline underline-offset-4">
-                        {getBrandProducts(brand.slug).length} tools and parts
+                        {getBrandProducts(brand.slug).length} items
                       </Link>
                       {catalog && (
                         <Link href={catalogPath(catalog)} className="text-accent underline underline-offset-4">

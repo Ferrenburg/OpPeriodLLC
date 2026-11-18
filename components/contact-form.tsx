@@ -222,15 +222,15 @@ export function ContactForm({ options, email, turnstileSiteKey, quote }: Props) 
 
       <div>
         <label htmlFor="message" className="font-semibold">
-          {quote ? "Tools and quantities" : "Message"}
+          {quote ? "Items and quantities" : "Message"}
         </label>
         {quote && (
           <p id="message-hint" className="mt-1 text-muted">
-            One line per tool. Add sizes or brands if your department has a standard.
+            One line per item. Add sizes, lengths, couplings, or brands if your department has a standard.
           </p>
         )}
         <textarea ref={message} id="message" name="message" required rows={quote ? 8 : 6} maxLength={5000}
-          placeholder={quote ? "4 x 30 inch halligan bar\n2 x 6 ft New York hook" : undefined}
+          placeholder={quote ? "4 x 30 inch halligan bar\n6 x 50 ft 1-3/4 in. attack hose, NH couplings" : undefined}
           aria-invalid={!!fieldErrors.message}
           aria-describedby={[quote && "message-hint", describe("message")].filter(Boolean).join(" ") || undefined}
           className={input} />

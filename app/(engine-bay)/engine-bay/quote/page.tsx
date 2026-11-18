@@ -7,7 +7,7 @@ import { getListedProjects } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Request a Quote",
-  description: `Send ${engineBay.name} the tools and quantities your department needs and get itemized pricing back.`,
+  description: `Send ${engineBay.name} the equipment and quantities your department needs and get itemized pricing back.`,
   alternates: { canonical: `${engineBay.path}/quote` },
 };
 
@@ -38,8 +38,8 @@ export default function QuotePage() {
         <aside className="h-fit border-t-4 border-eb-red bg-eb-paper p-6">
           <h2 className="font-display text-2xl font-bold uppercase italic">What speeds up a quote</h2>
           <ul className="mt-4 space-y-3">
-            <li>Each tool and how many you need</li>
-            <li>Sizes, materials, or brands your department has standardized on</li>
+            <li>Each item and how many you need</li>
+            <li>Sizes, lengths, couplings, colors, or brands your department has standardized on</li>
             <li>When you need them, especially if it&apos;s tied to a budget year</li>
           </ul>
           <h2 className="mt-8 font-display text-2xl font-bold uppercase italic">Rather call or email?</h2>

@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { ProductCard } from "@/components/engine-bay/product-card";
 import { engineBay, siteUrl } from "@/lib/brand";
 import { ProductPhoto } from "@/components/engine-bay/product-photo";
-import { categoryPath, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { categoryPath, equipmentPath, quoteHref, toolCategories } from "@/lib/engine-bay";
 import { brandPath, getProduct, getProducts, getProductsIn, partNumbers, quoteLabel } from "@/lib/engine-bay-catalog";
 import { readPublicImage } from "@/lib/images";
 
@@ -56,8 +56,8 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
         <nav aria-label="Breadcrumb" className="text-sm text-muted">
           <ol className="flex flex-wrap gap-x-2">
             <li>
-              <Link href={`${engineBay.path}/tools`} className="hover:text-fg hover:underline">
-                Tools
+              <Link href={equipmentPath} className="hover:text-fg hover:underline">
+                Equipment
               </Link>
             </li>
             <li aria-hidden="true">/</li>

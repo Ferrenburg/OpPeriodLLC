@@ -11,8 +11,6 @@ export type ToolCategory = {
   blurb: string;
   // Slug of the product whose first photo stands for the category on cards.
   featured: string;
-  // Left out of the home page grid and linked in a line under it instead.
-  minor?: boolean;
 };
 
 export const toolCategories: ToolCategory[] = [
@@ -90,16 +88,15 @@ export const toolCategories: ToolCategory[] = [
     slug: "parts",
     name: "Handles and parts",
     short: "Parts",
-    blurb: "Replacement poles, handles, rake heads, teeth, and swatter flaps to keep tools in service.",
+    blurb: "Replacement poles, handles, rake heads, teeth, and swatter flaps to keep equipment in service.",
     featured: "70-32dg-b",
-    minor: true,
   },
 ];
 
 export const orderingSteps = [
   {
     title: "Send your list",
-    text: "Use the quote form or email us. Tools, quantities, and any specs your department wants.",
+    text: "Use the quote form or email us. Items, quantities, and any specs your department wants.",
   },
   {
     title: "Get an itemized quote",
@@ -107,11 +104,56 @@ export const orderingSteps = [
   },
   {
     title: "Place the order",
-    text: "Your department sends the order and we get the tools headed your way.",
+    text: "Your department sends the order and we get it headed your way.",
   },
 ];
 
-export const categoryPath = (category: { slug: string }) => `${engineBay.path}/tools/${category.slug}`;
+export const categoryPath = (category: { slug: string }) => `${engineBay.path}/equipment/${category.slug}`;
+
+// The categories grouped the way a fire department thinks about loose
+// equipment. Every category belongs to exactly one area (the catalog loader
+// checks). The first category's photo stands for the area.
+export type EquipmentArea = {
+  slug: string;
+  name: string;
+  blurb: string;
+  categories: string[];
+};
+
+export const equipmentAreas: EquipmentArea[] = [
+  {
+    slug: "hand-tools",
+    name: "Forcible entry and hand tools",
+    blurb: "Halligans, axes, hooks and pike poles, irons, and through-the-lock tools.",
+    categories: ["halligans", "axes", "hooks", "irons", "forcible-entry"],
+  },
+  {
+    slug: "hose",
+    name: "Fire hose",
+    blurb: "Attack, supply (LDH), and forestry hose.",
+    categories: ["hose"],
+  },
+  {
+    slug: "saws-rescue",
+    name: "Saws and rescue",
+    blurb: "Rescue and battery saws, blades, hydrant wrenches, and spanners.",
+    categories: ["saws", "rescue"],
+  },
+  {
+    slug: "wildland",
+    name: "Wildland",
+    blurb: "Pulaskis, McLeods, fire rakes, swatters, shovels, and brush gear.",
+    categories: ["wildland"],
+  },
+  {
+    slug: "mounting-parts",
+    name: "Mounting and parts",
+    blurb: "Straps, harnesses, brackets, replacement handles, and parts.",
+    categories: ["straps-mounts", "parts"],
+  },
+];
+
+export const equipmentPath = `${engineBay.path}/equipment`;
 
 // Printable catalogs and price guides, as PDFs in public/downloads/. The
 // owner makes these; swap the files (same names) when a new year's comes out.
@@ -156,7 +198,7 @@ export const printCatalogs: PrintCatalog[] = [
 export const catalogPath = (catalog: PrintCatalog) => `${engineBay.path}/catalogs/${catalog.slug}`;
 
 export const ebNav = [
-  { label: "Tools", href: `${engineBay.path}/tools` },
+  { label: "Equipment", href: `${engineBay.path}/equipment` },
   { label: "Catalogs", href: `${engineBay.path}/catalogs` },
   { label: "How to Order", href: `${engineBay.path}#ordering` },
   { label: "About", href: `${engineBay.path}#about` },
@@ -167,7 +209,7 @@ export const quoteHref = (tool?: string) =>
 
 export const ebPages = [
   engineBay.path,
-  `${engineBay.path}/tools`,
+  `${engineBay.path}/equipment`,
   `${engineBay.path}/quote`,
   `${engineBay.path}/catalogs`,
   ...printCatalogs.map(catalogPath),

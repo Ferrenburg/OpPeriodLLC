@@ -4,7 +4,7 @@ import { categoryPath, categoryPhoto, getProductsIn } from "@/lib/engine-bay-cat
 import { CategoryImage } from "./category-image";
 
 // A category tile with its featured product's photo, used on the Engine Bay
-// home page and the tools overview. The whole card links to the category.
+// equipment overview and category sections. The whole card links to the category.
 export function CategoryCard({ category, headingLevel = "h3" }: { category: ToolCategory; headingLevel?: "h2" | "h3" }) {
   const count = getProductsIn(category.slug).length;
   const Heading = headingLevel;

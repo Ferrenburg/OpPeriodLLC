@@ -30,8 +30,8 @@ export function EbFooter() {
           </p>
         </div>
 
-        <nav aria-label="Tools">
-          <p className="font-display text-lg font-semibold uppercase italic tracking-wide">Tools</p>
+        <nav aria-label="Equipment">
+          <p className="font-display text-lg font-semibold uppercase italic tracking-wide">Equipment</p>
           <ul className="mt-4 space-y-2">
             {toolCategories.map((category) => (
               <li key={category.slug}>
