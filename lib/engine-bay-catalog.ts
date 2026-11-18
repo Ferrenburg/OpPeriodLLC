@@ -23,7 +23,8 @@ const productSchema = z
   .strictObject({
   slug,
   // The manufacturer's model or part number, exactly as they print it. A
-  // product sold in several sizes leaves this out and lists variants instead.
+  // product sold in several sizes lists variants instead, and one sized and
+  // coupled to order (like fire hose) can have neither.
   sku: text.optional(),
   name: text,
   category: z.enum(categorySlugs, `must be one of: ${categorySlugs.join(", ")}`),
@@ -38,10 +39,11 @@ const productSchema = z
   images: z.array(z.string().startsWith("/", "must be a path in public/, like /catalog/photo.webp")).default([]),
   // Sizes or options, each with its own part number, like a hook in 4, 5, and 6 ft.
   variants: z.array(z.strictObject({ sku: text, option: text })).default([]),
+  // The manufacturer's spec or data sheet (a PDF on their site), linked from the product page.
+  datasheet: z.url().optional(),
   // Where the product details came from, for checking later. Not shown.
   source: z.url().optional(),
-  })
-  .refine((p) => p.sku || p.variants.length > 0, { path: ["sku"], message: "add a part number, or list variants with their own" });
+  });
 
 const fileSchema = z.strictObject({
   brand: z.strictObject({
@@ -145,9 +147,11 @@ export const quoteLabel = (product: Product, variant?: { sku: string; option: st
   return product.sku ? `${product.brand.name} ${product.sku}, ${product.name}` : `${product.brand.name} ${product.name}`;
 };
 
-// The part number line on cards: the model, or the range of a product's sizes.
+// The part number line on cards: the model, the range of a product's sizes,
+// or nothing for a product sized to order.
 export function partNumbers(product: Product): string {
   if (product.sku) return product.sku;
+  if (product.variants.length === 0) return "";
   const skus = product.variants.map((v) => v.sku);
   return skus.length > 2 ? `${skus[0]} to ${skus[skus.length - 1]}` : skus.join(", ");
 }

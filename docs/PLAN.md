@@ -285,6 +285,10 @@ All 41 products in Council Tool's Firefighting category, with Council's go-ahead
 
 Built from the owner's Engine Bay FHU catalog PDF (`public/downloads/engine-bay-fire-hooks-unlimited-catalog-2026.pdf`), not FHU's website: product cards, the "More..." table rows, and hook families with a size table each. 297 FHU products and 25 Husqvarna products (the catalog's Husqvarna section). Photos are the originals embedded in the PDF, checked against the shape printed on the page, in `public/catalog/fhu-*.webp`. Prices are never copied. Three categories were added for this line: Straps and mounts, Hydrant and rescue tools, Saws and blades.
 
+### Snap-tite Hose (added November 2026)
+
+16 Snap-tite fire hose lines from snaptitehose.com (`content/engine-bay/products/snap-tite-hose.json`), in a new Fire hose category: attack hose, supply hose (LDH), forestry hose, and industrial and in-plant fire hose. Pages were fetched one per second. Each has Snap-tite's pitch, construction, description, features, the colors shown, uses, warranty terms, up to four color photos (`public/catalog/snaptite-*.webp`), and a `datasheet` link to Snap-tite's PDF. Hose has no `sku` or `variants`: it's quoted by size, length, couplings, and color, and cards say "Sized to order". Products on Snap-tite's site that link to firequip.com, and their agriculture, irrigation, and potable water lines, are left out.
+
 ### Next steps
 
 1. More brands: add a JSON file per brand and photos in `public/catalog/`. Nothing else changes.

@@ -34,7 +34,7 @@ export default function EngineBayHome() {
               to hooks.
             </h1>
             <p className="mt-6 max-w-xl text-xl leading-relaxed text-white/85">
-              Forcible entry, overhaul, and wildland tools for fire departments. Send us your list and we&apos;ll quote it.
+              Forcible entry, overhaul, and wildland tools, plus fire hose, for fire departments. Send us your list and we&apos;ll quote it.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={quoteHref()} className={redButton}>

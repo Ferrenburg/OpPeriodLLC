@@ -16,8 +16,14 @@ export function ProductCard({ product, headingLevel = "h3" }: { product: Product
         <p className="text-xs font-semibold uppercase tracking-wider text-muted">{product.brand.name}</p>
         <Heading className="mt-1 flex-1 font-semibold leading-snug group-hover:text-accent">{product.name}</Heading>
         <p className="mt-3 text-sm text-muted">
-          {product.variants.length > 0 ? `${product.variants.length} options: ` : "Model "}
-          <span className="font-semibold text-fg">{partNumbers(product)}</span>
+          {partNumbers(product) ? (
+            <>
+              {product.variants.length > 0 ? `${product.variants.length} options: ` : "Model "}
+              <span className="font-semibold text-fg">{partNumbers(product)}</span>
+            </>
+          ) : (
+            "Sized to order"
+          )}
         </p>
       </div>
     </Link>

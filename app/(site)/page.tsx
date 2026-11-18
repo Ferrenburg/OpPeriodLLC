@@ -96,7 +96,7 @@ export default function HomePage() {
                 to hooks.
               </h1>
               <p className="mt-6 max-w-xl text-xl leading-relaxed text-white/85">
-                Fire service hand tools for departments, from {brandNames.slice(0, -1).join(", ")} and {brandNames.at(-1)}.
+                Fire service hand tools and hose for departments, from {brandNames.slice(0, -1).join(", ")} and {brandNames.at(-1)}.
                 Send us your list and we&apos;ll quote it.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
