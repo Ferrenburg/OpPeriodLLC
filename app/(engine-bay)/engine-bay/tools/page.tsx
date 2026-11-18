@@ -8,7 +8,7 @@ import { getBrands, getProducts } from "@/lib/engine-bay-catalog";
 
 export const metadata: Metadata = {
   title: "Tools",
-  description: `Halligans, axes, hooks and pike poles, irons, forcible entry, straps and mounts, rescue, wildland, and saws from ${engineBay.name}.`,
+  description: `Halligans, axes, hooks and pike poles, fire hose, irons, forcible entry, straps and mounts, rescue, wildland, and saws from ${engineBay.name}.`,
   alternates: { canonical: `${engineBay.path}/tools` },
 };
 

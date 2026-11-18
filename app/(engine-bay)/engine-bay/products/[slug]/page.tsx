@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps<"/engine-bay/produc
   if (!product) return {};
   return {
     title: `${product.brand.name} ${product.name}`,
-    description: `${product.summary} ${product.sku ? "Model" : "Part numbers"} ${partNumbers(product)}. Request a quote from ${engineBay.name}.`,
+    description: `${product.summary}${partNumbers(product) ? ` ${product.sku ? "Model" : "Part numbers"} ${partNumbers(product)}.` : ""} Request a quote from ${engineBay.name}.`,
     alternates: { canonical: product.href },
     openGraph: product.images[0] ? { images: [{ url: product.images[0], alt: product.name }] } : undefined,
   };
@@ -101,14 +101,20 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
               {product.brand.name}
             </Link>
             <h1 className="mt-2 font-display text-4xl font-bold uppercase italic leading-none md:text-5xl">{product.name}</h1>
-            <p className="mt-4 inline-block border-2 border-line px-3 py-1 text-sm">
-              {product.sku ? "Model" : `${product.variants.length} options:`} <span className="font-semibold">{partNumbers(product)}</span>
-            </p>
+            {partNumbers(product) && (
+              <p className="mt-4 inline-block border-2 border-line px-3 py-1 text-sm">
+                {product.sku ? "Model" : `${product.variants.length} options:`} <span className="font-semibold">{partNumbers(product)}</span>
+              </p>
+            )}
             <p className="mt-5 text-lg leading-relaxed">{product.summary}</p>
 
             <div className="mt-8 border-t-4 border-eb-red bg-eb-paper p-5">
               <p className="font-display text-2xl font-bold uppercase italic">Get pricing for your department</p>
-              <p className="mt-1 text-muted">Tell us how many you need and we&apos;ll send an itemized quote.</p>
+              <p className="mt-1 text-muted">
+                {partNumbers(product)
+                  ? "Tell us how many you need and we'll send an itemized quote."
+                  : "Tell us the size, lengths, couplings, and color you need and we'll send an itemized quote."}
+              </p>
               <div className="mt-4 flex flex-wrap gap-3">
                 <Link
                   href={quoteHref(quoteLabel(product))}
@@ -124,6 +130,15 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
                 </a>
               </div>
             </div>
+
+            {product.datasheet && (
+              <p className="mt-5">
+                <a href={product.datasheet} target="_blank" rel="noopener noreferrer" className="font-semibold text-accent underline underline-offset-4">
+                  {product.brand.name} data sheet (PDF)
+                </a>{" "}
+                <span className="text-muted">for sizes, pressures, and weights.</span>
+              </p>
+            )}
 
             {product.variants.length > 0 && (
               <section aria-labelledby="options" className="mt-10">

@@ -38,6 +38,13 @@ export const toolCategories: ToolCategory[] = [
     featured: "rhfsv-4",
   },
   {
+    slug: "hose",
+    name: "Fire hose",
+    short: "Hose",
+    blurb: "Attack, supply (LDH), and forestry hose from Snap-tite.",
+    featured: "snap-tite-supreme-ii",
+  },
+  {
     slug: "irons",
     name: "Irons sets",
     short: "Irons",

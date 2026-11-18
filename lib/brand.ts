@@ -74,7 +74,7 @@ export const engineBay = {
   shortName: "Engine Bay",
   path: "/engine-bay",
   description:
-    "Fire service hand tools for departments, from halligans to New York hooks. Engine Bay Supply Co. is a division of OpPeriod LLC.",
+    "Fire service hand tools and fire hose for departments, from halligans to New York hooks. Engine Bay Supply Co. is a division of OpPeriod LLC.",
   // Quote requests go here until Engine Bay gets its own inbox.
   email: company.email,
   phone: { display: "(337) 313-2812", href: "tel:+13373132812" },

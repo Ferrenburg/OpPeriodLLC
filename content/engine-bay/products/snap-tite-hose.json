@@ -1,0 +1,489 @@
+{
+  "brand": {
+    "slug": "snap-tite-hose",
+    "name": "Snap-tite Hose",
+    "about": [
+      "Snap-tite Hose makes fire hose at its plants in Erie and Union City, Pennsylvania.",
+      "Snap-tite formed its hose division in 1969 and became Snap-tite Hose, Inc. in 1980."
+    ],
+    "website": "https://www.snaptitehose.com"
+  },
+  "products": [
+    {
+      "slug": "snap-tite-supreme-ii",
+      "name": "Supreme II",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Premium Attack Line. Outstanding Value. Polyester outer/inner jacket, extruded thru-the-weave onyx nitrile liner.",
+      "details": [
+        "Supreme™ II is a premier double jacketed fire hose and one of the best values on the market today. Originally designed over 40 years ago, Supreme™ has become the hose to which all others are compared. With hose sizes up to 3” and manufactured to exacting standards, Supreme™ II features a polyester outer jacket that encompasses an onyx nitrile rubber thru-the-weave liner. Performing well at high and low pressures, Supreme™ II has a smooth and enhanced waterway for better flow and less kinking."
+      ],
+      "features": [
+        "Premium quality outside jacket with an onyx nitrile rubber thru-the-weave liner construction. NO ADHESIVE IS USED. The lining will never delaminate.",
+        "Optional Dura-Cote™ treatment.",
+        "Remains flexible at temperatures as low as -40°F (-40°C) and is resistant to ozone and oxidation.",
+        "Optional color-coded stripe of one contrasting color can be woven into the outer jacket running the entire length of the hose for identification purposes.",
+        "Kink resistance exceeds that of lightweight jacketed hose.",
+        "Suitable for use with CAFS and foam solutions.",
+        "Manufactured in accordance with NFPA 1960 Standard, the latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: Yellow, Red, Blue, Orange, Green, White uncoated, White coated. Custom colors available on request.",
+        "Built for: Attack, Low Pressure, CAFS, Dura-Coat Treatment.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "2-year all hazard warranty.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-supreme-ii-1.webp",
+        "/catalog/snaptite-supreme-ii-2.webp",
+        "/catalog/snaptite-supreme-ii-3.webp",
+        "/catalog/snaptite-supreme-ii-4.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/Supreme-2_Aug-2026.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/supreme-ii"
+    },
+    {
+      "slug": "snap-tite-conquest",
+      "name": "Conquest",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Maximize Water Flow And Knock Down Fires Faster. Polyester double jacketed attack hose.",
+      "details": [
+        "Looking for a hose to flow a tremendous amount of water? You’ve found it with CONQUEST™! Today’s fires are hotter and more water is needed at the nozzle to knock them down fast. Conquest™ meets that challenge every day. Our patented thru-the-weave extruded polyurethane liner has an incredibly smooth surface that enhances water flow."
+      ],
+      "features": [
+        "Patented double jacketed fire hose made from 100% high tensile strength polyester outer jacket with extruded thru-the-weave polyurethane inner hose. NO ADHESIVE IS USED. The lining will never delaminate.",
+        "Optional Dura-Cote™ treatment.",
+        "Hose remains flexible at temperatures as low as -40°F (-40°C) and meets all NFPA requirements for ozone resistance.",
+        "Outstanding flow and low friction loss.",
+        "Suitable for CAFS and foam concentrates.",
+        "Optional color-coded stripe of one contrasting color can be woven into the outer jacket running the full length of the hose for identification purposes.",
+        "Manufactured in accordance with NFPA 1960 standard, latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: Red, Blue, Orange, Green, White coated, White uncoated.",
+        "Built for: Attack, High Rise, CAFS, Potable Water, Dura-Coat Treatment.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "2-year all hazard warranty.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-conquest-1.webp",
+        "/catalog/snaptite-conquest-2.webp",
+        "/catalog/snaptite-conquest-3.webp",
+        "/catalog/snaptite-conquest-4.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/Conquest_Nov-2026.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/conquest"
+    },
+    {
+      "slug": "snap-tite-gladiator-fg",
+      "name": "Gladiator (FG)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Premium Attack Hose: Excellent Flow, Even at Low Pressure. Polyester jacket with extruded thru-the-weave nitrile liner.",
+      "details": [
+        "Gladiator™ is a premier hose with a polyester outside jacket that encompasses a very durable nitrile rubber thru-the-weave inside liner. Built to last, this rugged hose is constructed with incredible strength and long-lasting performance in mind. The Gladiator™ performs well at high or low pressures, has a smooth and enhanced waterway for better flows, and less kinking than other products on the market."
+      ],
+      "features": [
+        "Premium quality, outside jacket with a nitrile rubber thru-the-weave inner liner construction. NO ADHESIVE IS USED. The lining will never delaminate.",
+        "Optional Dura-Cote™ treatment.",
+        "Remains flexible at temperatures as low as -40°F (-40°C) and highly resistant to ozone and oxidation, and most chemicals and petrochemicals.",
+        "Kink resistance exceeds that of lightweight jacketed hose.",
+        "Suitable for use with CAFS and foam solutions.",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: White, Yellow, Blue, Green, Red.",
+        "Built for: Attack, Low Pressure, CAFS, Dura-Coat Treatment.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "2-year all hazard warranty.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-gladiator-fg-1.webp",
+        "/catalog/snaptite-gladiator-fg-2.webp",
+        "/catalog/snaptite-gladiator-fg-3.webp",
+        "/catalog/snaptite-gladiator-fg-4.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/Gladiator-FG_Nov-2026-v2.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/gladiator-fg"
+    },
+    {
+      "slug": "snap-tite-gladiator-fgn",
+      "name": "Gladiator (FGN)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Engineered for Low-Pressure, High-Flow Firefighting. Jacketed thru-the-weave nitrile rubber.",
+      "details": [
+        "Gladiator™ FGN is one of the leading attack lines in the industry. Built to last, this rugged hose is constructed with an extruded thru-the-weave nitrile rubber liner and a durable outer polyester jacket, providing incredible strength and long-lasting performance. The Gladiator™ FGN performs well at high or low pressures and has a smooth 1.77” waterway for less kinking than other products on the market. Both the nitrile rubber thru-the-weave inner lining and outer jacket are proudly made at our factories in Pennsylvania, USA."
+      ],
+      "features": [
+        "The Service Test Pressure is 500 PSI, making it a very durable and reliable hose.",
+        "Performance rated at -40° to 200°F (-40°C to 93°C).",
+        "Standard Dura-Cote™ protective treatment available in NFPA colors.",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition within our ISO- 9001:2015 certified quality assurance system.",
+        "Shown in: Yellow, Red, Blue, Green, White coated, Orange.",
+        "Built for: Attack, Low Pressure, CAFS, Dura-Coat Treatment.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "2-year all hazard warranty.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-gladiator-fgn-1.webp",
+        "/catalog/snaptite-gladiator-fgn-2.webp",
+        "/catalog/snaptite-gladiator-fgn-3.webp",
+        "/catalog/snaptite-gladiator-fgn-4.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/Gladiator-FGN_Nov-2026.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/gladiator-fgn"
+    },
+    {
+      "slug": "snap-tite-warrior",
+      "name": "Warrior",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "In a Class of its Own: The Attack Hose Revolutionizing Firefighter Safety. A proprietary double jacketed hose with best in class heat resistance.",
+      "details": [
+        "Fires are burning hotter, and extinguishing the fire faster is the name of the game. But what advances have been made to manufacture a hose that can withstand the actual thermal conditions it's exposed to on the fire ground? A hose that can literally stand the heat while performing exceptionally? We made it.",
+        "The Warrior™ is a revolutionary attack hose built to conquer the heat of modern fires. Independent lab tests prove the Warrior™ can withstand extreme heat for extended periods. But it’s not just about survival; the Warrior™ delivers exceptional water flow, kink resistance, and handling even under pressure. This translates to a hose that performs exceptionally well, even in the harshest environments. The Warrior™ sets a new standard for high-temperature attack hoses, proving itself to be in a class of its own."
+      ],
+      "features": [
+        "Hose can withstand 60 minutes in radiant heat testing without failure. (UL- 19 test standards conducted in our lab under the same conditions as the UL lab).",
+        "More than three times the abrasion resistance of any current hose on the market.",
+        "Excellent handling, kink resistance, and flow at the nozzle at pressures of 45 psi to 100 psi.",
+        "Optional Dura-Cote™ treatment.",
+        "Remains flexible to temperatures as low as - 40 °F (- 40 °C) and is resistant to ozone, oxidation, and most chemicals and petrochemicals. (UL Tested to -4°F (-20°C)).",
+        "Manufactured in accordance with NFPA 1960 standard, latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: Natural.",
+        "Built for: Attack, Low Pressure, CAFS, Dura-Coat Treatment.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "3-year all hazard warranty.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-warrior-1.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/Warrior_JULY-2026-v2.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/warrior"
+    },
+    {
+      "slug": "snap-tite-hfx",
+      "name": "HFX",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Resilient and Reliable. Extruded nitrile rubber attack hose.",
+      "details": [
+        "HFX™ is a nitrile thru-the-weave, rubber covered fire hose that utilizes polyester and nylon 6.6 yarn in the reinforcing jacket. Under pressure, the polyester keeps the hose from snaking, while the nylon allows for controlled dilation, reducing friction loss, and generating higher flow rates. Our special rubber compound provides a tough cover that resists heat, abrasion, snags, and hot embers. The interlocking matrix also means no adhesives are used and there is a permanent bond to all the warp and weft yarns. The Snap-tite HFX™ is highly resistant to both conductive and radiant heat."
+      ],
+      "features": [
+        "Extruded thru-the-weave, nitrile rubber fire hose. The reinforcement is made with a blend of circular woven, twill weave, polyester, and nylon fibers.",
+        "The ribs on the cover surface greatly increase abrasion resistance and help provide a long service life.",
+        "Remains flexible at temperatures as low as -40°F (-40°C) and is resistant to ozone, oxidation, and most chemicals and petrochemicals.",
+        "Suitable for attack, soft sleeve suction, and relay applications.",
+        "Unique extruded nitrile rubber thru-the-weave construction provides a flexible, easy to maneuver hose that is easy to pack.",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: Red.",
+        "Built for: Attack, Soft Suction, Klean Hose.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-hfx-1.webp",
+        "/catalog/snaptite-hfx-2.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/HFX_Sept-2026-3.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/hfx"
+    },
+    {
+      "slug": "snap-tite-ld",
+      "name": "LD",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Durable, Dependable and Better by Design. Lightweight extruded rubber hose.",
+      "details": [
+        "LD™ is a premium quality extruded thru-the-weave, nitrile rubber fire hose. It’s an easily coiled, nonkinking, high flow, lightweight hose that also resists abrasion, chemicals, and weathering by ozone."
+      ],
+      "features": [
+        "Extruded thru-the-weave, nitrile rubber fire hose. The reinforcement has circular woven, twill weave, and nylon fibers.",
+        "Highly resistant to both conductive and radiant heat.",
+        "Hose remains flexible at temperatures as low as -40°F (-40°C) and is resistant to ozone, oxidation, and most chemicals and petrochemicals.",
+        "Maintenance free, no drying required, and is easily cleaned.",
+        "Lightweight and kink resistant at low pressures makes this hose superior for high rise firefighting.",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: Yellow, Blue.",
+        "Built for: Attack, Klean Hose.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-ld-1.webp",
+        "/catalog/snaptite-ld-2.webp",
+        "/catalog/snaptite-ld-3.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/LD_Sept-2026.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/ld"
+    },
+    {
+      "slug": "snap-tite-8d",
+      "name": "8D",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "The Ultimate Multipurpose Hose. Polyester double jacketed attack hose.",
+      "details": [
+        "8D™ is a municipal grade, double jacketed hose with a lightweight EPDM rubber liner that meets all the requirements of NFPA 1960. It is designed for use as an attack handline hose and is manufactured to a service test pressure of 400 psi (2758 kPa) to handle all fireground challenges with ease."
+      ],
+      "features": [
+        "Double jacketed EPDM rubber lined hose made from 100% high tensile strength polyester yarn.",
+        "Optional Dura-Cote™ protective treatment.",
+        "Hose remains flexible at temperatures as low as -40°F (-40°C) and is highly resistant to ozone and oxidation.",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: Yellow, Red, Orange, Green, White, White uncoated.",
+        "Built for: Attack, Dura-Coat Treatment.",
+        "USA Made.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-8d-1.webp",
+        "/catalog/snaptite-8d-2.webp",
+        "/catalog/snaptite-8d-3.webp",
+        "/catalog/snaptite-8d-4.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/8D_Aug-2026.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/8d"
+    },
+    {
+      "slug": "snap-tite-6t-military",
+      "name": "6T Military",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "High-Performance Firefighting with Military-Grade Construction. A Premium Double Jacket Hose With Superior Performance.",
+      "details": [
+        "The choice for mission-critical firefighting performance, 6T™ hose is a double jacket military-grade fire hose constructed with 100% high tensile strength polyester yarn with a thermoplastic polyurethane liner for reduced weight and kink-resistance. 6T™ meets all the requirements of NFPA 1961 Standard and Mil Std. 24606B for potable water transfer or fuel transfer. The optional Dura-Cote™ treatment greatly increases abrasion, heat, flame and petrochemical resistance while virtually eliminating water pick-up. When treated, 6T™ is protected from mildew and no drying is required, making it easy to manage on the fireground."
+      ],
+      "features": [
+        "Durable. Sets the standard for high-quality, double jacket, lightweight attack hose.",
+        "Added Reinforcement. Optional Dura-Cote™ protective treatment extends the life of the hose, greatly increases abrasion, heat, flame and petrochemical resistance and eliminates water pick-up.",
+        "Flexible. Hose remains flexible to temperatures as low as -40°F to 150°F (-40°C to 65°C) and is designed to totally eliminate deterioration by ozone.",
+        "Versatile. Polyurethane lining material meets NSF/ANSI Standard 61 for drinking water and can be used as a hydrant or water main bypass in an emergency situation.",
+        "Meets Specifications. 6T™ hose meets MIL-SPEC A-A-59226.",
+        "Certified. Manufactured in accordance with NFPA 1961 Standard, latest edition within our ISO-9001 certified quality assurance system.",
+        "Shown in: Blue.",
+        "Built for: Military, Attack, Potable water."
+      ],
+      "images": [
+        "/catalog/snaptite-6t-military-1.webp",
+        "/catalog/snaptite-6t-military-2.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/6T-v2.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/6t-military"
+    },
+    {
+      "slug": "snap-tite-5p",
+      "name": "5P",
+      "category": "hose",
+      "group": "Industrial and in-plant fire hose",
+      "summary": "Strong, Value-Priced Firefighting Solution. Polyester single jacket EPDM rubber lined hose.",
+      "details": [
+        "The super-duty 5P™ is an excellent all-around performer: Strong, flexible, and ideally suited for all exterior and interior firefighting applications. It delivers medium pressure and high-end performance at a value price point. 5P™ is a polyester single jacket hose with a rugged Ethylene Propylene Diene Monomer (EPDM) rubber liner that can handle most fluids, including some petrochemicals. It boasts a maximum operating pressure of 250 psi (1723 kPa) and can be enhanced with optional Dura-Cote™ treatment for a higher level of abrasion resistance."
+      ],
+      "features": [
+        "Single jacket, polyester, EPDM rubber lined hose.",
+        "Optional Dura-Cote™ protective treatment.",
+        "Hose remains flexible at temperatures as low as -40°F (-40°C) and is resistant to ozone and oxidation.",
+        "Available with aluminum or brass couplings.",
+        "Designed for the following applications: General industrial and construction use; discharge hose; in-plant fire protection; wash down and maintenance.",
+        "1-1/2” and 2-1/2” (Red and White) are UL, ULC, and FM certified.",
+        "1-1/2” and 2-1/2” (Yellow) are ULC/FM certified.",
+        "Shown in: Red, White uncoated.",
+        "Built for: Industrial.",
+        "UL/ULC and FM Certified.",
+        "USA Made.",
+        "1-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-5p-1.webp",
+        "/catalog/snaptite-5p-2.webp",
+        "/catalog/snaptite-5p-3.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/5P_Sept-2026.pdf",
+      "source": "https://www.snaptitehose.com/industries/municipal/product/5p"
+    },
+    {
+      "slug": "snap-tite-blazeline",
+      "name": "BlazeLine",
+      "category": "hose",
+      "group": "Forestry hose",
+      "summary": "Lightweight Strength, Engineered for Superior Performance. Polyester Single Jacketed Forestry Hose.",
+      "details": [
+        "Our Type 187 forestry hose is a lightweight, all-synthetic fire hose featuring a durable polyurethane lining within a polyester jacket. It is engineered to meet USDA Forest Service Specification 5100- 187 for “Synthetic Lined” fire hoses. The hose is available in two styles: BlazeLine™ 7 and BlazeLine™ 8. Both styles are offered in 50’ or 100’ lengths, with your choice of aluminum rocker lug or 1/4-turn forestry couplings. The Type 187 forestry hose meets or exceeds the lightweight requirements outlined in its specifications, ensuring reliable performance in demanding environments."
+      ],
+      "features": [
+        "BlazeLine™ 7 is designed for traditional Type l specifications.",
+        "BlazeLine™ 8 meets the new Type ll specification and boasts mildew-resistant properties to eliminate the need for drying.",
+        "Optional Dura-Cote™ protective treatment (BlazeLine™ 8 only).",
+        "Hose remains flexible at temperatures of -40°F (-40°C) to 150° F (65°C).",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: White, Yellow."
+      ],
+      "images": [
+        "/catalog/snaptite-blazeline-1.webp",
+        "/catalog/snaptite-blazeline-2.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/BlazeLine_NEW.pdf",
+      "source": "https://www.snaptitehose.com/industries/forestry/product/blazeline"
+    },
+    {
+      "slug": "snap-tite-conquest-ldh",
+      "name": "Conquest LDH",
+      "category": "hose",
+      "group": "Supply hose (LDH)",
+      "summary": "Conquest™ LDH Hose for High-Flow Fire Suppression. Polyester double jacketed supply hose.",
+      "details": [
+        "Looking for a hose to flow a tremendous amount of water? You’ve found it with CONQUEST™! Today’s fires are hotter and more water is needed at the nozzle to knock them down fast. Conquest meets that challenge every day. Our patented thru-the-weave extruded polyurethane liner has an incredibly smooth surface that enhances water flow."
+      ],
+      "features": [
+        "Patented double jacketed fire hose made from 100% high tensile strength polyester outer jacket with extruded thru-the-weave polyurethane inner hose. NO ADHESIVE IS USED. The lining will never delaminate.",
+        "Optional Dura-Cote™ treatment.",
+        "Outstanding flow and low friction loss.",
+        "Hose remains flexible at temperatures as low as -40°F (-40°C) and meets all NFPA requirements for ozone resistance.",
+        "Suitable for CAFS and foam concentrates.",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: Yellow, Red, Blue, Green, Orange, White.",
+        "Built for: Attack, Supply, CAFS, Potable Water, Soft Suction, Dura-Coat Treatment.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "2-year all hazard warranty.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-conquest-ldh-1.webp",
+        "/catalog/snaptite-conquest-ldh-2.webp",
+        "/catalog/snaptite-conquest-ldh-3.webp",
+        "/catalog/snaptite-conquest-ldh-4.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/Conquest-LDH_Aug-2026.pdf",
+      "source": "https://www.snaptitehose.com/applications/attack/product/conquest-ldh"
+    },
+    {
+      "slug": "snap-tite-hfx-ldh",
+      "name": "HFX LDH",
+      "category": "hose",
+      "group": "Supply hose (LDH)",
+      "summary": "Maneuverable. Packable. Dependable. Extruded nitrile rubber supply hose.",
+      "details": [
+        "HFX™ LDH is a nitrile thru-the-weave, rubber covered fire hose that utilizes polyester and nylon 6.6 yarn in the reinforcing jacket. Under pressure, the polyester keeps the hose from snaking, while the nylon allows for controlled dilation, reducing friction loss, and generating higher flow rates. Our special rubber compound provides a tough cover that resists heat, abrasion, snags, and hot embers. The interlocking matrix also means no adhesives are used and there is a permanent bond to all the warp and weft yarns. The Snap-tite HFX™ is highly resistant to both conductive and radiant heat."
+      ],
+      "features": [
+        "Extruded thru-the-weave, nitrile rubber fire hose. The reinforcement is made with a blend of circular woven, twill weave, polyester, and nylon fibers.",
+        "The ribs on the cover surface greatly increase abrasion resistance and help provide a long service life.",
+        "Remains flexible at temperatures as low as -40°F (-40°C) and is resistant to ozone, oxidation and most chemicals and petrochemicals.",
+        "Suitable for supply, soft sleeve suction, and relay applications.",
+        "Extruded nitrile rubber thru-the-weave construction provides a flexible, easy to maneuver hose that is easy to pack.",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition within our SO-9001:2015 certified quality assurance system.",
+        "Built for: Supply, Klean Hose.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "10-year warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-hfx-ldh-1.webp",
+        "/catalog/snaptite-hfx-ldh-2.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/HFX-LDH_Sept-2026-2.pdf",
+      "source": "https://www.snaptitehose.com/applications/large-diameter-supply-line-hose/product/hfx-ldh"
+    },
+    {
+      "slug": "snap-tite-supreme-ii-ldh",
+      "name": "Supreme II LDH",
+      "category": "hose",
+      "group": "Supply hose (LDH)",
+      "summary": "Premium Supply Line. Outstanding Value. Polyester outer/inner jacket, extruded thru-the-weave onyx nitrile liner.",
+      "details": [
+        "Supreme™ II LDH is a premier double jacketed supply hose and one of the best values on the market today. Originally designed over 40 years ago, Supreme™ has become the hose to which all others are compared. With hose sizes up to 5” and manufactured to exacting standards, Supreme™ II LDH features a polyester outer jacket that encompasses an onyx nitrile rubber thru-the-weave liner."
+      ],
+      "features": [
+        "Premium quality outside jacket with an onyx nitrile rubber thru-the-weave liner construction. NO ADHESIVE IS USED. The lining will never delaminate.",
+        "Optional Dura-Cote™ treatment.",
+        "Remains flexible at temperatures as low as -40°F (-40°C) and is resistant to ozone and oxidation.",
+        "Optional color-coded stripe of one contrasting color can be woven into the outer jacket running the entire length of the hose for identification purposes.",
+        "Manufactured in accordance with NFPA 1960 Standard, the latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Shown in: Red, Blue, Orange, Green, White coated. Custom colors available on request."
+      ],
+      "images": [
+        "/catalog/snaptite-supreme-ii-ldh-1.webp",
+        "/catalog/snaptite-supreme-ii-ldh-2.webp",
+        "/catalog/snaptite-supreme-ii-ldh-3.webp",
+        "/catalog/snaptite-supreme-ii-ldh-4.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/Supreme-2_LDH_Aug-2026.pdf",
+      "source": "https://www.snaptitehose.com/applications/large-diameter-supply-line-hose/product/supreme-ll-ldh"
+    },
+    {
+      "slug": "snap-tite-tpx-ldh",
+      "name": "TPX LDH",
+      "category": "hose",
+      "group": "Supply hose (LDH)",
+      "summary": "The Ultimate Lightweight 3-Ply Hose for Maximum Power. 3-ply nitrile rubber supply hose.",
+      "details": [
+        "Traditionally, manufactured extruded hose can vary in thickness, becoming bulky, and heavy. TPX™ utilizes a 3-ply design where the ribbed cover and smooth nitrile liner are extruded independently. The cover is inserted inside the tight-weave reinforcement, vulcanized, and turned inside out. The liner is then inserted and the hose is vulcanized for a second time to form a bond of all three plies, guaranteeing a consistent, compact hose wall. The Snap-tite TPX™ is highly resistant to both conductive and radiant heat."
+      ],
+      "features": [
+        "3-ply rubber municipal fire hose with both the cover and liner made of heavy duty nitrile rubber, high tensile strength tightly woven polyester reinforcement for maximum durability and flexibility.",
+        "Smooth liner keeps friction loss to a minimum.",
+        "Nitrile rubber cover greatly increases abrasion resistance, provides long service life and the tightly woven reinforcement resists puncture.",
+        "Suitable for supply and soft sleeve suction applications.",
+        "Remains flexible at temperatures as low as -40°F (-40°C) and is resistant to ozone, oxidation, and most chemicals and petrochemicals.",
+        "Tighter weave allows more resistance to puncture while also being easier to pack and store.",
+        "Lays flat and needs less hose bed space than typical extruded hose.",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition within our ISO-9001:2015 certified quality assurance system.",
+        "Built for: Supply, Soft Suction, Klean Hose.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "10-year warranty.",
+        "2-year all hazard warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-tpx-ldh-1.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/TPX-LDH_Sept-2026-2.pdf",
+      "source": "https://www.snaptitehose.com/applications/large-diameter-supply-line-hose/product/tpx-ldh"
+    },
+    {
+      "slug": "snap-tite-utx-ldh",
+      "name": "UTX LDH",
+      "category": "hose",
+      "group": "Supply hose (LDH)",
+      "summary": "Maximum Durability Without the Bulk. Premium hose. outstanding value.",
+      "details": [
+        "UTX™ LDH gives fire departments that extra edge in flow and support - all in a high-visibility, lightweight supply line. A tough polyurethane outer cover combines with an exclusive thru-the-weave polyurethane liner to offer greater resistance to punctures and abrasion. But it doesn’t stop there. UTX™ is compact, taking up less room in the hose bed, and durable - with higher resistance to oils, chemicals, and ozone. Snag proof and kink resistant, UTX™ will not mildew or rot and is guaranteed for life to never delaminate."
+      ],
+      "features": [
+        "Typical rubber extruded fire hose can vary in thickness, becoming bulky and heavy. UTX™ LDH incorporates a circular woven polyester jacket that is completely encapsulated by an extruded thru-the-weave polyurethane cover and liner that provides abrasion and puncture resistance while remaining light and service worthy.",
+        "UTX™ weighs 20% less than conventional rubber supply hose.",
+        "Extruded thru-the-weave polyurethane construction and ultra-smooth liner minimize friction loss.",
+        "Engineered to deliver more flow and more efficient packability.",
+        "Remains flexible to -50°F (-46°C).",
+        "Resists ozone, oxidation, and most chemical/petroleum products.",
+        "Manufactured in accordance with NFPA 1960 Standard, latest edition.",
+        "Made in USA to ISO-9001:2015 certified quality management system.",
+        "Shown in: Red, Orange, Green.",
+        "Built for: Supply, Soft Suction, Potable Water, Klean Hose.",
+        "USA Made.",
+        "Lifetime delamination warranty.",
+        "10-year warranty.",
+        "2-year all hazard warranty."
+      ],
+      "images": [
+        "/catalog/snaptite-utx-ldh-1.webp",
+        "/catalog/snaptite-utx-ldh-2.webp",
+        "/catalog/snaptite-utx-ldh-3.webp",
+        "/catalog/snaptite-utx-ldh-4.webp"
+      ],
+      "datasheet": "https://www.snaptitehose.com/assets/BrochureFiles/UTX_2026-v2.pdf",
+      "source": "https://www.snaptitehose.com/applications/large-diameter-supply-line-hose/product/utx-ldh"
+    }
+  ]
+}
