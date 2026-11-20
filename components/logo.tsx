@@ -35,5 +35,5 @@ export function Logo({ logo, className = "h-10", onDark = false, priority = fals
 
   if (!onDark) return img(resolved);
   if (light) return img(light);
-  return <span className="inline-flex rounded-sm bg-paper px-3 py-2">{img(resolved)}</span>;
+  return <span className="inline-flex rounded-lg bg-paper px-3 py-2">{img(resolved)}</span>;
 }

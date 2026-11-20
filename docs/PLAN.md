@@ -62,8 +62,10 @@ Each project gets its own `accentColor` in its frontmatter (Box Alarm is `#C6001
 ### Look and feel
 
 - Industrial and disciplined, not flashy. Think apparatus floor, not tech startup.
-- Typography: a bold condensed or italic-leaning sans for headings that echoes the forward slant of the OpPeriod wordmark (something like Barlow Condensed or Saira Condensed, self-hosted through `next/font`), and a clean readable sans for body text.
-- Generous whitespace, strong grid, square or slightly rounded corners, subtle slanted edges or angled accent bars as a nod to the red bar in the logo. Use that motif sparingly.
+- Typography: upright Barlow Condensed for headings (600 and 700), like an equipment catalog, and Barlow for body text, self-hosted through `next/font`. The OpPeriod wordmark carries the slant; headings don't.
+- Layout follows an equipment dealer site: a warm paper background with a fixed blueprint grid behind every page (`body::before` in `app/globals.css`, 58px lines plus faint red and steel glows), white cards with a hairline border and 10px corners (`card`, `card-hover`), tracked uppercase eyebrows with a short red rule (`eyebrow`), rounded 8px buttons from `components/button.tsx`, and a translucent sticky header with a utility bar.
+- Dark bands (heroes, the CTA, the scrolling text band) use the diamond plate or the `grid-dark` utility, with corner ticks on the Engine Bay hero.
+- Generous whitespace and a strong grid. Use red for one thing per view: the main button, an eyebrow rule, or a number.
 - Must look great on a phone first. Most visitors will be on mobile.
 - Light mode only, using CSS variables. Dark mode was dropped so the black logos always sit on a light background.
 
@@ -249,7 +251,11 @@ Engine Bay Supply Co. is the OpPeriod division that supplies fire service hand t
 
 ### On opperiod.com
 
-Engine Bay is OpPeriod's lead business. The OpPeriod home page opens with an Engine Bay hero (diamond plate, "Halligans to hooks.", Shop and Request a Quote buttons, phone, catalogs), then six Engine Bay categories, then the brands with their catalogs, then OpPeriod's other projects, "How we operate", and the contact band. "Engine Bay" is in the main OpPeriod menu between Home and Projects.
+Engine Bay is OpPeriod's lead business. The OpPeriod home page opens with an Engine Bay hero (diamond plate, "Stock the rig.", Shop and Request a Quote buttons, phone, catalogs), then the five equipment areas, then the brands with their catalogs, then OpPeriod's other projects, "How we operate", and the contact band. "Engine Bay" is in the main OpPeriod menu between Home and Projects.
+
+### Loose equipment, not just tools (November 2026)
+
+Engine Bay is positioned as a fire department loose equipment supplier: everything that rides on the rig. The hero line is "Stock the rig." The shop lives at `/engine-bay/equipment` (old `/engine-bay/tools` links redirect). The 11 categories are grouped into five `equipmentAreas` in `lib/engine-bay.ts`: forcible entry and hand tools, fire hose, saws and rescue, wildland, and mounting and parts. Both home pages show the areas; the equipment page lists categories under them. New categories must be added to an area or the build stops.
 
 ### How it sells
 
@@ -261,7 +267,7 @@ It's built to look like a fire equipment dealer (reference: Dinges Fire, All Han
 
 - Its own layout at `app/(engine-bay)/engine-bay/`: black utility bar (phone, email, Request a Quote), dark header with the EB mark, red category bar, dark footer that says it's a division of OpPeriod LLC. Its own tab icon and link preview image.
 - `/engine-bay`: diamond plate hero ("Halligans to hooks."), shop by category (six cards with product photos, plus a line for handles and parts), how ordering works, "By firefighters, for firefighters" (don't mention the owner's rank), brands we carry, and a red "Got a list?" band.
-- `/engine-bay/tools`: category cards. `/engine-bay/tools/<category>`: that category's products, by brand, then by the catalog's own section (`group`). The red bar links go to the category pages.
+- `/engine-bay/equipment`: categories under the five areas. `/engine-bay/equipment/<category>`: that category's products, by brand, then by the catalog's own section (`group`). The red bar links go to the category pages.
 - `/engine-bay/products/<slug>`: one page per product with photos, model number, summary, Get Pricing and Call buttons, features, details, the manufacturer's Prop 65 warning, and more from the same category. Product structured data for search, with no price.
 - `/engine-bay/brands/<slug>`: a brand's short intro and its products by category.
 - `/engine-bay/catalogs`: the owner's printable 2026 catalogs and price guides (Council Tool, Fire Hooks Unlimited), each with a viewer page at `/engine-bay/catalogs/<slug>` that embeds the PDF on desktop and shows the cover with Open and Download buttons on phones. Files live in `public/downloads/`; the list is `printCatalogs` in `lib/engine-bay.ts`. The site sends `X-Frame-Options: SAMEORIGIN` so the embed works.

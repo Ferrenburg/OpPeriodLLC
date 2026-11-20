@@ -15,8 +15,13 @@ const nextConfig: NextConfig = {
     const sections = published
       .filter((project) => project.sitePath)
       .map((project) => ({ source: `/projects/${project.slug}`, destination: project.href, permanent: true }));
+    // Engine Bay's "tools" pages became "equipment" when it grew past hand tools.
+    const renamed = [
+      { source: "/engine-bay/tools", destination: "/engine-bay/equipment", permanent: true },
+      { source: "/engine-bay/tools/:category", destination: "/engine-bay/equipment/:category", permanent: true },
+    ];
     // The About page was removed; send old links home instead of to a 404.
-    return [...shortLinks, ...sections, { source: "/about", destination: "/", permanent: true }];
+    return [...shortLinks, ...sections, ...renamed, { source: "/about", destination: "/", permanent: true }];
   },
   async headers() {
     return [

@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className="container-site py-14 md:py-20">
-      <span className="slant-bar" aria-hidden="true" />
-      <h1 className="mt-3 font-display text-5xl font-bold uppercase italic md:text-6xl">Contact</h1>
+      <p className="eyebrow">{company.legalName}</p>
+      <h1 className="mt-4 font-display text-[clamp(2.9rem,6vw,4.8rem)] font-bold uppercase leading-[0.92]">Contact</h1>
 
       <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_18rem]">
         <div className="max-w-2xl">
@@ -33,10 +33,10 @@ export default function ContactPage() {
           </noscript>
         </div>
 
-        <div className="h-fit bg-surface p-6">
-          <h2 className="font-display text-2xl font-bold uppercase italic">Rather email?</h2>
+        <div className="card h-fit p-6">
+          <h2 className="font-display text-2xl font-bold uppercase">Rather email?</h2>
           <p className="mt-2 text-muted">Write to us directly at</p>
-          <a href={`mailto:${company.email}`} className="mt-1 inline-block text-lg font-semibold text-accent underline underline-offset-4">
+          <a href={`mailto:${company.email}`} className="mt-1 inline-block break-all text-lg font-semibold text-accent underline underline-offset-4">
             {company.email}
           </a>
           <p className="mt-6 text-sm text-muted">

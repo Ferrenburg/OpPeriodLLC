@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buttonClass } from "@/components/button";
 import { notFound } from "next/navigation";
 import { ProductCard } from "@/components/engine-bay/product-card";
 import { engineBay, siteUrl } from "@/lib/brand";
 import { ProductPhoto } from "@/components/engine-bay/product-photo";
-import { categoryPath, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { categoryPath, equipmentPath, quoteHref, toolCategories } from "@/lib/engine-bay";
 import { brandPath, getProduct, getProducts, getProductsIn, partNumbers, quoteLabel } from "@/lib/engine-bay-catalog";
 import { readPublicImage } from "@/lib/images";
 
@@ -56,8 +57,8 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
         <nav aria-label="Breadcrumb" className="text-sm text-muted">
           <ol className="flex flex-wrap gap-x-2">
             <li>
-              <Link href={`${engineBay.path}/tools`} className="hover:text-fg hover:underline">
-                Tools
+              <Link href={equipmentPath} className="hover:text-fg hover:underline">
+                Equipment
               </Link>
             </li>
             <li aria-hidden="true">/</li>
@@ -100,16 +101,17 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
             <Link href={brandPath(product.brand)} className="text-sm font-semibold uppercase tracking-wider text-accent hover:underline">
               {product.brand.name}
             </Link>
-            <h1 className="mt-2 font-display text-4xl font-bold uppercase italic leading-none md:text-5xl">{product.name}</h1>
+            <h1 className="mt-2 font-display text-4xl font-bold uppercase leading-none md:text-5xl">{product.name}</h1>
             {partNumbers(product) && (
-              <p className="mt-4 inline-block border-2 border-line px-3 py-1 text-sm">
+              <p className="mt-4 inline-block rounded-lg border border-line-2 bg-card px-3 py-1 text-sm">
                 {product.sku ? "Model" : `${product.variants.length} options:`} <span className="font-semibold">{partNumbers(product)}</span>
               </p>
             )}
             <p className="mt-5 text-lg leading-relaxed">{product.summary}</p>
 
-            <div className="mt-8 border-t-4 border-eb-red bg-eb-paper p-5">
-              <p className="font-display text-2xl font-bold uppercase italic">Get pricing for your department</p>
+            <div className="card relative mt-8 overflow-hidden p-6">
+              <span aria-hidden="true" className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-accent-fill to-accent-fill-hover" />
+              <p className="font-display text-2xl font-bold uppercase">Get pricing for your department</p>
               <p className="mt-1 text-muted">
                 {partNumbers(product)
                   ? "Tell us how many you need and we'll send an itemized quote."
@@ -118,13 +120,13 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
               <div className="mt-4 flex flex-wrap gap-3">
                 <Link
                   href={quoteHref(quoteLabel(product))}
-                  className="inline-flex min-h-12 items-center justify-center rounded-sm bg-eb-red px-7 font-display text-lg font-semibold uppercase italic tracking-wide text-white hover:bg-eb-red-dark"
+                  className={buttonClass("primary")}
                 >
                   Get Pricing
                 </Link>
                 <a
                   href={engineBay.phone.href}
-                  className="inline-flex min-h-12 items-center justify-center rounded-sm border-2 border-fg px-6 font-display text-lg font-semibold uppercase italic tracking-wide hover:bg-fg hover:text-bg"
+                  className={buttonClass("secondary")}
                 >
                   Call {engineBay.phone.display}
                 </a>
@@ -142,7 +144,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
 
             {product.variants.length > 0 && (
               <section aria-labelledby="options" className="mt-10">
-                <h2 id="options" className="font-display text-2xl font-bold uppercase italic">
+                <h2 id="options" className="font-display text-2xl font-bold uppercase">
                   Sizes and options
                 </h2>
                 <div className="mt-4 overflow-x-auto">
@@ -178,13 +180,13 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
 
             {product.features.length > 0 && (
               <section aria-labelledby="features" className="mt-10">
-                <h2 id="features" className="font-display text-2xl font-bold uppercase italic">
+                <h2 id="features" className="font-display text-2xl font-bold uppercase">
                   Features
                 </h2>
                 <ul className="mt-4 space-y-2">
                   {product.features.map((feature) => (
                     <li key={feature} className="flex gap-3">
-                      <span className="mt-2.5 h-1 w-3 shrink-0 -skew-x-12 bg-eb-red" aria-hidden="true" />
+                      <span className="mt-2.5 h-[3px] w-3 shrink-0 rounded-full bg-accent-fill" aria-hidden="true" />
                       {feature}
                     </li>
                   ))}
@@ -196,7 +198,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
 
         {product.details.length > 0 && (
           <section aria-labelledby="details" className="mt-12 max-w-3xl">
-            <h2 id="details" className="font-display text-2xl font-bold uppercase italic">
+            <h2 id="details" className="font-display text-2xl font-bold uppercase">
               Details
             </h2>
             <div className="mt-4 space-y-4 text-lg leading-relaxed">
@@ -208,24 +210,24 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
         )}
 
         {product.prop65 && (
-          <p className="mt-10 max-w-3xl border-l-4 border-line pl-4 text-sm text-muted">
+          <p className="mt-10 max-w-3xl border-l-2 border-line-2 pl-4 text-sm text-muted">
             <span className="font-semibold text-fg">California residents:</span> {product.prop65.replace(/^Prop 65 Warning:\s*/, "Prop 65 warning. ")}
           </p>
         )}
       </div>
 
       {related.length > 0 && (
-        <section aria-labelledby="related" className="bg-eb-paper py-12 md:py-16">
+        <section aria-labelledby="related" className="border-t border-line bg-surface/70 py-14 md:py-20">
           <div className="container-site">
             <div className="flex flex-wrap items-end justify-between gap-4">
-              <h2 id="related" className="font-display text-3xl font-bold uppercase italic md:text-4xl">
+              <h2 id="related" className="font-display text-3xl font-bold uppercase md:text-4xl">
                 More {category.name.toLowerCase()}
               </h2>
               <Link href={categoryPath(category)} className="font-semibold text-accent underline underline-offset-4">
                 See all
               </Link>
             </div>
-            <ul className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
+            <ul className="mt-8 grid grid-cols-2 gap-5 lg:grid-cols-4">
               {related.map((item) => (
                 <li key={item.slug}>
                   <ProductCard product={item} />

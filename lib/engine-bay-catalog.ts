@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { cache } from "react";
 import { z } from "zod";
-import { toolCategories, type ToolCategory } from "./engine-bay";
+import { equipmentAreas, toolCategories, type ToolCategory } from "./engine-bay";
 
 // The Engine Bay product catalog. One JSON file per brand in
 // content/engine-bay/products/ (council-tool.json, for example). Adding a
@@ -99,6 +99,10 @@ export const loadCatalog = cache((): { brands: Brand[]; products: Product[] } =>
   }
 
   for (const category of toolCategories) {
+    const areas = equipmentAreas.filter((area) => area.categories.includes(category.slug));
+    if (areas.length !== 1) {
+      problems.push(`lib/engine-bay.ts\n  - category ${category.slug}: must be in exactly one of equipmentAreas (it's in ${areas.length})`);
+    }
     const featured = products.find((p) => p.slug === category.featured);
     if (products.length > 0 && featured?.category !== category.slug) {
       problems.push(`lib/engine-bay.ts\n  - category ${category.slug}: featured product "${category.featured}" isn't a product in that category`);

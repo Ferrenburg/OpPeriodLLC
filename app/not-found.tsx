@@ -10,8 +10,8 @@ export default function NotFound() {
   return (
     <SiteChrome>
       <section className="container-site py-20 md:py-28">
-        <span className="slant-bar" aria-hidden="true" />
-        <h1 className="mt-4 font-display text-5xl font-bold uppercase italic md:text-6xl">
+        <p className="eyebrow">Error 404</p>
+        <h1 className="mt-4 font-display text-[clamp(2.9rem,6vw,4.8rem)] font-bold uppercase leading-[0.92]">
           Wrong address
         </h1>
         <p className="mt-4 max-w-prose text-lg text-muted">

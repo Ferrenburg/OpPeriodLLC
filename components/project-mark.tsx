@@ -11,7 +11,7 @@ export function ProjectMark({ project, className, sizes }: { project: Project; c
   return (
     <span
       aria-hidden="true"
-      className={`inline-flex aspect-square items-center justify-center font-display font-bold italic leading-none [clip-path:polygon(0_0,78%_0,100%_22%,100%_100%,0_100%)] ${className}`}
+      className={`inline-flex aspect-square items-center justify-center font-display font-bold leading-none [clip-path:polygon(0_0,78%_0,100%_22%,100%_100%,0_100%)] ${className}`}
       style={{ background: project.accent, color: project.accentText }}
     >
       {project.name.charAt(0).toUpperCase()}

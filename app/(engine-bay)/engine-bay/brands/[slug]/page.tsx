@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: PageProps<"/engine-bay/brands
   if (!brand) return {};
   return {
     title: brand.name,
-    description: `${brand.name} fire service tools from ${engineBay.name}. ${brand.about[0] ?? ""}`.trim(),
+    description: `${brand.name} fire department equipment from ${engineBay.name}. ${brand.about[0] ?? ""}`.trim(),
     alternates: { canonical: brandPath(brand) },
   };
 }
@@ -37,7 +37,7 @@ export default async function BrandPage({ params }: PageProps<"/engine-bay/brand
         ))}
         {printCatalog && (
           <p className="mt-3">
-            <Link href={catalogPath(printCatalog)} className="font-semibold text-white underline underline-offset-4">
+            <Link href={catalogPath(printCatalog)} className="font-semibold text-accent underline underline-offset-4">
               View the {printCatalog.title.toLowerCase().replace(brand.name.toLowerCase(), brand.name)}
             </Link>
           </p>
@@ -50,7 +50,7 @@ export default async function BrandPage({ params }: PageProps<"/engine-bay/brand
           if (items.length === 0) return null;
           return (
             <section key={category.slug} aria-labelledby={`${category.slug}-heading`} className="border-b border-line py-12 last:border-b-0">
-              <h2 id={`${category.slug}-heading`} className="font-display text-3xl font-bold uppercase italic">
+              <h2 id={`${category.slug}-heading`} className="font-display text-3xl font-bold uppercase">
                 {category.name}
               </h2>
               <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
@@ -64,7 +64,7 @@ export default async function BrandPage({ params }: PageProps<"/engine-bay/brand
           );
         })}
         <p className="pb-14 text-lg">
-          Need a {brand.name} tool that isn&apos;t listed?{" "}
+          Need something from {brand.name} that isn&apos;t listed?{" "}
           <Link href={quoteHref(brand.name)} className="font-semibold text-accent underline underline-offset-4">
             Ask us
           </Link>

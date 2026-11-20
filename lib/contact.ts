@@ -139,7 +139,7 @@ export async function sendContactEmail(input: ContactInput, to: string, projectN
     `Phone: ${input.phone || "(not given)"}`,
     ...(quote ? [`Needed by: ${input.neededBy || "(not given)"}`] : []),
     "",
-    quote ? "Tools and quantities:" : "Message:",
+    quote ? "Items and quantities:" : "Message:",
     input.message,
     "",
     "Hit reply to answer them directly.",

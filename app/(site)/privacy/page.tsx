@@ -22,8 +22,8 @@ export default function PrivacyPage() {
 
   return (
     <section className="container-site py-14 md:py-20">
-      <span className="slant-bar" aria-hidden="true" />
-      <h1 className="mt-3 font-display text-5xl font-bold uppercase italic md:text-6xl">Privacy policy</h1>
+      <p className="eyebrow">{company.legalName}</p>
+      <h1 className="mt-4 font-display text-[clamp(2.9rem,6vw,4.8rem)] font-bold uppercase leading-[0.92]">Privacy policy</h1>
       <div className="mt-6 max-w-2xl">
         <Todo>The effective date, and a review of this draft before launch.</Todo>
       </div>

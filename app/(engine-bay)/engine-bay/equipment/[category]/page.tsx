@@ -13,7 +13,7 @@ export function generateStaticParams() {
   return toolCategories.map((category) => ({ category: category.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps<"/engine-bay/tools/[category]">): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps<"/engine-bay/equipment/[category]">): Promise<Metadata> {
   const { category: slug } = await params;
   const category = toolCategories.find((c) => c.slug === slug);
   if (!category) return {};
@@ -34,7 +34,7 @@ function byGroup(products: Product[]): [string | undefined, Product[]][] {
   return [...groups.entries()];
 }
 
-export default async function CategoryPage({ params }: PageProps<"/engine-bay/tools/[category]">) {
+export default async function CategoryPage({ params }: PageProps<"/engine-bay/equipment/[category]">) {
   const { category: slug } = await params;
   const category = toolCategories.find((c) => c.slug === slug);
   if (!category) notFound();
@@ -53,7 +53,7 @@ export default async function CategoryPage({ params }: PageProps<"/engine-bay/to
               <a
                 key={brand.slug}
                 href={`#${brand.slug}`}
-                className="rounded-sm border border-white/40 px-3 py-1 text-sm font-semibold text-white hover:bg-white hover:text-eb-ink"
+                className="rounded-lg border border-line-2 bg-card px-3 py-1.5 text-sm font-semibold hover:border-accent-fill hover:text-accent"
               >
                 {brand.name}
               </a>
@@ -75,7 +75,7 @@ export default async function CategoryPage({ params }: PageProps<"/engine-bay/to
         {brands.map((brand) => (
           <section key={brand.slug} id={brand.slug} aria-labelledby={`${brand.slug}-heading`} className="scroll-mt-4 border-b border-line py-12 last:border-b-0">
             <div className="flex flex-wrap items-end justify-between gap-4">
-              <h2 id={`${brand.slug}-heading`} className="font-display text-3xl font-bold uppercase italic md:text-4xl">
+              <h2 id={`${brand.slug}-heading`} className="font-display text-3xl font-bold uppercase md:text-4xl">
                 {brand.name}
               </h2>
               <Link href={brandPath(brand)} className="font-semibold text-accent underline underline-offset-4">

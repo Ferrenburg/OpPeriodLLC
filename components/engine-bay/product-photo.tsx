@@ -22,7 +22,7 @@ export function ProductPhoto({
   if (!photo) {
     return (
       <div className="diamond-plate absolute inset-0 flex items-center justify-center p-4 text-center" aria-hidden={alt ? undefined : true}>
-        <span className="line-clamp-3 font-display text-xl font-bold uppercase italic leading-tight text-white/90">{name}</span>
+        <span className="line-clamp-3 font-display text-xl font-bold uppercase leading-tight text-white/90">{name}</span>
       </div>
     );
   }

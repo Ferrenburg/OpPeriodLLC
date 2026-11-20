@@ -8,8 +8,8 @@ import { ProductPhoto } from "./product-photo";
 export function ProductCard({ product, headingLevel = "h3" }: { product: Product; headingLevel?: "h2" | "h3" | "h4" }) {
   const Heading = headingLevel;
   return (
-    <Link href={product.href} className="group flex h-full flex-col border border-line bg-bg transition-shadow hover:shadow-lg">
-      <div className="relative aspect-square border-b border-line bg-white">
+    <Link href={product.href} className="card card-hover group flex h-full flex-col overflow-hidden">
+      <div className="relative aspect-square border-b border-line bg-card">
         <ProductPhoto src={product.images[0]} name={product.name} sizes="(min-width: 1024px) 18rem, (min-width: 640px) 33vw, 50vw" />
       </div>
       <div className="flex flex-1 flex-col p-4">

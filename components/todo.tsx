@@ -6,7 +6,7 @@ const showTodos = process.env.VERCEL_ENV !== "production";
 export function Todo({ children }: { children: React.ReactNode }) {
   if (!showTodos) return null;
   return (
-    <span className="block border-2 border-dashed border-line px-4 py-3 text-muted">
+    <span className="block rounded-lg border-2 border-dashed border-line-2 px-4 py-3 text-muted">
       <span className="font-semibold text-fg">TODO: owner to provide.</span> {children}
     </span>
   );
