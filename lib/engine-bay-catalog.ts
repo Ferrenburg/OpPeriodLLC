@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { cache } from "react";
 import { z } from "zod";
-import { equipmentAreas, toolCategories, type ToolCategory } from "./engine-bay";
+import { equipmentAreas, flagshipBrands, toolCategories, type ToolCategory } from "./engine-bay";
 
 // The Engine Bay product catalog. One JSON file per brand in
 // content/engine-bay/products/ (council-tool.json, for example). Adding a
@@ -109,7 +109,25 @@ export const loadCatalog = cache((): { brands: Brand[]; products: Product[] } =>
     }
   }
 
+  if (brands.length > 0) {
+    for (const slug of flagshipBrands) {
+      if (!brands.some((b) => b.slug === slug)) {
+        problems.push(`lib/engine-bay.ts\n  - flagshipBrands: no brand file has the slug "${slug}" (remove it from the list or fix the slug)`);
+      }
+    }
+  }
+
   if (problems.length > 0) throw new Error(`Engine Bay product files have problems:\n\n${problems.join("\n\n")}\n`);
+
+  // Flagship brands first, in the order listed, then the rest by name. Products
+  // follow their brand's place and keep their file order within a brand.
+  const rank = (slug: string) => {
+    const i = flagshipBrands.indexOf(slug);
+    return i === -1 ? flagshipBrands.length : i;
+  };
+  brands.sort((a, b) => rank(a.slug) - rank(b.slug) || a.name.localeCompare(b.name));
+  const brandOrder = new Map(brands.map((b, i) => [b.slug, i]));
+  products.sort((a, b) => brandOrder.get(a.brand.slug)! - brandOrder.get(b.brand.slug)!);
   return { brands, products };
 });
 

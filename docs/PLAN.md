@@ -282,6 +282,7 @@ It's built to look like a fire equipment dealer (reference: Dinges Fire, All Han
 - Each product: `slug`, `sku` (exactly as the manufacturer prints it), `name`, `category` (a slug from `toolCategories`), optional `group` (a heading inside the category), `summary`, `details` (paragraphs), `features` (bullets), optional `prop65`, `images` (paths under `public/catalog/`; can be empty, which shows a placeholder), optional `variants` (`sku` and `option` for each size of a product sold in several, shown as a table with its own Get Pricing link per size; such a product can leave `sku` out), and `source` (the manufacturer's page, not shown).
 - `lib/engine-bay-catalog.ts` loads and checks every file. A bad category, a missing photo, or a duplicate slug stops the build with the file, product, and field.
 - Each category's card photo is its `featured` product's first photo.
+- Council Tool and Snap-tite Hose are the flagship brands (`flagshipBrands` in `lib/engine-bay.ts`). The loader sorts brands with those first, in that order, then the rest by name, and sorts products to follow their brand. Menus, the footer, the brand strip, the hero's brand list, category pages, area tiles, and related items all pick that up.
 
 ### Council Tool (added October 2026)
 

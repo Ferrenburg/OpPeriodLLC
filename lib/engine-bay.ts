@@ -107,6 +107,11 @@ export const toolCategories: ToolCategory[] = [
   },
 ];
 
+// Flagship brands, in order. Anywhere the site lists brands or mixes their
+// products (menus, the brand strip, category pages, related items), these
+// come first and the rest follow alphabetically. The catalog loader applies it.
+export const flagshipBrands = ["council-tool", "snap-tite-hose"];
+
 export const orderingSteps = [
   {
     title: "Send your list",
