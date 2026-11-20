@@ -1,0 +1,2755 @@
+{
+  "brand": {
+    "slug": "rawhide-fire-hose",
+    "name": "Rawhide Fire Hose",
+    "about": [
+      "Rawhide Fire Hose is headquartered in Wooster, Ohio, and ships fire hose, nozzles, adapters, and tools from four warehouses.",
+      "The name comes from the original fire hose, made from leather tubing that was tough yet flexible."
+    ],
+    "website": "https://rawhidefirehose.com"
+  },
+  "products": [
+    {
+      "slug": "rawhide-brass-hydrant-gate-valve-w-hand-wheel",
+      "sku": "v-df-uhgv250f",
+      "name": "Brass Hydrant Gate Valve W/ Hand Wheel",
+      "category": "appliances",
+      "group": "Valves",
+      "summary": "Cast brass hydrant gate valve with a hand wheel, for throttling hydrant flow without damaging the hydrant. UL listed.",
+      "features": [
+        "2-1/2\" female NST swivel by 2-1/2\" male NST outlet",
+        "Cast brass, O-ring seal",
+        "Maximum operating pressure: 175 psi (water only) at 70°F (21°C)",
+        "UL listed"
+      ],
+      "images": [
+        "/catalog/rawhide-brass-hydrant-gate-valve-w-hand-wheel.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-valves-and-wyes/brass-hydrant-gate-valve/"
+    },
+    {
+      "slug": "rawhide-dry-hydrant-male-adapter-w-elbow-and-aluminum-cap-w-cable",
+      "name": "Dry Hydrant Male Adapter W/ Elbow & Aluminum Cap W/ Cable",
+      "category": "appliances",
+      "group": "Dry hydrant adapters",
+      "summary": "Red Head style 132 male dry hydrant adapter with an elbow, suction strainer, and aluminum cap on a cable.",
+      "features": [
+        "\"O\" ring seal for vacuum tight joints",
+        "Suction strainer with removable snap ring for easy cleanout",
+        "Comes with an aluminum cap and cable"
+      ],
+      "images": [
+        "/catalog/rawhide-dry-hydrant-male-adapter-w-elbow-and-aluminum-cap-w-cable.webp"
+      ],
+      "variants": [
+        {
+          "sku": "132-904.5MN",
+          "option": "4-1/2\", 90 Degree, NST/NH"
+        },
+        {
+          "sku": "132-905M",
+          "option": "5\", 90 Degree, NST/NH"
+        },
+        {
+          "sku": "132-456MN",
+          "option": "6\", 45 Degree, NST/NH"
+        },
+        {
+          "sku": "132-906MN",
+          "option": "6\", 90 Degree, NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/dry-hydrant-male-adapter-w-90-degree-elbow-aluminum-cap-w-cable/"
+    },
+    {
+      "slug": "rawhide-6-in-dry-hydrant-long-handle-female-adapter-w-elbow-and-aluminum-plug-w-cable",
+      "name": "6\" Dry Hydrant Long Handle Female Adapter W/ Elbow & Aluminum Plug W/ Cable",
+      "category": "appliances",
+      "group": "Dry hydrant adapters",
+      "summary": "6\" long handle female dry hydrant adapter with an elbow, removable suction strainer, and aluminum plug on a cable.",
+      "features": [
+        "6\" in 45 degree, 90 degree, or straight",
+        "\"O\" ring seal for vacuum tight joints",
+        "Removable suction strainer for easy cleanout",
+        "Comes with an aluminum plug and cable"
+      ],
+      "images": [
+        "/catalog/rawhide-6-in-dry-hydrant-long-handle-female-adapter-w-elbow-and-aluminum-plug-w-cable.webp"
+      ],
+      "variants": [
+        {
+          "sku": "132-1806FN",
+          "option": "6\", 180 Degree Straight, NST/NH"
+        },
+        {
+          "sku": "132-456FN",
+          "option": "6\", 45 Degree, NST/NH"
+        },
+        {
+          "sku": "132-906FN",
+          "option": "6\", 90 Degree, NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/dry-hydrant-long-handle-female-adapter-w-elbow-aluminum-plug-w-cable/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-breaker-cap",
+      "sku": "2502",
+      "name": "2-1/2\" Breaker Cap",
+      "category": "appliances",
+      "group": "Caps and plugs",
+      "summary": "Molded red breaker cap that protects 2-1/2\" swivel inlets on siamese, standpipe, and sprinkler connections. A sharp blow clears it.",
+      "details": [
+        "This special moulded breaker cap is designed for quick release when every second counts. It is engineered to protect 2 1/2\" swivel inlets on siamese, standpipe and sprinkler connections. It is locked in place by open eyebolts, which attach to pin lugs on swivel connections only. A sharp blow will fracture the cap and clear the connection for action. Supplied in standard red."
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-breaker-cap.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/caps/breaker-cap/"
+    },
+    {
+      "slug": "rawhide-plastic-caps",
+      "name": "Plastic Caps",
+      "category": "appliances",
+      "group": "Caps and plugs",
+      "summary": "The plastic caps are designed to cut the cost of petty theft, while at the same time providing maximum coverage to prevent debris from the hose and threads.",
+      "details": [
+        "This cap is available in 1-1/2\", 2\" and 2-1/2\" male threads. It comes complete with a sturdy plated attaching chain and inside gasket.",
+        "The plastic caps are ideal for protection of interior fire valves where theft of expensive brass parts is most prevalent."
+      ],
+      "images": [
+        "/catalog/rawhide-plastic-caps.webp"
+      ],
+      "variants": [
+        {
+          "sku": "PC-15I",
+          "option": "1-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "PC-15N",
+          "option": "1-1/2\", NST/NH"
+        },
+        {
+          "sku": "PC-2I",
+          "option": "2\", NPSH/IPT"
+        },
+        {
+          "sku": "PC-25N",
+          "option": "2-1/2\", NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/caps/plastic-caps/"
+    },
+    {
+      "slug": "rawhide-economy-nozzle-75-in-combination-nozzle-1030",
+      "name": "Economy Nozzle 3/4\" Combination Nozzle (1030)",
+      "category": "nozzles",
+      "group": "Economy nozzles",
+      "summary": "The 3/4\" economy nozzle delivers straight stream to variable spray pattern. Designed for booster lines and small diameter hose.",
+      "images": [
+        "/catalog/rawhide-economy-nozzle-75-in-combination-nozzle-1030.webp"
+      ],
+      "variants": [
+        {
+          "sku": "1030.75GHT",
+          "option": "GHT"
+        },
+        {
+          "sku": "1030.75I",
+          "option": "NPSH/IPT"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/economy-nozzles/economy-nozzle-75-combination-nozzle-1030/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-adjust-a-plug",
+      "sku": "2501",
+      "name": "2-1/2\" Adjust-A-Plug",
+      "category": "appliances",
+      "group": "Caps and plugs",
+      "summary": "Red protective plug for swivel connections up to 2-1/2\", with two adjustable metal plates that mate with your local thread.",
+      "details": [
+        "An inexpensive protective adjust-a-plug for swivel connections up to 2 1/2\" in diameter. It features two adjustable metal plates installed in the back of the plug, that can be easily mated with your local thread. Once adjusted to size, the metal plates are locked in place by a central metal bolt. The plug can be easily removed with a fire department spanner wrench. The plug can be re-installed in place by fire department personnel after shutdown. Supplied in standard red."
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-adjust-a-plug.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/plugs/adjust-a-plug-2/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-brass-combination-nozzle",
+      "name": "1-1/2\" Brass Combination Nozzle",
+      "category": "nozzles",
+      "group": "Economy nozzles",
+      "summary": "Brass combination nozzle for 1-1/2\" hose, 75 GPM at 100 psi. Factory Mutual approved and ULC listed.",
+      "features": [
+        "The brass combination nozzle is ideal for industrial, commercial installations and small fire companies.",
+        "Size 1 1/2\" (NST/NHT & IPT/NPSH)",
+        "Height 4 5/8\"",
+        "Gallonage 75 GPM (US) @100PSI",
+        "Weight 2 lbs.",
+        "Factory Mutual Approved",
+        "ULC Listed & Labeled"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-brass-combination-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "16751.5I",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "16751.5N",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/economy-nozzles/1-12-brass-combination-nozzle/"
+    },
+    {
+      "slug": "rawhide-economy-nozzle-2-5-in-combination-nozzle-2520",
+      "name": "Economy Nozzle 2.5\" Combination Nozzle (2520)",
+      "category": "nozzles",
+      "group": "Economy nozzles",
+      "summary": "The 2-1/2\" economy nozzle is a combination fog, stream and shut-off nozzle. Ideal for in-plant protection and small fire companies where price is a factor.",
+      "details": [
+        "This nozzle comes complete with adapter and handles for ease of use."
+      ],
+      "features": [
+        "Size 2 1/2\", available threads are NST/NHT, NYFD, NY CORP & CHICAGO FD.",
+        "Height 9\"",
+        "Gallonage 150 GPM (US)",
+        "Factory Mutual Approved",
+        "ULC Listed"
+      ],
+      "images": [
+        "/catalog/rawhide-economy-nozzle-2-5-in-combination-nozzle-2520.webp"
+      ],
+      "variants": [
+        {
+          "sku": "25202.5CFD",
+          "option": "Chicago FD"
+        },
+        {
+          "sku": "25202.5N",
+          "option": "NST/NH"
+        },
+        {
+          "sku": "25202.5NYC",
+          "option": "NY Corp"
+        },
+        {
+          "sku": "25202.5FDNY",
+          "option": "NYFD"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/economy-nozzles/economy-nozzle-2-5-combination-nozzle-2520/"
+    },
+    {
+      "slug": "rawhide-economy-nozzle-2-in-combination-nozzle-2520-npsh-ipt-only",
+      "sku": "25202",
+      "name": "Economy Nozzle 2\" Combination Nozzle (2520) NPSH/IPT Only",
+      "category": "nozzles",
+      "group": "Economy nozzles",
+      "summary": "The 2\" economy nozzle is a combination stream, fog shut off nozzle. Delivers straight stream and adjusts to variable fog pattern.",
+      "details": [
+        "Ideal for in plant protection and small fire companies where price is a factor. Available in IPT/NPSH threads only."
+      ],
+      "features": [
+        "Height 5 3/8\"",
+        "Gallonage: 150 GPM @100PSI",
+        "Factory Mutual Approved",
+        "ULC Listed"
+      ],
+      "images": [
+        "/catalog/rawhide-economy-nozzle-2-in-combination-nozzle-2520-npsh-ipt-only.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/economy-nozzles/economy-nozzle-2-combination-nozzle-2520/"
+    },
+    {
+      "slug": "rawhide-economy-nozzle-1-in-combination-nozzle-1030",
+      "name": "Economy Nozzle 1\" Combination Nozzle (1030)",
+      "category": "nozzles",
+      "group": "Economy nozzles",
+      "summary": "The 1\" economy nozzle is constructed of red polycarbonate and precision molded from the latest developments in the industry.",
+      "details": [
+        "Designed for booster lines and small diameter hose. Ideal for fighting grass fires. Delivers straight stream to variable spray pattern."
+      ],
+      "features": [
+        "Available threads are NH/NST and IPT/NPSH.",
+        "Gallonage 22 GPM (US)",
+        "Factory Mutual Approved"
+      ],
+      "images": [
+        "/catalog/rawhide-economy-nozzle-1-in-combination-nozzle-1030.webp"
+      ],
+      "variants": [
+        {
+          "sku": "10301IPT",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "10301NST",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/economy-nozzles/economy-nozzle-1-combination-nozzle-1030/"
+    },
+    {
+      "slug": "rawhide-playpipe-nozzle",
+      "sku": "playpipe",
+      "name": "Playpipe Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "Hardcoat anodized aluminum playpipe with a 2-1/2\" inlet, 1-1/2\" outlet, and 1-3/8\" waterway.",
+      "features": [
+        "Lightweight aluminum body",
+        "Hardcoat anodized",
+        "2-1/2\" inlet X 1-1/2\" outlet, 1-3/8\" waterway"
+      ],
+      "images": [
+        "/catalog/rawhide-playpipe-nozzle.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/playpipe/"
+    },
+    {
+      "slug": "rawhide-economy-nozzle-1-5-in-combination-nozzle-1575",
+      "name": "Economy Nozzle 1.5\" Combination Nozzle (1575)",
+      "category": "nozzles",
+      "group": "Economy nozzles",
+      "summary": "1-1/2\" polycarbonate combination nozzle, straight stream to fog with shutoff. Offered in NST/NH, NPSH/IPT, Chicago FD, NY Corp, NYFD, and Pacific Coast threads.",
+      "images": [
+        "/catalog/rawhide-economy-nozzle-1-5-in-combination-nozzle-1575.webp"
+      ],
+      "variants": [
+        {
+          "sku": "15751.5CFD",
+          "option": "Chicago FD"
+        },
+        {
+          "sku": "1575IPT",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "1575NST",
+          "option": "NST/NH"
+        },
+        {
+          "sku": "1575NYC",
+          "option": "NY Corp"
+        },
+        {
+          "sku": "1575FDNY",
+          "option": "NYFD"
+        },
+        {
+          "sku": "1575PCT",
+          "option": "Pacific Coast"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/economy-nozzles/economy-nozzle-1-5-combination-nozzle-1575/"
+    },
+    {
+      "slug": "rawhide-brass-caps-w-chain",
+      "name": "Brass Caps W/Chain",
+      "category": "appliances",
+      "group": "Caps and plugs",
+      "summary": "The brass caps are used on fire department connections, hydrants, valves, etc., to hold back water.",
+      "details": [
+        "The brass cap is designed to protect the hose and threads from debris and is supplied with a 12\" chain."
+      ],
+      "images": [
+        "/catalog/rawhide-brass-caps-w-chain.webp"
+      ],
+      "variants": [
+        {
+          "sku": "BR-C-15I",
+          "option": "1-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "BR-C-15N",
+          "option": "1-1/2\", NST/NH"
+        },
+        {
+          "sku": "BR-C-25I",
+          "option": "2-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "BR-C-25N",
+          "option": "2-1/2\", NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/caps/brass-caps-wchain/"
+    },
+    {
+      "slug": "rawhide-aluminum-plug-w-chain",
+      "name": "Aluminum Plug W/Chain",
+      "category": "appliances",
+      "group": "Caps and plugs",
+      "summary": "Aluminum plugs are made from rugged extruded 6061-T6 lightweight aluminum and hard coated to resist corrosion and abrasion.",
+      "details": [
+        "All plugs are furnished with a 12\" stainless steel chain."
+      ],
+      "features": [
+        "The aluminum plug used on fire department inlet connections to keep inlet ports free of debris."
+      ],
+      "images": [
+        "/catalog/rawhide-aluminum-plug-w-chain.webp"
+      ],
+      "variants": [
+        {
+          "sku": "P-10I",
+          "option": "1\", NPSH/IPT"
+        },
+        {
+          "sku": "P-10N",
+          "option": "1\", NST/NH"
+        },
+        {
+          "sku": "P-15I",
+          "option": "1-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "P-15N",
+          "option": "1-1/2\", NST/NH"
+        },
+        {
+          "sku": "P20I",
+          "option": "2\", NPSH/IPT"
+        },
+        {
+          "sku": "P-20",
+          "option": "2\", NST/NH"
+        },
+        {
+          "sku": "P-25I",
+          "option": "2-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "P-25N",
+          "option": "2-1/2\", NST/NH"
+        },
+        {
+          "sku": "P-30I",
+          "option": "3\", NPSH/IPT"
+        },
+        {
+          "sku": "P-30N",
+          "option": "3\", NST/NH"
+        },
+        {
+          "sku": "P-40I",
+          "option": "4\", NPSH/IPT"
+        },
+        {
+          "sku": "P-40N",
+          "option": "4\", NST/NH"
+        },
+        {
+          "sku": "P-45I",
+          "option": "4-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "P-45N",
+          "option": "4-1/2\", NST/NH"
+        },
+        {
+          "sku": "P-50I",
+          "option": "5\", NPSH/IPT"
+        },
+        {
+          "sku": "P-50N",
+          "option": "5\", NST/NH"
+        },
+        {
+          "sku": "P-60I",
+          "option": "6\", NPSH/IPT"
+        },
+        {
+          "sku": "P-60N",
+          "option": "6\", NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/plugs/aluminum-plug-wchain/"
+    },
+    {
+      "slug": "rawhide-brass-plug-with-chain",
+      "name": "Brass Plug with Chain",
+      "category": "appliances",
+      "group": "Caps and plugs",
+      "summary": "The brass plug is used on fire department inlet connections to keep inlet ports free of debris.",
+      "details": [
+        "All Brass plugs are furnished with a 12\" chain."
+      ],
+      "images": [
+        "/catalog/rawhide-brass-plug-with-chain.webp"
+      ],
+      "variants": [
+        {
+          "sku": "BR-P-15I",
+          "option": "1-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "BR-P-15N",
+          "option": "1-1/2\", NST/NH"
+        },
+        {
+          "sku": "BR-P-25I",
+          "option": "2-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "BR-P-25N",
+          "option": "2-1/2\", NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/plugs/brass-plugs/"
+    },
+    {
+      "slug": "rawhide-plastic-threaded-plugs",
+      "name": "Plastic Threaded Plugs",
+      "category": "appliances",
+      "group": "Caps and plugs",
+      "summary": "The plastic plug is available in 1-1/2\" & 2-1/2\" threads. It comes complete with a sturdy plated attaching chain.",
+      "features": [
+        "1503: 1-1/2\" in NST/NH or NPSH/IPT",
+        "2503: 2-1/2\" in NST/NH only",
+        "Designed to cut the cost of petty theft"
+      ],
+      "images": [
+        "/catalog/rawhide-plastic-threaded-plugs.webp"
+      ],
+      "variants": [
+        {
+          "sku": "1503I",
+          "option": "1-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "1503N",
+          "option": "1-1/2\", NST/NH"
+        },
+        {
+          "sku": "2503N",
+          "option": "2-1/2\", NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/plugs/plastic-threaded-plugs/"
+    },
+    {
+      "slug": "rawhide-brass-hydrant-gate-valve-w-speed-handle",
+      "sku": "V-DF-HGV250F",
+      "name": "Brass Hydrant Gate Valve W/ Speed Handle",
+      "category": "appliances",
+      "group": "Valves",
+      "summary": "Cast brass hydrant gate valve with an aluminum speed handle, for throttling hydrant flow without damaging the hydrant.",
+      "features": [
+        "2-1/2\" swivel female NST/NH inlet by 2-1/2\" male NST/NH outlet",
+        "Cast brass, rubber seal",
+        "Pin lug swivel, rising stem",
+        "Aluminum speed handle",
+        "For hydrants, standpipes, and fire pumps",
+        "Maximum operating pressure: 175 psi (water only) at 70°F (21°C)"
+      ],
+      "images": [
+        "/catalog/rawhide-brass-hydrant-gate-valve-w-speed-handle.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-valves-and-wyes/brass-hydrant-gate-valve-2/"
+    },
+    {
+      "slug": "rawhide-brass-plain-wye-no-clapper",
+      "name": "Brass Plain Wye (No Clapper)",
+      "category": "appliances",
+      "group": "Wyes",
+      "summary": "Brass pin lug wye that divides one stream into two. No clapper.",
+      "features": [
+        "Brass, pin lug"
+      ],
+      "images": [
+        "/catalog/rawhide-brass-plain-wye-no-clapper.webp"
+      ],
+      "variants": [
+        {
+          "sku": "V-DF-PW15F15F",
+          "option": "1-1/2\" Female Inlet NST X (2) 1-1/2\" Male Outlets NST"
+        },
+        {
+          "sku": "V-DF-PW25F15F",
+          "option": "2-1/2\" Female Inlet NST X (2) 1-1/2\" Male Outlets NST"
+        },
+        {
+          "sku": "V-DF-PW25F25F",
+          "option": "2-1/2\" Female Inlet NST X (2) 2-1/2\" Male Outlets NST"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-valves-and-wyes/plain-wye-valves/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-1368-select-flow-municipal-nozzle",
+      "sku": "1368",
+      "name": "2-1/2\" 1368 Select Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "2-1/2\" select flow nozzle, 95 to 250 GPM. Selectable gallonage nozzle with stainless steel spinning teeth, a ball shutoff, and a pistol grip.",
+      "features": [
+        "Selectable gallonage nozzle with multiple flow settings",
+        "Stainless steel spinning teeth",
+        "Stainless steel ball enables ball shut off handle to work smoothly at extreme ranges",
+        "Straight stream to wide fog and flush without shutting down",
+        "Permanent anodized indicator bands",
+        "Metal Horseshoe handle",
+        "Multiple pattern detents for positive positioning",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "100 PSI (7.0 BAR) standard, optional 75 PSI (5 BAR)",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "NST/NH Threads",
+        "Flow Setting: GPM 95-125-150-200-250; LPM 360-475-550-750-950"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-1368-select-flow-municipal-nozzle.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/select-flow-municipal-nozzle/2-12-sf250-select-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-1366-select-flow-municipal-nozzle",
+      "name": "1-1/2\" 1366 Select Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "1-1/2\" select flow nozzle, 30 to 125 GPM. Selectable gallonage nozzle with stainless steel spinning teeth, a ball shutoff, and a pistol grip.",
+      "features": [
+        "Selectable gallonage nozzle with multiple flow settings",
+        "Stainless steel spinning teeth",
+        "Stainless steel ball enables ball shut off handle to work smoothly at extreme ranges",
+        "Straight stream to wide fog and flush without shutting down",
+        "Permanent anodized indicator bands",
+        "Metal Horseshoe handle",
+        "Multiple pattern detents for positive positioning",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "100 PSI (7.0 BAR) standard, optional 75 PSI (5 BAR)",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "NH or NPSH threads",
+        "Flow Setting: GPM 30-60-95-125; LPM 115-230-360-475"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-1366-select-flow-municipal-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "13661.5I",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "13661.5N",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/select-flow-municipal-nozzle/1-12-sf-125-select-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-in-1360-select-flow-municipal-nozzle",
+      "name": "1\" 1360 Select Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "1\" select flow nozzle, 5 to 40 GPM. Selectable gallonage nozzle with stainless steel spinning teeth, a ball shutoff, and a pistol grip.",
+      "features": [
+        "Selectable gallonage nozzle with multiple flow settings",
+        "Stainless steel spinning teeth",
+        "Stainless steel ball enables ball shut off handle to work smoothly at extreme ranges",
+        "Straight stream to wide fog and flush without shutting down",
+        "Permanent anodized indicator bands",
+        "Metal Horseshoe handle",
+        "Multiple pattern detents for positive positioning",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "100 PSI (7.0 BAR) standard, optional 75 PSI (5 BAR)",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "NH or NPSH threads",
+        "Flow Settings: GPM 5-10-24-40; LPM 19-37-90-150"
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-1360-select-flow-municipal-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "13601I",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "13601N",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/select-flow-municipal-nozzle/1-sf-40-select-flow-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-1372-constant-flow-municipal-nozzle",
+      "name": "1-1/2\" 1372 Constant Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "1-1/2\" constant flow nozzle at 60, 95, or 125 GPM. Constant gallonage nozzle with stainless steel spinning teeth, a ball shutoff, and a pistol grip.",
+      "features": [
+        "Constant gallonage nozzle with multiple flow settings available",
+        "Stainless steel spinning teeth",
+        "Stainless steel ball enables ball shut off handle to work smoothly at extreme ranges",
+        "Straight stream to wide fog and flush without shutting down",
+        "Permanent anodized metal indicator bands",
+        "Metal horseshoe handle",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "100 PSI (7.0 BAR) standard, optional 50 PSI (3-1/2 BAR)& 75 PSI (5 BAR)",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "NH or NPSH threads",
+        "Flow Setting: GPM 60, 95 or 125; LPM 230, 360, or 475"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-1372-constant-flow-municipal-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "13721.5I",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "13721.5N",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/constant-flow-municipal-nozle/1-12-1372-constant-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-1375-constant-flow-municipal-nozzle",
+      "sku": "1375",
+      "name": "2-1/2\" 1375 Constant Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "2-1/2\" constant flow nozzle at 200, 250, 300, or 350 GPM. Constant gallonage nozzle with stainless steel spinning teeth, a ball shutoff, and a pistol grip.",
+      "features": [
+        "Constant gallonage nozzle with multiple flow settings available",
+        "Stainless steel spinning teeth",
+        "Stainless steel ball enables ball shut off handle to work smoothly at extreme ranges",
+        "Straight stream to wide fog and flush without shutting down",
+        "Permanent anodized metal indicator bands",
+        "Metal horseshoe handle",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "100 PSI (7.0 BAR) standard, optional 50 PSI (3-1/2 BAR)& 75 PSI (5 BAR)",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "NST/NH Threads",
+        "Flow Setting: GPM 200, 250, 300, or 350; LPM 750, 950 or 1140"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-1375-constant-flow-municipal-nozzle.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/constant-flow-municipal-nozle/2-12-1375-constant-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-in-1371-constant-flow-municipal-nozzle",
+      "name": "1\" 1371 Constant Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "1\" constant flow nozzle at 13, 25, 40, or 60 GPM. Constant gallonage nozzle with stainless steel spinning teeth, a ball shutoff, and a pistol grip.",
+      "features": [
+        "Constant gallonage nozzle with multiple flow settings available",
+        "Stainless steel spinning teeth",
+        "Stainless steel ball enables ball shut off handle to work smoothly at extreme ranges",
+        "Straight stream to wide fog and flush without shutting down",
+        "Permanent anodized metal indicator bands",
+        "Metal horseshoe handle",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "100 PSI (7.0 BAR) standard, optional 50 PSI (3-1/2 BAR)& 75 PSI (5 BAR)",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "NH or NPSH threads",
+        "Flow Setting: GPM 13, 25, 40 or 60; LPM 50, 100, 150 or 230"
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-1371-constant-flow-municipal-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "13711I",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "13711N",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/constant-flow-municipal-nozle/1-1371-constant-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-in-select-flow-forestry-nozzle",
+      "sku": "2307",
+      "name": "1\" Select Flow Forestry Nozzle",
+      "category": "nozzles",
+      "group": "Forestry nozzles",
+      "summary": "1\" forestry nozzle with selectable 8, 15, and 30 GPM settings, stainless steel spinning teeth, and a twist shutoff.",
+      "features": [
+        "Selectable gallonage 8-15-30 GPM",
+        "Twist \"OFF\"",
+        "Straight stream to wide fog and flush without shutting down",
+        "Stainless steel spinning teeth",
+        "NST/NH Threads"
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-select-flow-forestry-nozzle.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/forestry-nozzles/1-select-flow-forestry-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-in-forestry-nozzle",
+      "sku": "2309",
+      "name": "1\" Dual Forestry Nozzle",
+      "category": "nozzles",
+      "group": "Forestry nozzles",
+      "summary": "1\" dual forestry nozzle, 10 to 30 GPM, with low and high flow settings for straight stream or narrow fog and a twist shutoff.",
+      "features": [
+        "10-30 GPM flow",
+        "NST/NH Threads",
+        "Settings: low flow straight stream, low flow narrow fog, high flow straight stream, high flow narrow fog"
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-forestry-nozzle.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/forestry-nozzles/1-dual-forestry-nozzle/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-hydrant-ball-valve",
+      "sku": "6595",
+      "name": "2-1/2\" Hydrant Ball Valve",
+      "category": "appliances",
+      "group": "Valves",
+      "summary": "Quarter-turn, full flow 2-1/2\" ball valve for double dressing hydrants, tanker fill sites, and in-line flow control.",
+      "features": [
+        "2-1/2\" NH female swivel by 2-1/2\" NH male",
+        "Quarter turn, hard coated ball, full flow",
+        "Extension 5.5\", width 4\", height 7\"",
+        "Weight: 5 lbs"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-hydrant-ball-valve.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-valves-and-wyes/2-12-hydrant-ball-valve/"
+    },
+    {
+      "slug": "rawhide-leader-line-wye-1-4-turn-ball-valve-non-locking",
+      "sku": "6520",
+      "name": "Leader Line Wye 1/4 Turn Ball Valve-Non Locking",
+      "category": "appliances",
+      "group": "Wyes",
+      "summary": "Lightweight alloy leader line wye with quarter-turn ball valves, 2-1/2\" female NST/NH inlet by two 1-1/2\" male outlets. Non-locking handles.",
+      "features": [
+        "Non-locking handles",
+        "Lightweight alloy",
+        "2-1/2\" female NST/NH inlet by (2) 1-1/2\" male NST/NH outlets"
+      ],
+      "images": [
+        "/catalog/rawhide-leader-line-wye-1-4-turn-ball-valve-non-locking.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-valves-and-wyes/leader-line-wye-valve-non-locking/"
+    },
+    {
+      "slug": "rawhide-leader-line-wye-1-4-turn-ball-valve-self-locking",
+      "sku": "6530",
+      "name": "Leader Line Wye 1/4 Turn Ball Valve-Self Locking",
+      "category": "appliances",
+      "group": "Wyes",
+      "summary": "Lightweight alloy leader line wye with self-locking quarter-turn ball valves, 2-1/2\" female NST/NH inlet by two 1-1/2\" male outlets.",
+      "features": [
+        "Self-locking handles",
+        "Lightweight alloy",
+        "2-1/2\" female NST/NH inlet by (2) 1-1/2\" male NST/NH outlets"
+      ],
+      "images": [
+        "/catalog/rawhide-leader-line-wye-1-4-turn-ball-valve-self-locking.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-valves-and-wyes/leader-line-wye-valve-self-locking/"
+    },
+    {
+      "slug": "rawhide-hydrant-wye-1-4-turn-ball-valve-self-locking",
+      "sku": "6540",
+      "name": "Hydrant Wye 1/4 Turn Ball Valve (Self Locking)",
+      "category": "appliances",
+      "group": "Wyes",
+      "summary": "Self-locking quarter-turn hydrant wye with two 2-1/2\" male NST outlets, for 2-1/2\" through 6\" female inlets.",
+      "features": [
+        "Self-locking handles",
+        "Lightweight alloy",
+        "Inlets: 2-1/2\", 3\", 4\", 4-1/2\", 5\", or 6\" female NST",
+        "Outlets: (2) 2-1/2\" male NST"
+      ],
+      "images": [
+        "/catalog/rawhide-hydrant-wye-1-4-turn-ball-valve-self-locking.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-valves-and-wyes/hydrant-wye-valves/"
+    },
+    {
+      "slug": "rawhide-ball-shutoffs-with-pistol-grip",
+      "name": "Ball Shutoffs with Pistol Grip",
+      "category": "nozzles",
+      "group": "Shutoffs",
+      "summary": "Aluminum ball shutoffs with a pistol grip and stainless steel ball, in 1\", 1-1/2\", and 2-1/2\".",
+      "features": [
+        "Lightweight aluminum body",
+        "Stainless steel ball allows smoother operation at extreme ranges",
+        "For CAFS or high rise operation we recommend removing strainer",
+        "3/4\", 1\" & 1-3/8\" waterway",
+        "Available in 1\", 1-1/2\" NST/NH or NPSH/IPT threads and 2-1/2\" NH/NST threads.",
+        "Other threads available upon request."
+      ],
+      "images": [
+        "/catalog/rawhide-ball-shutoffs-with-pistol-grip.webp"
+      ],
+      "variants": [
+        {
+          "sku": "1100 I",
+          "option": "1\", NPSH/IPT"
+        },
+        {
+          "sku": "1100",
+          "option": "1\", NST/NH"
+        },
+        {
+          "sku": "110215 I",
+          "option": "1-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "110215",
+          "option": "1-1/2\", NST/NH"
+        },
+        {
+          "sku": "110225",
+          "option": "2-1/2\", NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/ball-shutoffs/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-stacked-tip-triple-1-in-discharge",
+      "sku": "1115",
+      "name": "1-1/2\" Stacked Tip-Triple 1\" Discharge",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Three-piece stacked tip for 1-1/2\" lines with 1-1/4\", 1-1/8\", and 1\" discharges. Extruded, hardcoat anodized aluminum. 12\" long.",
+      "features": [
+        "Extruded aluminum body",
+        "Hardcoat anodized",
+        "Inlet: 1-1/2\"",
+        "Tips: 1-1/4\", 1-1/8\", and 1\" discharge",
+        "Length: 12\""
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-stacked-tip-triple-1-in-discharge.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/smooth-bore-tips/1-12-stacked-tip-triple-1-discharge/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-stacked-tip-double-1-2-in-discharge",
+      "sku": "1112",
+      "name": "1-1/2\" Stacked Tip-Double 1/2\" Discharge",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Two-piece stacked tip for 1-1/2\" lines with 15/16\" and 1/2\" discharges. Extruded, hardcoat anodized aluminum.",
+      "features": [
+        "Extruded aluminum body",
+        "Hardcoat anodized",
+        "Inlet: 1-1/2\"",
+        "Tips: 15/16\" and 1/2\" discharge",
+        "Length: 6.75\""
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-stacked-tip-double-1-2-in-discharge.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/smooth-bore-tips/stacked-tip-double/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-smooth-bore-tip-1-in-discharge",
+      "sku": "11061000",
+      "name": "1-1/2\" Smooth Bore Tip 1\" Discharge",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Smooth bore tip with a 1-1/2\" inlet and 1\" discharge. Extruded, hardcoat anodized aluminum. 6\" long.",
+      "features": [
+        "Extruded aluminum body",
+        "Hardcoat anodized",
+        "Inlet: 1-1/2\"",
+        "Discharge: 1\"",
+        "Length: 6\""
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-smooth-bore-tip-1-in-discharge.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/smooth-bore-tips/1-12-inch-smooth-bore-tip-1-inch-discharge/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-smooth-bore-tip-15-16-in-discharge",
+      "sku": "110609375",
+      "name": "1-1/2\" Smooth Bore Tip 15/16\" Discharge",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Smooth bore tip with a 1-1/2\" inlet and 15/16\" discharge. Extruded, hardcoat anodized aluminum. 6\" long.",
+      "features": [
+        "Extruded aluminum body",
+        "Hardcoat anodized",
+        "Inlet: 1-1/2\"",
+        "Discharge: 15/16\"",
+        "Length: 6\""
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-smooth-bore-tip-15-16-in-discharge.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/smooth-bore-tips/1-12-smooth-bore-tip-1516-waterway/"
+    },
+    {
+      "slug": "rawhide-piercing-nozzle-125-gpm",
+      "sku": "2308-3",
+      "name": "Piercing Nozzle 125 GPM",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "125 GPM piercing nozzle with a steel point, dense fog pattern, and 1-1/2\" continuous swivel inlet. 3' long.",
+      "features": [
+        "Steel Point",
+        "Dense Fog Pattern",
+        "3' Length",
+        "1-1/2\" Continuous Swivel Inlet"
+      ],
+      "images": [
+        "/catalog/rawhide-piercing-nozzle-125-gpm.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/piercing-nozzle-125-gpm/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-smooth-bore-tip-7-8-in-discharge",
+      "sku": "11060875",
+      "name": "1-1/2\" Smooth Bore Tip 7/8\" Discharge",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Smooth bore tip with a 1-1/2\" inlet and 7/8\" discharge. Extruded, hardcoat anodized aluminum. 6\" long.",
+      "features": [
+        "Extruded aluminum body",
+        "Hardcoat anodized",
+        "Inlet: 1-1/2\"",
+        "Discharge: 7/8\"",
+        "Length: 6\""
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-smooth-bore-tip-7-8-in-discharge.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/smooth-bore-tips/1-12-smooth-bore-tip/"
+    },
+    {
+      "slug": "rawhide-1-in-smooth-bore-tip-3-8-in-discharge",
+      "sku": "11050500",
+      "name": "1\" Smooth Bore Tip 3/8\" Discharge",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Smooth bore tip with a 1\" NST/NH inlet and 3/8\" discharge. Extruded, hardcoat anodized aluminum.",
+      "features": [
+        "Extruded aluminum body",
+        "Hardcoat anodized",
+        "Inlet: 1\" NST/NH",
+        "Discharge: 3/8\"",
+        "Length: 4.5\"",
+        "Other styles and orifices available"
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-smooth-bore-tip-3-8-in-discharge.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/smooth-bore-tips/1-sbt45-smooth-bore-tip/"
+    },
+    {
+      "slug": "rawhide-3846-master-stream-nozzle",
+      "sku": "3846",
+      "name": "3846 Master Stream Nozzle",
+      "category": "nozzles",
+      "group": "Master stream",
+      "summary": "Combination fog and straight stream master stream nozzle with adjustable flow up to 750 GPM, spinning teeth, and a 2-1/2\" NST/NH inlet.",
+      "features": [
+        "Durable lightweight alloy",
+        "Adjustable flow settings",
+        "Combination fog and straight stream",
+        "2-1/2\" Female NST/NH inlet",
+        "Master Stream 50-400-550-750 GPM",
+        "Spinning Teeth"
+      ],
+      "images": [
+        "/catalog/rawhide-3846-master-stream-nozzle.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/master-stream-nozzles/3846-master-stream-nozzle/"
+    },
+    {
+      "slug": "rawhide-3822-master-stream-nozzle",
+      "sku": "3822",
+      "name": "3822 Master Stream Nozzle",
+      "category": "nozzles",
+      "group": "Master stream",
+      "summary": "Adjustable baffle master stream nozzle, 150 to 500 GPM, with fixed teeth and a 2-1/2\" NST/NH inlet.",
+      "features": [
+        "Durable lightweight alloy",
+        "Adjustable flow settings: 150, 250, 350, and 500 GPM",
+        "Combination fog and straight stream",
+        "Adjustable baffle",
+        "Fixed teeth",
+        "2-1/2\" female NST/NH inlet"
+      ],
+      "images": [
+        "/catalog/rawhide-3822-master-stream-nozzle.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/master-stream-nozzles/3822-master-stream-nozzle/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-portable-deck-monitor-4622-2-w-master-stream-nozzle-3848",
+      "sku": "4622-2/3848",
+      "name": "2-1/2\" Portable Deck Monitor 4622-2 W/ Master Stream Nozzle 3848",
+      "category": "nozzles",
+      "group": "Master stream",
+      "summary": "Portable aluminum deck monitor with dual clappered 2-1/2\" inlets, a 3\" waterway, and a folding base. Comes with the 3848 master stream nozzle (500 to 1250 GPM).",
+      "features": [
+        "Durable, lightweight aluminum construction (32 lbs.)",
+        "Dual application for use as a portable monitor or add top flange for deck mount use",
+        "Compact folding base",
+        "Spring loaded locking system for positive locking",
+        "Safety stop at 30° above horizontal",
+        "Full, unobstructed 3\" waterway for low friction loss",
+        "Pressure gauge",
+        "Dual clappered 2-1/2\" continuous swivel inlets",
+        "Includes master stream nozzle 3848 (MS1250):",
+        "Made of durable lightweight alloy",
+        "Adjustable flow settings",
+        "Combination fog and straight stream",
+        "2-1/2\" inlet",
+        "Flow Setting: GPM 500-750-1000-1250"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-portable-deck-monitor-4622-2-w-master-stream-nozzle-3848.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/portable-deck-gun-monitor/2-12-portable-deck-monitor-4622-2-w-master-stream-nozzle-3848/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-deluge-tip-quad-1-3-8-in-discharge",
+      "sku": "1120",
+      "name": "2-1/2\" Deluge Tip Quad 1-3/8\" Discharge",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Stacked deluge tips for a 2-1/2\" inlet with 2\", 1-3/4\", 1-1/2\", and 1-3/8\" discharges. Extruded aluminum, 17\" long.",
+      "features": [
+        "Extruded Aluminum Body",
+        "Hardcoat Aluminum",
+        "2-1/2\" Inlet Base",
+        "2\", 1-1/2\" & 1-3/4\" Middle",
+        "1-3/8\" Discharge",
+        "17\" long",
+        "NST/NH Threads"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-deluge-tip-quad-1-3-8-in-discharge.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/deluge-tips/2-12-deluge-tip-quad-1-38-discharge/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-stream-straightener",
+      "sku": "3119",
+      "name": "2-1/2\" Stream Straightener",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Extruded, hardcoat anodized aluminum stream straightener with a 2-1/2\" NST/NH inlet and tip. 3\" long.",
+      "features": [
+        "Extruded Aluminum Body",
+        "Hardcoat Anodized",
+        "2-1/2\" Inlet",
+        "2-1/2\" Tip",
+        "3\" Long",
+        "NST/NH Threads"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-stream-straightener.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/deluge-tips/2-12-stream-straightener/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-in-line-eductor-250-gpm",
+      "sku": "5205-250",
+      "name": "2-1/2\" In Line Eductor 250 GPM",
+      "category": "nozzles",
+      "group": "Foam eductors",
+      "summary": "2-1/2\" in-line foam eductor, 250 GPM, with a metering valve from 1/4 to 6% and a check ball to prevent backflow. 12\" long.",
+      "details": [
+        "The 2-1/2\" in line eductor provides 250 gpm, is 12\" long and connects with a 2-1/2\" Inlet and has a 2-1/2\" Outlet. A 1-1/2\" inlet/outlet configuration is also available. The 2-1/2\" educator is standard with NST/NH."
+      ],
+      "features": [
+        "Lightweight alloy construction",
+        "Check ball that prevents backflow occurrence",
+        "Large and easy to read metering device",
+        "Metering valve with 6 settings: 0 (shutoff), ¼, ½, 1, 3, & 6%",
+        "Detachable metering device allows for quick and easy cleaning",
+        "Rated to flow at 200 PSI"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-in-line-eductor-250-gpm.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/2-12-in-line-eductor/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-in-line-eductor-125-gpm",
+      "name": "1-1/2\" In Line Eductor 125 GPM",
+      "category": "nozzles",
+      "group": "Foam eductors",
+      "summary": "1-1/2\" in-line foam eductor, 125 GPM, with a metering valve from 1/4 to 6% and a check ball to prevent backflow. 8\" long.",
+      "details": [
+        "The 1-1/2\" in line eductor 125 gpm is 8\" long and has a 1-1/2\" Inlet and 1-1/2\" outlet. Comes in NST/NH or NPSH/IPT threads."
+      ],
+      "features": [
+        "Lightweight alloy construction",
+        "Check ball to prevent backflow",
+        "Large easy to read metering device",
+        "Metering valve with 6 settings: 0 (shutoff), ¼, ½, 1, 3, & 6%",
+        "Detachable metering device for quick and easy cleaning",
+        "Rated to flow at 200 PSI"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-in-line-eductor-125-gpm.webp"
+      ],
+      "variants": [
+        {
+          "sku": "5203-125 I",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "5203-125",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/1-12-line-eductor-125-gpm/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-in-line-eductor-95-gpm",
+      "name": "1-1/2\" In Line Eductor 95 GPM",
+      "category": "nozzles",
+      "group": "Foam eductors",
+      "summary": "1-1/2\" in-line foam eductor, 95 GPM, with a metering valve from 1/4 to 6% and a check ball to prevent backflow. 8\" long.",
+      "details": [
+        "The 1-1/2\" in line eductor 95 gpm is 8\" long and has a 1-1/2\" Inlet and 1-1/2\" outlet. Comes in NST/NH or NPSH/IPT threads."
+      ],
+      "features": [
+        "Lightweight alloy construction",
+        "Check ball to prevent backflow",
+        "Large easy to read metering device",
+        "Metering valve with 6 settings: 0 (shutoff), ¼, ½, 1, 3, & 6%",
+        "Detachable metering device for quick and easy cleaning",
+        "Rated to flow at 200 PSI"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-in-line-eductor-95-gpm.webp"
+      ],
+      "variants": [
+        {
+          "sku": "5203-95 I",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "5203-95",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/in-line-educator/"
+    },
+    {
+      "slug": "rawhide-forestry-grade-wye-1-4-turn-ball-valve",
+      "name": "Forestry Grade Wye 1/4 Turn Ball Valve",
+      "category": "appliances",
+      "group": "Wyes",
+      "summary": "Lightweight alloy forestry wye with stainless steel quarter-turn ball shutoffs, with 1\" or 1-1/2\" inlets.",
+      "features": [
+        "Made of lightweight alloys",
+        "Stainless steel ball shut-off"
+      ],
+      "images": [
+        "/catalog/rawhide-forestry-grade-wye-1-4-turn-ball-valve.webp"
+      ],
+      "variants": [
+        {
+          "sku": "650510",
+          "option": "1\" Female Inlet NST X (2) 1\" Male Outlets NST"
+        },
+        {
+          "sku": "650610",
+          "option": "1-1/2\" Female Inlet NST X (2) 1\" Male Outlets NST"
+        },
+        {
+          "sku": "650615",
+          "option": "1-1/2\" Female Inlet NST X (2) 1-1/2\" Male Outlets NST"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-valves-and-wyes/forestry-wye-valves/"
+    },
+    {
+      "slug": "rawhide-aluminum-hydrant-gate-valve",
+      "sku": "6596",
+      "name": "Aluminum Hydrant Gate Valve",
+      "category": "appliances",
+      "group": "Valves",
+      "summary": "Lightweight aluminum hydrant gate valve with a speed handle. Protects hydrants from damage when they're used for throttling.",
+      "features": [
+        "2-1/2\" female NST swivel by 2-1/2\" male NST outlet",
+        "Pin lug swivel, non-rising stem",
+        "Aluminum speed handle, non-metallic seal",
+        "Maximum operating pressure: 175 psi (water only) at 70°F (21°C)"
+      ],
+      "images": [
+        "/catalog/rawhide-aluminum-hydrant-gate-valve.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-valves-and-wyes/aluminum-hydrant-gate-valve/"
+    },
+    {
+      "slug": "rawhide-triple-storz-holder-and-set-w-s-148-3",
+      "sku": "W-S-148-3",
+      "name": "Triple Storz Holder & Set W-S-148-3",
+      "category": "straps-mounts",
+      "group": "Wrench holders",
+      "summary": "The triple storz holder & Set W-S-148-3 comes complete with 148 holder, (1) Style SW-3 storz hydrant wrench & (2) Style SW-2 storz spanner wrenches.",
+      "images": [
+        "/catalog/rawhide-triple-storz-holder-and-set-w-s-148-3.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/wrench-holders-sets/triple-storz-holder-set-w-s-148-3/"
+    },
+    {
+      "slug": "rawhide-double-storz-wrench-holder-and-set-w-s-146-2",
+      "sku": "W-S-146-2",
+      "name": "Double Storz Wrench Holder & Set W-S-146-2",
+      "category": "straps-mounts",
+      "group": "Wrench holders",
+      "summary": "Double holder with two Storz spanner wrenches.",
+      "details": [
+        "Storz wrenches are strong yet lightweight. Beyond hydrant and spanner work, they help with tasks like prying open doors, removing lids from foam drums, and adjusting gas meter valves."
+      ],
+      "images": [
+        "/catalog/rawhide-double-storz-wrench-holder-and-set-w-s-146-2.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/wrench-holders-sets/double-storz-holder-set-w-s-146-2/"
+    },
+    {
+      "slug": "rawhide-double-storz-holder-and-set-w-s-146-1",
+      "sku": "W-S-146-1",
+      "name": "Double Storz Holder & Set W-S-146-1",
+      "category": "straps-mounts",
+      "group": "Wrench holders",
+      "summary": "Style S-146 double holder with two Style SW-1 Storz spanner wrenches.",
+      "images": [
+        "/catalog/rawhide-double-storz-holder-and-set-w-s-146-1.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/wrench-holders-sets/double-storz-holders-set-w-s-146-1/"
+    },
+    {
+      "slug": "rawhide-double-storz-holder-w-s-146",
+      "sku": "W-S-146",
+      "name": "Double Storz Holder W-S-146",
+      "category": "straps-mounts",
+      "group": "Wrench holders",
+      "summary": "Compact holder for (2) storz spanner wrenches. Strong stainless steel springs & pin bearings.",
+      "images": [
+        "/catalog/rawhide-double-storz-holder-w-s-146.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/wrench-holders-sets/double-storz-holder-w-s-146/"
+    },
+    {
+      "slug": "rawhide-hydrant-and-spanner-holder-and-set-w-148-3-7",
+      "sku": "W-148-3-7",
+      "name": "Hydrant & Spanner Holder & Set W-148-3-7",
+      "category": "straps-mounts",
+      "group": "Wrench holders",
+      "summary": "The hydrant & spanner holder & set comes complete with Style 148 holder, (1) Style 107 hydrant wrench & (2) Style 101 spanner wrenches.",
+      "images": [
+        "/catalog/rawhide-hydrant-and-spanner-holder-and-set-w-148-3-7.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/wrench-holders-sets/hydrant-spanner-holder-set-w-148-3-7/"
+    },
+    {
+      "slug": "rawhide-hydrant-and-spanner-holder-and-sets-w-148-3",
+      "sku": "W-148-3",
+      "name": "Hydrant & Spanner Holder & Set W-148-3",
+      "category": "straps-mounts",
+      "group": "Wrench holders",
+      "summary": "Style 148 holder with one Style 105 hydrant wrench and two Style 101 spanner wrenches.",
+      "images": [
+        "/catalog/rawhide-hydrant-and-spanner-holder-and-sets-w-148-3.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/wrench-holders-sets/hydrant-spanner-holder-sets-w-148-3/"
+    },
+    {
+      "slug": "rawhide-hydrant-and-spanner-wrench-holder-w-148",
+      "sku": "W-148",
+      "name": "Hydrant & Spanner Wrench Holder W-148",
+      "category": "straps-mounts",
+      "group": "Wrench holders",
+      "summary": "The hydrant & spanner wrench holder accommodates 1 hydrant wrench and 2 spanner wrenches. This triple holder has long lasting stainless steel springs and pin bearings.",
+      "features": [
+        "Weight: 2-1/4 lbs Size: 9-3/4\" X 5-3/4\" X 2-1/4\""
+      ],
+      "images": [
+        "/catalog/rawhide-hydrant-and-spanner-wrench-holder-w-148.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/wrench-holders-sets/hydrant-spanner-wrench-holder-w-148/"
+    },
+    {
+      "slug": "rawhide-double-spanner-holder-w-146",
+      "sku": "W-146",
+      "name": "Double Spanner Holder W-146",
+      "category": "straps-mounts",
+      "group": "Wrench holders",
+      "summary": "The double spanner holder is a compact holder for 2 spanner wrenches. This holder has strong stainless steel springs and pin bearings.",
+      "details": [
+        "Weight: 1-1/4 Size: 6-7/8\" X 5-7/8\" X 2-1/4\""
+      ],
+      "images": [
+        "/catalog/rawhide-double-spanner-holder-w-146.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/wrench-holders-sets/double-spanner-holder-w-146/"
+    },
+    {
+      "slug": "rawhide-double-spanner-holder-and-set-w-146-2",
+      "sku": "W-146-2",
+      "name": "Double Spanner Holder & Set W-146-2",
+      "category": "straps-mounts",
+      "group": "Wrench holders",
+      "summary": "The double spanner holder & set comes complete with style 146 holder & (2) style 101 spanner wrenches that are made from rugged ALMAG 35 alloy.",
+      "details": [
+        "They have a tensile strength of 40 KSI that meets the requirements of ASTM GM70B.",
+        "The compact holder has strong stainless steel springs and pin bearings. The holder weighs 1-1/2 lbs. and is 6-7/8\" X 4-7/8\" X 2-1/4\"."
+      ],
+      "images": [
+        "/catalog/rawhide-double-spanner-holder-and-set-w-146-2.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/wrench-holders-sets/double-spanner-holder-set-w-146-2/"
+    },
+    {
+      "slug": "rawhide-hydrant-wrench-w-107",
+      "sku": "W-107/W-LS",
+      "name": "Hydrant Wrench W-107",
+      "category": "rescue",
+      "group": "Hydrant wrenches",
+      "summary": "This long adjustable hydrant wrench will accommodate pentagon heads to 1-3/4\" & square heads to 1-1/4\".",
+      "details": [
+        "Single hook spanner head is designed to fit 3/4\" through 6\" rocker lug or pin lug fittings. Length: 18-1/2\""
+      ],
+      "images": [
+        "/catalog/rawhide-hydrant-wrench-w-107.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/hydrant-wrenches/hydrant-wrench-w-107/"
+    },
+    {
+      "slug": "rawhide-hydrant-wrench-w-105-s",
+      "sku": "W-105S/W-ST",
+      "name": "Hydrant Wrench W-105-S",
+      "category": "rescue",
+      "group": "Hydrant wrenches",
+      "summary": "The short adjustable hydrant wrench with double spanner head will accommodate pentagon heads to 1-7/8\" & square heads to 1-1/2\".",
+      "details": [
+        "Double spanner head is designed to fit 3/4\" through 6\" rocker lug or pin lug fittings. Jaw is replaceable. Length: 11-1/2\""
+      ],
+      "images": [
+        "/catalog/rawhide-hydrant-wrench-w-105-s.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/hydrant-wrenches/hydrant-wrenches-w-105-s/"
+    },
+    {
+      "slug": "rawhide-hydrant-wrench-w-105",
+      "sku": "W-105/W-LT",
+      "name": "Hydrant Wrench W-105",
+      "category": "rescue",
+      "group": "Hydrant wrenches",
+      "summary": "This adjustable hydrant wrench will accommodate pentagon heads to 1-7/8\" & square heads to 1-1/2\".",
+      "details": [
+        "Double spanner head is designed to fit 3/4\" through 6\" rocker lug or pin lug fittings. Jaw is replaceable. Length: 19-1/2\""
+      ],
+      "images": [
+        "/catalog/rawhide-hydrant-wrench-w-105.webp",
+        "/catalog/rawhide-hydrant-wrench-w-105-2.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/hydrant-wrenches/hydrant-wrenches-w-105/"
+    },
+    {
+      "slug": "rawhide-spanner-wrench-w-104",
+      "sku": "W-104",
+      "name": "Spanner Wrench W-104",
+      "category": "rescue",
+      "group": "Spanner wrenches",
+      "summary": "This spanner wrench is a double end hole type spanner for use on 3/4\" & 1\" booster hose couplings & 2-1/2\" hole type fittings.",
+      "features": [
+        "Length: 7-1/2\"",
+        "Weight: 3-1/2 oz"
+      ],
+      "images": [
+        "/catalog/rawhide-spanner-wrench-w-104.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/spanner-wrenches/spanner-w-104/"
+    },
+    {
+      "slug": "rawhide-spanner-wrench-w-106",
+      "sku": "W-106",
+      "name": "Spanner Wrench W-106",
+      "category": "rescue",
+      "group": "Spanner wrenches",
+      "summary": "The catch-all spanner wrench fits 3/4\" to 6\" rocker lug, pin lug, slot type, or split lug fittings.",
+      "details": [
+        "Gas cock shut-off located for maximum strength & leverage. Length: 10\""
+      ],
+      "images": [
+        "/catalog/rawhide-spanner-wrench-w-106.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/spanner-wrenches/spanner-w-106/"
+    },
+    {
+      "slug": "rawhide-spanner-w-103",
+      "sku": "W-103",
+      "name": "Spanner W-103",
+      "category": "rescue",
+      "group": "Spanner wrenches",
+      "summary": "Compact hole type spanner for 3/4\" and 1\" booster hose fittings.",
+      "features": [
+        "Length: 7-1/2\""
+      ],
+      "images": [
+        "/catalog/rawhide-spanner-w-103.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/spanner-wrenches/spanner-w-103/"
+    },
+    {
+      "slug": "rawhide-spanner-w-101",
+      "sku": "W-101/W-SPAN",
+      "name": "Spanner W-101",
+      "category": "rescue",
+      "group": "Spanner wrenches",
+      "summary": "The universal spanner wrench is a rugged, all purpose tool and has a gas cock shut-off located for maximum strength & leverage.",
+      "details": [
+        "Fits 3/4\" to 6\" rocker lug & pin lug fittings. Length: 10-1/2\""
+      ],
+      "images": [
+        "/catalog/rawhide-spanner-w-101.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/spanner-wrenches/spanner-w-101/"
+    },
+    {
+      "slug": "rawhide-adjustable-storz-hydrant-wrench-w-sw-3",
+      "sku": "W-SW-3",
+      "name": "Adjustable Storz Hydrant Wrench W-SW-3",
+      "category": "rescue",
+      "group": "Storz wrenches",
+      "summary": "The adjustable storz hydrant wrench will accommodate pentagon heads to 1-7/8\" & square heads to 1-1/2\".",
+      "details": [
+        "The single hook spanner & storz spanner combination head is designed to fit 3/4\" thru 6\" rocker lug or pin lug fittings plus 4\", 5\" & 6\" storz heads. The bronze jaw is replaceable."
+      ],
+      "features": [
+        "Weight: 6 lbs",
+        "Length: 25\""
+      ],
+      "images": [
+        "/catalog/rawhide-adjustable-storz-hydrant-wrench-w-sw-3.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/storz-wrenches/storz-wrench-w-sw-3/"
+    },
+    {
+      "slug": "rawhide-storz-spanner-wrench-w-sw-2",
+      "sku": "W-SW-2/W-STORZ",
+      "name": "Storz Spanner Wrench W-SW-2",
+      "category": "rescue",
+      "group": "Storz wrenches",
+      "summary": "Storz spanner wrench for 4\", 5\", and 6\" Storz connections.",
+      "features": [
+        "Length: 13\"",
+        "Weight: 8 oz"
+      ],
+      "images": [
+        "/catalog/rawhide-storz-spanner-wrench-w-sw-2.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/storz-wrenches/storz-wrench-w-sw-2/"
+    },
+    {
+      "slug": "rawhide-storz-spanner-wrench-w-sw-1",
+      "sku": "W-SW-1",
+      "name": "Storz Spanner Wrench W-SW-1",
+      "category": "rescue",
+      "group": "Storz wrenches",
+      "summary": "Storz spanner wrench for 1\", 1-1/2\", 2\", 2-1/2\", and 3\" Storz connections.",
+      "features": [
+        "Length: 10\"",
+        "Weight: 3-1/2 oz"
+      ],
+      "images": [
+        "/catalog/rawhide-storz-spanner-wrench-w-sw-1.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/storz-wrenches/storz-wrench-w-sw-1/"
+    },
+    {
+      "slug": "rawhide-storz-spanner-wrench-w-slw-1",
+      "sku": "W-SLW-1",
+      "name": "Storz Spanner Wrench W-SLW-1",
+      "category": "rescue",
+      "group": "Storz wrenches",
+      "summary": "Storz spanner wrench for 4\" and 5\" locking Storz heads.",
+      "features": [
+        "Length: 11\"",
+        "Weight: 8 oz"
+      ],
+      "images": [
+        "/catalog/rawhide-storz-spanner-wrench-w-slw-1.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/storz-wrenches/storz-wrench-w-slw-1/"
+    },
+    {
+      "slug": "rawhide-economy-nozzle-1-5-in-30-degree-fog-nozzle-1575e-electrical",
+      "name": "Economy Nozzle 1.5\" 30 Degree Fog Nozzle (1575E) Electrical",
+      "category": "nozzles",
+      "group": "Economy nozzles",
+      "summary": "1-1/2\" polycarbonate nozzle that opens to a 30 degree fog for electrical equipment and switching panels. Tested to 250,000 volts at 10 feet. 75 GPM.",
+      "details": [
+        "The electrical economy nozzle is constructed of red polycarbonate and precision molded from the latest developments in the industry. This nozzle opens to a 30 degree fog pattern, designed for use on electrical equipment and switching panels. Tested to 250,000 volts at 10 feet."
+      ],
+      "features": [
+        "Available threads are NH/NST, IPT/NPSH, Chicago Fire Dept., NYFD, NY Corp. and Pacific Coast Thread.",
+        "Size 1.5\"",
+        "Height 4 to 5/8\"",
+        "Gallonage 75 GPM (US)",
+        "Factory Mutual Approved"
+      ],
+      "images": [
+        "/catalog/rawhide-economy-nozzle-1-5-in-30-degree-fog-nozzle-1575e-electrical.webp"
+      ],
+      "variants": [
+        {
+          "sku": "15751.5ECFD",
+          "option": "Chicago FD"
+        },
+        {
+          "sku": "15751.5EIPT",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "15751.5ENST",
+          "option": "NST/NH"
+        },
+        {
+          "sku": "15751.5ENYCORP",
+          "option": "NY Corp"
+        },
+        {
+          "sku": "15751.5EFDNY",
+          "option": "NYFD"
+        },
+        {
+          "sku": "15751.5EPCT",
+          "option": "Pacific Coast"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/economy-nozzles/economy-nozzle-1-5-30-degree-fog-nozzle-1575e/"
+    },
+    {
+      "slug": "rawhide-1-in-and-1-1-2-in-1321-and-1322-automatic-flow-municipal-nozzle",
+      "name": "1\" & 1-1/2\" 1321 & 1322 Automatic Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "1\" and 1-1/2\" automatic nozzle, 10 to 125 GPM. Automatic nozzle with slide valve control, straight stream to wide fog, and a pistol grip.",
+      "features": [
+        "Slide valve control",
+        "Straight stream to wide fog and flush without shutting down",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "Permanent anodized metal indicator bands",
+        "Metal horseshoe handle",
+        "Molded fixed teeth for fog",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "NH or NPSH threads",
+        "Flow Setting: GPM 10-125; LPM 40-475"
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-and-1-1-2-in-1321-and-1322-automatic-flow-municipal-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "13211I",
+          "option": "1\", NPSH/IPT"
+        },
+        {
+          "sku": "AF1251N",
+          "option": "1\", NST/NH"
+        },
+        {
+          "sku": "13221.5I",
+          "option": "1-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "13221.5N",
+          "option": "1-1/2\", NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/automatic-flow-municipal-nozzle/1-1-12-1321-1322-automatic-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-in-lightweight-booster-reel-hose-600-lb-test",
+      "name": "1\" Lightweight Booster Reel Hose (600 LB Test)",
+      "category": "hose",
+      "group": "Booster hose",
+      "summary": "Thin-walled, polyurethane lined booster hose with a helical reinforcement that holds its shape. Can be charged on the reel. Built for 12\" drum reels and skid units.",
+      "details": [
+        "This thin-walled polyurethane lined hose is the most durable lightweight booster hose on the market and is designed so that it can be charged with water, while still on the reel, making it ideal for close quarters uses. This lightweight 1 inch hose reel (600 LB Test) is a multi-purpose, lightweight, attack hose that meets the needs of industrial, municipal and forestry applications.",
+        "This uniquely constructed booster reel hose features an all-polyester cover for heat and abrasion resistance, along with a special helical interior reinforcement to retain its rigid shape.",
+        "Booster Hose Design: Circular woven, single jacket, combined with a helical interior reinforcement, and a polyester cover. Standard lengths are available up to 200 feet long. Custom lengths are available upon request.",
+        "Abrasion Impregnation: A polyurethane based polymer impregnation results in a red color and aids in abrasion resistance."
+      ],
+      "features": [
+        "Colors: Red",
+        "Lengths: 50, 75, 100, 150, 200 ft",
+        "Coupling options: Aluminum field attachable NPSH/IPT; Aluminum field attachable NST/NH; uncoupled",
+        "Single jacket construction",
+        "Rigid helical reinforcement",
+        "Lightweight and kink resistant",
+        "Abrasion resistant red cover",
+        "Designed for 12\" drum reels and skid units",
+        "Diameter: 1\"",
+        "Tube: Extruded polyurethane liner yields ozone and chemical resistance and extended shelf and use life.",
+        "Booster Hose Couplings: Field replaceable coupling with a one-inch NH or NPSH thread."
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-lightweight-booster-reel-hose-600-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/industrial/1-lightweight-booster-hose-600-lb-test/"
+    },
+    {
+      "slug": "rawhide-1-in-single-jacket-fire-hose-500-lb-test",
+      "name": "1\" Single Jacket Fire Hose (500 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Single jacket polyester fire hose with an EPDM lining, treated to resist mold and mildew. 250 psi service test, 500 psi proof test.",
+      "details": [
+        "This quality fire hose is engineered to be abrasion resistant and impervious to mold / mildew for heavy-duty usage. This fire hose is designed to be easily deployed. It is built for prolonged storage and offers extended service life. All fire hose products provided by Rawhide Fire Hose meet or exceed NFPA 1961 standards. Note: All hoses should be inspected and tested per NFPA 1962 guidelines, provided the application falls under this jurisdiction.",
+        "Jacket Construction: This Single Jacket Fire Hose (500 LB Test) is comprised of a single jacket, woven evenly and free of defects, from spun polyester yarn offering superior strength and wear characteristics. The warp yarn is standard 100% polyester. The filler yarns are high strength, low elongation, filament type polyester, in order to reduce weight while increasing flexibility. In addition the jacket is processed with a treatment that helps to resist mold and mildew. This fire hose is available in white, red or yellow, as standard, with other colors available upon request. Standard lengths include 50' and 100'. This fire hose can be coupled with anodized aluminum (Threaded or Storz), brass threaded or camlock shanks.",
+        "Lining: The rubber lining is a single ply, extruded, synthetic EPDM tube, compounded to resist ozone. The manufacturing process includes a vulcanization phase that bonds the lining to the outer jacket.",
+        "Couplings: As required per specification(s). Available with internal expansion ring threaded aluminum couplings, NH/NST or NPSH/IPT. Storz, shank or cam-lock couplings or special threaded couplings are available upon request.",
+        "Special Characteristics: Lightweight and easy to handle. Wear and length of service can be extended by maintaining fire hose assemblies."
+      ],
+      "features": [
+        "Colors: Red, White, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 250# Service Test Pressure; 500# Proof Test Pressure; 750# Burst Pressure",
+        "Temperature Range: -40 degrees F to 180 degrees F; -40 degrees C to 82 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-single-jacket-fire-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/1-single-jacket-fire-hose-ap-500-500-lb-test-2/"
+    },
+    {
+      "slug": "rawhide-2-in-single-jacket-fire-hose-500-lb-test",
+      "name": "2\" Single Jacket Fire Hose (500 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Single jacket polyester fire hose with an EPDM lining, treated to resist mold and mildew. 250 psi service test, 500 psi proof test.",
+      "details": [
+        "This quality fire hose is engineered to be abrasion resistant and impervious to mold / mildew for heavy-duty usage. This fire hose is designed to be easily deployed. It is built for prolonged storage and offers extended service life. All fire hose products provided by Rawhide Fire Hose meet or exceed NFPA 1961 standards. Note: All hoses should be inspected and tested per NFPA 1962 guidelines, provided the application falls under this jurisdiction.",
+        "Jacket Construction: This 2\" Single Jacket Fire Hose (500 LB Test) is comprised of a single jacket, woven evenly and free of defects, from spun polyester yarn offering superior strength and wear characteristics. The warp yarn is standard 100% polyester. The filler yarns are high strength, low elongation, filament type polyester, in order to reduce weight while increasing flexibility. In addition the jacket is processed with a treatment that helps to resist mold and mildew. This fire hose is available in white, as standard, with other colors available upon request. Standard lengths include 50' and 100'. This fire hose can be coupled with anodized aluminum (Threaded or Storz), brass threaded or camlock shanks.",
+        "Lining: The rubber lining is a single ply, extruded, synthetic EPDM tube, compounded to resist ozone. The manufacturing process includes a vulcanization phase that bonds the lining to the outer jacket.",
+        "Couplings: As required per specification(s). Available with internal expansion ring threaded aluminum couplings, NH/NST or NPSH/IPT. Storz, shank or cam-lock couplings or special threaded couplings are available upon request.",
+        "Special Characteristics: Lightweight and easy to handle. Wear and length of service can be extended by maintaining fire hose assemblies."
+      ],
+      "features": [
+        "Colors: Red, White, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 250# Service Test Pressure; 500# Proof Test Pressure; 750# Burst Pressure",
+        "Temperature Range: -40 degrees F to 180 degrees F; -40 degrees C to 82 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-2-in-single-jacket-fire-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/industrial/2-single-jacket-fire-hose-ap-500-500-lb-test/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-single-jacket-fire-hose-500-lb-test",
+      "name": "2-1/2\" Single Jacket Fire Hose (500 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Single jacket polyester fire hose with an EPDM lining, treated to resist mold and mildew. 250 psi service test, 500 psi proof test.",
+      "details": [
+        "This quality fire hose is engineered to be abrasion resistant and impervious to mold / mildew for heavy-duty usage. This fire hose is designed to be easily deployed. It is built for prolonged storage and offers extended service life. All fire hose products provided by Rawhide Fire Hose meet or exceed NFPA 1961 standards. Note: All hoses should be inspected and tested per NFPA 1962 guidelines, provided the application falls under this jurisdiction.",
+        "Jacket Construction: This Single Jacket Fire Hose 500 LB Test is comprised of a single jacket, woven evenly and free of defects, from spun polyester yarn offering superior strength and wear characteristics. The warp yarn is standard 100% polyester. The filler yarns are high strength, low elongation, filament type polyester, in order to reduce weight while increasing flexibility. In addition the jacket is processed with a treatment that helps to resist mold and mildew. This fire hose is available in white, red or yellow, as standard, with other colors available upon request. Standard lengths include 50', 75' and 100'. This fire hose can be coupled with anodized aluminum (Threaded or Storz), brass threaded or camlock shanks.",
+        "Lining: The rubber lining is a single ply, extruded, synthetic EPDM tube, compounded to resist ozone. The manufacturing process includes a vulcanization phase that bonds the lining to the outer jacket.",
+        "Couplings: As required per specification(s). Available with internal expansion ring threaded aluminum couplings, NH/NST or NPSH/IPT. Storz, shank or cam-lock couplings or special threaded couplings are available upon request.",
+        "Special Characteristics: Lightweight and easy to handle. Wear and length of service can be extended by maintaining fire hose assemblies."
+      ],
+      "features": [
+        "Colors: Red, White, Yellow",
+        "Lengths: 50, 75, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 250# Service Test Pressure; 500# Proof Test Pressure; 750# Burst Pressure",
+        "Temperature Range: -40 degrees F to 180 degrees F; -40 degrees C to 82 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-single-jacket-fire-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/2-12-single-jacket-fire-hose-ap-500-500-lb-test/"
+    },
+    {
+      "slug": "rawhide-1-in-fire-engine-booster-hose-1600-lb-test",
+      "name": "1\" Fire Engine Booster Hose 1600 LB Test",
+      "category": "hose",
+      "group": "Booster hose",
+      "summary": "Booster reel hose with a red NBR/PVC cover and spiral yarn reinforcement, rated up to 800 psi working pressure. Can be charged while still on the reel.",
+      "details": [
+        "Resists scrapes, scuffs, scratches and built to exceed municipal and industrial demands. This hose can also be used for water transfer service, wash down and mop up.",
+        "Cover Construction: Built rugged, by using a red NBR/PVC cover to resist abrasion. The smooth surface provides for ease of handling.",
+        "Lining: The rubber lining is SBR/Nitrile rubber. Overlapped spiral layers of synthetic yarn makes this hose tough yet still flexible. Built safe for use with pressures up to 800 psi working pressure.",
+        "Couplings: As required per customer order and use, this hose is offered in hard coated aluminum, brass and chrome-plated brass. The couplings are spanner hole-type and can be attached in the field."
+      ],
+      "features": [
+        "Colors: Red",
+        "Lengths: 50, 100, 150, 200 ft",
+        "Coupling options: Aluminum IPT/NPSH hole type (bar-way); Aluminum NST/NH hole type (bar-way); Brass IPT/NPSH hole type (bar-way); Brass NST/NH hole type (bar-way); Chrome IPT/NPSH hole type (bar-way); Chrome NST/NH hole type (bar-way); uncoupled",
+        "For use in high-pressure fire engine booster hose service",
+        "Medium to high oil resistance",
+        "Will not flatten or crush reels",
+        "Working pressure up to 800 PSI for best margin of safety",
+        "Hose can be fully charged with water while still on the reel",
+        "Ideal for brush, refuse, dumpster and grass fires",
+        "Thick-walled and flexible",
+        "Made in the United States of America",
+        "Can be handled easily by one fire fighter",
+        "Retains shape when carried on a pumper truck reel",
+        "Perfect for close quarters wash down and mop up"
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-fire-engine-booster-hose-1600-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/1-fire-engine-booster-hose-1600-lb-test/"
+    },
+    {
+      "slug": "rawhide-1-3-4-in-double-jacket-fire-hose-800-lb-test",
+      "name": "1-3/4\" Double Jacket Fire Hose (800 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Double jacket polyester attack hose with an EPDM lining, made to municipal requirements. 400 psi service test, 800 psi proof test, 1350 psi burst.",
+      "details": [
+        "The double jacket fire hose (800 lb test) is flexible, strong and abrasion resistant. Manufactured to exacting municipal requirements. Designed to be the ultimate in industrial and municipal fire protection.",
+        "Jacket Construction: The jackets are woven evenly and free of defects, from spun polyester yarn that offers superior strength and wear characteristics. The warp yarn is standard 100% polyester. The filler yarns are high strength, low elongation, filament polyester to reduce weight and increase flexibility. In addition the jacket is treated to resist mold and mildew.",
+        "Lining: The rubber lining is a single ply, extruded, synthetic EPDM tube, compounded to resist ozone. Under this specification, the construction of this hose is to be manufactured fully backed.",
+        "Couplings: As required per specification(s). Available with internal expansion ring threaded aluminum or brass.",
+        "Special Characteristics: Standard color is white. Available in yellow, red, orange, blue, black, tan and green. Standard lengths are 50' and 100'. Custom lengths are available. Hose meets the standards and specifications of Underwriters Laboratories, Inc. (UL), including UL-19 (tensile strength & elongation) for rubber-lined hoses. All hoses are stenciled with 1\" characters stating \"service test to 400 PSI Per NFPA 1962 \" and the service date in a contrasting color indelible ink.",
+        "Service Life: This hose has a potential service life of ten (10) years, notwithstanding mistreatment and/or misuse."
+      ],
+      "features": [
+        "Colors: Red, White, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum NST/NH (rocker lug, expansion ring); uncoupled",
+        "NH/NST and NPSH/IPT standard. Custom thread patterns available upon request",
+        "Pressure Ratings: 400# Service Test Pressure; 800# Proof Test Pressure; 1350# Burst Pressure",
+        "Temperature Range: -40 degrees F to 180 degrees F; -40 degrees C to 82 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-1-3-4-in-double-jacket-fire-hose-800-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/1-34-double-jacket-fire-hose-800-lb-test-2/"
+    },
+    {
+      "slug": "rawhide-2-in-double-jacket-fire-hose-800-lb-test",
+      "name": "2\" Double Jacket Fire Hose (800 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Double jacket polyester attack hose with an EPDM lining, made to municipal requirements. 400 psi service test, 800 psi proof test, 1350 psi burst.",
+      "details": [
+        "The double jacket fire hose (800 lb test) is flexible, strong and abrasion resistant. Manufactured to exacting municipal requirements. Designed to be the ultimate in industrial and municipal fire protection.",
+        "Jacket Construction: The jackets are woven evenly and free of defects, from spun polyester yarn that offers superior strength and wear characteristics. The warp yarn is standard 100% polyester. The filler yarns are high strength, low elongation, filament polyester to reduce weight and increase flexibility. In addition the jacket is treated to resist mold and mildew.",
+        "Lining: The rubber lining is a single ply, extruded, synthetic EPDM tube, compounded to resist ozone. Under this specification, the construction of this hose is to be manufactured fully backed.",
+        "Couplings: As required per specification(s). Available with internal expansion ring threaded aluminum or brass.",
+        "Special Characteristics: Standard color is white. Available in yellow, red, orange, blue, black, tan and green. Standard lengths are 50' and 100'. Custom lengths are available. Hose meets the standards and specifications of Underwriters Laboratories, Inc. (UL), including UL-19 (tensile strength & elongation) for rubber-lined hoses. All hoses are stenciled with 1\" characters stating \"service test to 400 PSI Per NFPA 1962 \" and the service date in a contrasting color indelible ink.",
+        "Service Life: This hose has a potential service life of ten (10) years, notwithstanding mistreatment and/or misuse."
+      ],
+      "features": [
+        "Colors: Red, White",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); uncoupled",
+        "NH/NST and NPSH/IPT standard. Custom thread patterns available upon request",
+        "Pressure Ratings: 400# Service Test Pressure; 800# Proof Test Pressure; 1350# Burst Pressure",
+        "Temperature Range: -40 degrees F to 180 degrees F; -40 degrees C to 82 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-2-in-double-jacket-fire-hose-800-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/2-double-jacket-fire-hose-800lb-test/"
+    },
+    {
+      "slug": "rawhide-3-in-double-jacket-fire-hose-800-lb-test",
+      "name": "3\" Double Jacket Fire Hose (800 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Double jacket polyester attack hose with an EPDM lining, made to municipal requirements. 400 psi service test, 800 psi proof test, 1350 psi burst.",
+      "details": [
+        "The double jacket fire hose (800 lb test) is flexible, strong and abrasion resistant. Manufactured to exacting municipal requirements. Designed to be the ultimate in industrial and municipal fire protection.",
+        "Jacket Construction: The jackets are woven evenly and free of defects, from spun polyester yarn that offers superior strength and wear characteristics. The warp yarn is standard 100% polyester. The filler yarns are high strength, low elongation, filament polyester to reduce weight and increase flexibility. In addition the jacket is treated to resist mold and mildew.",
+        "Lining: The rubber lining is a single ply, extruded, synthetic EPDM tube, compounded to resist ozone. Under this specification, the construction of this hose is to be manufactured fully backed.",
+        "Couplings: As required per specification(s). Available with internal expansion ring threaded aluminum or brass.",
+        "Special Characteristics: Standard color is white. Available in yellow, red, orange, blue, black, tan and green. Standard lengths are 50' and 100'. Custom lengths are available. Hose meets the standards and specifications of Underwriters Laboratories, Inc. (UL), including UL-19 (tensile strength & elongation) for rubber-lined hoses. All hoses are stenciled with 1\" characters stating \"service test to 400 PSI Per NFPA 1962 \" and the service date in a contrasting color indelible ink.",
+        "Service Life: This hose has a potential service life of ten (10) years, notwithstanding mistreatment and/or misuse."
+      ],
+      "features": [
+        "Colors: Red, White, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: 3\" Aluminum NPSH/IPT (rocker lug, expansion ring); 3\" Aluminum NST/NH (rocker lug, expansion ring); 3\" X 2-1/2\" Aluminum NST/NH (rocker lug, expansion ring); uncoupled",
+        "NH/NST and NPSH/IPT standard. Custom thread patterns available upon request",
+        "Pressure Ratings: 400# Service Test Pressure; 800# Proof Test Pressure; 1350# Burst Pressure",
+        "Temperature Range: -40 degrees F to 180 degrees F; -40 degrees C to 82 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-3-in-double-jacket-fire-hose-800-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/3-inch-double-jacket-fire-hose-800lb-test/"
+    },
+    {
+      "slug": "rawhide-4-in-double-jacket-fire-hose-600-lb-test",
+      "name": "4\" Double Jacket Fire Hose (600 LB Test)",
+      "category": "hose",
+      "group": "Supply hose (LDH)",
+      "summary": "4\" double jacket polyester supply hose with an EPDM lining. 300 psi service test, 600 psi proof test, 1000 psi burst.",
+      "details": [
+        "The double jacket fire hose (600 lb test) is flexible, strong and abrasion resistant. Manufactured to exacting municipal requirements. Designed to be the ultimate in industrial and municipal fire protection.",
+        "Jacket Construction: The jackets are woven evenly and free of defects, from spun polyester yarn that offers superior strength and wear characteristics. The warp yarn is standard 100% polyester. The filler yarns are high strength, low elongation, filament polyester to reduce weight and increase flexibility. In addition the jacket is treated to resist mold and mildew.",
+        "Lining: The rubber lining is a single ply, extruded, synthetic EPDM tube, compounded to resist ozone. Under this specification, the construction of this hose is to be manufactured fully backed.",
+        "Couplings: As required per specification(s). Available with internal expansion ring threaded aluminum.",
+        "Special Characteristics: Standard color is white. Available in yellow and red upon request. Standard lengths are 50' and 100'. Custom lengths are available. Hose meets the standards and specifications of Underwriters Laboratories, Inc. (UL), including UL-19 (tensile strength & elongation) for rubber-lined hoses. All hoses are stenciled with 1\" characters stating \"service test to 300 PSI Per NFPA 1962 \" and the service date in a contrasting color indelible ink.",
+        "Service Life: This hose has a potential service life of ten (10) years, notwithstanding mistreatment and/or misuse."
+      ],
+      "features": [
+        "Colors: White",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum NST/NH (rocker lug, expansion ring); uncoupled",
+        "NH/NST and NPSH/IPT standard. Custom thread patterns available upon request",
+        "Pressure Ratings: 300# Service Test Pressure; 600# Proof Test Pressure; 1000# Burst Pressure",
+        "Temperature Range: -40 degrees F to 180 degrees F; -40 degrees C to 82 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-4-in-double-jacket-fire-hose-600-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/4-double-jacket-fire-hose-600-lb-test/"
+    },
+    {
+      "slug": "rawhide-3-4-in-fire-engine-booster-hose-1600-lb-test",
+      "name": "3/4\" Fire Engine Booster Hose 1600 LB Test",
+      "category": "hose",
+      "group": "Booster hose",
+      "summary": "Booster reel hose with a red NBR/PVC cover and spiral yarn reinforcement, rated up to 800 psi working pressure. Can be charged while still on the reel.",
+      "details": [
+        "Resists scrapes, scuffs, scratches and built to exceed municipal and industrial demands. This hose can also be used for water transfer service, wash down and mop up.",
+        "Cover Construction: Built rugged, by using a red NBR/PVC cover to resist abrasion. The smooth surface provides for ease of handling.",
+        "Lining: The rubber lining is SBR/Nitrile rubber. Overlapped spiral layers of synthetic yarn makes this hose tough yet still flexible. Built safe for use with pressures up to 800 psi working pressure.",
+        "Couplings: As required per customer order and use, this hose is offered in hard coated aluminum, brass and chrome-plated brass. The couplings are spanner hole-type and can be attached in the field."
+      ],
+      "features": [
+        "Colors: Red",
+        "Lengths: 50, 100, 150, 200 ft",
+        "Coupling options: Aluminum IPT/NPSH hole type (bar-way); Aluminum NST/NH hole type (bar-way); Brass IPT/NPSH hole type (bar-way); Brass NST/NH hole type (bar-way); Chrome IPT/NPSH hole type (bar-way); Chrome NST/NH hole type (bar-way); uncoupled",
+        "For use in high-pressure fire engine booster hose service",
+        "Medium to high oil resistance",
+        "Will not flatten or crush reels",
+        "Working pressure up to 800 PSI for best margin of safety",
+        "Hose can be fully charged with water while still on the reel",
+        "Ideal for brush, refuse, dumpster and grass fires",
+        "Thick-walled and flexible",
+        "Made in the United States of America",
+        "Can be handled easily by one fire fighter",
+        "Retains shape when carried on a pumper truck reel",
+        "Perfect for close quarters wash down and mop up"
+      ],
+      "images": [
+        "/catalog/rawhide-3-4-in-fire-engine-booster-hose-1600-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/34-fire-engine-booster-hose-1600-lb-test/"
+    },
+    {
+      "slug": "rawhide-2-in-rubber-covered-fire-hose-500-lb-test",
+      "name": "2\" Rubber Covered Fire Hose (500 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Thru-the-weave nitrile rubber covered fire hose made to NFPA 1961. Resists ozone, oxidation, and most chemical and petroleum products. 500 psi acceptance test.",
+      "details": [
+        "The rubber covered fire hose is manufactured to meet or exceed NFPA standard 1961, engineered to be durable and designed to remain flexible. Built to resist ozone, oxidation and most chemical / petroleum products. Made tough for extended service in rigorous use, yet virtually maintenance free.",
+        "Hose Construction: The rubber covered fire hose is constructed from 100% synthetic yarn combined with nitrile rubber. Thru-the-weave manufacturing utilizes a circularly woven frame that is completely locked in with tough nitrile rubber to produce a single homogeneous unit. The laminated process consists of a 3-ply system, independently extruded and double vulcanized for maximum durability. The longitudinal ribbing reduces drag and provides for long service. The twill weave of the reinforcement resists puncture.",
+        "Lining Properties: The tensile strength is 1500 PSI or greater, ultimate elongation is 400% minimum and the smooth nitrile rubber yields durability while minimizing pressure drop. This hose remains flexible down to 35 degrees F and will resist heat up to 1200 degrees F for two minutes without rupture or damage to the synthetic reinforcement.",
+        "Ozone Resistance: Hose shall show no visible signs of cracking to the lining or cover when tested in accordance to ASTM D518 Procedure B (100pphm/118°F/70 hours).",
+        "Chemical Resistance: Exposure to sea water and contamination by most chemical substances, hydrocarbons, oils, alkalis, acids and greases must have no effect on the short or long term performance of the hose. A chemical resistance chart is available and Key Hose will supply specific chemical resistance data on request of purchaser for unique applications.",
+        "Heat Resistance: The hose, when subjected to a static pressure of 100 PSI, shall be capable of withstanding a surface temperature of 1200°F for a minimum of one minute without rupture or damage to the synthetic reinforcement.",
+        "Special Characteristics: Manufactured to meet or exceed NFPA specifications. All hose markings are per NFPA requirements."
+      ],
+      "features": [
+        "Colors: Red, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 500# Acceptance Test Pressure; 250# Working Pressure; 750# Burst Pressure",
+        "Temperature Range: -4 degrees F to 212 degrees F; -20 degrees C to 100 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-2-in-rubber-covered-fire-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/2-rubber-covered-fire-hose-500-lb-test/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-rubber-covered-fire-hose-500-lb-test",
+      "name": "2-1/2\" Rubber Covered Fire Hose (500 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Thru-the-weave nitrile rubber covered fire hose made to NFPA 1961. Resists ozone, oxidation, and most chemical and petroleum products. 500 psi acceptance test.",
+      "details": [
+        "The rubber covered fire hose is manufactured to meet or exceed NFPA standard 1961, engineered to be durable and designed to remain flexible. Built to resist ozone, oxidation and most chemical / petroleum products. Made tough for extended service in rigorous use, yet virtually maintenance free.",
+        "Hose Construction: The rubber covered fire hose is constructed from 100% synthetic yarn combined with nitrile rubber. Thru-the-weave manufacturing utilizes a circularly woven frame that is completely locked in with tough nitrile rubber to produce a single homogeneous unit. The laminated process consists of a 3-ply system, independently extruded and double vulcanized for maximum durability. The longitudinal ribbing reduces drag and provides for long service. The twill weave of the reinforcement resists puncture.",
+        "Lining Properties: The tensile strength is 1500 PSI or greater, ultimate elongation is 400% minimum and the smooth nitrile rubber yields durability while minimizing pressure drop. This hose remains flexible down to 35 degrees F and will resist heat up to 1200 degrees F for two minutes without rupture or damage to the synthetic reinforcement.",
+        "Ozone Resistance: Hose shall show no visible signs of cracking to the lining or cover when tested in accordance to ASTM D518 Procedure B (100pphm/118°F/70 hours).",
+        "Chemical Resistance: Exposure to sea water and contamination by most chemical substances, hydrocarbons, oils, alkalis, acids and greases must have no effect on the short or long term performance of the hose. A chemical resistance chart is available and Key Hose will supply specific chemical resistance data on request of purchaser for unique applications.",
+        "Heat Resistance: The hose, when subjected to a static pressure of 100 PSI, shall be capable of withstanding a surface temperature of 1200°F for a minimum of one minute without rupture or damage to the synthetic reinforcement.",
+        "Special Characteristics: Manufactured to meet or exceed NFPA specifications. All hose markings are per NFPA requirements."
+      ],
+      "features": [
+        "Colors: Red, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug, expansion ring); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 500# Acceptance Test Pressure; 250# Working Pressure; 750# Burst Pressure",
+        "Temperature Range: -4 degrees F to 212 degrees F; -20 degrees C to 100 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-rubber-covered-fire-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/2-12-rubber-covered-fire-hose-500-lb-test/"
+    },
+    {
+      "slug": "rawhide-3-in-rubber-covered-fire-hose-500-lb-test",
+      "name": "3\" Rubber Covered Fire Hose (500 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Thru-the-weave nitrile rubber covered fire hose made to NFPA 1961. Resists ozone, oxidation, and most chemical and petroleum products. 500 psi acceptance test.",
+      "details": [
+        "The rubber covered fire hose is manufactured to meet or exceed NFPA standard 1961, engineered to be durable and designed to remain flexible. Built to resist ozone, oxidation and most chemical / petroleum products. Made tough for extended service in rigorous use, yet virtually maintenance free.",
+        "Hose Construction: The rubber covered fire hose is constructed from 100% synthetic yarn combined with nitrile rubber. Thru-the-weave manufacturing utilizes a circularly woven frame that is completely locked in with tough nitrile rubber to produce a single homogeneous unit. The laminated process consists of a 3-ply system, independently extruded and double vulcanized for maximum durability. The longitudinal ribbing reduces drag and provides for long service. The twill weave of the reinforcement resists puncture.",
+        "Lining Properties: The tensile strength is 1500 PSI or greater, ultimate elongation is 400% minimum and the smooth nitrile rubber yields durability while minimizing pressure drop. This hose remains flexible down to 35 degrees F and will resist heat up to 1200 degrees F for two minutes without rupture or damage to the synthetic reinforcement.",
+        "Ozone Resistance: Hose shall show no visible signs of cracking to the lining or cover when tested in accordance to ASTM D518 Procedure B (100pphm/118°F/70 hours).",
+        "Chemical Resistance: Exposure to sea water and contamination by most chemical substances, hydrocarbons, oils, alkalis, acids and greases must have no effect on the short or long term performance of the hose. A chemical resistance chart is available and Key Hose will supply specific chemical resistance data on request of purchaser for unique applications.",
+        "Heat Resistance: The hose, when subjected to a static pressure of 100 PSI, shall be capable of withstanding a surface temperature of 1200°F for a minimum of one minute without rupture or damage to the synthetic reinforcement.",
+        "Special Characteristics: Manufactured to meet or exceed NFPA specifications. All hose markings are per NFPA requirements."
+      ],
+      "features": [
+        "Colors: Red, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: 3\" Aluminum NPSH/IPT (rocker lug, expansion ring); 3\" Aluminum NST/NH (rocker lug, expansion ring); 3\" X 2-1/2\" Aluminum NST/NH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 500# Acceptance Test Pressure; 250# Working Pressure; 750# Burst Pressure",
+        "Temperature Range: -4 degrees F to 212 degrees F; -20 degrees C to 100 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-3-in-rubber-covered-fire-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/3-inch-rubber-covered-fire-hose-600-lb-test/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-rubber-covered-fire-hose-600-lb-test",
+      "name": "2-1/2\" Rubber Covered Fire Hose (600 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Thru-the-weave nitrile rubber covered fire hose made to NFPA 1961. Resists ozone, oxidation, and most chemical and petroleum products. 600 psi acceptance test.",
+      "details": [
+        "The rubber covered fire hose is manufactured to meet or exceed NFPA standard 1961, engineered to be durable and designed to remain flexible. Built to resist ozone, oxidation and most chemical / petroleum products. Made tough for extended service in rigorous use, yet virtually maintenance free.",
+        "Hose Construction: The rubber covered fire hose is constructed from 100% synthetic yarn combined with nitrile rubber. Thru-the-weave manufacturing utilizes a circularly woven frame that is completely locked in with tough nitrile rubber to produce a single homogeneous unit. The laminated process consists of a 3-ply system, independently extruded and double vulcanized for maximum durability. The longitudinal ribbing reduces drag and provides for long service. The twill weave of the reinforcement resists puncture.",
+        "Lining Properties: The tensile strength is 1500 PSI or greater, ultimate elongation is 400% minimum and the smooth nitrile rubber yields durability while minimizing pressure drop. This hose remains flexible down to 35 degrees F and will resist heat up to 1200 degrees F for two minutes without rupture or damage to the synthetic reinforcement.",
+        "Ozone Resistance: Hose shall show no visible signs of cracking to the lining or cover when tested in accordance to ASTM D518 Procedure B (100pphm/118°F/70 hours).",
+        "Chemical Resistance: Exposure to sea water and contamination by most chemical substances, hydrocarbons, oils, alkalis, acids and greases must have no effect on the short or long term performance of the hose. A chemical resistance chart is available and Key Hose will supply specific chemical resistance data on request of purchaser for unique applications.",
+        "Heat Resistance: The hose, when subjected to a static pressure of 100 PSI, shall be capable of withstanding a surface temperature of 1200°F for a minimum of one minute without rupture or damage to the synthetic reinforcement.",
+        "Special Characteristics: Manufactured to meet or exceed NFPA specifications. All hose markings are per NFPA requirements."
+      ],
+      "features": [
+        "Colors: Red, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug, expansion ring); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 600# Acceptance Test Pressure; 300# Working Pressure; 900# Burst Pressure",
+        "Temperature Range: -4 degrees F to 212 degrees F; -20 degrees C to 100 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-rubber-covered-fire-hose-600-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/2-12-rubber-covered-fire-hose-600-lb-test/"
+    },
+    {
+      "slug": "rawhide-4-in-rubber-covered-fire-hose-500-lb-test",
+      "name": "4\" Rubber Covered Fire Hose (500 LB Test)",
+      "category": "hose",
+      "group": "Supply hose (LDH)",
+      "summary": "4\" rubber covered supply hose, 500 lb test, with threaded NST/NH or Storz couplings.",
+      "features": [
+        "Colors: Red, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum NST/NH (rocker lug, expansion ring); Aluminum Storz (collar type); uncoupled"
+      ],
+      "images": [
+        "/catalog/rawhide-4-in-rubber-covered-fire-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/municipal-fire-hose/4-rubber-covered-fire-hose-500-lb-test/"
+    },
+    {
+      "slug": "rawhide-6-in-rubber-covered-fire-hose-450-lb-test",
+      "name": "6\" Rubber Covered Fire Hose (450 LB Test)",
+      "category": "hose",
+      "group": "Supply hose (LDH)",
+      "summary": "6\" rubber covered supply hose, 450 lb test, with threaded NST/NH or Storz couplings.",
+      "features": [
+        "Colors: Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum NST/NH (rocker lug, expansion ring); Aluminum Storz (collar type); uncoupled"
+      ],
+      "images": [
+        "/catalog/rawhide-6-in-rubber-covered-fire-hose-450-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/6-rubber-covered-fire-hose-450-lb-test/"
+    },
+    {
+      "slug": "rawhide-1-in-forestry-hose-type-2-600-lb-test",
+      "name": "1\" Forestry Hose Type 2 (600 LB Test)",
+      "category": "hose",
+      "group": "Forestry hose",
+      "summary": "Yellow single jacket forestry hose with a polyurethane lining, impregnated for abrasion resistance to USDA 5100-187. 900 psi minimum burst per NFPA 1961.",
+      "details": [
+        "Jacket Construction: The jackets will be woven evenly and be free of defects, including knots, lumps, or unsightly disfigurations that could jeopardize the integrity of the hose assembly. The warp yarn shall consist of ring spun polyester yarn. The use of filament or entangled yarn is expressly forbidden due to the lack of inherent abrasion resistance. The filler yarns shall be constructed of high strength, low elongation, filament polyester to reduce weight and increase flexibility. The jacket construction shall be a 1-2 woven twill pattern with the 2 over-crossing on the exterior of the jacket.",
+        "Abrasion Impregnation: Hose assemblies are available with polymer impregnation that provide additional abrasion resistance. Standard color: yellow. Color shall be pure and even in each hose. Impregnated hose shall meet the requirements of USDA 5100-187 for abrasion resistance.",
+        "Lining: The lining shall be a single-ply extruded tube of synthetic polyurethane to resist ozone. The polyurethane tube shall adhere to the jacket to prevent delamination. The finished product will meet and exceed all potable water Mil-H-24606B standards for the manufacturing of lightweight fire hose. The use of the polyurethane lined fire hose is designed to increase packing ability and applications where lightweight fire hose is desired.",
+        "Performance: The minimum burst test pressure, when tested in accordance to NFPA 1961, on Key Type 2 diameters shall be 900 PSI. Service test pressures stenciled on the hose shall be in accordance with current minimum requirements of NFPA 1962. A valid USA/ULC Underwriters listing shall be in force."
+      ],
+      "features": [
+        "Colors: Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum forestry quick connect; Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); uncoupled",
+        "Couplings: Expansion ring threaded or quarter-turn quick connect couplings available."
+      ],
+      "images": [
+        "/catalog/rawhide-1-in-forestry-hose-type-2-600-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/forestry-fire-hose-hose-by-industry/forestry-hose-type-2-600-lb-test/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-double-jacket-fire-hose-800-lb-test",
+      "name": "2-1/2\" Double Jacket Fire Hose (800 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Double jacket polyester attack hose with an EPDM lining, made to municipal requirements. 400 psi service test, 800 psi proof test, 1350 psi burst.",
+      "details": [
+        "The double jacket fire hose (800 lb test) is flexible, strong and abrasion resistant. Manufactured to exacting municipal requirements. Designed to be the ultimate in industrial and municipal fire protection.",
+        "Jacket Construction: The jackets are woven evenly and free of defects, from spun polyester yarn that offers superior strength and wear characteristics. The warp yarn is standard 100% polyester. The filler yarns are high strength, low elongation, filament polyester to reduce weight and increase flexibility. In addition the jacket is treated to resist mold and mildew.",
+        "Lining: The rubber lining is a single ply, extruded, synthetic EPDM tube, compounded to resist ozone. Under this specification, the construction of this hose is to be manufactured fully backed.",
+        "Couplings: As required per specification(s). Available with internal expansion ring threaded aluminum or brass.",
+        "Special Characteristics: Standard color is white. Available in yellow, red, orange, blue, black, tan and green. Standard lengths are 50' and 100'. Custom lengths are available. Hose meets the standards and specifications of Underwriters Laboratories, Inc. (UL), including UL-19 (tensile strength & elongation) for rubber-lined hoses. All hoses are stenciled with 1\" characters stating \"service test to 400 PSI Per NFPA 1962 \" and the service date in a contrasting color indelible ink.",
+        "Service Life: This hose has a potential service life of ten (10) years, notwithstanding mistreatment and/or misuse."
+      ],
+      "features": [
+        "Colors: Red, White, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "NH/NST and NPSH/IPT standard. Custom thread patterns available upon request",
+        "Pressure Ratings: 400# Service Test Pressure; 800# Proof Test Pressure; 1350# Burst Pressure",
+        "Temperature Range: -40 degrees F to 180 degrees F; -40 degrees C to 82 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-double-jacket-fire-hose-800-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/2-12-double-jacket-fire-hose-800-lb-test/"
+    },
+    {
+      "slug": "rawhide-3848-master-stream-nozzle",
+      "sku": "3848",
+      "name": "3848 Master Stream Nozzle",
+      "category": "nozzles",
+      "group": "Master stream",
+      "summary": "Master stream nozzle with adjustable settings of 500, 750, 1000, and 1250 GPM, spinning teeth, and a 2-1/2\" NST/NH inlet.",
+      "features": [
+        "Made of durable lightweight alloy",
+        "Adjustable flow settings",
+        "Combination fog and straight stream",
+        "2-1/2\" Female NST/NH inlet",
+        "Master Stream 500-750-1000-1250 GPM",
+        "Spinning Teeth"
+      ],
+      "images": [
+        "/catalog/rawhide-3848-master-stream-nozzle.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/master-stream-nozzles/3848-master-stream-nozzle/"
+    },
+    {
+      "slug": "rawhide-2-1-2-in-deluge-tip-1-1-4-in-discharge",
+      "sku": "1117",
+      "name": "2-1/2\" Deluge Tip 1-1/4\" Discharge",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Deluge tip for a 2-1/2\" NST/NH inlet with a 1-1/4\" discharge. Extruded aluminum, 9\" long.",
+      "features": [
+        "Extruded Aluminum Body",
+        "Hardcoat Aluminum",
+        "2-1/2\" Inlet Base",
+        "1-1/4\" Discharge",
+        "9\" long",
+        "NST/NH Threads"
+      ],
+      "images": [
+        "/catalog/rawhide-2-1-2-in-deluge-tip-1-1-4-in-discharge.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/deluge-tips/2-12-deluge-tip-1-14-discharge/"
+    },
+    {
+      "slug": "rawhide-aluminum-caps-w-chain",
+      "name": "Aluminum Caps W/ Chain",
+      "category": "appliances",
+      "group": "Caps and plugs",
+      "summary": "The aluminum caps are a two-part rocker lug swivel female cap that comes with a 12\" stainless steel chain.",
+      "details": [
+        "Made of extruded 6061-T6 aircraft aluminum alloy and hard coated to resist corrosion and abrasion."
+      ],
+      "features": [
+        "Other threads available on request"
+      ],
+      "images": [
+        "/catalog/rawhide-aluminum-caps-w-chain.webp"
+      ],
+      "variants": [
+        {
+          "sku": "C-1I",
+          "option": "1\", NPSH/IPT"
+        },
+        {
+          "sku": "C-10N",
+          "option": "1\", NST/NH"
+        },
+        {
+          "sku": "C-15I",
+          "option": "1-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "C-15N",
+          "option": "1-1/2\", NST/NH"
+        },
+        {
+          "sku": "C-20I",
+          "option": "2\", NPSH/IPT"
+        },
+        {
+          "sku": "C-20N",
+          "option": "2\", NST/NH"
+        },
+        {
+          "sku": "C-25I",
+          "option": "2-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "C-25N",
+          "option": "2-1/2\", NST/NH"
+        },
+        {
+          "sku": "C-30I",
+          "option": "3\", NPSH/IPT"
+        },
+        {
+          "sku": "C-30N",
+          "option": "3\", NST/NH"
+        },
+        {
+          "sku": "C-40I",
+          "option": "4\", NPSH/IPT"
+        },
+        {
+          "sku": "C-40N",
+          "option": "4\", NST/NH"
+        },
+        {
+          "sku": "C-45I",
+          "option": "4-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "C-45N",
+          "option": "4-1/2\", NST/NH"
+        },
+        {
+          "sku": "C-50I",
+          "option": "5\", NPSH/IPT"
+        },
+        {
+          "sku": "C-50N",
+          "option": "5\", NST/NH"
+        },
+        {
+          "sku": "C-60I",
+          "option": "6\", NPSH/IPT"
+        },
+        {
+          "sku": "C-60N",
+          "option": "6\", NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/caps/aluminum-caps/"
+    },
+    {
+      "slug": "rawhide-5-in-rubber-covered-fire-hose-450-lb-test",
+      "name": "5\" Rubber Covered Fire Hose (450 LB Test)",
+      "category": "hose",
+      "group": "Supply hose (LDH)",
+      "summary": "5\" rubber covered supply hose, 450 lb test, with threaded NST/NH or Storz couplings.",
+      "features": [
+        "Colors: Red, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum NST/NH (rocker lug, expansion ring); Aluminum Storz (collar type); uncoupled"
+      ],
+      "images": [
+        "/catalog/rawhide-5-in-rubber-covered-fire-hose-450-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/5-rubber-covered-fire-hose-450-lb-test/"
+    },
+    {
+      "slug": "rawhide-fire-hydrant-wrench-w-107-s",
+      "sku": "W-107-S/W-SS",
+      "name": "Hydrant Wrench W-107-S",
+      "category": "rescue",
+      "group": "Hydrant wrenches",
+      "summary": "Compact adjustable hydrant wrench that fits easily in a compartment. Fits pentagon nuts to 1-3/4\" and square nuts to 1-1/4\".",
+      "details": [
+        "The W-107-S is a compact, adjustable fire hydrant wrench built for firefighters, municipal water crews and anyone who needs reliable hydrant access in a tool that fits easily in a compartment. It fits pentagon nuts up to 1-3/4\" and square nuts up to 1-1/4\", and its single-hook spanner head works with 3/4\" through 6\" rocker lug or pin lug fittings."
+      ],
+      "features": [
+        "Length: 10-1/2\""
+      ],
+      "images": [
+        "/catalog/rawhide-fire-hydrant-wrench-w-107-s.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/wrenches/hydrant-wrenches/hydrant-wrench-w-107-s/"
+    },
+    {
+      "slug": "rawhide-1-3-4-in-rubber-covered-fire-hose-600-lb-test",
+      "name": "1-3/4\" Rubber Covered Fire Hose (600 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Thru-the-weave nitrile rubber covered fire hose made to NFPA 1961. Resists ozone, oxidation, and most chemical and petroleum products. 600 psi acceptance test.",
+      "details": [
+        "Our 1-3/4 inch fire hose is manufactured to meet or exceed NFPA 1961, engineered for durability and designed to remain flexible. It is built to resist ozone, oxidation and most chemical and petroleum products. This hose is made tough for extended service in rigorous use, yet is virtually maintenance-free.",
+        "Hose Construction: Our rubber covered fire hose is constructed from 100% synthetic yarn combined with nitrile rubber. Thru-the-weave manufacturing utilizes a circularly woven frame that is completely locked in with tough nitrile rubber to produce a single homogeneous unit. The laminated process consists of a 3-ply system, independently extruded and double vulcanized In both constructions, longitudinal ribbing reduces drag as the hose is advanced and extends service life, while the twill weave of the reinforcement resists puncture.",
+        "Lining Properties: The lining has a tensile strength of 1500 PSI or greater, and a minimum ultimate elongation of 400%. Its smooth nitrile rubber surface provides durability while minimizing pressure drop. This hose remains flexible down to 35 degrees F and will resist heat up to 1200 degrees F for two minutes without rupture or damage to the synthetic reinforcement.",
+        "Ozone Resistance: The hose shows no visible signs of cracking in the lining or cover when tested in accordance with ASTM D518 Procedure B (100pphm/118°F/70 hours).",
+        "Chemical Resistance: This hose is built to withstand exposure to seawater and contact with most chemical substances, hydrocarbons, oils, alkalis, acids and greases without affecting short- or long-term performance. A chemical resistance chart is available, and Rawhide will supply specific chemical resistance data on request for unique applications.",
+        "Heat Resistance: When subjected to a static pressure of 100 PSI, the hose can withstand a surface temperature of 1200°F for a minimum of one minute without rupture or damage to the synthetic reinforcement.",
+        "Special Characteristics: Manufactured to meet or exceed NFPA specifications. All hose markings are per NFPA requirements."
+      ],
+      "features": [
+        "Colors: Red, Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug, expansion ring); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 600 PSI Acceptance Test Pressure; 300 PSI Working Pressure; 900 PSI Burst Pressure",
+        "Temperature Range: -4 degrees F to 212 degrees F; -20 degrees C to 100 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-1-3-4-in-rubber-covered-fire-hose-600-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/1-34-rubber-covered-fire-hose-600-lb-test/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-brass-straight-stream-nozzle",
+      "name": "1-1/2\" Brass Straight Stream Nozzle",
+      "category": "nozzles",
+      "group": "Economy nozzles",
+      "summary": "When you need water to reach its target, this brass straight stream nozzle delivers. Designed for 1-1/2\" hose, its smooth 1/2\" orifice focuses the full flow into a tight, concentrated stream that travels farther and hits harder than a wide or fog pattern.",
+      "details": [
+        "Information: For use with 1-1/2\" Hose. Deliver water at higher GPM and over greater distances in a concentrated stream.",
+        "When you need water to reach its target, this brass straight stream nozzle delivers. Designed for 1-1/2\" hose, its smooth 1/2\" orifice focuses the full flow into a tight, concentrated stream that travels farther and hits harder than a wide or fog pattern. That reach makes it a dependable choice for fire brigades, industrial facilities, hose cabinets and standpipe systems, and general water delivery where distance matters.",
+        "Each nozzle is precision machined from solid brass, a material that resists corrosion and stands up to repeated use and long-term storage. At 10\" long, it's compact enough to store easily, yet substantial enough to direct the stream with control.",
+        "This nozzle is rated for a maximum operating pressure of 100 PSI and is designed for water only. It should not be used with foam, chemicals, fuels or other fluids.",
+        "To fit your existing equipment, the nozzle is available in two thread types: NST/NH (National Standard Thread / National Hose), the standard for most fire department hose and hydrant connections, and NPSH/IPT (National Pipe Straight Hose / Iron Pipe Thread), common on industrial, plumbing and standpipe connections."
+      ],
+      "features": [
+        "Maximum Operating Pressure: 100 PSI (Water Only)",
+        "Finish: Machined Brass",
+        "Dimensions: Length- 10\"; Orifice- 1/2\"",
+        "Hose Threads Available: NST/NH"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-brass-straight-stream-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "N-HN150BI",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "N-HN150BN",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/economy-nozzles/brass-straight-stream-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-double-jacket-fire-hose-800-lb-test",
+      "name": "1-1/2\" Double Jacket Fire Hose (800 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Double jacket polyester attack hose with an EPDM lining, made to municipal requirements. 400 psi service test, 800 psi proof test, 1350 psi burst.",
+      "details": [
+        "The double jacket fire hose (800 lb test) is flexible, strong and abrasion resistant. Manufactured to exacting municipal requirements. Designed to be the ultimate in industrial and municipal fire protection.",
+        "Jacket Construction: The jackets are woven evenly and free of defects, from spun polyester yarn that offers superior strength and wear characteristics. The warp yarn is standard 100% polyester. The filler yarns are high strength, low elongation, filament polyester to reduce weight and increase flexibility. In addition the jacket is treated to resist mold and mildew.",
+        "Lining: The rubber lining is a single ply, extruded, synthetic EPDM tube, compounded to resist ozone. Under this specification, the construction of this hose is to be manufactured fully backed.",
+        "Couplings: As required per specification(s). Available with internal expansion ring threaded aluminum or brass.",
+        "Special Characteristics: Standard color is white. Available in yellow, red, orange, blue, black, tan and green. Standard lengths are 50' and 100'. Custom lengths are available. Hose meets the standards and specifications of Underwriters Laboratories, Inc. (UL), including UL-19 (tensile strength & elongation) for rubber-lined hoses. All hoses are stenciled with 1\" characters stating \"service test to 400 PSI Per NFPA 1962 \" and the service date in a contrasting color indelible ink.",
+        "Service Life: This hose has a potential service life of ten (10) years, notwithstanding mistreatment and/or misuse."
+      ],
+      "features": [
+        "Colors: Red, White, Yellow",
+        "Lengths: 50, 75, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug, expansion ring); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "NH/NST and NPSH/IPT standard. Custom thread patterns available upon request",
+        "Pressure Ratings: 400# Service Test Pressure; 800# Proof Test Pressure; 1350# Burst Pressure",
+        "Temperature Range: -40 degrees F to 180 degrees F; -40 degrees C to 82 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-double-jacket-fire-hose-800-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/1-12-double-jacket-fire-hose-800-lb-test/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-and-2-1-2-in-1373-constant-flow-municipal-nozzle",
+      "name": "1-1/2\" & 2-1/2\" 1373 Constant Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "Constant flow nozzle at 150, 175, or 200 GPM, in 1-1/2\" and 2-1/2\". Constant gallonage nozzle with stainless steel spinning teeth, a ball shutoff, and a pistol grip.",
+      "features": [
+        "Constant gallonage nozzle with multiple flow settings available",
+        "Stainless steel spinning teeth",
+        "Stainless steel ball enables ball shut off handle to work smoothly at extreme ranges",
+        "Straight stream to wide fog and flush without shutting down",
+        "Permanent anodized metal indicator bands",
+        "Metal horseshoe handle",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "100 PSI (7.0 BAR) standard, optional 50 PSI (3-1/2 BAR)& 75 PSI (5 BAR)",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "Flow Setting: GPM 150, 175, or 200; LPM 550, 750 or 950"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-and-2-1-2-in-1373-constant-flow-municipal-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "13731.5I",
+          "option": "1-1/2\", NPSH/IPT"
+        },
+        {
+          "sku": "13731.5N",
+          "option": "1-1/2\", NST/NH"
+        },
+        {
+          "sku": "13732.5N",
+          "option": "2-1/2\", NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/constant-flow-municipal-nozle/1-12-2-12-1373-constant-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-rubber-covered-fire-hose-500-lb-test",
+      "name": "1-1/2\" Rubber Covered Fire Hose (500 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Thru-the-weave nitrile rubber covered fire hose made to NFPA 1961. Resists ozone, oxidation, and most chemical and petroleum products. 500 psi acceptance test.",
+      "details": [
+        "The rubber covered fire hose is manufactured to meet or exceed NFPA standard 1961, engineered to be durable and designed to remain flexible. Built to resist ozone, oxidation and most chemical / petroleum products. Made tough for extended service in rigorous use, yet virtually maintenance free.",
+        "Hose Construction: The rubber covered fire hose is constructed from 100% synthetic yarn combined with nitrile rubber. Thru-the-weave manufacturing utilizes a circularly woven frame that is completely locked in with tough nitrile rubber to produce a single homogeneous unit. The laminated process consists of a 3-ply system, independently extruded and double vulcanized for maximum durability. The longitudinal ribbing reduces drag and provides for long service. The twill weave of the reinforcement resists puncture.",
+        "Lining Properties: The tensile strength is 1500 PSI or greater, ultimate elongation is 400% minimum and the smooth nitrile rubber yields durability while minimizing pressure drop. This hose remains flexible down to 35 degrees F and will resist heat up to 1200 degrees F for two minutes without rupture or damage to the synthetic reinforcement.",
+        "Ozone Resistance: Hose shall show no visible signs of cracking to the lining or cover when tested in accordance to ASTM D518 Procedure B (100pphm/118°F/70 hours).",
+        "Chemical Resistance: Exposure to sea water and contamination by most chemical substances, hydrocarbons, oils, alkalis, acids and greases must have no effect on the short or long term performance of the hose. A chemical resistance chart is available and Key Hose will supply specific chemical resistance data on request of purchaser for unique applications.",
+        "Heat Resistance: The hose, when subjected to a static pressure of 100 PSI, shall be capable of withstanding a surface temperature of 1200°F for a minimum of one minute without rupture or damage to the synthetic reinforcement.",
+        "Special Characteristics: Manufactured to meet or exceed NFPA specifications. All hose markings are per NFPA requirements."
+      ],
+      "features": [
+        "Colors: Red, Yellow",
+        "Lengths: 50, 75, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug, expansion ring); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 500# Acceptance Test Pressure; 250# Working Pressure; 750# Burst Pressure",
+        "Temperature Range: -4 degrees F to 212 degrees F; -20 degrees C to 100 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-rubber-covered-fire-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/1-12-rubber-covered-fire-hose-500-lb-test/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-smooth-bore-tip-1-1-4-in-discharge",
+      "sku": "11061250",
+      "name": "1-1/2\" Smooth Bore Tip 1-1/4\" Discharge",
+      "category": "nozzles",
+      "group": "Smooth bore and stacked tips",
+      "summary": "Smooth bore tip with a 1-1/2\" inlet and 1-1/4\" discharge. Extruded, hardcoat anodized aluminum. 6\" long.",
+      "features": [
+        "Extruded aluminum body",
+        "Hardcoat anodized",
+        "Inlet: 1-1/2\"",
+        "Discharge: 1-1/4\"",
+        "Length: 6\""
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-smooth-bore-tip-1-1-4-in-discharge.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/smooth-bore-tips/1-12-smooth-bore-tip-1-14-discharge/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-1323-automatic-flow-municipal-nozzle",
+      "name": "1-1/2\" 1323 Automatic Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "1-1/2\" automatic nozzle, 70 to 200 GPM. Automatic nozzle with slide valve control, straight stream to wide fog, and a pistol grip.",
+      "features": [
+        "Slide valve control",
+        "Straight stream to wide fog and flush without shutting down",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "Permanent anodized metal indicator bands",
+        "Metal horseshoe handle",
+        "Molded fixed teeth for fog",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "NH or NPSH threads",
+        "Flow Setting: GPM 70-200; LPM 265-750"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-1323-automatic-flow-municipal-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "13231.5I",
+          "option": "NPSH/IPT"
+        },
+        {
+          "sku": "13231.5N",
+          "option": "NST/NH"
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/automatic-flow-municipal-nozzle/1-12-1323-automatic-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-75-in-layflat-garden-hose-for-forestry-applications",
+      "name": "3/4\" Layflat Garden Hose for Forestry Applications",
+      "category": "hose",
+      "group": "Forestry hose",
+      "summary": "3/4\" layflat garden hose for forestry work with brass GHT couplings and strain reliefs. 300 psi working pressure, 900 psi burst.",
+      "details": [
+        "The.75\" layflat garden fire hose exceeds all performance requirements of Federal specification NSN# 4210-01-167-1061. This layflat garden fire hose comes with brass GHT couplings complete with gaskets, and strain reliefs at each coupling. This hose is engineered to maintain flexibility in temperatures down to -20 degrees Fahrenheit. The working pressure is an impressive 300-psi, featuring a burst pressure of 900 psi at 70 degrees Fahrenheit."
+      ],
+      "features": [
+        "Colors: White, Yellow",
+        "Lengths: 25, 50, 75, 100 ft",
+        "Coupling options: Brass GHT (expansion coupling)",
+        "Circular woven fire hose technology",
+        "High tensile all polyester woven jacket",
+        "High tensile polyurethane NSF liner",
+        "Brass GHT threaded couplings complete with gasket and strain reliefs",
+        "Polyurethane lining made from high tensile TPU compounded",
+        "Resists ozone",
+        "Working pressure of 300-psi (Avg water pressure is 70 to 90)",
+        "To prevent kinking, this hose must be rolled out completely before pressurizing with water."
+      ],
+      "images": [
+        "/catalog/rawhide-75-in-layflat-garden-hose-for-forestry-applications.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/lay-flat-hose/75-layflat-garden-hose/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-rubber-covered-fire-hose-600-lb-test",
+      "name": "1-1/2\" Rubber Covered Fire Hose (600 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Thru-the-weave nitrile rubber covered fire hose made to NFPA 1961. Resists ozone, oxidation, and most chemical and petroleum products. 600 psi acceptance test.",
+      "details": [
+        "The rubber covered fire hose is manufactured to meet or exceed NFPA standard 1961, engineered to be durable and designed to remain flexible. Built to resist ozone, oxidation and most chemical / petroleum products. Made tough for extended service in rigorous use, yet virtually maintenance free.",
+        "Hose Construction: The rubber covered fire hose is constructed from 100% synthetic yarn combined with nitrile rubber. Thru-the-weave manufacturing utilizes a circularly woven frame that is completely locked in with tough nitrile rubber to produce a single homogeneous unit. The laminated process consists of a 3-ply system, independently extruded and double vulcanized for maximum durability. The longitudinal ribbing reduces drag and provides for long service. The twill weave of the reinforcement resists puncture.",
+        "Lining Properties: The tensile strength is 1500 PSI or greater, ultimate elongation is 400% minimum and the smooth nitrile rubber yields durability while minimizing pressure drop. This hose remains flexible down to 35 degrees F and will resist heat up to 1200 degrees F for two minutes without rupture or damage to the synthetic reinforcement.",
+        "Ozone Resistance: Hose shall show no visible signs of cracking to the lining or cover when tested in accordance to ASTM D518 Procedure B (100pphm/118°F/70 hours).",
+        "Chemical Resistance: Exposure to sea water and contamination by most chemical substances, hydrocarbons, oils, alkalis, acids and greases must have no effect on the short or long term performance of the hose. A chemical resistance chart is available and Key Hose will supply specific chemical resistance data on request of purchaser for unique applications.",
+        "Heat Resistance: The hose, when subjected to a static pressure of 100 PSI, shall be capable of withstanding a surface temperature of 1200°F for a minimum of one minute without rupture or damage to the synthetic reinforcement.",
+        "Special Characteristics: Manufactured to meet or exceed NFPA specifications. All hose markings are per NFPA requirements."
+      ],
+      "features": [
+        "Colors: Red, Yellow",
+        "Lengths: 50, 75, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug, expansion ring); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "Pressure Ratings: 600# Acceptance Test Pressure; 300# Working Pressure; 900# Burst Pressure",
+        "Temperature Range: -4 degrees F to 212 degrees F; -20 degrees C to 100 degrees C"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-rubber-covered-fire-hose-600-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/1-12-rubber-covered-fire-hose-600-lb-test/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-and-2-1-2-in-1369-select-flow-municipal-nozzle",
+      "name": "1-1/2\" & 2-1/2\" 1369 Select Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "Select flow nozzle, 30 to 200 GPM, in 1-1/2\" and 2-1/2\". Selectable gallonage nozzle with stainless steel spinning teeth, a ball shutoff, and a pistol grip.",
+      "features": [
+        "Selectable gallonage nozzle with multiple flow settings",
+        "Stainless steel spinning teeth",
+        "Stainless steel ball enables ball shut off handle to work smoothly at extreme ranges",
+        "Straight stream to wide fog and flush without shutting down",
+        "Permanent anodized indicator bands",
+        "Metal Horseshoe handle",
+        "Multiple pattern detents for positive positioning",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "100 PSI (7.0 BAR) standard, optional 75 PSI (5 BAR)",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "Flow Setting: GPM 30-60-95-125-150-200; LPM 115-230-360-475-550-750"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-and-2-1-2-in-1369-select-flow-municipal-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "13691.5I",
+          "option": "NPSH/IPT, 1-1/2\""
+        },
+        {
+          "sku": "13691.5N",
+          "option": "NST/NH, 1-1/2\""
+        },
+        {
+          "sku": "13692.5N",
+          "option": "NST/NH, 2-1/2\""
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/select-flow-municipal-nozzle/1-12-2-12-sf-200x-select-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-single-jacket-fire-hose-500-lb-test",
+      "name": "1-1/2\" Single Jacket Fire Hose (500 LB Test)",
+      "category": "hose",
+      "group": "Attack hose",
+      "summary": "Single jacket polyester fire hose with an EPDM lining, treated to resist mold and mildew. 250 psi service test, 500 psi proof test.",
+      "details": [
+        "Our 1-1/2\" single jacket fire hose (500 PSI Test) is a premium-quality hose engineered for heavy-duty use. It resists abrasion, mold and mildew, deploys easily and is built for prolonged storage and extended service life. All fire hose products from Rawhide Fire Hose meet or exceed NFPA 1961 standards.",
+        "Note: All hoses should be inspected and tested according to NFPA 1962 guidelines when the application falls under NFPA jurisdiction.",
+        "Jacket Construction: This single jacket fire hose consists of a single jacket, woven evenly and free of defects, from spun polyester yarn that offers superior strength and wear resistance. The warp yarn is 100% polyester, and the filler yarns are high-strength, low-elongation filament polyester, which reduces weight while increasing flexibility. In addition, the jacket is treated to resist mold and mildew.",
+        "Colors and Lengths: This fire hose is available in white, red or yellow as standard, with other colors available upon request. Standard lengths include 50', 75' and 100'.",
+        "Lining: The rubber lining is a single ply, extruded, EPDM tube compounded to resist ozone. During manufacturing, the lining is vulcanized to bond it securely to the outer jacket.",
+        "Special Characteristics: Regular maintenance helps extend the wear and service life of your fire hose assemblies. For step-by-step instructions, see The Complete Guide for Cleaning Fire Hoses"
+      ],
+      "features": [
+        "Colors: Red, White, Yellow",
+        "Lengths: 50, 75, 100 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug, expansion ring); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "Couplings: Couplings are supplied as required by your specifications. Options include:",
+        "Internal expansion ring threaded aluminum couplings in NH/NST or NPSH/IPT",
+        "Anodized aluminum Storz couplings",
+        "Brass threaded couplings",
+        "Shank or cam-lock couplings",
+        "Special threaded couplings upon request"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-single-jacket-fire-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/1-12-single-jacket-fire-hose-ap-500-500-lb-test-2/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-and-2-1-2-in-1367-select-flow-municipal-nozzle",
+      "name": "1-1/2\" & 2-1/2\" 1367 Select Flow Municipal Nozzle",
+      "category": "nozzles",
+      "group": "Fog and combination nozzles",
+      "summary": "Select flow nozzle, 95 to 200 GPM, in 1-1/2\" and 2-1/2\". Selectable gallonage nozzle with stainless steel spinning teeth, a ball shutoff, and a pistol grip.",
+      "features": [
+        "Selectable gallonage nozzle with multiple flow settings",
+        "Stainless steel spinning teeth",
+        "Stainless steel ball enables ball shut off handle to work smoothly at extreme ranges",
+        "Straight stream to wide fog and flush without shutting down",
+        "Permanent anodized indicator bands",
+        "Metal Horseshoe handle",
+        "Multiple pattern detents for positive positioning",
+        "Female inlet swivel with strainer",
+        "Wide fog for maximum operator protection",
+        "100 PSI (7.0 BAR) standard, optional 75 PSI (5 BAR)",
+        "NFPA 1964 compliant",
+        "All nozzles include pistol grip",
+        "Flow Setting: GPM 95-125-150-200; LPM 360-475-550-750"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-and-2-1-2-in-1367-select-flow-municipal-nozzle.webp"
+      ],
+      "variants": [
+        {
+          "sku": "13671.5I",
+          "option": "NPSH/IPT, 1-1/2\""
+        },
+        {
+          "sku": "13671.5N",
+          "option": "NST/NH, 1-1/2\""
+        },
+        {
+          "sku": "13672.5N",
+          "option": "NST/NH, 2-1/2\""
+        }
+      ],
+      "source": "https://rawhidefirehose.com/firehose/fire-hose-accessories/fire-hose-nozzles/municipal-nozzles/select-flow-municipal-nozzle/1-12-sf-200-select-flow-municipal-nozzle/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-forestry-hose-type-2-600-lb-test",
+      "name": "1-1/2\" Forestry Hose Type 2 (600 LB Test)",
+      "category": "hose",
+      "group": "Forestry hose",
+      "summary": "Yellow single jacket forestry hose with a polyurethane lining, impregnated for abrasion resistance to USDA 5100-187. 900 psi minimum burst per NFPA 1961.",
+      "details": [
+        "Jacket Construction: The jackets will be woven evenly and be free of defects, including knots, lumps, or unsightly disfigurations that could jeopardize the integrity of the hose assembly. The warp yarn shall consist of ring spun polyester yarn. The use of filament or entangled yarn is expressly forbidden due to the lack of inherent abrasion resistance. The filler yarns shall be constructed of high strength, low elongation, filament polyester to reduce weight and increase flexibility. The jacket construction shall be a 1-2 woven twill pattern with the 2 over-crossing on the exterior of the jacket.",
+        "Abrasion Impregnation: Hose assemblies are available with polymer impregnation that provide additional abrasion resistance. Standard color: yellow. Color shall be pure and even in each hose. Impregnated hose shall meet the requirements of USDA 5100-187 for abrasion resistance.",
+        "Lining: The lining shall be a single-ply extruded tube of synthetic polyurethane to resist ozone. The polyurethane tube shall adhere to the jacket to prevent delamination. The finished product will meet and exceed all potable water Mil-H-24606B standards for the manufacturing of lightweight fire hose. The use of the polyurethane lined fire hose is designed to increase packing ability and applications where lightweight fire hose is desired.",
+        "Performance: The minimum burst test pressure, when tested in accordance to NFPA 1961, on Key Type 2 diameters shall be 900 PSI. Service test pressures stenciled on the hose shall be in accordance with current minimum requirements of NFPA 1962. A valid USA/ULC Underwriters listing shall be in force."
+      ],
+      "features": [
+        "Colors: Yellow",
+        "Lengths: 50, 100 ft",
+        "Coupling options: Aluminum forestry quick connect; Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); uncoupled",
+        "Couplings: Expansion ring threaded or quarter-turn quick connect couplings available."
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-forestry-hose-type-2-600-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/forestry-fire-hose-hose-by-industry/1-12-forestry-hose-type-2-600-lb-test/"
+    },
+    {
+      "slug": "rawhide-1-1-2-in-fire-engine-booster-hose-500-lb-test",
+      "name": "1-1/2\" Fire Engine Booster Hose 500 LB Test",
+      "category": "hose",
+      "group": "Booster hose",
+      "summary": "1-1/2\" booster hose with a red NBR/PVC cover and spiral yarn reinforcement, rated up to 250 psi working pressure. Can be charged while still on the reel.",
+      "details": [
+        "Resists scrapes, scuffs, scratches and built to exceed municipal and industrial demands. This hose can also be used for water transfer service, wash down and mop up.",
+        "Cover Construction: Built rugged, by using a red NBR/PVC cover to resist abrasion. The smooth surface provides for ease of handling.",
+        "Lining: The rubber lining is SBR/Nitrile rubber. Overlapped spiral layers of synthetic yarn makes this hose tough yet still flexible. Built safe for use with pressures up to 250 psi working pressure.",
+        "Couplings: As required per customer order and use, this hose is offered with hard coated aluminum or brass expansion ring type couplings."
+      ],
+      "features": [
+        "Colors: Red",
+        "Lengths: 50, 100, 150, 200 ft",
+        "Coupling options: Aluminum IPT/NPSH (rocker lug, expansion ring); Aluminum NST/NH (rocker lug, expansion ring); Brass IPT/NPSH (rocker lug, expansion ring); Brass NST/NH (rocker lug, expansion ring); uncoupled",
+        "For use in high-pressure fire engine booster hose service",
+        "Medium to high oil resistance",
+        "Will not flatten or crush reels",
+        "Working pressure up to 250 PSI for best margin of safety",
+        "Hose can be fully charged with water while still on the reel",
+        "Ideal for brush, refuse, dumpster and grass fires",
+        "Thick-walled and flexible",
+        "Made in the United States of America",
+        "Can be handled easily by one fire fighter",
+        "Retains shape when carried on a pumper truck reel",
+        "Perfect for close quarters wash down and mop up"
+      ],
+      "images": [
+        "/catalog/rawhide-1-1-2-in-fire-engine-booster-hose-500-lb-test.webp"
+      ],
+      "source": "https://rawhidefirehose.com/firehose/hose-by-industry/attack-fire-hose/1-12-fire-engine-booster-hose-500-lb/"
+    }
+  ]
+}

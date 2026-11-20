@@ -255,7 +255,7 @@ Engine Bay is OpPeriod's lead business. The OpPeriod home page opens with an Eng
 
 ### Loose equipment, not just tools (November 2026)
 
-Engine Bay is positioned as a fire department loose equipment supplier: everything that rides on the rig. The hero line is "Stock the rig." The shop lives at `/engine-bay/equipment` (old `/engine-bay/tools` links redirect). The 11 categories are grouped into five `equipmentAreas` in `lib/engine-bay.ts`: forcible entry and hand tools, fire hose, saws and rescue, wildland, and mounting and parts. Both home pages show the areas; the equipment page lists categories under them. New categories must be added to an area or the build stops.
+Engine Bay is positioned as a fire department loose equipment supplier: everything that rides on the rig. The hero line is "Stock the rig." The shop lives at `/engine-bay/equipment` (old `/engine-bay/tools` links redirect). The 13 categories are grouped into five `equipmentAreas` in `lib/engine-bay.ts`: forcible entry and hand tools, hose and nozzles, saws and rescue, wildland, and mounting and parts. Both home pages show the areas; the equipment page lists categories under them. New categories must be added to an area or the build stops.
 
 ### How it sells
 
@@ -294,6 +294,10 @@ Built from the owner's Engine Bay FHU catalog PDF (`public/downloads/engine-bay-
 ### Snap-tite Hose (added November 2026)
 
 16 Snap-tite fire hose lines from snaptitehose.com (`content/engine-bay/products/snap-tite-hose.json`), in a new Fire hose category: attack hose, supply hose (LDH), forestry hose, and industrial and in-plant fire hose. Pages were fetched one per second. Each has Snap-tite's pitch, construction, description, features, the colors shown, uses, warranty terms, up to four color photos (`public/catalog/snaptite-*.webp`), and a `datasheet` link to Snap-tite's PDF. Hose has no `sku` or `variants`: it's quoted by size, length, couplings, and color, and cards say "Sized to order". Products on Snap-tite's site that link to firequip.com, and their agriculture, irrigation, and potable water lines, are left out.
+
+### Rawhide Fire Hose (added November 2026)
+
+108 products from rawhidefirehose.com (`content/engine-bay/products/rawhide-fire-hose.json`), fetched about one page a second. Rawhide is a Wooster, Ohio supply house that sources from several manufacturers, so its pages are the product source here. Two categories were added for it in the Hose and nozzles area (the area was "Fire hose"): `nozzles` (Nozzles and tips) and `appliances` (Valves, wyes, and fittings). Its fire hose (attack, supply LDH, booster, forestry) joins the Fire hose category with no part numbers, like Snap-tite, listing Rawhide's colors, lengths, and coupling options. Spanner, hydrant, and Storz wrenches went into Hydrant and rescue tools, and wrench holders into Straps and mounts. Nozzles, caps, plugs, wyes, and valves list one row per size or thread with Rawhide's part number. Left out: mill discharge, MSHA mine, and rack and reel hose; building hose racks, reels, covers, and rack assemblies; FDCs; and Coast Guard marine nozzles. Shipping notes, Rawhide's phone number, price adders on thread options ("+4.00"), their warranty promises, and general "what is LDH" text were stripped. The shipping weights in Rawhide's product data aren't used. The scripts that built the file aren't in the repo; a re-pull means fetching the pages again.
 
 ### Next steps
 

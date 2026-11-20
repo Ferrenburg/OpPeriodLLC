@@ -8,7 +8,7 @@ import { getBrands, getProducts } from "@/lib/engine-bay-catalog";
 
 export const metadata: Metadata = {
   title: "Equipment",
-  description: `Loose equipment for fire departments from ${engineBay.name}: forcible entry and hand tools, fire hose, saws and rescue tools, wildland gear, and mounting.`,
+  description: `Loose equipment for fire departments from ${engineBay.name}: forcible entry and hand tools, fire hose and nozzles, saws and rescue tools, wildland gear, and mounting.`,
   alternates: { canonical: equipmentPath },
 };
 

@@ -39,8 +39,22 @@ export const toolCategories: ToolCategory[] = [
     slug: "hose",
     name: "Fire hose",
     short: "Hose",
-    blurb: "Attack, supply (LDH), and forestry hose from Snap-tite.",
+    blurb: "Attack, supply (LDH), booster, and forestry hose, sized and coupled to order.",
     featured: "snap-tite-supreme-ii",
+  },
+  {
+    slug: "nozzles",
+    name: "Nozzles and tips",
+    short: "Nozzles",
+    blurb: "Fog, select flow, and constant flow nozzles, smooth bore and stacked tips, master streams, and foam eductors.",
+    featured: "rawhide-1-1-2-in-1366-select-flow-municipal-nozzle",
+  },
+  {
+    slug: "appliances",
+    name: "Valves, wyes, and fittings",
+    short: "Valves & Wyes",
+    blurb: "Hydrant gate and ball valves, wyes, caps and plugs, and dry hydrant adapters.",
+    featured: "rawhide-hydrant-wye-1-4-turn-ball-valve-self-locking",
   },
   {
     slug: "irons",
@@ -67,14 +81,14 @@ export const toolCategories: ToolCategory[] = [
     slug: "straps-mounts",
     name: "Straps and mounts",
     short: "Straps & Mounts",
-    blurb: "Irons straps, tool loops, harnesses, and brackets to mount tools on the rig.",
+    blurb: "Irons straps, tool loops, harnesses, wrench holders, and brackets to mount tools on the rig.",
     featured: "iss-82",
   },
   {
     slug: "rescue",
     name: "Hydrant and rescue tools",
     short: "Rescue",
-    blurb: "Hydrant wrenches, spanners, punches, and other tools for the rig.",
+    blurb: "Hydrant, spanner, and Storz wrenches, punches, and other tools for the rig.",
     featured: "hw-1",
   },
   {
@@ -129,9 +143,9 @@ export const equipmentAreas: EquipmentArea[] = [
   },
   {
     slug: "hose",
-    name: "Fire hose",
-    blurb: "Attack, supply (LDH), and forestry hose.",
-    categories: ["hose"],
+    name: "Hose and nozzles",
+    blurb: "Attack, supply, booster, and forestry hose, plus nozzles, valves, wyes, and fittings.",
+    categories: ["hose", "nozzles", "appliances"],
   },
   {
     slug: "saws-rescue",
