@@ -74,7 +74,7 @@ export const engineBay = {
   shortName: "Engine Bay",
   path: "/engine-bay",
   description:
-    "Loose equipment for fire departments: forcible entry and hand tools, fire hose and nozzles, saws, rescue and wildland gear, and mounting. Engine Bay Supply Co. is a division of OpPeriod LLC.",
+    "Loose equipment for fire departments: forcible entry and hand tools, fire hose, saws, rescue and wildland gear, and mounting. Engine Bay Supply Co. is a division of OpPeriod LLC.",
   // Quote requests go here until Engine Bay gets its own inbox.
   email: company.email,
   phone: { display: "(337) 313-2812", href: "tel:+13373132812" },

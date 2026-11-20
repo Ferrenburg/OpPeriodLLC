@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps<"/engine-bay/produc
   if (!product) return {};
   return {
     title: `${product.brand.name} ${product.name}`,
-    description: `${product.summary}${partNumbers(product) ? ` ${product.sku ? "Model" : "Part numbers"} ${partNumbers(product)}.` : ""} Request a quote from ${engineBay.name}.`,
+    description: `${product.summary}${partNumbers(product) ? ` ${product.sku ? "Model" : "Part numbers"} ${partNumbers(product)}.` : ""} Request a quote from ${engineBay.name}`,
     alternates: { canonical: product.href },
     openGraph: product.images[0] ? { images: [{ url: product.images[0], alt: product.name }] } : undefined,
   };

@@ -76,7 +76,7 @@ export function EbHero({ srPrefix }: { srPrefix?: string }) {
             Stock the rig.
           </h1>
           <p className="mt-6 max-w-[60ch] text-lg leading-relaxed text-white/90 md:text-xl">
-            Forcible entry and hand tools, hose and nozzles, saws, rescue and wildland gear, and the mounts to carry it all, from{" "}
+            Forcible entry and hand tools, fire hose, saws, rescue and wildland gear, and the mounts to carry it all, from{" "}
             {brands
               .map((b) => b.name)
               .slice(0, -1)
@@ -242,7 +242,7 @@ export function OrderingSection() {
 }
 
 export function TextBand() {
-  const words = ["Stock the rig", "Forcible entry", "Hose and nozzles", "Saws and rescue", "Wildland", "Mounting and parts", "Built to last"];
+  const words = ["Stock the rig", "Forcible entry", "Fire hose", "Saws and rescue", "Wildland", "Mounting and parts", "Built to last"];
   const row = words.flatMap((word) => [
     <span key={word} className="px-6">
       {word}
