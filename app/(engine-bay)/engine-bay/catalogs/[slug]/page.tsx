@@ -60,7 +60,7 @@ export default async function CatalogPage({ params }: PageProps<"/engine-bay/cat
 
       <div className="mt-4 flex flex-wrap items-end justify-between gap-6">
         <div>
-          <h1 className="font-display text-4xl font-bold uppercase italic leading-none md:text-5xl">{catalog.title}</h1>
+          <h1 className="font-display text-4xl font-bold uppercase leading-none md:text-5xl">{catalog.title}</h1>
           <p className="mt-3 text-lg text-muted">
             {catalog.pages} pages. {catalog.note}
           </p>

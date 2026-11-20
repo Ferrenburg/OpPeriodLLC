@@ -37,7 +37,7 @@ export default async function BrandPage({ params }: PageProps<"/engine-bay/brand
         ))}
         {printCatalog && (
           <p className="mt-3">
-            <Link href={catalogPath(printCatalog)} className="font-semibold text-white underline underline-offset-4">
+            <Link href={catalogPath(printCatalog)} className="font-semibold text-accent underline underline-offset-4">
               View the {printCatalog.title.toLowerCase().replace(brand.name.toLowerCase(), brand.name)}
             </Link>
           </p>
@@ -50,7 +50,7 @@ export default async function BrandPage({ params }: PageProps<"/engine-bay/brand
           if (items.length === 0) return null;
           return (
             <section key={category.slug} aria-labelledby={`${category.slug}-heading`} className="border-b border-line py-12 last:border-b-0">
-              <h2 id={`${category.slug}-heading`} className="font-display text-3xl font-bold uppercase italic">
+              <h2 id={`${category.slug}-heading`} className="font-display text-3xl font-bold uppercase">
                 {category.name}
               </h2>
               <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">

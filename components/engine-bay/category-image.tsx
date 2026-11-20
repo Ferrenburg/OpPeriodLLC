@@ -18,9 +18,8 @@ export function CategoryImage({
 
   if (image) {
     return (
-      <div className={`relative ${aspect} overflow-hidden border-b border-line bg-white`}>
-        <span className="absolute left-0 top-0 z-10 h-2 w-1/3 bg-eb-red" aria-hidden="true" />
-        <Image src={image.src} width={image.width} height={image.height} alt="" sizes={sizes} className="absolute inset-0 size-full object-contain p-4" />
+      <div className={`relative ${aspect} overflow-hidden border-b border-line bg-card`}>
+                <Image src={image.src} width={image.width} height={image.height} alt="" sizes={sizes} className="absolute inset-0 size-full object-contain p-4" />
       </div>
     );
   }

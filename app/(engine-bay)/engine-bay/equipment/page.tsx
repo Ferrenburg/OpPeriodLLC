@@ -22,14 +22,14 @@ export default function EquipmentPage() {
         <p>
           {count} items for the rig from {brands.slice(0, -1).join(", ")} and {brands.at(-1)}. Pick a category, find what
           you need, and hit Get Pricing. If it rides on the rig and you don&apos;t see it here,{" "}
-          <Link href={quoteHref()} className="font-semibold text-white underline underline-offset-4">
+          <Link href={quoteHref()} className="font-semibold text-accent underline underline-offset-4">
             ask
           </Link>{" "}
           and we&apos;ll track it down.
         </p>
         <p className="mt-3">
           Want the full price guides?{" "}
-          <Link href={`${engineBay.path}/catalogs`} className="font-semibold text-white underline underline-offset-4">
+          <Link href={`${engineBay.path}/catalogs`} className="font-semibold text-accent underline underline-offset-4">
             See the catalogs
           </Link>
           .
@@ -39,7 +39,7 @@ export default function EquipmentPage() {
       <div className="container-site">
         {equipmentAreas.map((area) => (
           <section key={area.slug} id={area.slug} aria-labelledby={`${area.slug}-heading`} className="scroll-mt-4 border-b border-line py-12 last:border-b-0 md:py-14">
-            <h2 id={`${area.slug}-heading`} className="font-display text-3xl font-bold uppercase italic leading-none md:text-4xl">
+            <h2 id={`${area.slug}-heading`} className="font-display text-3xl font-bold uppercase leading-none md:text-4xl">
               {area.name}
             </h2>
             <p className="mt-2 text-lg text-muted">{area.blurb}</p>

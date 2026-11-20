@@ -62,8 +62,10 @@ Each project gets its own `accentColor` in its frontmatter (Box Alarm is `#C6001
 ### Look and feel
 
 - Industrial and disciplined, not flashy. Think apparatus floor, not tech startup.
-- Typography: a bold condensed or italic-leaning sans for headings that echoes the forward slant of the OpPeriod wordmark (something like Barlow Condensed or Saira Condensed, self-hosted through `next/font`), and a clean readable sans for body text.
-- Generous whitespace, strong grid, square or slightly rounded corners, subtle slanted edges or angled accent bars as a nod to the red bar in the logo. Use that motif sparingly.
+- Typography: upright Barlow Condensed for headings (600 and 700), like an equipment catalog, and Barlow for body text, self-hosted through `next/font`. The OpPeriod wordmark carries the slant; headings don't.
+- Layout follows an equipment dealer site: a warm paper background with a fixed blueprint grid behind every page (`body::before` in `app/globals.css`, 58px lines plus faint red and steel glows), white cards with a hairline border and 10px corners (`card`, `card-hover`), tracked uppercase eyebrows with a short red rule (`eyebrow`), rounded 8px buttons from `components/button.tsx`, and a translucent sticky header with a utility bar.
+- Dark bands (heroes, the CTA, the scrolling text band) use the diamond plate or the `grid-dark` utility, with corner ticks on the Engine Bay hero.
+- Generous whitespace and a strong grid. Use red for one thing per view: the main button, an eyebrow rule, or a number.
 - Must look great on a phone first. Most visitors will be on mobile.
 - Light mode only, using CSS variables. Dark mode was dropped so the black logos always sit on a light background.
 

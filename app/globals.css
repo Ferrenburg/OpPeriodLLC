@@ -1,13 +1,20 @@
 @import "tailwindcss";
 
-/* Site tokens, from the brand palette in docs/PLAN.md. The site is light only. */
+/*
+  Site tokens, from the brand palette in docs/PLAN.md. The site is light only.
+  The look (warm paper over a fixed blueprint grid, white cards with
+  hairlines, upright condensed headlines, small tracked eyebrows) follows the
+  fire equipment dealer sites the owner likes, in our own colors.
+*/
 :root {
   color-scheme: light;
-  --bg: #ffffff; /* paper */
-  --surface: #f3f3f1; /* smoke */
+  --bg: #f8f7f4; /* warm paper, a lighter tint of the Engine Bay paper */
+  --surface: #f1f0ec; /* alternate bands, hovers, page heroes */
+  --card: #ffffff; /* cards and panels sit on the paper */
   --fg: #0e1010; /* ink */
-  --muted: #5b6166; /* steel, 6.3:1 on paper */
-  --line: #dcdcd8;
+  --muted: #555b60; /* steel, 6.4:1 on paper */
+  --line: #e3e1db; /* hairlines */
+  --line-2: #d3d0c8; /* stronger hairlines: inputs, ghost buttons */
   --accent: #8e0d0e; /* opperiod red as text, 9.5:1 on paper */
   --accent-fill: #8e0d0e; /* buttons, white text is 9.5:1 */
   --accent-fill-hover: #6f0a0b;
@@ -37,6 +44,8 @@
   --color-fg: var(--fg);
   --color-muted: var(--muted);
   --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-card: var(--card);
   --color-accent: var(--accent);
   --color-accent-fill: var(--accent-fill);
   --color-accent-fill-hover: var(--accent-fill-hover);
@@ -67,8 +76,29 @@ html {
 }
 
 body {
+  position: relative;
   background: var(--bg);
   color: var(--fg);
+}
+
+/*
+  The blueprint grid: faint 58px lines with a soft red glow top right and a
+  steel glow bottom left. It's fixed, so content scrolls over it. Sections
+  without a background let it show through.
+*/
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(1000px 720px at 100% -8%, rgb(226 36 27 / 0.06), transparent 62%),
+    radial-gradient(900px 720px at -8% 108%, rgb(85 91 96 / 0.08), transparent 62%),
+    linear-gradient(rgb(14 16 16 / 0.065) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(14 16 16 / 0.065) 1px, transparent 1px);
+  background-size: auto, auto, 58px 58px, 58px 58px;
 }
 
 :focus-visible {
@@ -86,16 +116,88 @@ body {
   }
 }
 
-/*
-  The forward leaning bar from the logo. Used as a small accent beside
-  headings and on cards, not as decoration everywhere.
-*/
+/* A short red rule above a heading. */
 @utility slant-bar {
   display: inline-block;
-  height: 0.375rem;
+  height: 3px;
   width: 2.5rem;
+  border-radius: 2px;
   background: var(--slant-color, var(--accent-fill));
-  transform: skewX(-24deg);
+}
+
+/* Small tracked label over a heading, led by a short red rule. */
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  &::before {
+    content: "";
+    width: 1.75rem;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--accent-fill);
+  }
+}
+
+/* Same, with a rule on both sides, for centered headings and the hero. */
+@utility eyebrow-center {
+  &::after {
+    content: "";
+    width: 1.75rem;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--accent-fill);
+  }
+}
+
+/* White panel with a hairline and a soft shadow. */
+@utility card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow: 0 14px 30px -22px rgb(14 16 16 / 0.35);
+}
+
+/* Lift and outline a clickable card on hover. */
+@utility card-hover {
+  transition:
+    transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1),
+    box-shadow 0.25s,
+    border-color 0.25s;
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-fill);
+    box-shadow: 0 22px 40px -24px rgb(14 16 16 / 0.45);
+  }
+}
+
+/* A row that scrolls sideways forever. The track holds the items twice. */
+@utility marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* The blueprint grid in white, for dark bands. */
+@utility grid-dark {
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.045) 1px, transparent 1px);
+  background-size: 58px 58px;
 }
 
 /* Diamond plate, like an engine bay floor or a running board. Dark bands only. */
@@ -109,26 +211,27 @@ body {
   .nav-link {
     position: relative;
     padding-block: 0.5rem;
-    font-family: var(--font-display);
-    font-size: 1.125rem;
-    font-style: italic;
+    font-size: 0.95rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    color: var(--muted);
+    transition: color 0.2s;
     &:hover {
       color: var(--accent);
     }
   }
-  /* Current page gets a short slanted bar underneath, like the logo. */
+  /* Current page: ink text with a short red rule underneath. */
+  .nav-link-active {
+    color: var(--fg);
+  }
   .nav-link-active::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 3px;
-    width: 1.75rem;
+    height: 2px;
+    width: 1.25rem;
+    border-radius: 2px;
     background: var(--accent-fill);
-    transform: skewX(-24deg);
   }
 }
 
@@ -145,7 +248,6 @@ body {
   margin-top: 2.5rem;
   font-family: var(--font-display);
   font-size: 2rem;
-  font-style: italic;
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
@@ -154,7 +256,6 @@ body {
   margin-top: 2rem;
   font-family: var(--font-display);
   font-size: 1.5rem;
-  font-style: italic;
   font-weight: 600;
 }
 .mdx-body :where(ul):not(:where(.not-prose, .not-prose *)) {

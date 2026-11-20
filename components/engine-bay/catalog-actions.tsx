@@ -1,9 +1,8 @@
+import { buttonClass } from "@/components/button";
 import { type PrintCatalog } from "@/lib/engine-bay";
 
-const red =
-  "inline-flex min-h-12 items-center justify-center rounded-sm bg-eb-red px-6 font-display text-lg font-semibold uppercase italic tracking-wide text-white hover:bg-eb-red-dark";
-const outline =
-  "inline-flex min-h-12 items-center justify-center rounded-sm border-2 border-fg px-6 font-display text-lg font-semibold uppercase italic tracking-wide hover:bg-fg hover:text-bg";
+const red = buttonClass("primary");
+const outline = buttonClass("secondary");
 
 // Download and open-in-a-new-tab buttons for a catalog PDF. Phones mostly
 // can't show an embedded PDF, so these are how they read it.

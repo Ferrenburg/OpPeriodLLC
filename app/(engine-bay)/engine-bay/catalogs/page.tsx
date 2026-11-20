@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buttonClass } from "@/components/button";
 import { EbPageHero } from "@/components/engine-bay/page-hero";
 import { engineBay } from "@/lib/brand";
 import { catalogPath, printCatalogs } from "@/lib/engine-bay";
@@ -39,7 +40,7 @@ export default function CatalogsPage() {
                 </Link>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wider text-muted">{catalog.brand}</p>
-                  <h2 className="mt-1 font-display text-3xl font-bold uppercase italic leading-none">
+                  <h2 className="mt-1 font-display text-3xl font-bold uppercase leading-none">
                     <Link href={catalogPath(catalog)} className="hover:text-accent">
                       {catalog.title}
                     </Link>
@@ -51,7 +52,7 @@ export default function CatalogsPage() {
                   <div className="mt-5">
                     <Link
                       href={catalogPath(catalog)}
-                      className="mb-3 inline-flex min-h-12 items-center justify-center rounded-sm bg-eb-red px-6 font-display text-lg font-semibold uppercase italic tracking-wide text-white hover:bg-eb-red-dark"
+                      className={buttonClass("primary", "mb-3")}
                     >
                       View catalog
                     </Link>

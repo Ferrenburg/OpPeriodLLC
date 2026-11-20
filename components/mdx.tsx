@@ -26,7 +26,7 @@ export function FeatureGrid({ items = [], children }: { items?: Feature[]; child
         {items.map((item) => {
           const { title, text } = typeof item === "string" ? { title: item, text: undefined } : item;
           return (
-            <li key={title} className="border border-line bg-bg p-5">
+            <li key={title} className="card p-5">
               <span className="slant-bar" aria-hidden="true" />
               <p className="mt-3 text-lg font-semibold leading-snug">{title}</p>
               {text && <p className="mt-1 text-muted">{text}</p>}
@@ -41,8 +41,8 @@ export function FeatureGrid({ items = [], children }: { items?: Feature[]; child
 
 export function Callout({ title, children }: { title?: string; children: ReactNode }) {
   return (
-    <div role="note" className="not-prose my-8 border-l-4 bg-surface p-5 [border-color:var(--project-accent,var(--accent-fill))]">
-      {title && <p className="font-display text-xl font-bold uppercase italic">{title}</p>}
+    <div role="note" className="not-prose my-8 rounded-r-[10px] border-l-4 bg-card p-5 shadow-sm [border-color:var(--project-accent,var(--accent-fill))]">
+      {title && <p className="font-display text-xl font-bold uppercase">{title}</p>}
       <div className="mt-1 space-y-3 text-fg [&_a]:font-semibold [&_a]:underline">{children}</div>
     </div>
   );

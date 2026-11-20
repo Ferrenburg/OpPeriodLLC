@@ -18,5 +18,5 @@
 - Secrets and recipient addresses come from environment variables (see `.env.example`), never code.
 - Wrap copy the owner still has to provide in `<Todo>` (components/todo.tsx) and list it in `CONTENT-TODO.md`. Todo boxes are hidden on production builds (`VERCEL_ENV=production`).
 - `main` is production. Work on a branch and let Vercel make a preview.
-- Keep the site at 95+ in every Lighthouse category on mobile. Fonts are limited to four files (Barlow 400 and 600, Barlow Condensed 600 and 700 italic); adding a weight costs load time.
+- Keep the site at 95+ in every Lighthouse category on mobile. Fonts are limited to four files (Barlow 400 and 600, Barlow Condensed 600 and 700, upright); adding a weight costs load time.
 - Run `npm run check` and `npm run build` before pushing.

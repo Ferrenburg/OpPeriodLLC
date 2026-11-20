@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buttonClass } from "@/components/button";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/button";
 import { FeatureGrid } from "@/components/mdx";
@@ -71,7 +72,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
               <p className="text-sm font-semibold uppercase tracking-wider text-muted">{project.category}</p>
               <StatusBadge status={project.status} />
             </div>
-            <h1 className="mt-2 font-display text-5xl font-bold uppercase italic leading-none md:text-6xl">
+            <h1 className="mt-2 font-display text-5xl font-bold uppercase leading-none md:text-6xl">
               {project.name}
             </h1>
             <p className="mt-3 text-xl text-muted">{project.tagline}</p>
@@ -90,7 +91,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
                 {project.externalUrl && (
                   <a
                     href={project.externalUrl}
-                    className="inline-flex min-h-12 items-center rounded-sm border-2 border-fg px-6 font-display text-lg font-semibold uppercase italic tracking-wide hover:bg-fg hover:text-bg"
+                    className={buttonClass("secondary")}
                   >
                     Visit site
                   </a>
@@ -112,7 +113,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
       {!comingSoon && project.highlights && (
         <section className="bg-surface py-12 md:py-16">
           <div className="container-site">
-            <h2 className="font-display text-3xl font-bold uppercase italic md:text-4xl">At a glance</h2>
+            <h2 className="font-display text-3xl font-bold uppercase md:text-4xl">At a glance</h2>
             <FeatureGrid items={project.highlights} />
           </div>
         </section>
@@ -121,7 +122,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
       <section className="container-site py-12 md:py-16">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <h2 className="font-display text-3xl font-bold uppercase italic md:text-4xl">
+            <h2 className="font-display text-3xl font-bold uppercase md:text-4xl">
               Part of the {company.name} family
             </h2>
             <p className="mt-2 text-muted">

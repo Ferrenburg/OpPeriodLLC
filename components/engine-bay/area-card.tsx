@@ -31,40 +31,63 @@ function entries(area: EquipmentArea): Entry[] {
   return tally((p) => p.brand.name, (p) => `${categoryPath(category)}#${p.brand.slug}`) ?? [];
 }
 
-// One area of loose equipment (like "Saws and rescue"): its first category's
-// photo, a short line, and links into it with counts.
-export function AreaCard({ area, wide = false, headingLevel = "h3" }: { area: EquipmentArea; wide?: boolean; headingLevel?: "h2" | "h3" }) {
+// One area of loose equipment (like "Saws and rescue") as a tile: its first
+// category's photo, a number tag, an arrow that turns red on hover, and links
+// into it with counts. The heading link covers the tile; the inner links sit
+// above it.
+export function AreaCard({
+  area,
+  index,
+  wide = false,
+  headingLevel = "h3",
+}: {
+  area: EquipmentArea;
+  index: number;
+  wide?: boolean;
+  headingLevel?: "h2" | "h3";
+}) {
   const first = toolCategories.find((c) => c.slug === area.categories[0])!;
   const list = entries(area);
   const total = area.categories.reduce((sum, slug) => sum + getProductsIn(slug).length, 0);
   const Heading = headingLevel;
   return (
-    <div className="flex h-full flex-col border border-line bg-bg">
-      <Link href={categoryPath(first)} tabIndex={-1} aria-hidden="true">
+    <div className="card card-hover group relative flex h-full flex-col overflow-hidden">
+      <div className="relative">
         <CategoryImage
           photo={categoryPhoto(first)}
           aspect={wide ? "aspect-[16/10] lg:aspect-[16/6]" : "aspect-[16/10]"}
           sizes={wide ? "(min-width: 1024px) 48rem, 100vw" : "(min-width: 1024px) 24rem, (min-width: 640px) 50vw, 100vw"}
         />
-      </Link>
+        <span className="absolute left-4 top-4 rounded-md bg-fg/80 px-2 py-1 text-[0.68rem] font-semibold tracking-[0.12em] text-white">
+          {String(index + 1).padStart(2, "0")}
+        </span>
+        <span
+          aria-hidden="true"
+          className="absolute right-4 top-4 grid size-10 place-items-center rounded-full border border-line-2 bg-card/90 text-fg transition duration-300 group-hover:-rotate-45 group-hover:border-accent-fill group-hover:bg-accent-fill group-hover:text-white"
+        >
+          <svg viewBox="0 0 20 20" className="size-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M4 10h12M11 5l5 5-5 5" />
+          </svg>
+        </span>
+      </div>
       <div className="flex flex-1 flex-col p-6">
-        <Heading className="font-display text-3xl font-bold uppercase italic leading-none">
-          <Link href={categoryPath(first)} className="hover:text-accent">
+        <p className="text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-muted">{total} items</p>
+        <Heading className="mt-1 font-display text-3xl font-bold uppercase leading-none">
+          <Link href={categoryPath(first)} className="after:absolute after:inset-0 group-hover:text-accent">
             {area.name}
           </Link>
         </Heading>
         <p className="mt-2 text-muted">{area.blurb}</p>
-        <ul className={`mt-4 flex-1 space-y-1 ${wide ? "sm:columns-2 sm:gap-8" : ""}`}>
+        <ul className={`relative z-10 mt-4 flex-1 space-y-0.5 ${wide ? "sm:columns-2 sm:gap-8" : ""}`}>
           {list.map((entry) => (
             <li key={entry.label} className="break-inside-avoid">
-              <Link href={entry.href} className="group inline-flex items-baseline gap-2 py-1 font-semibold hover:text-accent">
-                <span className="underline decoration-line underline-offset-4 group-hover:decoration-current">{entry.label}</span>
+              <Link href={entry.href} className="inline-flex items-baseline gap-2 py-1 font-semibold hover:text-accent">
+                <span className="underline decoration-line-2 underline-offset-4 hover:decoration-current">{entry.label}</span>
                 <span className="text-sm font-normal text-muted">{entry.count}</span>
               </Link>
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-sm font-semibold uppercase tracking-wider text-muted">{total} items</p>
       </div>
     </div>
   );

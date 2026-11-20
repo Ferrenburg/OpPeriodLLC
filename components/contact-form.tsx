@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+import { buttonClass } from "./button";
 import { useEffect, useRef, useState } from "react";
 import type { ContactOption, FieldErrors } from "@/lib/contact";
 
@@ -27,7 +28,7 @@ declare global {
 }
 
 const input =
-  "mt-2 block w-full rounded-sm border-2 border-line bg-bg px-4 py-3 text-lg text-fg focus:border-fg focus:outline-none aria-invalid:border-accent";
+  "mt-2 block w-full rounded-lg border border-line-2 bg-card px-4 py-3 text-lg text-fg shadow-[inset_0_1px_2px_rgb(14_16_16/0.04)] focus:border-accent-fill focus:outline-none aria-invalid:border-accent";
 
 // The inputs are never reset or re-rendered on an error, so whatever someone
 // typed stays put until the message actually goes through.
@@ -121,7 +122,7 @@ export function ContactForm({ options, email, turnstileSiteKey, quote }: Props) 
   if (sent) {
     return (
       <div ref={done} tabIndex={-1} role="status" className="border-l-4 border-accent-fill bg-surface p-6 focus:outline-none">
-        <p className="font-display text-3xl font-bold uppercase italic">{quote ? "Quote request sent" : "Message sent"}</p>
+        <p className="font-display text-3xl font-bold uppercase">{quote ? "Quote request sent" : "Message sent"}</p>
         <p className="mt-2 text-lg">
           {quote
             ? "Thanks. We'll get back to you with pricing at the email you gave us."
@@ -268,7 +269,7 @@ export function ContactForm({ options, email, turnstileSiteKey, quote }: Props) 
       <button
         type="submit"
         disabled={sending}
-        className="inline-flex min-h-12 items-center justify-center rounded-sm bg-accent-fill px-8 font-display text-lg font-semibold uppercase italic tracking-wide text-white hover:bg-accent-fill-hover disabled:opacity-60"
+        className={buttonClass("primary", "px-8 disabled:opacity-60")}
       >
         {sending ? "Sending..." : quote ? "Request quote" : "Send message"}
       </button>

@@ -5,10 +5,10 @@ import { AreaCard } from "./area-card";
 // so the grid fills two even rows.
 export function AreaGrid({ headingLevel = "h3" }: { headingLevel?: "h2" | "h3" }) {
   return (
-    <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {equipmentAreas.map((area, index) => (
         <li key={area.slug} className={index === 0 ? "sm:col-span-2" : ""}>
-          <AreaCard area={area} wide={index === 0} headingLevel={headingLevel} />
+          <AreaCard area={area} index={index} wide={index === 0} headingLevel={headingLevel} />
         </li>
       ))}
     </ul>

@@ -17,7 +17,7 @@ export function ProjectFilter({ items }: { items: Item[] }) {
       type="button"
       aria-pressed={selected === value}
       onClick={() => setSelected(value)}
-      className="min-h-11 rounded-sm border-2 border-line px-4 font-semibold hover:border-fg aria-pressed:border-fg aria-pressed:bg-fg aria-pressed:text-bg"
+      className="min-h-11 rounded-lg border border-line-2 bg-card px-4 font-semibold hover:border-accent-fill aria-pressed:border-fg aria-pressed:bg-fg aria-pressed:text-bg"
     >
       {label}
     </button>

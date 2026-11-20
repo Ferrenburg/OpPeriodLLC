@@ -3,15 +3,15 @@ import { Barlow, Barlow_Condensed } from "next/font/google";
 import { company, siteUrl } from "@/lib/brand";
 import "./globals.css";
 
-// Condensed italic headings echo the forward slant of the wordmark. Both
-// fonts are downloaded at build time and served from this site. Each
-// weight is its own file, so only the four the design uses are loaded:
-// headings are always italic, and body text is regular or semibold.
+// Upright condensed headings, like an equipment catalog. Both fonts are
+// downloaded at build time and served from this site. Each weight is its
+// own file, so only the four the design uses are loaded: headings are
+// semibold or bold, and body text is regular or semibold.
 const heading = Barlow_Condensed({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["600", "700"],
-  style: ["italic"],
+  style: ["normal"],
 });
 
 const body = Barlow({
