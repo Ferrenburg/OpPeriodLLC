@@ -32,8 +32,11 @@ export const MAX_LINES = 40;
 // On when SHOP_ENABLED=true and a Stripe key is set. Off, every page is
 // exactly the quote-only site.
 export function shopEnabled(): boolean {
-  return process.env.SHOP_ENABLED === "true" && Boolean(process.env.STRIPE_SECRET_KEY);
+  return process.env.SHOP_ENABLED?.trim() === "true" && Boolean(stripeKey());
 }
+
+// Trimmed, so a key pasted with a stray space or line break still works.
+const stripeKey = () => process.env.STRIPE_SECRET_KEY?.trim() ?? "";
 
 export function shippingRates(): ShippingRates | null {
   return parseShippingRates(process.env.SHOP_SHIPPING_RATES || shopShippingRates);
@@ -46,7 +49,7 @@ export function shopLeadTime(): string | undefined {
 }
 
 const apiBase = () => process.env.STRIPE_API_BASE || "https://api.stripe.com";
-const authHeader = () => ({ Authorization: `Bearer ${process.env.STRIPE_SECRET_KEY}` });
+const authHeader = () => ({ Authorization: `Bearer ${stripeKey()}` });
 
 type RawProduct = { id: string; name: string; active: boolean; default_price: string | null; metadata?: Record<string, string> };
 type RawPrice = {
@@ -59,6 +62,11 @@ type RawPrice = {
 // Every active one-time USD price, flattened with its product. Cached for an
 // hour and tagged, so the Stripe webhook can refresh it the moment a price
 // changes. A Stripe outage leaves the site quote only instead of breaking it.
+// The last failure loading prices (HTTP status and Stripe's error code, never
+// the key), for /api/shop/status.
+let lastPriceError: string | null = null;
+export const priceLoadError = () => lastPriceError;
+
 export const loadStripePrices = cache(async (): Promise<StripePriceRow[]> => {
   const rows: StripePriceRow[] = [];
   let after: string | undefined;
@@ -71,7 +79,11 @@ export const loadStripePrices = cache(async (): Promise<StripePriceRow[]> => {
         headers: authHeader(),
         next: { revalidate: 3600, tags: [SHOP_PRICES_TAG] },
       });
-      if (!response.ok) throw new Error(`Stripe prices request failed: ${response.status}`);
+      if (!response.ok) {
+        const body = (await response.json().catch(() => ({}))) as { error?: { type?: string; code?: string; message?: string } };
+        lastPriceError = `${response.status} ${body.error?.code ?? body.error?.type ?? ""}`.trim();
+        throw new Error(`Stripe prices request failed: ${response.status} ${body.error?.message ?? ""}`);
+      }
       const list = (await response.json()) as { data: RawPrice[]; has_more: boolean };
       for (const price of list.data) {
         const product = price.product;
