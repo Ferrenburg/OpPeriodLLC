@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useClientPathname } from "./use-client-pathname";
 
 export function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
-  const pathname = usePathname();
+  const pathname = useClientPathname();
   const active = pathname === href;
   return (
     <Link

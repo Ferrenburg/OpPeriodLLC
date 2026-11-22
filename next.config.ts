@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 import { loadProjects } from "./lib/project-loader";
 
+// Where opperiod.com/engine-bay links go. Keep in step with engineBay.url in lib/brand.ts.
+const engineBayUrl = "https://enginebaysupply.com";
+
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   // Short links: opperiod.com/<slug> goes to opperiod.com/projects/<slug>.
@@ -10,7 +13,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     const published = loadProjects().filter((project) => project.published);
     const shortLinks = published
-      .filter((project) => project.href !== `/${project.slug}`)
+      .filter((project) => project.href !== `/${project.slug}` && project.sitePath !== `/${project.slug}`)
       .map((project) => ({ source: `/${project.slug}`, destination: project.href, permanent: true }));
     const sections = published
       .filter((project) => project.sitePath)
@@ -20,8 +23,27 @@ const nextConfig: NextConfig = {
       { source: "/engine-bay/tools", destination: "/engine-bay/equipment", permanent: true },
       { source: "/engine-bay/tools/:category", destination: "/engine-bay/equipment/:category", permanent: true },
     ];
+    // Engine Bay moved to enginebaysupply.com (proxy.ts serves it there).
+    // Old opperiod.com/engine-bay links follow it, and its old /tools links
+    // work on the new domain too. Which of www or the bare domain is primary
+    // is set in Vercel's domain settings, not here, so the two can't fight.
+    const ebHost = "(?:www\\.)?enginebaysupply\\.com";
+    const opperiodHost = "(?:www\\.)?opperiod\\.com";
+    const engineBayMoved = [
+      { source: "/engine-bay", has: [{ type: "host" as const, value: opperiodHost }], destination: `${engineBayUrl}/`, permanent: true },
+      { source: "/engine-bay/:path*", has: [{ type: "host" as const, value: opperiodHost }], destination: `${engineBayUrl}/:path*`, permanent: true },
+      { source: "/tools", has: [{ type: "host" as const, value: ebHost }], destination: "/equipment", permanent: true },
+      { source: "/tools/:category", has: [{ type: "host" as const, value: ebHost }], destination: "/equipment/:category", permanent: true },
+    ];
     // The About page was removed; send old links home instead of to a 404.
-    return [...shortLinks, ...sections, ...renamed, { source: "/about", destination: "/", permanent: true }];
+    return [
+      ...engineBayMoved,
+      ...shortLinks,
+      ...sections,
+      ...renamed,
+      { source: "/about", has: [{ type: "host" as const, value: ebHost }], destination: "/#about", permanent: true },
+      { source: "/about", missing: [{ type: "host" as const, value: ebHost }], destination: "/", permanent: true },
+    ];
   },
   async headers() {
     return [

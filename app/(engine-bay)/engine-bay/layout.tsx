@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { EbFooter } from "@/components/engine-bay/footer";
 import { EbHeader } from "@/components/engine-bay/header";
-import { engineBay } from "@/lib/brand";
+import { engineBay, engineBayUrl } from "@/lib/brand";
 
 // Engine Bay has its own header and footer instead of the OpPeriod ones, so
 // it reads like an equipment supplier's site. It still runs inside the root layout
 // (fonts, html, body).
 export const metadata: Metadata = {
+  // Canonicals and link previews point at enginebaysupply.com in production.
+  metadataBase: engineBayUrl(),
   title: { default: engineBay.name, template: `%s | ${engineBay.name}` },
   description: engineBay.description,
   openGraph: { siteName: engineBay.name, type: "website" },

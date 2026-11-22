@@ -12,9 +12,12 @@ published: true
 logo: /brand/engine-bay-logo.png
 # The flame red from the Engine Bay logo.
 accentColor: "#E2241B"
-# Engine Bay has its own section of the site, so cards and menus go there.
+# Engine Bay is built in this repo but served on its own domain.
 # Its pages live in app/(engine-bay) and its catalog in lib/engine-bay.ts.
 sitePath: /engine-bay
+# Its own site. Cards and menus link here in production, and
+# opperiod.com/engine-bay redirects here.
+siteUrl: https://enginebaysupply.com
 ---
 
 {/* Not shown: /projects/engine-bay redirects to the Engine Bay section. */}

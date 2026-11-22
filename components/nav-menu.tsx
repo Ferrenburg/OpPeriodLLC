@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { useClientPathname } from "./use-client-pathname";
 import { useEffect, useId, useRef, useState } from "react";
 
 // A header dropdown. A disclosure button, not a hover menu, so it works the
@@ -28,7 +29,8 @@ export function NavMenu({
   const wrapper = useRef<HTMLDivElement>(null);
   const button = useRef<HTMLButtonElement>(null);
   const panelId = useId();
-  const current = active || (activePrefix ? pathname.startsWith(activePrefix) : false);
+  const clientPath = useClientPathname();
+  const current = active || (activePrefix && clientPath ? clientPath.startsWith(activePrefix) : false);
 
   // Close after navigating.
   if (pathname !== lastPath) {

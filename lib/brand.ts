@@ -56,10 +56,18 @@ export const logos = {
   opperiod: { src: "/brand/opperiod-logo.png", alt: "OpPeriod LLC" },
 } satisfies Record<string, LogoConfig>;
 
+// Engine Bay Supply Co. lives on its own domain. Its pages are built from
+// app/(engine-bay)/engine-bay, and proxy.ts serves them at the root of
+// enginebaysupply.com. A preview or local build has only one address, so
+// there its pages stay under /engine-bay. Set ENGINE_BAY_OWN_DOMAIN=true to
+// try the production layout locally.
+const engineBayOwnDomain = process.env.VERCEL_ENV === "production" || process.env.ENGINE_BAY_OWN_DOMAIN === "true";
+const engineBayDomain = "enginebaysupply.com";
+
 export const mainNav = [
   { label: "Home", href: "/" },
   // Engine Bay is the lead business, so it gets its own spot in the menu.
-  { label: "Engine Bay", href: "/engine-bay" },
+  { label: "Engine Bay", href: engineBayOwnDomain ? `https://${engineBayDomain}` : "/engine-bay" },
   { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -67,12 +75,19 @@ export const mainNav = [
 export const footerNav = [...mainNav, { label: "Privacy", href: "/privacy" }] as const;
 
 // Engine Bay Supply Co., the OpPeriod division that supplies fire service
-// hand tools. It has its own section at /engine-bay with its own header and
-// footer. Its catalog content lives in lib/engine-bay.ts.
+// hand tools. It has its own site (see engineBayOwnDomain above) with its own
+// header and footer. Its catalog content lives in lib/engine-bay.ts.
 export const engineBay = {
   name: "Engine Bay Supply Co.",
   shortName: "Engine Bay",
-  path: "/engine-bay",
+  // Its own site. Pages on opperiod.com link here.
+  domain: engineBayDomain,
+  url: `https://${engineBayDomain}`,
+  ownDomain: engineBayOwnDomain,
+  // Prefix for links between Engine Bay pages: "" on its own domain,
+  // "/engine-bay" on previews. Use home for a link to its home page.
+  path: engineBayOwnDomain ? "" : "/engine-bay",
+  home: engineBayOwnDomain ? "/" : "/engine-bay",
   description:
     "Loose equipment for fire departments: forcible entry and hand tools, fire hose, saws, rescue and wildland gear, and mounting. Engine Bay Supply Co. is a division of OpPeriod LLC.",
   // Quote requests go here until Engine Bay gets its own inbox.
@@ -87,3 +102,16 @@ export const engineBay = {
   },
   logo: { src: "/brand/engine-bay-logo.png", alt: "Engine Bay Supply Co." },
 } as const;
+
+// A link to an Engine Bay page from an OpPeriod page (or anywhere that needs a
+// full address, like a sitemap): https://enginebaysupply.com/equipment in
+// production, /engine-bay/equipment on previews.
+export function engineBayLink(path = "/"): string {
+  if (engineBay.ownDomain) return `${engineBay.url}${path === "/" ? "" : path}`;
+  return path === "/" ? "/engine-bay" : `/engine-bay${path}`;
+}
+
+// The base address for Engine Bay page metadata (canonicals, link previews).
+export function engineBayUrl(): URL {
+  return engineBay.ownDomain ? new URL(engineBay.url) : siteUrl();
+}

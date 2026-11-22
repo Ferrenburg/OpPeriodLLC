@@ -232,15 +232,15 @@ export const shopPolicyPages = [
 export const ebNav = [
   { label: "Equipment", href: `${engineBay.path}/equipment` },
   { label: "Catalogs", href: `${engineBay.path}/catalogs` },
-  { label: "How to Order", href: `${engineBay.path}#ordering` },
-  { label: "About", href: `${engineBay.path}#about` },
+  { label: "How to Order", href: `${engineBay.home}#ordering` },
+  { label: "About", href: `${engineBay.home}#about` },
 ] as const;
 
 export const quoteHref = (tool?: string) =>
   tool ? `${engineBay.path}/quote?tool=${encodeURIComponent(tool)}` : `${engineBay.path}/quote`;
 
 export const ebPages = [
-  engineBay.path,
+  engineBay.home,
   `${engineBay.path}/equipment`,
   `${engineBay.path}/quote`,
   `${engineBay.path}/catalogs`,

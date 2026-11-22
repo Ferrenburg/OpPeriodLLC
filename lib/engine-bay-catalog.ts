@@ -61,7 +61,9 @@ const fileSchema = z.strictObject({
 export type Brand = z.infer<typeof fileSchema>["brand"];
 export type Product = z.infer<typeof productSchema> & { brand: Brand; href: string };
 
-const productPath = (product: { slug: string }) => `/engine-bay/products/${product.slug}`;
+import { engineBay } from "./brand";
+
+const productPath = (product: { slug: string }) => `${engineBay.path}/products/${product.slug}`;
 
 export const loadCatalog = cache((): { brands: Brand[]; products: Product[] } => {
   const brands: Brand[] = [];
@@ -163,7 +165,7 @@ export function categoryPhoto(category: ToolCategory): string | undefined {
   return getProduct(category.featured)?.images[0];
 }
 
-export const brandPath = (brand: Brand) => `/engine-bay/brands/${brand.slug}`;
+export const brandPath = (brand: Brand) => `${engineBay.path}/brands/${brand.slug}`;
 
 // What a Get Pricing link puts at the top of the quote form. Pass a variant
 // for one size of a product sold in several.

@@ -15,7 +15,7 @@ import { engineBay } from "@/lib/brand";
 
 export const metadata: Metadata = {
   title: { absolute: `${engineBay.name} | Fire Department Loose Equipment` },
-  alternates: { canonical: engineBay.path },
+  alternates: { canonical: engineBay.home },
 };
 
 export default function EngineBayHome() {

@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buttonClass } from "@/components/button";
-import {
-  AreasSection,
-  BrandCards,
-  BrandStrip,
-  EbHero,
-  SectionHeading,
-  StatsStrip,
-} from "@/components/engine-bay/home-sections";
+import { SectionHeading } from "@/components/engine-bay/home-sections";
 import { Logo } from "@/components/logo";
 import { ProjectCard } from "@/components/project-card";
-import { company, engineBay, logos, siteUrl } from "@/lib/brand";
+import { company, engineBay, engineBayLink, logos, siteUrl } from "@/lib/brand";
+import { toolCategories } from "@/lib/engine-bay";
+import { getBrands, getProducts } from "@/lib/engine-bay-catalog";
 import { getListedProjects } from "@/lib/projects";
 
 export const metadata: Metadata = {
-  description: `${company.description} Home of ${engineBay.name}, loose equipment for fire departments.`,
+  description: `${company.description} Parent company of ${engineBay.name}, loose equipment for fire departments.`,
   alternates: { canonical: "/" },
 };
 
@@ -67,11 +62,16 @@ function organizationJsonLd(projects: ReturnType<typeof getListedProjects>) {
   };
 }
 
-// Engine Bay leads the landing page; the rest of OpPeriod follows. The
-// Engine Bay sections use its colors through .eb-theme.
+// OpPeriod LLC's own page. Engine Bay, the lead business, gets a band that
+// sends people to its own site, enginebaysupply.com.
 export default function HomePage() {
   const projects = getListedProjects();
-  const others = projects.filter((project) => project.sitePath !== engineBay.path);
+  const others = projects.filter((project) => project.slug !== "engine-bay");
+  const ebStats = [
+    { value: getProducts().length, label: "Items listed" },
+    { value: getBrands().length, label: "Brands carried" },
+    { value: toolCategories.length, label: "Equipment categories" },
+  ];
 
   return (
     <>
@@ -80,38 +80,72 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd(projects)).replace(/</g, "\\u003c") }}
       />
 
-      <div className="eb-theme">
-        <EbHero srPrefix={`${engineBay.name}:`} />
-        <StatsStrip />
-        <BrandStrip />
-        <AreasSection />
-        <section aria-labelledby="brands-we-carry" className="border-t border-line bg-surface/70 py-16 md:py-24">
-          <div className="container-site">
-            <SectionHeading id="brands-we-carry" eyebrow={engineBay.name} title="Brands we carry" />
-            <div className="mt-12">
-              <BrandCards />
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <section aria-labelledby="also-from" className="border-t border-line py-16 md:py-24">
-        <div className="container-site">
-          <div className="flex flex-wrap items-end justify-between gap-6">
-            <div className="max-w-2xl">
-              <p className="eyebrow">{company.legalName}</p>
-              <h2 id="also-from" className="sr-only">
-                Also from {company.name}
-              </h2>
-              <Logo logo={logos.opperiod} className="mt-5 h-12 md:h-14" sizes="(min-width: 768px) 260px, 220px" />
-              <p className="mt-5 text-xl leading-relaxed text-muted">
-                {company.description} {engineBay.name} is one of our divisions. Here&apos;s what else we run.
-              </p>
-            </div>
-            <Link href="/projects" className={buttonClass("secondary")}>
-              See all projects
+      <section className="border-b border-line bg-surface/60">
+        <div className="container-site py-16 md:py-24">
+          <p className="eyebrow">{company.legalName}</p>
+          <h1 className="mt-6">
+            <Logo logo={logos.opperiod} className="h-14 sm:h-20 md:h-24" sizes="(min-width: 768px) 400px, 330px" priority />
+          </h1>
+          <p className="mt-8 max-w-2xl text-xl leading-relaxed md:text-2xl">{company.description}</p>
+          <div className="mt-9 flex flex-wrap gap-3">
+            <Link href="/projects" className={buttonClass("primary")}>
+              View projects
+            </Link>
+            <Link href="/contact" className={buttonClass("secondary")}>
+              Contact
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="engine-bay" className="eb-theme relative isolate overflow-hidden bg-eb-ink text-white">
+        <div aria-hidden="true" className="diamond-plate absolute inset-0 -z-20" />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 bg-[radial-gradient(800px_560px_at_85%_20%,rgb(226_36_27/0.32),transparent_62%)]"
+        />
+        <div className="container-site grid items-center gap-10 py-16 md:py-24 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
+          <div>
+            <p className="eyebrow text-white/85 before:bg-white/70">Our lead business</p>
+            <h2 id="engine-bay" className="mt-5 font-display text-[clamp(2.6rem,6vw,4.6rem)] font-bold uppercase leading-[0.92]">
+              {engineBay.name}
+            </h2>
+            <p className="mt-5 max-w-[58ch] text-lg leading-relaxed text-white/90">{engineBay.description}</p>
+            <dl className="mt-8 grid max-w-lg grid-cols-3 gap-4 border-t border-white/20 pt-6">
+              {ebStats.map((stat) => (
+                <div key={stat.label} className="flex flex-col">
+                  <dt className="text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-white/70">{stat.label}</dt>
+                  <dd className="order-first font-display text-4xl font-bold">{stat.value}</dd>
+                </div>
+              ))}
+            </dl>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <a href={engineBayLink("/")} className={buttonClass("primary")}>
+                Visit {engineBay.domain}
+              </a>
+              <a href={engineBayLink("/equipment")} className={buttonClass("onDark")}>
+                Shop equipment
+              </a>
+            </div>
+          </div>
+          <div aria-hidden="true" className="hidden justify-center lg:flex">
+            <Logo logo={engineBay.logo} onDark className="h-56 drop-shadow-2xl xl:h-64" sizes="(min-width: 1280px) 420px, 360px" />
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="what-we-run" className="py-16 md:py-24">
+        <div className="container-site">
+          <SectionHeading
+            id="what-we-run"
+            eyebrow={company.name}
+            title="What else we run"
+            action={
+              <Link href="/projects" className={buttonClass("secondary")}>
+                See all projects
+              </Link>
+            }
+          />
           <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {others.map((project) => (
               <li key={project.slug}>
