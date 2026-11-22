@@ -15,7 +15,8 @@ function entries(area: EquipmentArea): Entry[] {
   }
   const category = categories[0];
   const products = getProductsIn(category.slug);
-  const tally = (key: (p: Product) => string | undefined, anchor: (p: Product) => string) => {
+  // Groups list biggest first; brands keep the catalog's brand order (flagships first).
+  const tally = (key: (p: Product) => string | undefined, anchor: (p: Product) => string, byCount: boolean) => {
     const out = new Map<string, Entry>();
     for (const p of products) {
       const label = key(p);
@@ -24,11 +25,12 @@ function entries(area: EquipmentArea): Entry[] {
       entry.count += 1;
       out.set(label, entry);
     }
-    return [...out.values()].sort((a, b) => b.count - a.count);
+    const list = [...out.values()];
+    return byCount ? list.sort((a, b) => b.count - a.count) : list;
   };
-  const groups = tally((p) => p.group, () => categoryPath(category));
+  const groups = tally((p) => p.group, () => categoryPath(category), true);
   if (groups && groups.length > 1) return groups;
-  return tally((p) => p.brand.name, (p) => `${categoryPath(category)}#${p.brand.slug}`) ?? [];
+  return tally((p) => p.brand.name, (p) => `${categoryPath(category)}#${p.brand.slug}`, false) ?? [];
 }
 
 // One area of loose equipment (like "Saws and rescue") as a tile: its first

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function QuotePage() {
   // Routes like any other Engine Bay message, through its project file.
-  const project = getListedProjects().find((p) => p.sitePath === engineBay.path)?.slug ?? GENERAL;
+  const project = getListedProjects().find((p) => p.slug === "engine-bay")?.slug ?? GENERAL;
 
   return (
     <>

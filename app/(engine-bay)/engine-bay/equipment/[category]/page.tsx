@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps<"/engine-bay/equipm
   if (!category) return {};
   return {
     title: category.name.charAt(0).toUpperCase() + category.name.slice(1),
-    description: `${category.blurb} From ${engineBay.name}.`,
+    description: `${category.blurb} From ${engineBay.name}`,
     alternates: { canonical: categoryPath(category) },
   };
 }

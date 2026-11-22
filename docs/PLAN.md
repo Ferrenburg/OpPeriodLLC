@@ -249,7 +249,19 @@ The README must include a section called **"How to add a new project"** written 
 
 Engine Bay Supply Co. is the OpPeriod division that supplies fire service hand tools to departments, from halligans to New York hooks. The brands it will distribute aren't confirmed yet. Logo provided: the "EB" mark with a flame, and a full lockup with the line "Hand tools / Fire service / Built to last". Colors from the logo: red `#E2241B`, dark red `#A9141B`, ink `#121418`, paper `#F4F3F0`.
 
-### On opperiod.com
+### Its own domain (November 2026)
+
+Engine Bay lives at enginebaysupply.com (bare domain is the intended primary; which one is primary is set in Vercel's domain settings, and the code serves both). One Vercel project serves both domains:
+
+- `proxy.ts`: on enginebaysupply.com, `/x` is served from the built `/engine-bay/x` page, and any `/engine-bay/...` address there 308s to the clean one. API routes, `_next`, and files with an extension pass through, so photos, PDFs, and the quote form's `/api/contact` work unchanged.
+- `next.config.ts`: opperiod.com/engine-bay/... 301s to enginebaysupply.com/...; old `/tools` and `/about` links on the new domain still land.
+- `lib/brand.ts`: `engineBay.ownDomain` is true in production (or with `ENGINE_BAY_OWN_DOMAIN=true` locally). Then `engineBay.path` is "" and links are root paths; on previews it's "/engine-bay". `engineBayLink()` builds links from OpPeriod pages. The Engine Bay layout sets `metadataBase` to the new domain, so canonicals and link previews point there.
+- Its own `sitemap.xml` and `robots.txt` (in `app/(engine-bay)/engine-bay/`), and its own not-found page. opperiod.com's sitemap no longer lists Engine Bay pages.
+- The project file has `siteUrl: https://enginebaysupply.com`, so OpPeriod cards and menus link there in production.
+
+### On opperiod.com (before the domain move)
+
+
 
 Engine Bay is OpPeriod's lead business. The OpPeriod home page opens with an Engine Bay hero (diamond plate, "Stock the rig.", Shop and Request a Quote buttons, phone, catalogs), then the five equipment areas, then the brands with their catalogs, then OpPeriod's other projects, "How we operate", and the contact band. "Engine Bay" is in the main OpPeriod menu between Home and Projects.
 
@@ -282,6 +294,7 @@ It's built to look like a fire equipment dealer (reference: Dinges Fire, All Han
 - Each product: `slug`, `sku` (exactly as the manufacturer prints it), `name`, `category` (a slug from `toolCategories`), optional `group` (a heading inside the category), `summary`, `details` (paragraphs), `features` (bullets), optional `prop65`, `images` (paths under `public/catalog/`; can be empty, which shows a placeholder), optional `variants` (`sku` and `option` for each size of a product sold in several, shown as a table with its own Get Pricing link per size; such a product can leave `sku` out), and `source` (the manufacturer's page, not shown).
 - `lib/engine-bay-catalog.ts` loads and checks every file. A bad category, a missing photo, or a duplicate slug stops the build with the file, product, and field.
 - Each category's card photo is its `featured` product's first photo.
+- Council Tool and Snap-tite Hose are the flagship brands (`flagshipBrands` in `lib/engine-bay.ts`). The loader sorts brands with those first, in that order, then the rest by name, and sorts products to follow their brand. Menus, the footer, the brand strip, the hero's brand list, category pages, area tiles, and related items all pick that up.
 
 ### Council Tool (added October 2026)
 
@@ -294,6 +307,10 @@ Built from the owner's Engine Bay FHU catalog PDF (`public/downloads/engine-bay-
 ### Snap-tite Hose (added November 2026)
 
 16 Snap-tite fire hose lines from snaptitehose.com (`content/engine-bay/products/snap-tite-hose.json`), in a new Fire hose category: attack hose, supply hose (LDH), forestry hose, and industrial and in-plant fire hose. Pages were fetched one per second. Each has Snap-tite's pitch, construction, description, features, the colors shown, uses, warranty terms, up to four color photos (`public/catalog/snaptite-*.webp`), and a `datasheet` link to Snap-tite's PDF. Hose has no `sku` or `variants`: it's quoted by size, length, couplings, and color, and cards say "Sized to order". Products on Snap-tite's site that link to firequip.com, and their agriculture, irrigation, and potable water lines, are left out.
+
+### Rawhide Fire Hose (added November 2026)
+
+27 fire hose products from rawhidefirehose.com (`content/engine-bay/products/rawhide-fire-hose.json`), fetched about one page a second: attack (double jacket, single jacket, rubber covered), supply LDH, booster, and forestry hose, in the Fire hose category next to Snap-tite. Like Snap-tite there are no part numbers ("Sized to order"); each lists Rawhide's colors, lengths, and coupling options. Rawhide is a Wooster, Ohio supply house that sources from several manufacturers, so its pages are the product source. Only hose is carried from Rawhide: the owner doesn't want their nozzles, valves, wyes, fittings, wrenches, or holders. Their industrial hose (mill discharge, MSHA mine, rack and reel) and building hose storage are left out too. Shipping notes, Rawhide's phone number, warranty promises, and general "what is LDH" text were stripped, and the shipping weights in their product data aren't used. The scripts that built the file aren't in the repo; a re-pull means fetching the pages again.
 
 ### Next steps
 

@@ -38,6 +38,10 @@ export const frontmatterSchema = z.strictObject({
   accentColor: optional(z.string().regex(/^#[0-9a-fA-F]{6}$/, 'must be a hex color in quotes, like "#C60014"')),
   externalUrl: optional(z.url({ protocol: /^https?$/, error: "must be a full web address starting with https://" })),
   sitePath: optional(z.string().regex(/^\/[a-z0-9-]+$/, "must be a path on this site, like /engine-bay")),
+  // The project's own domain, when its section is served there (Engine Bay at
+  // enginebaysupply.com). Cards and menus link to it in production; previews
+  // keep linking to sitePath.
+  siteUrl: optional(z.url({ protocol: /^https$/, error: "must be a full web address starting with https://" })),
   contactEmailKey: optional(z.string().regex(/^[A-Z0-9_]+$/, "use capital letters, numbers, and underscores, like BOX_ALARM")),
   serviceArea: optional(text),
   highlights: optional(z.array(text).min(3, "list at least 3, or remove the field").max(6, "list 6 at most")),
@@ -45,8 +49,9 @@ export const frontmatterSchema = z.strictObject({
 });
 
 export type Project = z.infer<typeof frontmatterSchema> & {
-  // Where cards and menus link: sitePath when the project has its own
-  // section on this site, otherwise /projects/<slug>.
+  // Where cards and menus link: siteUrl in production when the project has
+  // its own domain, else sitePath when it has its own section on this site,
+  // otherwise /projects/<slug>.
   href: string;
   // accentColor, or OpPeriod red when none is set.
   accent: string;
@@ -60,6 +65,9 @@ export type Project = z.infer<typeof frontmatterSchema> & {
 
 // True when app/ has a page folder for the path, directly or inside a route
 // group like app/(engine-bay)/engine-bay.
+// Production serves sections with a siteUrl on their own domain (see proxy.ts).
+const ownDomains = process.env.VERCEL_ENV === "production" || process.env.ENGINE_BAY_OWN_DOMAIN === "true";
+
 function sectionExists(sitePath: string): boolean {
   const appDir = path.join(root, "app");
   const name = sitePath.slice(1);
@@ -145,7 +153,7 @@ export function loadProjects(): Project[] {
     const accent = data.accentColor?.toUpperCase() ?? colors.opperiodRed;
     projects.push({
       ...data,
-      href: data.sitePath ?? `/projects/${data.slug}`,
+      href: (ownDomains && data.siteUrl) || data.sitePath || `/projects/${data.slug}`,
       accent,
       accentText: readableOn(accent),
       body: parsed.content,

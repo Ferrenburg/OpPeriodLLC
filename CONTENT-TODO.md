@@ -45,6 +45,13 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 
 ## Engine Bay Supply Co. (`app/(engine-bay)/engine-bay/`, `lib/engine-bay.ts`, `content/engine-bay/products/`)
 
+- [ ] Moving Engine Bay to enginebaysupply.com. Do these in order once this branch merges:
+  1. In Vercel, open the OpPeriod project, Settings, Domains, and add `enginebaysupply.com` and `www.enginebaysupply.com` (set www to redirect to the bare domain). Point the domain's DNS at Vercel the way Vercel shows.
+  2. Cloudflare Turnstile: add `enginebaysupply.com` to the widget's hostnames, or the quote form's spam check fails on the new domain.
+  3. Google Search Console: add enginebaysupply.com, submit https://enginebaysupply.com/sitemap.xml, and request indexing of the new home page. (No Change of Address: opperiod.com stays live as its own site.)
+  4. Optional: an @enginebaysupply.com email for quotes. Set it as Engine Bay's `email` in `lib/brand.ts` and as `CONTACT_EMAIL_ENGINE_BAY` in Vercel, and verify the domain in Resend if quotes should come from it.
+  5. Update printed and shared links (business cards, catalogs, vendor listings) to enginebaysupply.com. Old opperiod.com/engine-bay links keep working through the redirect.
+
 - [ ] Council Tool: confirm their go-ahead covers using their product photos and descriptions word for word, not just selling the tools. Get it in writing (an email is fine) before this goes live.
 - [ ] Council Tool: confirm the 41 products are all ones Engine Bay can actually get. The list is everything in Council's Firefighting category as of October 2026, including wildland tools and replacement parts.
 - [ ] Decide whether to say "authorized Council Tool dealer" anywhere. The site doesn't say it now. Only add it if Council says Engine Bay can use that wording.
@@ -60,5 +67,8 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 - [ ] A few part numbers show up on two different items in the FHU catalog: HSYSTEM (The Hook System and its D-handle), CH-312 (Can Harness and Can Harness Deluxe), SPBP (brush pump and its repair kit), and K12FD (the saw and the saw with blades). Check them against FHU's price list.
 - [ ] Snap-tite Hose: 16 fire hose lines (attack, supply LDH, forestry, and 5P) are on the site, with Snap-tite's descriptions, features, warranty terms, color photos, and a link to each data sheet, taken from snaptitehose.com. Get Snap-tite's okay in writing for their photos and copy, like Council.
 - [ ] Snap-tite's site also lists booster hose, forestry hose (Flash Point, Ultra Forestry), 7" LDH, and a few industrial hoses that are made by Firequip and link to firequip.com. They're left off. Tell us if Engine Bay sells Firequip too.
+- [ ] Rawhide Fire Hose: 27 hose products are on the site (attack, supply LDH, booster, and forestry), with Rawhide's descriptions and photos from rawhidefirehose.com. Get Rawhide's okay in writing for their photos and copy.
+- [ ] Rawhide sources from several manufacturers, so the hose specs on the site are Rawhide's, not the original maker's. If you know who makes a line, say so and we can credit them.
+- [ ] Rawhide uses the same photo for several hose sizes and pressure ratings. Check the photos match what ships.
 - [ ] Hose has no part numbers on the site (it shows "Sized to order"). Departments quote it by line, size, length, couplings, and color. If you have Snap-tite part numbers you want listed, send them.
 - [ ] Hooks sold in any length (Colorado, Georgia, Tristate, Denver, Eagle, Downtown, Bicoastal, Hooks Nest) show their part number as `COLORADO-[size]`, the way the catalog prints `COLORADO-`.

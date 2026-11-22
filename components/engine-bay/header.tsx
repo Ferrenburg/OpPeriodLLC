@@ -3,7 +3,7 @@ import { buttonClass } from "@/components/button";
 import { Logo } from "@/components/logo";
 import { NavMenu } from "@/components/nav-menu";
 import { NavLink } from "@/components/nav-link";
-import { engineBay } from "@/lib/brand";
+import { company, engineBay } from "@/lib/brand";
 import { categoryPath, ebNav, equipmentAreas, equipmentPath, quoteHref, toolCategories } from "@/lib/engine-bay";
 import { brandPath, getBrandProducts, getBrands, getProductsIn } from "@/lib/engine-bay-catalog";
 import { EbMobileMenu } from "./mobile-menu";
@@ -28,7 +28,7 @@ export function EbHeader() {
             </ul>
           </nav>
           <div className="ml-auto flex items-center gap-5">
-            <Link href="/" className="hidden text-muted hover:text-accent sm:inline">
+            <Link href={company.url} className="hidden text-muted hover:text-accent sm:inline">
               Division of OpPeriod LLC
             </Link>
             <a href={engineBay.phone.href} className="text-fg hover:text-accent">
@@ -40,7 +40,7 @@ export function EbHeader() {
 
       <div className="border-b border-line bg-bg/90 backdrop-blur-md">
         <div className="container-site relative flex h-[4.5rem] items-center justify-between gap-6">
-          <Link href={engineBay.path} className="flex shrink-0 items-center gap-3">
+          <Link href={engineBay.home} className="flex shrink-0 items-center gap-3">
             <Logo logo={engineBay.logo} className="h-9 md:h-10" sizes="80px" priority />
             <span className="leading-none">
               <span className="block font-display text-2xl font-bold uppercase tracking-wide">Engine Bay</span>

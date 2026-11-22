@@ -39,7 +39,7 @@ export const toolCategories: ToolCategory[] = [
     slug: "hose",
     name: "Fire hose",
     short: "Hose",
-    blurb: "Attack, supply (LDH), and forestry hose from Snap-tite.",
+    blurb: "Attack, supply (LDH), booster, and forestry hose, sized and coupled to order.",
     featured: "snap-tite-supreme-ii",
   },
   {
@@ -93,6 +93,11 @@ export const toolCategories: ToolCategory[] = [
   },
 ];
 
+// Flagship brands, in order. Anywhere the site lists brands or mixes their
+// products (menus, the brand strip, category pages, related items), these
+// come first and the rest follow alphabetically. The catalog loader applies it.
+export const flagshipBrands = ["council-tool", "snap-tite-hose"];
+
 export const orderingSteps = [
   {
     title: "Send your list",
@@ -130,7 +135,7 @@ export const equipmentAreas: EquipmentArea[] = [
   {
     slug: "hose",
     name: "Fire hose",
-    blurb: "Attack, supply (LDH), and forestry hose.",
+    blurb: "Attack, supply (LDH), booster, and forestry hose.",
     categories: ["hose"],
   },
   {
@@ -200,15 +205,15 @@ export const catalogPath = (catalog: PrintCatalog) => `${engineBay.path}/catalog
 export const ebNav = [
   { label: "Equipment", href: `${engineBay.path}/equipment` },
   { label: "Catalogs", href: `${engineBay.path}/catalogs` },
-  { label: "How to Order", href: `${engineBay.path}#ordering` },
-  { label: "About", href: `${engineBay.path}#about` },
+  { label: "How to Order", href: `${engineBay.home}#ordering` },
+  { label: "About", href: `${engineBay.home}#about` },
 ] as const;
 
 export const quoteHref = (tool?: string) =>
   tool ? `${engineBay.path}/quote?tool=${encodeURIComponent(tool)}` : `${engineBay.path}/quote`;
 
 export const ebPages = [
-  engineBay.path,
+  engineBay.home,
   `${engineBay.path}/equipment`,
   `${engineBay.path}/quote`,
   `${engineBay.path}/catalogs`,
