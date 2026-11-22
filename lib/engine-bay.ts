@@ -1,4 +1,5 @@
 import { engineBay } from "./brand";
+import type { CategoryShipping } from "./shop-core";
 
 // Engine Bay tool categories. Products live in content/engine-bay/products/
 // (see lib/engine-bay-catalog.ts) and each one names one of these slugs.
@@ -201,6 +202,32 @@ export const printCatalogs: PrintCatalog[] = [
 ];
 
 export const catalogPath = (catalog: PrintCatalog) => `${engineBay.path}/catalogs/${catalog.slug}`;
+
+// The online shop (lib/shop.ts). It sells a site product only when Stripe has
+// a price whose product metadata "sku" matches the product's part number and
+// whose "vendor" is listed here. The vendor ships the order direct (drop ship).
+export const shopVendors = ["Council Tool", "Snap-tite Hose", "Fire Hooks Unlimited"];
+
+// Site brands to keep quote only even when their vendor is in the shop, like
+// "husqvarna" until Husqvarna confirms online sales in writing.
+export const shopExcludedBrands: string[] = [];
+
+// How each category ships. Categories not listed are measured: an item over
+// 48 in. ships "long". A product can override with "shipClass" in its file.
+export const categoryShipping: Record<string, CategoryShipping> = {
+  hose: "hose",
+  saws: "saw",
+  "straps-mounts": "standard",
+  rescue: "standard",
+};
+
+export const shopPath = `${engineBay.path}/shop`;
+export const cartPath = `${engineBay.path}/cart`;
+export const shopPolicyPages = [
+  { label: "Shipping", href: `${engineBay.path}/shipping` },
+  { label: "Returns", href: `${engineBay.path}/returns` },
+  { label: "Terms of sale", href: `${engineBay.path}/terms` },
+];
 
 export const ebNav = [
   { label: "Equipment", href: `${engineBay.path}/equipment` },
