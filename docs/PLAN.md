@@ -259,6 +259,18 @@ Engine Bay lives at enginebaysupply.com (bare domain is the intended primary; wh
 - Its own `sitemap.xml` and `robots.txt` (in `app/(engine-bay)/engine-bay/`), and its own not-found page. opperiod.com's sitemap no longer lists Engine Bay pages.
 - The project file has `siteUrl: https://enginebaysupply.com`, so OpPeriod cards and menus link there in production.
 
+### Online shop (November 2026)
+
+Engine Bay sells online alongside quotes. The owner's Stripe account is the price book: one product per part number with metadata `sku`, `vendor`, and `category`, and a default price. Snap-tite hose is one Stripe product per build (size, length, color, couplings).
+
+- `lib/shop-core.ts`: pure helpers shared with the report script (hose name parsing and line aliases, shipping classes, flat-rate math, money format).
+- `lib/shop.ts` (server only): loads every active default price from Stripe with `fetch`, cached for an hour under the `stripe-prices` tag; joins them to site products by part number (and Snap-tite hose by name); prices carts; calls Stripe; checks webhook signatures. A Stripe outage leaves the site quote only.
+- Settings in `lib/engine-bay.ts`: `shopVendors` (who drop ships), `shopExcludedBrands` (brands kept quote only), `categoryShipping` (shipping class per category; others are measured, over 48 in. is "long"). A product can set `shipClass`.
+- Pages: product pages get a price, quantity, and Add to cart (a column per size in the sizes table, and a hose picker for Snap-tite lines) above the quote box; cards show "From" prices; `/shop` (Order online), `/cart`, `/order/thanks`, `/shipping`, `/returns`, `/terms`. Header gets Order online and a cart icon. All of it is hidden, and those pages 404, when the shop is off.
+- The cart lives in the browser (`localStorage`, part numbers and quantities only). `/api/shop/cart` prices it; `/api/shop/checkout` prices it again and starts Stripe Checkout (US shipping address, phone, optional department and PO number, invoice PDF, Stripe Tax, one flat shipping line made of each vendor's flat rate). Return links use the shopper's own host, limited to our domains.
+- `/api/stripe/webhook`: price and product changes refresh the cache; a paid checkout emails the owner the order grouped by vendor ("Place with Council Tool: ...") with part numbers, ship-to address, department, PO, and the Stripe risk level. Nothing goes to a vendor automatically. Resend's idempotency key stops duplicate emails on Stripe retries.
+- `npm run shop:report` (needs `STRIPE_SECRET_KEY`): read-only match report.
+
 ### On opperiod.com (before the domain move)
 
 

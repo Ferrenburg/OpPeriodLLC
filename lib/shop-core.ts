@@ -41,7 +41,8 @@ export function inches(text: string): number {
 
 // Stripe names each hose build like:
 //   Snap-tite Supreme II 3" x 50' Red w/ 2-1/2" NH Aluminum
-const hosePattern = /^Snap-tite\s+(.+?)\s+((?:\d+-)?\d+(?:\/\d+)?)"\s*x\s*(\d+)'\s+(.+?)\s+w\/\s+(.+)$/;
+// Gladiator adds the true inside diameter: 1-3/4" (1.88") x 100' ...
+const hosePattern = /^Snap-tite\s+(.+?)\s+((?:\d+-)?\d+(?:\/\d+)?)"(?:\s*\([\d.]+"\))?\s*x\s*(\d+)'\s+(.+?)\s+w\/\s+(.+)$/;
 
 export function parseHoseName(name: string): HoseBuild | null {
   const m = name.trim().match(hosePattern);
@@ -57,7 +58,14 @@ export function parseHoseName(name: string): HoseBuild | null {
 }
 
 // Stripe line names that differ from the site's product names.
-const hoseAliases: Record<string, string> = { "6T": "6T Military" };
+const hoseAliases: Record<string, string> = {
+  "6T": "6T Military",
+  "Gladiator FG": "Gladiator (FG)",
+  "Gladiator FGN": "Gladiator (FGN)",
+  "5P Industrial": "5P",
+  "Blazeline 7": "BlazeLine",
+  "Blazeline 8": "BlazeLine",
+};
 
 // The site product names a Stripe hose build could belong to, best first.
 // 4" and larger is supply hose, which the site lists as "<line> LDH".

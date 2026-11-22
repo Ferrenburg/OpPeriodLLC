@@ -86,7 +86,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
           </ol>
         </nav>
 
-        <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+        <div className="mt-6 grid grid-cols-[minmax(0,1fr)] gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-14">
           <div>
             <div className="relative aspect-square border border-line bg-white">
               <ProductPhoto src={product.images[0]} name={product.name} alt={product.name} sizes="(min-width: 1024px) 36rem, 100vw" priority padding="p-6" />
@@ -199,7 +199,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
                 <h2 id="options" className="font-display text-2xl font-bold uppercase">
                   Sizes and options
                 </h2>
-                <div className="mt-4 overflow-x-auto">
+                <div className="relative mt-4 overflow-x-auto">
                   <table className="w-full min-w-[22rem] border-collapse text-left">
                     <thead>
                       <tr className="bg-eb-ink text-sm uppercase tracking-wider text-white">

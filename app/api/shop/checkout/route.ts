@@ -4,6 +4,18 @@ import { cartPath } from "@/lib/engine-bay";
 import { cartSchema, priceCart, shopEnabled, stripeRequest } from "@/lib/shop";
 import { formatMoney } from "@/lib/shop-core";
 
+// Only our own addresses, so a forged Host header can't send buyers elsewhere
+// after they pay.
+const allowedHost = /^(?:(?:www\.)?enginebaysupply\.com|(?:www\.)?opperiod\.com|[a-z0-9-]+\.vercel\.app|localhost(?::\d+)?|127\.0\.0\.1(?::\d+)?)$/;
+
+function returnOrigin(request: Request): string | null {
+  const host = (request.headers.get("x-forwarded-host") ?? request.headers.get("host") ?? "").split(",")[0].trim().toLowerCase();
+  if (!allowedHost.test(host)) return null;
+  const local = host.startsWith("localhost") || host.startsWith("127.0.0.1");
+  const proto = request.headers.get("x-forwarded-proto")?.split(",")[0].trim() || (local ? "http" : "https");
+  return `${proto === "http" && !local ? "https" : proto}://${host}`;
+}
+
 function clientIp(request: Request): string {
   return request.headers.get("x-real-ip") ?? request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
 }
@@ -43,9 +55,10 @@ export async function POST(request: Request) {
     );
   }
 
-  // Back to this site: enginebaysupply.com in production, the preview's own
-  // address on previews.
-  const origin = new URL(request.url).origin;
+  // Back to the address the buyer is on: enginebaysupply.com (www or not) in
+  // production, the preview's own address on previews.
+  const origin = returnOrigin(request);
+  if (!origin) return Response.json({ ok: false, error: "That request didn't look right." }, { status: 400 });
   const back = (path: string) => `${origin}${path}`;
 
   try {

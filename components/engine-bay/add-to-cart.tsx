@@ -18,7 +18,7 @@ export function AddToCart({ sku, cartHref, label, compact = false }: { sku: stri
   }
 
   return (
-    <div className={compact ? "flex items-center justify-end gap-2" : ""}>
+    <div className={compact ? "relative flex items-center justify-end gap-2" : ""}>
       <div className="flex items-center gap-2">
         <label htmlFor={id} className={compact ? "sr-only" : "text-sm font-semibold"}>
           Qty{compact ? ` for ${sku}` : ""}

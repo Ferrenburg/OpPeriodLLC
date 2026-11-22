@@ -1,5 +1,5 @@
-import { engineBay } from "./brand";
-import type { CategoryShipping } from "./shop-core";
+import { engineBay } from "./brand.ts";
+import type { CategoryShipping } from "./shop-core.ts";
 
 // Engine Bay tool categories. Products live in content/engine-bay/products/
 // (see lib/engine-bay-catalog.ts) and each one names one of these slugs.

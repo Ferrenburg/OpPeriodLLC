@@ -45,6 +45,18 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 
 ## Engine Bay Supply Co. (`app/(engine-bay)/engine-bay/`, `lib/engine-bay.ts`, `content/engine-bay/products/`)
 
+- [ ] Online shop launch (it's built and off). In order:
+  1. Stripe: add prices for Council Tool's firefighting line (halligans, axes, hooks, irons, wildland tools; the 40 Council items on the site). Stripe's Council products today are sledges, handles, punches, and similar, so Council would launch quote only. Add each as a product with metadata `sku` (exactly the site's part number, like HAL1P30), `vendor` = Council Tool, and a default price. Run `npm run shop:report` to check.
+  2. Stripe Tax: add registrations for every state you must collect in (Louisiana at least; ask your CPA). Until then checkout collects $0 tax.
+  3. Resale certificates: give Council, Snap-tite, and Fire Hooks Unlimited your resale certificate for each state they ship to, or they'll charge Engine Bay sales tax on drop shipped orders.
+  4. Shipping rates: first item and each additional for standard, long (over 48 in.), hose, and saw. Set them as SHOP_SHIPPING_RATES in Vercel.
+  5. Wording for /shipping, /returns, and /terms (have a lawyer read the terms), and the lead time line (SHOP_LEAD_TIME).
+  6. Confirm FHU and Husqvarna allow online sales at your prices. Husqvarna often limits online sales of powered equipment; to keep a brand quote only, add it to shopExcludedBrands in lib/engine-bay.ts.
+  7. In Stripe, Developers, Webhooks: add an endpoint at https://www.enginebaysupply.com/api/stripe/webhook (match your primary domain) with checkout.session.completed, checkout.session.async_payment_succeeded, price.created, price.updated, price.deleted, product.updated, product.deleted. Put its signing secret in STRIPE_WEBHOOK_SECRET.
+  8. Make a new restricted key for the site (the one shared in chat should be deleted after launch) and set STRIPE_SECRET_KEY, SHOP_ORDER_EMAIL, and SHOP_ENABLED=true in Vercel, then redeploy.
+  9. Place one real order on your own card, check the order email, then refund it in Stripe.
+- [ ] The 6 Snap-tite add-ons in Stripe (non-standard color, stripe, UL label, special threads, stencil kit, laser etching) and FireQuip hose aren't sold online because they have no site page.
+
 - [ ] Moving Engine Bay to enginebaysupply.com. Do these in order once this branch merges:
   1. In Vercel, open the OpPeriod project, Settings, Domains, and add `enginebaysupply.com` and `www.enginebaysupply.com` (set www to redirect to the bare domain). Point the domain's DNS at Vercel the way Vercel shows.
   2. Cloudflare Turnstile: add `enginebaysupply.com` to the widget's hostnames, or the quote form's spam check fails on the new domain.
