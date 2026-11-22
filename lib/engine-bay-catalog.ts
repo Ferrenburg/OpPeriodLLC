@@ -42,8 +42,8 @@ const productSchema = z
   // The manufacturer's spec or data sheet (a PDF on their site), linked from the product page.
   datasheet: z.url().optional(),
   // Shop shipping class, when the category default (categoryShipping in
-  // lib/engine-bay.ts) is wrong for this item: standard, long, hose, or saw.
-  shipClass: z.enum(["standard", "long", "hose", "saw"], "must be one of: standard, long, hose, saw").optional(),
+  // lib/engine-bay.ts) is wrong for this item: standard, long, hose, ldh, or saw.
+  shipClass: z.enum(["standard", "long", "hose", "ldh", "saw"], "must be one of: standard, long, hose, ldh, saw").optional(),
   // Where the product details came from, for checking later. Not shown.
   source: z.url().optional(),
   });

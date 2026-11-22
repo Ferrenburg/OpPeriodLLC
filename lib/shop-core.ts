@@ -2,8 +2,9 @@
 // the Stripe report script (scripts/shop-report.ts). No imports, so Node can
 // run the script straight from TypeScript.
 
-export type ShipClass = "standard" | "long" | "hose" | "saw";
-export const shipClasses: ShipClass[] = ["standard", "long", "hose", "saw"];
+// "ldh" is supply hose, 4 in. and up: far heavier than attack hose.
+export type ShipClass = "standard" | "long" | "hose" | "ldh" | "saw";
+export const shipClasses: ShipClass[] = ["standard", "long", "hose", "ldh", "saw"];
 
 // How a category ships: a fixed class, or "measure" to class each item by the
 // longest length in its name or size (over 48 in. ships as "long").
@@ -106,14 +107,15 @@ export const normalizeSku = (sku: string) => sku.toUpperCase().replace(/[^A-Z0-9
 // Flat shipping: "first item + each additional" per class, in cents.
 export type ShippingRates = Record<ShipClass, { first: number; additional: number }>;
 
-// SHOP_SHIPPING_RATES="standard=14+6,long=45+20,hose=30+15,saw=40+15" (dollars).
+// "standard=19+8,long=59+39,hose=24+14,ldh=95+75,saw=45+25" (dollars, first
+// item + each additional).
 // Returns null unless every class has a rate, so a half-filled table never
 // undercharges.
 export function parseShippingRates(value: string | undefined): ShippingRates | null {
   if (!value) return null;
   const out: Partial<ShippingRates> = {};
   for (const part of value.split(",")) {
-    const m = part.trim().match(/^(standard|long|hose|saw)\s*=\s*(\d+(?:\.\d{1,2})?)\s*\+\s*(\d+(?:\.\d{1,2})?)$/);
+    const m = part.trim().match(/^(standard|long|hose|ldh|saw)\s*=\s*(\d+(?:\.\d{1,2})?)\s*\+\s*(\d+(?:\.\d{1,2})?)$/);
     if (!m) return null;
     out[m[1] as ShipClass] = { first: Math.round(Number(m[2]) * 100), additional: Math.round(Number(m[3]) * 100) };
   }

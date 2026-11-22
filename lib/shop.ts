@@ -3,7 +3,7 @@ import "server-only";
 import crypto from "node:crypto";
 import { cache } from "react";
 import { z } from "zod";
-import { categoryShipping, shopExcludedBrands, shopVendors } from "./engine-bay";
+import { categoryShipping, shopExcludedBrands, shopShippingRates, shopVendors } from "./engine-bay";
 import { getProducts, type Product } from "./engine-bay-catalog";
 import {
   hoseOptionLabel,
@@ -36,7 +36,7 @@ export function shopEnabled(): boolean {
 }
 
 export function shippingRates(): ShippingRates | null {
-  return parseShippingRates(process.env.SHOP_SHIPPING_RATES);
+  return parseShippingRates(process.env.SHOP_SHIPPING_RATES || shopShippingRates);
 }
 
 // The owner's lead time line, like "Ships direct from the manufacturer in 5 to
@@ -151,7 +151,7 @@ export const getShopIndex = cache(async (): Promise<ShopIndex> => {
     const product = hoseSiteNames(build)
       .map((name) => hoseLines.get(name.toLowerCase()))
       .find(Boolean);
-    if (product) add(product, row, { option: hoseOptionLabel(build), shipClass: product.shipClass ?? "hose", hose: build });
+    if (product) add(product, row, { option: hoseOptionLabel(build), shipClass: product.shipClass ?? (build.diameterInches >= 4 ? "ldh" : "hose"), hose: build });
   }
   for (const offers of byProduct.values()) {
     if (offers[0]?.hose) {

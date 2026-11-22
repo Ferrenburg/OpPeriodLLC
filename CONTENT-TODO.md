@@ -46,11 +46,11 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
 ## Engine Bay Supply Co. (`app/(engine-bay)/engine-bay/`, `lib/engine-bay.ts`, `content/engine-bay/products/`)
 
 - [ ] Online shop launch (it's built and off). In order:
-  1. Stripe: add prices for Council Tool's firefighting line (halligans, axes, hooks, irons, wildland tools; the 40 Council items on the site). Stripe's Council products today are sledges, handles, punches, and similar, so Council would launch quote only. Add each as a product with metadata `sku` (exactly the site's part number, like HAL1P30), `vendor` = Council Tool, and a default price. Run `npm run shop:report` to check.
+  1. Council Tool: done (48 Council products in Stripe got `sku` and `vendor` metadata; 39 of the 40 Council items on the site now sell online). Still open: the FE8-32 axe is `80FMS32C` on the site and `80FMS32DG` in Stripe. Say which is right. Also, Stripe calls the three fiberglass axes (C60F36, C60P36, C60FMS36) 34 in. and the site says 36 in.
   2. Stripe Tax: add registrations for every state you must collect in (Louisiana at least; ask your CPA). Until then checkout collects $0 tax.
   3. Resale certificates: give Council, Snap-tite, and Fire Hooks Unlimited your resale certificate for each state they ship to, or they'll charge Engine Bay sales tax on drop shipped orders.
-  4. Shipping rates: first item and each additional for standard, long (over 48 in.), hose, and saw. Set them as SHOP_SHIPPING_RATES in Vercel.
-  5. Wording for /shipping, /returns, and /terms (have a lawyer read the terms), and the lead time line (SHOP_LEAD_TIME).
+  4. Shipping rates: estimates are in (shopShippingRates in lib/engine-bay.ts: standard $19 + $8, long $59 + $39, hose $24 + $14, LDH $95 + $75, saw $45 + $25). Compare them with real vendor freight after the first 20 orders.
+  5. Attorney review of /shipping, /returns, and /terms (drafts are on the pages; everything in [brackets] still needs an answer), then remove the draft note in components/engine-bay/policy-page.tsx and set the "Last updated" dates. Also the lead time line (SHOP_LEAD_TIME).
   6. Confirm FHU and Husqvarna allow online sales at your prices. Husqvarna often limits online sales of powered equipment; to keep a brand quote only, add it to shopExcludedBrands in lib/engine-bay.ts.
   7. In Stripe, Developers, Webhooks: add an endpoint at https://www.enginebaysupply.com/api/stripe/webhook (match your primary domain) with checkout.session.completed, checkout.session.async_payment_succeeded, price.created, price.updated, price.deleted, product.updated, product.deleted. Put its signing secret in STRIPE_WEBHOOK_SECRET.
   8. Make a new restricted key for the site (the one shared in chat should be deleted after launch) and set STRIPE_SECRET_KEY, SHOP_ORDER_EMAIL, and SHOP_ENABLED=true in Vercel, then redeploy.

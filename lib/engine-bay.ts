@@ -221,6 +221,12 @@ export const categoryShipping: Record<string, CategoryShipping> = {
   rescue: "standard",
 };
 
+// Flat shipping per manufacturer box, in dollars: first item + each
+// additional. Estimates from 2026 UPS Ground rates and surcharges (see the
+// owner's shop policy doc); compare with real vendor freight after the first
+// orders. SHOP_SHIPPING_RATES in the environment overrides this.
+export const shopShippingRates = "standard=19+8,long=59+39,hose=24+14,ldh=95+75,saw=45+25";
+
 export const shopPath = `${engineBay.path}/shop`;
 export const cartPath = `${engineBay.path}/cart`;
 export const shopPolicyPages = [
