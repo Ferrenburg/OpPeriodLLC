@@ -21,10 +21,10 @@ export function EbFooter() {
       title: "Company",
       links: [
         { label: "Catalogs", href: `${engineBay.path}/catalogs` },
-        { label: "How to order", href: `${engineBay.path}#ordering` },
+        { label: "How to order", href: `${engineBay.home}#ordering` },
         { label: "Request a quote", href: quoteHref() },
-        { label: company.legalName, href: "/" },
-        { label: "Privacy", href: "/privacy" },
+        { label: company.legalName, href: company.url },
+        { label: "Privacy", href: `${company.url}/privacy` },
       ],
     },
   ];
@@ -33,7 +33,7 @@ export function EbFooter() {
     <footer className="mt-auto border-t border-line bg-surface">
       <div className="container-site grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] md:py-20">
         <div className="max-w-sm">
-          <Link href={engineBay.path} className="inline-flex items-center gap-3">
+          <Link href={engineBay.home} className="inline-flex items-center gap-3">
             <Logo logo={engineBay.logo} className="h-10" sizes="80px" />
             <span className="leading-none">
               <span className="block font-display text-2xl font-bold uppercase tracking-wide">Engine Bay</span>

@@ -249,7 +249,19 @@ The README must include a section called **"How to add a new project"** written 
 
 Engine Bay Supply Co. is the OpPeriod division that supplies fire service hand tools to departments, from halligans to New York hooks. The brands it will distribute aren't confirmed yet. Logo provided: the "EB" mark with a flame, and a full lockup with the line "Hand tools / Fire service / Built to last". Colors from the logo: red `#E2241B`, dark red `#A9141B`, ink `#121418`, paper `#F4F3F0`.
 
-### On opperiod.com
+### Its own domain (November 2026)
+
+Engine Bay lives at enginebaysupply.com (bare domain primary; www redirects). One Vercel project serves both domains:
+
+- `proxy.ts`: on enginebaysupply.com, `/x` is served from the built `/engine-bay/x` page, and any `/engine-bay/...` address there 308s to the clean one. API routes, `_next`, and files with an extension pass through, so photos, PDFs, and the quote form's `/api/contact` work unchanged.
+- `next.config.ts`: opperiod.com/engine-bay/... 301s to enginebaysupply.com/...; www.enginebaysupply.com goes to the bare domain; old `/tools` and `/about` links on the new domain still land.
+- `lib/brand.ts`: `engineBay.ownDomain` is true in production (or with `ENGINE_BAY_OWN_DOMAIN=true` locally). Then `engineBay.path` is "" and links are root paths; on previews it's "/engine-bay". `engineBayLink()` builds links from OpPeriod pages. The Engine Bay layout sets `metadataBase` to the new domain, so canonicals and link previews point there.
+- Its own `sitemap.xml` and `robots.txt` (in `app/(engine-bay)/engine-bay/`), and its own not-found page. opperiod.com's sitemap no longer lists Engine Bay pages.
+- The project file has `siteUrl: https://enginebaysupply.com`, so OpPeriod cards and menus link there in production.
+
+### On opperiod.com (before the domain move)
+
+
 
 Engine Bay is OpPeriod's lead business. The OpPeriod home page opens with an Engine Bay hero (diamond plate, "Stock the rig.", Shop and Request a Quote buttons, phone, catalogs), then the five equipment areas, then the brands with their catalogs, then OpPeriod's other projects, "How we operate", and the contact band. "Engine Bay" is in the main OpPeriod menu between Home and Projects.
 

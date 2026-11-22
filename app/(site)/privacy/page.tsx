@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Todo } from "@/components/todo";
-import { company, formatAddress } from "@/lib/brand";
+import { company, engineBay, formatAddress } from "@/lib/brand";
 import { turnstileSiteKey } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "Privacy policy",
-  description: `How ${company.legalName} handles the information you send through this site.`,
+  description: `How ${company.legalName} handles the information you send through its sites, including ${engineBay.domain}.`,
   alternates: { canonical: "/privacy" },
 };
 
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
 
       <div className="mdx-body mt-10">
         <p>
-          This page explains what information {company.legalName} collects through {company.url.replace("https://", "")},
+          This page explains what information {company.legalName} collects through {company.url.replace("https://", "")} and {engineBay.domain} ({engineBay.name}),
           what we do with it, and what you can ask us to do with it. The short version: we only collect what
           you choose to send us, we use it to answer you, and we don&apos;t sell it.
         </p>
