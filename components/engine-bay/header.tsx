@@ -4,13 +4,16 @@ import { Logo } from "@/components/logo";
 import { NavMenu } from "@/components/nav-menu";
 import { NavLink } from "@/components/nav-link";
 import { company, engineBay } from "@/lib/brand";
-import { categoryPath, ebNav, equipmentAreas, equipmentPath, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { cartPath, categoryPath, ebNav, equipmentAreas, equipmentPath, quoteHref, shopPath, toolCategories } from "@/lib/engine-bay";
+import { shopEnabled } from "@/lib/shop";
+import { CartButton } from "./cart-button";
 import { brandPath, getBrandProducts, getBrands, getProductsIn } from "@/lib/engine-bay-catalog";
 import { EbMobileMenu } from "./mobile-menu";
 
 // Light utility bar with the equipment areas and the phone number, then a
 // translucent sticky bar with the logo, menus, and the quote button.
 export function EbHeader() {
+  const shop = shopEnabled();
   const brands = getBrands();
   return (
     <header className="sticky top-0 z-40">
@@ -102,6 +105,11 @@ export function EbHeader() {
                   </ul>
                 </NavMenu>
               </li>
+              {shop && (
+                <li>
+                  <NavLink href={shopPath}>Order online</NavLink>
+                </li>
+              )}
               {ebNav
                 .filter((item) => item.href !== equipmentPath && !item.href.endsWith("#about"))
                 .map((item) => (
@@ -116,12 +124,14 @@ export function EbHeader() {
             <a href={engineBay.phone.href} className={buttonClass("secondary", "min-h-11 px-4 max-xl:hidden")}>
               Call us
             </a>
+            {shop && <CartButton href={cartPath} />}
             <Link href={quoteHref()} className={buttonClass("primary", "min-h-11 px-5 max-sm:hidden")}>
               Request a quote
             </Link>
             <EbMobileMenu
               areas={equipmentAreas.map((area) => ({ label: area.name, href: `${equipmentPath}#${area.slug}` }))}
               brands={brands.map((brand) => ({ label: brand.name, href: brandPath(brand) }))}
+              shop={shop ? { label: "Order online", href: shopPath } : undefined}
             />
           </div>
         </div>

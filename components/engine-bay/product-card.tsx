@@ -1,12 +1,17 @@
 import Link from "next/link";
 import { partNumbers, type Product } from "@/lib/engine-bay-catalog";
+import { lowestPrice, offersFor } from "@/lib/shop";
+import { formatMoney } from "@/lib/shop-core";
 import { ProductPhoto } from "./product-photo";
 
 // A product in a grid: photo, brand, name, and part number (or the range of
 // part numbers for a product sold in several sizes). The whole card links to
-// the product page, where the Get Pricing buttons live.
-export function ProductCard({ product, headingLevel = "h3" }: { product: Product; headingLevel?: "h2" | "h3" | "h4" }) {
+// the product page, where the Get Pricing buttons live. When the shop sells
+// it, the card also shows the price (or the lowest of its sizes).
+export async function ProductCard({ product, headingLevel = "h3" }: { product: Product; headingLevel?: "h2" | "h3" | "h4" }) {
   const Heading = headingLevel;
+  const price = await lowestPrice(product);
+  const several = price !== undefined && (await offersFor(product)).length > 1;
   return (
     <Link href={product.href} className="card card-hover group flex h-full flex-col overflow-hidden">
       <div className="relative aspect-square border-b border-line bg-card">
@@ -25,6 +30,12 @@ export function ProductCard({ product, headingLevel = "h3" }: { product: Product
             "Sized to order"
           )}
         </p>
+        {price !== undefined && (
+          <p className="mt-2 font-semibold">
+            {several ? "From " : ""}
+            {formatMoney(price)}
+          </p>
+        )}
       </div>
     </Link>
   );

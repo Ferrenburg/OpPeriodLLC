@@ -145,11 +145,24 @@ export async function sendContactEmail(input: ContactInput, to: string, projectN
     "Hit reply to answer them directly.",
   ].join("\n");
 
+  await sendEmail({ to, subject, text, replyTo: input.email });
+}
+
+// Sends a plain text email through Resend. Shared by the contact form and the
+// shop's order emails. An idempotency key makes Resend drop a repeat within
+// 24 hours (Stripe resends webhooks it isn't sure we got).
+export async function sendEmail(message: {
+  to: string;
+  subject: string;
+  text: string;
+  replyTo?: string;
+  idempotencyKey?: string;
+}): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
-    if (process.env.NODE_ENV !== "production") {
+    if (process.env.NODE_ENV !== "production" || process.env.EMAIL_LOG_ONLY === "true") {
       // Local development: print instead of sending.
-      console.info(`[contact] RESEND_API_KEY not set, so not sending.\nTo: ${to}\nSubject: ${subject}\n\n${text}`);
+      console.info(`[email] RESEND_API_KEY not set, so not sending.\nTo: ${message.to}\nSubject: ${message.subject}\n\n${message.text}`);
       return;
     }
     throw new Error("RESEND_API_KEY is not set");
@@ -160,8 +173,12 @@ export async function sendContactEmail(input: ContactInput, to: string, projectN
 
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
-    headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from, to: [to], reply_to: input.email, subject, text }),
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+      ...(message.idempotencyKey ? { "Idempotency-Key": message.idempotencyKey } : {}),
+    },
+    body: JSON.stringify({ from, to: [message.to], reply_to: message.replyTo, subject: message.subject, text: message.text }),
   });
   if (!response.ok) {
     throw new Error(`Resend returned ${response.status}: ${await response.text()}`);

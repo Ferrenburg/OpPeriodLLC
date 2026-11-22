@@ -9,7 +9,7 @@ type Item = { label: string; href: string };
 
 // Same behavior as the OpPeriod mobile menu: the main links, then the
 // equipment areas and brands, which the header passes in.
-export function EbMobileMenu({ areas, brands }: { areas: Item[]; brands: Item[] }) {
+export function EbMobileMenu({ areas, brands, shop }: { areas: Item[]; brands: Item[]; shop?: Item }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [lastPath, setLastPath] = useState(pathname);
@@ -56,7 +56,7 @@ export function EbMobileMenu({ areas, brands }: { areas: Item[]; brands: Item[] 
       >
         <div className="container-site space-y-6 py-5">
           <ul className="divide-y divide-line">
-            {[...ebNav, { label: "Request a Quote", href: quoteHref() }].map((item) => (
+            {[...(shop ? [shop] : []), ...ebNav, { label: "Request a Quote", href: quoteHref() }].map((item) => (
               <li key={item.href}>
                 <Link href={item.href} onClick={() => setOpen(false)} className="block py-3 font-display text-xl font-bold uppercase tracking-wide">
                   {item.label}

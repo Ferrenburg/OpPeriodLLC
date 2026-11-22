@@ -1,0 +1,85 @@
+"use client";
+
+import { useSyncExternalStore } from "react";
+
+// The shop cart, kept in this browser only. It holds part numbers and
+// quantities, never prices: the server prices everything from Stripe.
+export type CartLine = { sku: string; quantity: number };
+
+const KEY = "eb-cart-v1";
+const EVENT = "eb-cart";
+const MAX_QUANTITY = 50;
+const EMPTY: CartLine[] = [];
+let cachedRaw: string | null = null;
+let cachedLines: CartLine[] = EMPTY;
+
+function read(): CartLine[] {
+  let raw: string | null = null;
+  try {
+    raw = window.localStorage.getItem(KEY);
+  } catch {
+    return EMPTY;
+  }
+  if (raw === cachedRaw) return cachedLines;
+  cachedRaw = raw;
+  try {
+    const parsed = JSON.parse(raw ?? "[]") as unknown;
+    cachedLines = Array.isArray(parsed)
+      ? parsed
+          .filter((l): l is CartLine => typeof l?.sku === "string" && Number.isInteger(l?.quantity) && l.quantity > 0)
+          .map((l) => ({ sku: l.sku, quantity: Math.min(MAX_QUANTITY, l.quantity) }))
+      : EMPTY;
+  } catch {
+    cachedLines = EMPTY;
+  }
+  return cachedLines;
+}
+
+function write(lines: CartLine[]) {
+  try {
+    window.localStorage.setItem(KEY, JSON.stringify(lines));
+  } catch {
+    // Private mode or storage full: the cart just won't persist.
+  }
+  window.dispatchEvent(new Event(EVENT));
+}
+
+function subscribe(onChange: () => void) {
+  const onStorage = (event: StorageEvent) => event.key === KEY && onChange();
+  window.addEventListener(EVENT, onChange);
+  window.addEventListener("storage", onStorage);
+  return () => {
+    window.removeEventListener(EVENT, onChange);
+    window.removeEventListener("storage", onStorage);
+  };
+}
+
+// Empty on the server and during hydration, then the saved cart.
+export function useCart(): CartLine[] {
+  return useSyncExternalStore(subscribe, read, () => EMPTY);
+}
+
+export function addToCart(sku: string, quantity: number) {
+  const lines = read();
+  const existing = lines.find((l) => l.sku === sku);
+  write(
+    existing
+      ? lines.map((l) => (l.sku === sku ? { sku, quantity: Math.min(MAX_QUANTITY, l.quantity + quantity) } : l))
+      : [...lines, { sku, quantity: Math.min(MAX_QUANTITY, quantity) }],
+  );
+}
+
+export function setQuantity(sku: string, quantity: number) {
+  const lines = read();
+  write(quantity <= 0 ? lines.filter((l) => l.sku !== sku) : lines.map((l) => (l.sku === sku ? { sku, quantity: Math.min(MAX_QUANTITY, quantity) } : l)));
+}
+
+export function removeFromCart(skus: string[]) {
+  write(read().filter((l) => !skus.includes(l.sku)));
+}
+
+export function clearCart() {
+  write([]);
+}
+
+export const cartMaxQuantity = MAX_QUANTITY;

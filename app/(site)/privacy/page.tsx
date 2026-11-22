@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Todo } from "@/components/todo";
 import { company, engineBay, formatAddress } from "@/lib/brand";
 import { turnstileSiteKey } from "@/lib/contact";
+import { shopEnabled } from "@/lib/shop";
 
 export const metadata: Metadata = {
   title: "Privacy policy",
@@ -16,6 +17,8 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   // Cloudflare only gets mentioned while the Turnstile spam check is on.
   const turnstile = Boolean(turnstileSiteKey());
+  // The payments sections only appear once the Engine Bay shop is on.
+  const shop = shopEnabled();
   const email = (
     <a href={`mailto:${company.email}`}>{company.email}</a>
   );
@@ -42,6 +45,16 @@ export default function PrivacyPage() {
           number, which project your message is about, and your message. We use that to read and answer your
           message, and for nothing else.
         </p>
+        {shop && (
+          <>
+            <h3>When you buy from {engineBay.name} online</h3>
+            <p>
+              Checkout runs on Stripe&apos;s secure payment page. We get your name, email, phone number, shipping and billing
+              address, what you ordered, and a department name or PO number if you give one. Your card number goes to
+              Stripe, not to us. Your cart is kept in your own browser until you check out.
+            </p>
+          </>
+        )}
         <h3>When you visit the site</h3>
         <p>
           Like most websites, our hosting provider automatically processes basic technical information, such
@@ -66,6 +79,8 @@ export default function PrivacyPage() {
           <li>Vercel, which hosts the website.</li>
           <li>Resend, which delivers contact form messages to our email inbox.</li>
           {turnstile && <li>Cloudflare, which runs the spam check on the contact form.</li>}
+          {shop && <li>Stripe, which takes payment for online orders.</li>}
+          {shop && <li>The manufacturer of what you ordered, which gets your name, shipping address, and phone number so it can ship to you.</li>}
         </ul>
         <p>We may also share information if the law requires it.</p>
 
