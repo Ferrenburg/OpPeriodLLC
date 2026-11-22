@@ -251,10 +251,10 @@ Engine Bay Supply Co. is the OpPeriod division that supplies fire service hand t
 
 ### Its own domain (November 2026)
 
-Engine Bay lives at enginebaysupply.com (bare domain primary; www redirects). One Vercel project serves both domains:
+Engine Bay lives at enginebaysupply.com (bare domain is the intended primary; which one is primary is set in Vercel's domain settings, and the code serves both). One Vercel project serves both domains:
 
 - `proxy.ts`: on enginebaysupply.com, `/x` is served from the built `/engine-bay/x` page, and any `/engine-bay/...` address there 308s to the clean one. API routes, `_next`, and files with an extension pass through, so photos, PDFs, and the quote form's `/api/contact` work unchanged.
-- `next.config.ts`: opperiod.com/engine-bay/... 301s to enginebaysupply.com/...; www.enginebaysupply.com goes to the bare domain; old `/tools` and `/about` links on the new domain still land.
+- `next.config.ts`: opperiod.com/engine-bay/... 301s to enginebaysupply.com/...; old `/tools` and `/about` links on the new domain still land.
 - `lib/brand.ts`: `engineBay.ownDomain` is true in production (or with `ENGINE_BAY_OWN_DOMAIN=true` locally). Then `engineBay.path` is "" and links are root paths; on previews it's "/engine-bay". `engineBayLink()` builds links from OpPeriod pages. The Engine Bay layout sets `metadataBase` to the new domain, so canonicals and link previews point there.
 - Its own `sitemap.xml` and `robots.txt` (in `app/(engine-bay)/engine-bay/`), and its own not-found page. opperiod.com's sitemap no longer lists Engine Bay pages.
 - The project file has `siteUrl: https://enginebaysupply.com`, so OpPeriod cards and menus link there in production.

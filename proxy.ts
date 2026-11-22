@@ -7,12 +7,12 @@ import { NextResponse, type NextRequest } from "next/server";
 // own files, and anything with a file extension (photos, PDFs, icons) pass
 // straight through. opperiod.com is untouched; its old /engine-bay links are
 // redirected in next.config.ts.
-const ENGINE_BAY_HOST = "enginebaysupply.com";
+const ENGINE_BAY_HOSTS = new Set(["enginebaysupply.com", "www.enginebaysupply.com"]);
 const BASE = "/engine-bay";
 
 export function proxy(request: NextRequest) {
   const host = (request.headers.get("host") ?? "").split(":")[0].toLowerCase();
-  if (host !== ENGINE_BAY_HOST) return NextResponse.next();
+  if (!ENGINE_BAY_HOSTS.has(host)) return NextResponse.next();
 
   const url = request.nextUrl.clone();
   const { pathname } = url;

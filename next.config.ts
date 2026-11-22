@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 import { loadProjects } from "./lib/project-loader";
 
+// Where opperiod.com/engine-bay links go. Keep in step with engineBay.url in lib/brand.ts.
+const engineBayUrl = "https://enginebaysupply.com";
+
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   // Short links: opperiod.com/<slug> goes to opperiod.com/projects/<slug>.
@@ -21,14 +24,14 @@ const nextConfig: NextConfig = {
       { source: "/engine-bay/tools/:category", destination: "/engine-bay/equipment/:category", permanent: true },
     ];
     // Engine Bay moved to enginebaysupply.com (proxy.ts serves it there).
-    // Old opperiod.com/engine-bay links follow it, www goes to the bare
-    // domain, and its old /tools links work on the new domain too.
-    const ebHost = "enginebaysupply.com";
+    // Old opperiod.com/engine-bay links follow it, and its old /tools links
+    // work on the new domain too. Which of www or the bare domain is primary
+    // is set in Vercel's domain settings, not here, so the two can't fight.
+    const ebHost = "(?:www\\.)?enginebaysupply\\.com";
     const opperiodHost = "(?:www\\.)?opperiod\\.com";
     const engineBayMoved = [
-      { source: "/engine-bay", has: [{ type: "host" as const, value: opperiodHost }], destination: `https://${ebHost}/`, permanent: true },
-      { source: "/engine-bay/:path*", has: [{ type: "host" as const, value: opperiodHost }], destination: `https://${ebHost}/:path*`, permanent: true },
-      { source: "/:path*", has: [{ type: "host" as const, value: `www.${ebHost}` }], destination: `https://${ebHost}/:path*`, permanent: true },
+      { source: "/engine-bay", has: [{ type: "host" as const, value: opperiodHost }], destination: `${engineBayUrl}/`, permanent: true },
+      { source: "/engine-bay/:path*", has: [{ type: "host" as const, value: opperiodHost }], destination: `${engineBayUrl}/:path*`, permanent: true },
       { source: "/tools", has: [{ type: "host" as const, value: ebHost }], destination: "/equipment", permanent: true },
       { source: "/tools/:category", has: [{ type: "host" as const, value: ebHost }], destination: "/equipment/:category", permanent: true },
     ];
