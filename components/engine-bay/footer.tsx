@@ -2,7 +2,8 @@ import Link from "next/link";
 import { buttonClass } from "@/components/button";
 import { Logo } from "@/components/logo";
 import { company, engineBay } from "@/lib/brand";
-import { equipmentAreas, equipmentPath, quoteHref } from "@/lib/engine-bay";
+import { equipmentAreas, equipmentPath, quoteHref, shopPath, shopPolicyPages } from "@/lib/engine-bay";
+import { shopEnabled } from "@/lib/shop";
 import { brandPath, getBrands } from "@/lib/engine-bay-catalog";
 
 const yearScript = `document.getElementById("eb-copyright-year").textContent=new Date().getFullYear()`;
@@ -22,8 +23,10 @@ export function EbFooter() {
       links: [
         { label: "Catalogs", href: `${engineBay.path}/catalogs` },
         { label: "How to order", href: `${engineBay.home}#ordering` },
+        ...(shopEnabled() ? [{ label: "Order online", href: shopPath }] : []),
         { label: "Request a quote", href: quoteHref() },
         { label: company.legalName, href: company.url },
+        ...(shopEnabled() ? shopPolicyPages : []),
         { label: "Privacy", href: `${company.url}/privacy` },
       ],
     },

@@ -3,8 +3,9 @@ import Link from "next/link";
 import { buttonClass } from "@/components/button";
 import { Logo } from "@/components/logo";
 import { company, engineBay } from "@/lib/brand";
-import { catalogPath, equipmentPath, orderingSteps, printCatalogs, quoteHref, toolCategories } from "@/lib/engine-bay";
+import { catalogPath, equipmentPath, orderingSteps, printCatalogs, quoteHref, shopPath, toolCategories } from "@/lib/engine-bay";
 import { brandPath, getBrandProducts, getBrands, getProduct, getProducts } from "@/lib/engine-bay-catalog";
+import { shopEnabled } from "@/lib/shop";
 import { readPublicImage } from "@/lib/images";
 import { AreaGrid } from "./area-grid";
 import { ProductCard } from "./product-card";
@@ -236,6 +237,15 @@ export function OrderingSection() {
             </li>
           ))}
         </ol>
+        {shopEnabled() && (
+          <p className="mt-8 text-lg">
+            Rather pay by card?{" "}
+            <Link href={shopPath} className="font-semibold text-accent underline underline-offset-4">
+              Order online
+            </Link>{" "}
+            and the manufacturer ships it straight to you.
+          </p>
+        )}
       </div>
     </section>
   );

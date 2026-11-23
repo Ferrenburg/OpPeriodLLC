@@ -259,6 +259,18 @@ Engine Bay lives at enginebaysupply.com (bare domain is the intended primary; wh
 - Its own `sitemap.xml` and `robots.txt` (in `app/(engine-bay)/engine-bay/`), and its own not-found page. opperiod.com's sitemap no longer lists Engine Bay pages.
 - The project file has `siteUrl: https://enginebaysupply.com`, so OpPeriod cards and menus link there in production.
 
+### Online shop (November 2026)
+
+Engine Bay sells online alongside quotes. The owner's Stripe account is the price book: one product per part number with metadata `sku`, `vendor`, and `category`, and a default price. Snap-tite hose is one Stripe product per build (size, length, color, couplings).
+
+- `lib/shop-core.ts`: pure helpers shared with the report script (hose name parsing and line aliases, shipping classes, flat-rate math, money format).
+- `lib/shop.ts` (server only): loads every active default price from Stripe with `fetch`, cached for an hour under the `stripe-prices` tag; joins them to site products by part number (and Snap-tite hose by name); prices carts; calls Stripe; checks webhook signatures. A Stripe outage leaves the site quote only.
+- Settings in `lib/engine-bay.ts`: `shopVendors` (who drop ships), `shopExcludedBrands` (brands kept quote only), `categoryShipping` (shipping class per category; others are measured, over 48 in. is "long"). A product can set `shipClass`.
+- Pages: product pages get a price, quantity, and Add to cart (a column per size in the sizes table, and a hose picker for Snap-tite lines) above the quote box; cards show "From" prices; `/shop` (Order online), `/cart`, `/order/thanks`, `/shipping`, `/returns`, `/terms`. Header gets Order online and a cart icon. All of it is hidden, and those pages 404, when the shop is off.
+- The cart lives in the browser (`localStorage`, part numbers and quantities only). `/api/shop/cart` prices it; `/api/shop/checkout` prices it again and starts Stripe Checkout (US shipping address, phone, optional department and PO number, invoice PDF, Stripe Tax, one flat shipping line made of each vendor's flat rate). Return links use the shopper's own host, limited to our domains.
+- `/api/stripe/webhook`: price and product changes refresh the cache; a paid checkout emails the owner the order grouped by vendor ("Place with Council Tool: ...") with part numbers, ship-to address, department, PO, and the Stripe risk level. Nothing goes to a vendor automatically. Resend's idempotency key stops duplicate emails on Stripe retries.
+- `npm run shop:report` (needs `STRIPE_SECRET_KEY`): read-only match report.
+
 ### On opperiod.com (before the domain move)
 
 
@@ -311,6 +323,10 @@ Built from the owner's Engine Bay FHU catalog PDF (`public/downloads/engine-bay-
 ### Rawhide Fire Hose (added November 2026)
 
 27 fire hose products from rawhidefirehose.com (`content/engine-bay/products/rawhide-fire-hose.json`), fetched about one page a second: attack (double jacket, single jacket, rubber covered), supply LDH, booster, and forestry hose, in the Fire hose category next to Snap-tite. Like Snap-tite there are no part numbers ("Sized to order"); each lists Rawhide's colors, lengths, and coupling options. Rawhide is a Wooster, Ohio supply house that sources from several manufacturers, so its pages are the product source. Only hose is carried from Rawhide: the owner doesn't want their nozzles, valves, wyes, fittings, wrenches, or holders. Their industrial hose (mill discharge, MSHA mine, rack and reel) and building hose storage are left out too. Shipping notes, Rawhide's phone number, warranty promises, and general "what is LDH" text were stripped, and the shipping weights in their product data aren't used. The scripts that built the file aren't in the repo; a re-pull means fetching the pages again.
+
+### Holik gloves (added November 2026)
+
+10 Holik gloves (`content/engine-bay/products/holik.json`) in a new Gloves category and area: three NFPA structural gauntlets (Brenna 8081, Raven 8084-03, Fury 8091) and rescue and extrication gloves (Kaya, Penelope Plus Green, Lesley Plus, and Vespid and Blaze, each with Evo and Neo styles as variants). Facts and photos come from Holik America (holik-america.com) and, for Kaya, Holik's English site (en.holik.com); each links Holik's leaflet. Products can now list `sizes` (Holik's published sizes, NFPA sizing for the gauntlets): the buyer must pick one, the size rides through the cart and into the Stripe session metadata (`sizes`), and the order email lists it under each part number. Stripe prices for Holik sit exactly at Holik's MAP (recorded in each Stripe product's metadata).
 
 ### Next steps
 
