@@ -92,6 +92,13 @@ export const toolCategories: ToolCategory[] = [
     blurb: "Replacement poles, handles, rake heads, teeth, and swatter flaps to keep equipment in service.",
     featured: "70-32dg-b",
   },
+  {
+    slug: "gloves",
+    name: "Gloves",
+    short: "Gloves",
+    blurb: "Structural firefighting gloves and rescue and extrication gloves.",
+    featured: "holik-blaze",
+  },
 ];
 
 // Flagship brands, in order. Anywhere the site lists brands or mixes their
@@ -152,6 +159,12 @@ export const equipmentAreas: EquipmentArea[] = [
     categories: ["wildland"],
   },
   {
+    slug: "gloves",
+    name: "Gloves",
+    blurb: "Structural firefighting gloves, and rescue and extrication gloves.",
+    categories: ["gloves"],
+  },
+  {
     slug: "mounting-parts",
     name: "Mounting and parts",
     blurb: "Straps, harnesses, brackets, replacement handles, and parts.",
@@ -206,7 +219,7 @@ export const catalogPath = (catalog: PrintCatalog) => `${engineBay.path}/catalog
 // The online shop (lib/shop.ts). It sells a site product only when Stripe has
 // a price whose product metadata "sku" matches the product's part number and
 // whose "vendor" is listed here. The vendor ships the order direct (drop ship).
-export const shopVendors = ["Council Tool", "Snap-tite Hose", "Fire Hooks Unlimited"];
+export const shopVendors = ["Council Tool", "Snap-tite Hose", "Fire Hooks Unlimited", "Holik"];
 
 // Site brands to keep quote only even when their vendor is in the shop, like
 // "husqvarna" until Husqvarna confirms online sales in writing.

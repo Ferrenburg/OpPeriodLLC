@@ -58,8 +58,22 @@ export async function sendOrderEmail(sessionId: string): Promise<void> {
 
   const index = await getShopIndex();
   const products = new Map(getProducts().map((p) => [p.slug, p]));
+  // Sizes ride in the session metadata: "8081 76W x2; 6510 L x1".
+  const sizes = new Map<string, string[]>();
+  for (const part of (session.metadata?.sizes ?? "").split(";")) {
+    const m = part.trim().match(/^(\S+)\s+(.+)\s+x(\d+)$/);
+    if (m) sizes.set(m[1], [...(sizes.get(m[1]) ?? []), `${m[2]} x${m[3]}`]);
+  }
   const groups = new Map<string, string[]>();
+  // One line per part number, even when sizes split it into several Stripe lines.
+  const merged = new Map<string, LineItem>();
   for (const item of items.data) {
+    const product = typeof item.price.product === "object" ? item.price.product : undefined;
+    const key = product?.metadata?.sku || item.description;
+    const seen = merged.get(key);
+    merged.set(key, seen ? { ...seen, quantity: seen.quantity + item.quantity, amount_total: seen.amount_total + item.amount_total } : item);
+  }
+  for (const item of merged.values()) {
     const product = typeof item.price.product === "object" ? item.price.product : undefined;
     const sku = product?.metadata?.sku ?? "";
     const vendor = product?.metadata?.vendor || "Unknown vendor";
@@ -68,7 +82,9 @@ export async function sendOrderEmail(sessionId: string): Promise<void> {
     const name = site ? `${site.brand.name} ${site.name}${offer.option ? ` (${offer.option})` : ""}` : item.description;
     const unit = item.price.unit_amount ?? 0;
     const line = `  ${item.quantity} x ${sku || "(no part number)"}  ${name}  ${formatMoney(unit)} each, ${formatMoney(item.amount_total)}`;
-    groups.set(vendor, [...(groups.get(vendor) ?? []), line]);
+    const sized = sizes.get(sku);
+    if (sized) sizes.delete(sku);
+    groups.set(vendor, [...(groups.get(vendor) ?? []), line, ...(sized ? [`      Sizes: ${sized.join(", ")}`] : [])]);
   }
 
   const shipTo = session.collected_information?.shipping_details ?? session.shipping_details;

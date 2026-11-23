@@ -55,6 +55,8 @@ Everything here is a placeholder or a missing fact the owner needs to provide. N
   7. In Stripe, Developers, Webhooks: add an endpoint at https://www.enginebaysupply.com/api/stripe/webhook (match your primary domain) with checkout.session.completed, checkout.session.async_payment_succeeded, price.created, price.updated, price.deleted, product.updated, product.deleted. Put its signing secret in STRIPE_WEBHOOK_SECRET.
   8. Make a new restricted key for the site (the one shared in chat should be deleted after launch) and set STRIPE_SECRET_KEY, SHOP_ORDER_EMAIL, and SHOP_ENABLED=true in Vercel, then redeploy.
   9. Place one real order on your own card, check the order email, then refund it in Stripe.
+- [ ] Holik: 10 gloves are on the site and for sale, with Holik America's descriptions, photos, and leaflets. Get Holik's okay in writing for their photos and copy, and confirm online sales at MAP are allowed under your dealer terms.
+- [ ] Holik sizes marked "special order" (some NFPA sizes) may take longer; say so in the ship time wording, or ask Holik for lead times.
 - [ ] The 6 Snap-tite add-ons in Stripe (non-standard color, stripe, UL label, special threads, stencil kit, laser etching) and FireQuip hose aren't sold online because they have no site page.
 
 - [ ] Moving Engine Bay to enginebaysupply.com. Do these in order once this branch merges:

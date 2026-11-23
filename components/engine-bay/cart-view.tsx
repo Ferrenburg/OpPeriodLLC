@@ -79,7 +79,7 @@ export function CartView({ shopHref, quoteHref, phone }: { shopHref: string; quo
   const { cart } = state;
   const notice = removed.length > 0 && (
     <p role="status" className="card mb-6 border-l-4 border-l-accent-fill p-4">
-      We took out {removed.length === 1 ? "an item" : `${removed.length} items`} that {removed.length === 1 ? "isn't" : "aren't"} sold online anymore ({removed.join(", ")}).{" "}
+      We took out {removed.length === 1 ? "an item" : `${removed.length} items`} that {removed.length === 1 ? "isn't" : "aren't"} sold online anymore ({removed.map((key) => key.replace("|", ", size ")).join("; ")}).{" "}
       <Link href={quoteHref} className="font-semibold text-accent underline underline-offset-4">
         Request a quote
       </Link>{" "}
@@ -111,7 +111,7 @@ export function CartView({ shopHref, quoteHref, phone }: { shopHref: string; quo
               {cart.lines
                 .filter((line) => line.vendor === vendor)
                 .map((line) => (
-                  <li key={line.sku} className="flex gap-4 py-4">
+                  <li key={line.key} className="flex gap-4 py-4">
                     <div className="relative size-20 shrink-0 overflow-hidden rounded-lg border border-line bg-card">
                       {line.image && <Image src={line.image} alt="" fill sizes="5rem" className="object-contain p-1" />}
                     </div>
@@ -121,7 +121,7 @@ export function CartView({ shopHref, quoteHref, phone }: { shopHref: string; quo
                         {line.name}
                       </Link>
                       <p className="text-sm text-muted">
-                        {line.option ? `${line.option} · ` : ""}Part # {line.sku}
+                        {line.option ? `${line.option} · ` : ""}{line.size ? `Size ${line.size} · ` : ""}Part # {line.sku}
                       </p>
                       <div className="mt-2 flex flex-wrap items-center gap-3">
                         <label className="text-sm">
@@ -131,13 +131,13 @@ export function CartView({ shopHref, quoteHref, phone }: { shopHref: string; quo
                             min={1}
                             max={cartMaxQuantity}
                             defaultValue={line.quantity}
-                            onBlur={(e) => setQuantity(line.sku, Math.max(1, Math.min(cartMaxQuantity, Number(e.target.value) || 1)))}
+                            onBlur={(e) => setQuantity(line.key, Math.max(1, Math.min(cartMaxQuantity, Number(e.target.value) || 1)))}
                             onKeyDown={(e) => e.key === "Enter" && (e.target as HTMLInputElement).blur()}
                             className="min-h-10 w-16 rounded-lg border border-line-2 bg-card px-2 text-center"
                           />
                         </label>
                         <span className="text-sm text-muted">x {formatMoney(line.unitAmount)}</span>
-                        <button type="button" onClick={() => removeFromCart([line.sku])} className="text-sm font-semibold text-accent underline underline-offset-4">
+                        <button type="button" onClick={() => removeFromCart([line.key])} className="text-sm font-semibold text-accent underline underline-offset-4">
                           Remove<span className="sr-only"> {line.sku}</span>
                         </button>
                       </div>

@@ -42,6 +42,12 @@ export async function POST(request: Request) {
   }
 
   const cart = await priceCart(parsed.data);
+  if (cart.lines.filter((line) => line.size).map((l) => `${l.sku} ${l.size} x${l.quantity}`).join("; ").length > 490) {
+    return Response.json(
+      { ok: false, error: `That's more sizes than one online order can hold. Split it into two orders, or call ${engineBay.phone.display}.` },
+      { status: 400 },
+    );
+  }
   if (cart.unavailable.length > 0) {
     return Response.json(
       { ok: false, error: "Some items in your cart aren't sold online anymore. We took them out; check the cart and try again.", cart },
@@ -88,6 +94,13 @@ export async function POST(request: Request) {
       metadata: {
         source: "engine-bay-shop",
         shipping_by_vendor: cart.shipping.byVendor.map((v) => `${v.vendor} ${formatMoney(v.amount)}`).join("; ").slice(0, 490),
+        // Sizes aren't separate Stripe prices, so they travel here for the
+        // order email: "8081 76W x2; 6510 L x1".
+        sizes: cart.lines
+          .filter((line) => line.size)
+          .map((line) => `${line.sku} ${line.size} x${line.quantity}`)
+          .join("; ")
+          .slice(0, 490),
       },
       success_url: back(`${engineBay.path}/order/thanks?session_id={CHECKOUT_SESSION_ID}`),
       cancel_url: back(cartPath),

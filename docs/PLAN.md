@@ -324,6 +324,10 @@ Built from the owner's Engine Bay FHU catalog PDF (`public/downloads/engine-bay-
 
 27 fire hose products from rawhidefirehose.com (`content/engine-bay/products/rawhide-fire-hose.json`), fetched about one page a second: attack (double jacket, single jacket, rubber covered), supply LDH, booster, and forestry hose, in the Fire hose category next to Snap-tite. Like Snap-tite there are no part numbers ("Sized to order"); each lists Rawhide's colors, lengths, and coupling options. Rawhide is a Wooster, Ohio supply house that sources from several manufacturers, so its pages are the product source. Only hose is carried from Rawhide: the owner doesn't want their nozzles, valves, wyes, fittings, wrenches, or holders. Their industrial hose (mill discharge, MSHA mine, rack and reel) and building hose storage are left out too. Shipping notes, Rawhide's phone number, warranty promises, and general "what is LDH" text were stripped, and the shipping weights in their product data aren't used. The scripts that built the file aren't in the repo; a re-pull means fetching the pages again.
 
+### Holik gloves (added November 2026)
+
+10 Holik gloves (`content/engine-bay/products/holik.json`) in a new Gloves category and area: three NFPA structural gauntlets (Brenna 8081, Raven 8084-03, Fury 8091) and rescue and extrication gloves (Kaya, Penelope Plus Green, Lesley Plus, and Vespid and Blaze, each with Evo and Neo styles as variants). Facts and photos come from Holik America (holik-america.com) and, for Kaya, Holik's English site (en.holik.com); each links Holik's leaflet. Products can now list `sizes` (Holik's published sizes, NFPA sizing for the gauntlets): the buyer must pick one, the size rides through the cart and into the Stripe session metadata (`sizes`), and the order email lists it under each part number. Stripe prices for Holik sit exactly at Holik's MAP (recorded in each Stripe product's metadata).
+
 ### Next steps
 
 1. More brands: add a JSON file per brand and photos in `public/catalog/`. Nothing else changes.

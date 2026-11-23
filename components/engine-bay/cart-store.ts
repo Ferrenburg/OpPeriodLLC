@@ -4,7 +4,10 @@ import { useSyncExternalStore } from "react";
 
 // The shop cart, kept in this browser only. It holds part numbers and
 // quantities, never prices: the server prices everything from Stripe.
-export type CartLine = { sku: string; quantity: number };
+export type CartLine = { sku: string; size?: string; quantity: number };
+
+// One line per part number and size (matches cartLineKey in lib/shop.ts).
+export const lineKey = (line: { sku: string; size?: string }) => (line.size ? `${line.sku}|${line.size}` : line.sku);
 
 const KEY = "eb-cart-v1";
 const EVENT = "eb-cart";
@@ -27,7 +30,7 @@ function read(): CartLine[] {
     cachedLines = Array.isArray(parsed)
       ? parsed
           .filter((l): l is CartLine => typeof l?.sku === "string" && Number.isInteger(l?.quantity) && l.quantity > 0)
-          .map((l) => ({ sku: l.sku, quantity: Math.min(MAX_QUANTITY, l.quantity) }))
+          .map((l) => ({ sku: l.sku, ...(typeof l.size === "string" && l.size ? { size: l.size } : {}), quantity: Math.min(MAX_QUANTITY, l.quantity) }))
       : EMPTY;
   } catch {
     cachedLines = EMPTY;
@@ -59,23 +62,24 @@ export function useCart(): CartLine[] {
   return useSyncExternalStore(subscribe, read, () => EMPTY);
 }
 
-export function addToCart(sku: string, quantity: number) {
+export function addToCart(sku: string, quantity: number, size?: string) {
   const lines = read();
-  const existing = lines.find((l) => l.sku === sku);
+  const key = lineKey({ sku, size });
+  const existing = lines.find((l) => lineKey(l) === key);
   write(
     existing
-      ? lines.map((l) => (l.sku === sku ? { sku, quantity: Math.min(MAX_QUANTITY, l.quantity + quantity) } : l))
-      : [...lines, { sku, quantity: Math.min(MAX_QUANTITY, quantity) }],
+      ? lines.map((l) => (lineKey(l) === key ? { ...l, quantity: Math.min(MAX_QUANTITY, l.quantity + quantity) } : l))
+      : [...lines, { sku, ...(size ? { size } : {}), quantity: Math.min(MAX_QUANTITY, quantity) }],
   );
 }
 
-export function setQuantity(sku: string, quantity: number) {
+export function setQuantity(key: string, quantity: number) {
   const lines = read();
-  write(quantity <= 0 ? lines.filter((l) => l.sku !== sku) : lines.map((l) => (l.sku === sku ? { sku, quantity: Math.min(MAX_QUANTITY, quantity) } : l)));
+  write(quantity <= 0 ? lines.filter((l) => lineKey(l) !== key) : lines.map((l) => (lineKey(l) === key ? { ...l, quantity: Math.min(MAX_QUANTITY, quantity) } : l)));
 }
 
-export function removeFromCart(skus: string[]) {
-  write(read().filter((l) => !skus.includes(l.sku)));
+export function removeFromCart(keys: string[]) {
+  write(read().filter((l) => !keys.includes(lineKey(l))));
 }
 
 export function clearCart() {

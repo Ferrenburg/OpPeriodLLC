@@ -1,0 +1,360 @@
+{
+  "brand": {
+    "slug": "holik",
+    "name": "Holik",
+    "about": [
+      "Holik makes firefighting and rescue gloves in its own facilities in Europe. Holik America brings its NFPA certified structural gloves and its extrication gloves to US departments."
+    ],
+    "website": "https://holik-america.com"
+  },
+  "products": [
+    {
+      "slug": "holik-brenna-gauntlet",
+      "sku": "8081",
+      "name": "Brenna Gauntlet",
+      "category": "gloves",
+      "group": "Structural firefighting gloves",
+      "summary": "Structural firefighting glove with a grain cowhide palm and split cowhide back. Certified by SEI to NFPA 1971, 2018 Edition.",
+      "details": [
+        "Premium grain cowhide in the palm and split cowhide on the back. Brenna gloves deliver protection, comfort, and confident grip on every call."
+      ],
+      "features": [
+        "Back: split cowhide leather, black",
+        "Palm: grain cowhide leather, black",
+        "Inner layers: thermo-protective layer on the back of the hand and thumb; aramid non-woven fabric for heat and cut resistance",
+        "Fourchettes: DuPont Nomex fabric between the fingers",
+        "Moisture barrier: Porelle P540 polyurethane FR membrane, a barrier against water, chemicals, bloodborne pathogens, and bacteria",
+        "Lining: thicker aramid lining that won't stretch or pull out, for easy donning and doffing even when wet",
+        "Lining stitched at the fingertips so it stays inside",
+        "Anatomical 3D cut for grip and fit",
+        "Gauntlet cuff, elastic at the wrist",
+        "Certified by SEI to NFPA 1971, 2018 Edition",
+        "Made in Holik facilities in Europe"
+      ],
+      "sizes": [
+        "64N (XS)",
+        "64W (S, short fingers)",
+        "64XW (M, short fingers), special order",
+        "70N (S)",
+        "70W (M)",
+        "70XW (L, short fingers), special order",
+        "76N (M, long fingers)",
+        "76W (L)",
+        "76XW (XL, short fingers), special order",
+        "82N (L, long fingers)",
+        "82W (XL)",
+        "82XW (2XL)",
+        "82XXW (3XL), special order"
+      ],
+      "images": [
+        "/catalog/holik-brenna-gauntlet.webp"
+      ],
+      "datasheet": "https://holik-america.com/wp-content/uploads/2026/09/Brenna-Leaflet.pdf",
+      "source": "https://holik-america.com/structural-firefight/brenna-gauntlet/"
+    },
+    {
+      "slug": "holik-raven-gauntlet",
+      "sku": "8084-03",
+      "name": "Raven Gauntlet",
+      "category": "gloves",
+      "group": "Structural firefighting gloves",
+      "summary": "Structural firefighting glove in heat, water, and abrasion resistant buffalo leather, with a TPP rating over 60 and a PFAS free moisture barrier.",
+      "details": [
+        "Robust construction with maximum flexibility, built for the demanding conditions of emergency work."
+      ],
+      "features": [
+        "Back: grain buffalo leather, treated to be heat, water, and abrasion resistant",
+        "Palm: grain buffalo leather",
+        "Inner layers: thermo-protective layer on the back of the hand and thumb; aramid non-woven fabric for heat, abrasion, and cut resistance",
+        "Fourchettes: meta-aramid fabric between the fingers for dexterity",
+        "Moisture barrier: Porelle DXT, PFAS free, a barrier against water, chemicals, bloodborne pathogens, and bacteria",
+        "Performance Liner System: stays in place, brushed on the reverse for airflow and heat protection",
+        "Heat Shield construction with a TPP rating over 60",
+        "Unbound Thumb design for full dexterity",
+        "SEI certified total fluorine (PFAS) content below 100 ppm"
+      ],
+      "sizes": [
+        "64N (XS)",
+        "64W (S, short fingers)",
+        "64XW (M, short fingers), special order",
+        "70N (S)",
+        "70W (M)",
+        "70XW (L, short fingers), special order",
+        "76N (M, long fingers)",
+        "76W (L)",
+        "76XW (XL, short fingers), special order",
+        "82N (L, long fingers)",
+        "82W (XL)",
+        "82XW (2XL)",
+        "82XXW (3XL)"
+      ],
+      "images": [
+        "/catalog/holik-raven-gauntlet.webp"
+      ],
+      "datasheet": "https://holik-america.com/wp-content/uploads/2026/09/Raven-Leaflet.pdf",
+      "source": "https://holik-america.com/structural-firefight/raven-gauntlet/"
+    },
+    {
+      "slug": "holik-fury-gauntlet",
+      "sku": "8091",
+      "name": "Fury Gauntlet",
+      "category": "gloves",
+      "group": "Structural firefighting gloves",
+      "summary": "Structural firefighting glove with a hybrid leather and CeramX Shield shell. SEI certified to NFPA 1970:2025, TPP 60+.",
+      "details": [
+        "Fury combines heat protection with dexterity, easy wet donning, and durable construction. The hybrid leather and CeramX Shield outer shell reduces weight and water absorption while delivering TPP 60+ thermal protection."
+      ],
+      "features": [
+        "Back: grain water buffalo leather with CeramX Shield, an aramid-based textile coated with ceramic",
+        "Palm: grain water buffalo leather, black",
+        "Inner layers: thermo-protective layer on the back of the hand and thumb; aramid non-woven fabric for heat and cut resistance",
+        "Fourchettes: meta-aramid fabric between the fingers",
+        "Moisture barrier: Porelle DXT, PFAS free",
+        "Performance Liner System: resists stretching, attached at the fingertips so it won't pull out, easy donning even when wet",
+        "Unbound Thumb design for better dexterity and tool control",
+        "SEI certified to NFPA 1970:2025",
+        "TPP 60+",
+        "Total fluorine under 100 ppm"
+      ],
+      "sizes": [
+        "64N (XS)",
+        "64W (S, short fingers)",
+        "64XW (M, short fingers), special order",
+        "70N (S)",
+        "70W (M)",
+        "70XW (L, short fingers), special order",
+        "76N (M, long fingers)",
+        "76W (L)",
+        "76XW (XL, short fingers), special order",
+        "82N (L, long fingers)",
+        "82W (XL)",
+        "82XW (2XL)",
+        "82XXW (3XL), special order"
+      ],
+      "images": [
+        "/catalog/holik-fury-gauntlet.webp"
+      ],
+      "datasheet": "https://holik-america.com/wp-content/uploads/2026/09/Fury-Leaflet.pdf",
+      "source": "https://holik-america.com/structural-firefight/fury-gauntlet/"
+    },
+    {
+      "slug": "holik-blaze",
+      "name": "Blaze",
+      "category": "gloves",
+      "group": "Rescue and extrication gloves",
+      "summary": "Extrication glove with a TPR protector on the back for impact protection, and Kevlar reinforcement in the palm. Debris cuff (Evo) or neoprene hook and loop cuff (Neo).",
+      "details": [
+        "Protective gloves for first responders. The TPR protector on the back gives impact protection, and the anatomical design keeps the hand sensitive and comfortable."
+      ],
+      "features": [
+        "Palm and fingers: synthetic leather",
+        "Back: elastic fabric, lime green",
+        "Thermoplastic rubber back and finger protection",
+        "Kevlar/PA elastic knit with FR coating and foam padding over the most exposed areas of the palm and between the thumb and index finger",
+        "Anti-slip reinforcements on the fingertips",
+        "Lining in palm: para-aramid, polyester, and fiberglass",
+        "Blaze Evo: debris cuff keeps dirt out",
+        "Blaze Neo: neoprene wristband with hook and loop closure",
+        "EN 388:2016+A1:2018: abrasion 4, cut F (TDM-100 test), tear 4, puncture 4, impact protection pass"
+      ],
+      "variants": [
+        {
+          "sku": "6511-02",
+          "option": "Blaze Evo (debris cuff)"
+        },
+        {
+          "sku": "6511-07",
+          "option": "Blaze Neo (neoprene hook and loop cuff)"
+        }
+      ],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+      ],
+      "images": [
+        "/catalog/holik-blaze.webp",
+        "/catalog/holik-blaze-2.webp",
+        "/catalog/holik-blaze-3.webp",
+        "/catalog/holik-blaze-4.webp"
+      ],
+      "datasheet": "https://holik-america.com/wp-content/uploads/2026/09/Blaze-Leaflet.pdf",
+      "source": "https://holik-america.com/extrication-gloves/blaze/"
+    },
+    {
+      "slug": "holik-lesley-plus",
+      "sku": "6510",
+      "name": "Lesley Plus",
+      "category": "gloves",
+      "group": "Rescue and extrication gloves",
+      "summary": "Rescue glove for technical work, with cut protection level 5 in the palm, reinforced fingers, reflective knuckle padding, and a debris cuff.",
+      "details": [
+        "A versatile rescue glove designed for technical interventions, with high cut resistance, reinforced finger protection, and a debris cuff."
+      ],
+      "features": [
+        "Palm: synthetic leather, sensitive, strong, and abrasion resistant",
+        "Back: elastic textile, lime green",
+        "Palm reinforcement: DuPont Kevlar fiber/PA with FR coating and foam padding",
+        "Reflective, foam filled knuckle reinforcement",
+        "Anti-slip fingertip reinforcements",
+        "Lining in palm: para-aramid, polyester, and fiberglass knit",
+        "Debris cuff lined with elastic",
+        "Lining stitched at the fingertips to prevent pullouts",
+        "3D style with fourchettes between the fingers",
+        "Cut protection level 5 in the palm",
+        "Contact heat EN 407:2020 level 2: 250°C (482°F) for at least 15 seconds"
+      ],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+      ],
+      "images": [
+        "/catalog/holik-lesley-plus.webp",
+        "/catalog/holik-lesley-plus-2.webp",
+        "/catalog/holik-lesley-plus-3.webp"
+      ],
+      "datasheet": "https://holik-america.com/wp-content/uploads/2026/09/Lesley-Plus-Leaflet.pdf",
+      "source": "https://holik-america.com/extrication-gloves/lesley-plus/"
+    },
+    {
+      "slug": "holik-kaya",
+      "sku": "8269",
+      "name": "Kaya",
+      "category": "gloves",
+      "group": "Rescue and extrication gloves",
+      "summary": "Rappelling glove in goatskin leather and knit, with a heat protecting palm sandwich and a neoprene hook and loop cuff.",
+      "details": [
+        "Rappelling gloves in a combination of leather and textile, with a comfortable fit and high sensitivity. The index finger has an overstretched seam to the back for more protection and longer glove life."
+      ],
+      "features": [
+        "Back: Eurojersey Sensitive functional knit, PA/elastane",
+        "Palm: goatskin leather with hydrophobic treatment",
+        "Goatskin reinforcement on the palm, part of the fingers and thumb, the knuckles, and the fingertips",
+        "Palm sandwich protects against heat generated while rappelling",
+        "Lining: para-aramid, polyester, and glass fiber",
+        "Neoprene cuff with hook and loop closure",
+        "Plastic ring on the cuff for hanging the gloves on a carabiner",
+        "EN 388+A1: 3 4 2 3 C X"
+      ],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "images": [
+        "/catalog/holik-kaya.webp",
+        "/catalog/holik-kaya-2.webp",
+        "/catalog/holik-kaya-3.webp",
+        "/catalog/holik-kaya-4.webp"
+      ],
+      "datasheet": "https://en.holik.com/upload/files/Datasheety/Defence/KAYA%208269%20Datasheet%20ENG%20Interactive%201-2025.pdf",
+      "source": "https://en.holik.com/products/rescue/kaya.html"
+    },
+    {
+      "slug": "holik-penelope-plus-green",
+      "sku": "6517",
+      "name": "Penelope Plus Green",
+      "category": "gloves",
+      "group": "Rescue and extrication gloves",
+      "summary": "Hi-vis rescue glove with a goatskin palm, TPR knuckle protection, and Kevlar reinforcement between the thumb and index finger.",
+      "details": [
+        "Comfortable handling, high dexterity, and TPR joint protection make this one of Holik's most popular rescue gloves."
+      ],
+      "features": [
+        "Palm and fingers: goatskin leather with hydrophobic treatment",
+        "Back: breathable elastic textile, hi-vis",
+        "Leather reinforcement over the back of the hand and fingers",
+        "TPR reinforcements over the knuckles and back of the hand",
+        "Kevlar fiber/PA elastic knit with FR coating between the thumb and index finger, over the side seams",
+        "Leather fingertip reinforcement",
+        "Lining in palm: Kevlar fiber, polyester, and fiberglass knit, highly cut resistant",
+        "Neoprene wristband with hook and loop closure",
+        "Terry fabric on the thumb to wipe sweat",
+        "Plastic ring for hanging the gloves on a carabiner"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ],
+      "images": [
+        "/catalog/holik-penelope-plus-green.webp",
+        "/catalog/holik-penelope-plus-green-2.webp",
+        "/catalog/holik-penelope-plus-green-3.webp",
+        "/catalog/holik-penelope-plus-green-4.webp"
+      ],
+      "datasheet": "https://holik-america.com/wp-content/uploads/2026/09/Penelope-Plus-Green-Leaflet.pdf",
+      "source": "https://holik-america.com/extrication-gloves/penelope-plus-green/"
+    },
+    {
+      "slug": "holik-vespid",
+      "name": "Vespid",
+      "category": "gloves",
+      "group": "Rescue and extrication gloves",
+      "summary": "Lightweight, flexible rescue glove with a pigskin palm, EVA foam knuckle padding, and contact heat protection. Elastic cuff (Evo) or neoprene hook and loop cuff (Neo).",
+      "details": [
+        "Designed for flexibility and comfort. Lightweight yet durable, with protection against mechanical and contact heat hazards in the palm and impact protection on the back of the hand."
+      ],
+      "features": [
+        "Palm and fingers: durable pigskin",
+        "Back: polyester with silicone printing",
+        "EVA foam padding over the knuckles",
+        "Natural leather between the index finger and thumb",
+        "Silicone printing on the areas that wear most",
+        "Lining in palm: para-aramid, polyester, and fiberglass",
+        "Vespid Evo: elastic cuff with an inner wristband that keeps dirt out",
+        "Vespid Neo: laminated neoprene cuff with hook and loop closure",
+        "EN ISO 21420:2020, EN 388:2016+A1:2018, EN 407:2020",
+        "Contact heat level 1: 100°C (212°F) for at least 15 seconds"
+      ],
+      "variants": [
+        {
+          "sku": "6512-02",
+          "option": "Vespid Evo (elastic cuff)"
+        },
+        {
+          "sku": "6512-07",
+          "option": "Vespid Neo (neoprene hook and loop cuff)"
+        }
+      ],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+      ],
+      "images": [
+        "/catalog/holik-vespid.webp",
+        "/catalog/holik-vespid-2.webp"
+      ],
+      "datasheet": "https://holik-america.com/wp-content/uploads/2026/09/Vespid-Leaflet.pdf",
+      "source": "https://holik-america.com/extrication-gloves/vespid/"
+    }
+  ]
+}

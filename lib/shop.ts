@@ -194,14 +194,26 @@ export async function getSellableProducts(): Promise<Product[]> {
   return getProducts().filter((product) => index.byProduct.has(product.slug));
 }
 
-// A cart from the browser: part numbers and quantities only.
+// A cart from the browser: part numbers, quantities, and a size for sized
+// products (gloves). Never prices.
 export const cartSchema = z
-  .array(z.strictObject({ sku: z.string().trim().min(1).max(80), quantity: z.number().int().min(1).max(MAX_QUANTITY) }))
+  .array(
+    z.strictObject({
+      sku: z.string().trim().min(1).max(80),
+      size: z.string().trim().min(1).max(60).optional(),
+      quantity: z.number().int().min(1).max(MAX_QUANTITY),
+    }),
+  )
   .max(MAX_LINES);
 export type CartInput = z.infer<typeof cartSchema>;
 
+// One cart line per part number and size.
+export const cartLineKey = (line: { sku: string; size?: string }) => (line.size ? `${line.sku}|${line.size}` : line.sku);
+
 export type PricedLine = {
+  key: string;
   sku: string;
+  size?: string;
   priceId: string;
   name: string;
   brand: string;
@@ -217,7 +229,8 @@ export type PricedLine = {
 
 export type PricedCart = {
   lines: PricedLine[];
-  // Part numbers no longer for sale (removed from Stripe or the site).
+  // Cart line keys no longer for sale (removed from Stripe or the site), or
+  // with a size the product doesn't come in.
   unavailable: string[];
   subtotal: number;
   // null when the owner hasn't set every shipping rate yet.
@@ -227,20 +240,28 @@ export type PricedCart = {
 export async function priceCart(cart: CartInput): Promise<PricedCart> {
   const index = await getShopIndex();
   const products = new Map(getProducts().map((p) => [p.slug, p]));
-  const quantities = new Map<string, number>();
-  for (const line of cart) quantities.set(line.sku, Math.min(MAX_QUANTITY, (quantities.get(line.sku) ?? 0) + line.quantity));
+  const merged = new Map<string, { sku: string; size?: string; quantity: number }>();
+  for (const line of cart) {
+    const key = cartLineKey(line);
+    const quantity = Math.min(MAX_QUANTITY, (merged.get(key)?.quantity ?? 0) + line.quantity);
+    merged.set(key, { sku: line.sku, size: line.size, quantity });
+  }
 
   const lines: PricedLine[] = [];
   const unavailable: string[] = [];
-  for (const [sku, quantity] of quantities) {
+  for (const [key, { sku, size, quantity }] of merged) {
     const offer = index.bySku.get(sku);
     const product = offer && products.get(offer.productSlug);
-    if (!offer || !product) {
-      unavailable.push(sku);
+    // A sized product needs one of its sizes; anything else can't have one.
+    const sizeOk = product && (product.sizes.length > 0 ? Boolean(size && product.sizes.includes(size)) : !size);
+    if (!offer || !product || !sizeOk) {
+      unavailable.push(key);
       continue;
     }
     lines.push({
+      key,
       sku,
+      size,
       priceId: offer.priceId,
       name: product.name,
       brand: product.brand.name,

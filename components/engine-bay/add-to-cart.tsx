@@ -7,18 +7,59 @@ import { addToCart, cartMaxQuantity } from "./cart-store";
 
 // Quantity box and Add to Cart for one part number. "compact" is the small
 // version for a row in the sizes table.
-export function AddToCart({ sku, cartHref, label, compact = false }: { sku: string; cartHref: string; label?: string; compact?: boolean }) {
+export function AddToCart({
+  sku,
+  cartHref,
+  label,
+  compact = false,
+  sizes = [],
+}: {
+  sku: string;
+  cartHref: string;
+  label?: string;
+  compact?: boolean;
+  // When set, the buyer must pick one (gloves). Never used with compact.
+  sizes?: string[];
+}) {
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(0);
+  const [size, setSize] = useState("");
+  const [needSize, setNeedSize] = useState(false);
   const id = useId();
 
   function add() {
-    addToCart(sku, quantity);
+    if (sizes.length > 0 && !size) {
+      setNeedSize(true);
+      return;
+    }
+    addToCart(sku, quantity, size || undefined);
     setAdded((n) => n + quantity);
   }
 
   return (
     <div className={compact ? "relative flex items-center justify-end gap-2" : ""}>
+      {sizes.length > 0 && (
+        <label className="mb-3 block text-sm font-semibold">
+          Size
+          <select
+            value={size}
+            onChange={(e) => {
+              setSize(e.target.value);
+              setNeedSize(false);
+            }}
+            aria-invalid={needSize || undefined}
+            className={`mt-1 block min-h-12 w-full max-w-xs rounded-lg border bg-card px-3 font-normal ${needSize ? "border-accent-fill" : "border-line-2"}`}
+          >
+            <option value="">Choose a size</option>
+            {sizes.map((s) => (
+              <option key={s} value={s}>
+                {s}
+              </option>
+            ))}
+          </select>
+          {needSize && <span className="mt-1 block font-normal text-accent">Pick a size first.</span>}
+        </label>
+      )}
       <div className="flex items-center gap-2">
         <label htmlFor={id} className={compact ? "sr-only" : "text-sm font-semibold"}>
           Qty{compact ? ` for ${sku}` : ""}
@@ -45,7 +86,7 @@ export function AddToCart({ sku, cartHref, label, compact = false }: { sku: stri
       <p aria-live="polite" className={`${compact ? "sr-only" : "mt-2 min-h-6 text-sm"}`}>
         {added > 0 && (
           <>
-            {added} added.{" "}
+            {added} added{size ? ` in ${size.split(" (")[0]}` : ""}.{" "}
             {!compact && (
               <Link href={cartHref} className="font-semibold text-accent underline underline-offset-4">
                 View cart

@@ -39,6 +39,9 @@ const productSchema = z
   images: z.array(z.string().startsWith("/", "must be a path in public/, like /catalog/photo.webp")).default([]),
   // Sizes or options, each with its own part number, like a hook in 4, 5, and 6 ft.
   variants: z.array(z.strictObject({ sku: text, option: text })).default([]),
+  // Sizes the buyer picks from (gloves). Not separate part numbers: the
+  // size rides along with the order. Written as the manufacturer lists them.
+  sizes: z.array(text).default([]),
   // The manufacturer's spec or data sheet (a PDF on their site), linked from the product page.
   datasheet: z.url().optional(),
   // Shop shipping class, when the category default (categoryShipping in

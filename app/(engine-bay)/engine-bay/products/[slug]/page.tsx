@@ -10,6 +10,7 @@ import { cartPath, categoryPath, equipmentPath, quoteHref, shopPolicyPages, tool
 import { brandPath, getProduct, getProducts, getProductsIn, partNumbers, quoteLabel } from "@/lib/engine-bay-catalog";
 import { AddToCart } from "@/components/engine-bay/add-to-cart";
 import { HosePicker } from "@/components/engine-bay/hose-picker";
+import { OptionPicker } from "@/components/engine-bay/option-picker";
 import { offersFor, shopLeadTime } from "@/lib/shop";
 import { formatMoney } from "@/lib/shop-core";
 import { readPublicImage } from "@/lib/images";
@@ -129,7 +130,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
                   <>
                     <p className="mt-2 font-display text-4xl font-bold">{formatMoney(single.unitAmount)}</p>
                     <div className="mt-4">
-                      <AddToCart sku={single.sku} cartHref={cartPath} />
+                      <AddToCart sku={single.sku} cartHref={cartPath} sizes={product.sizes} />
                     </div>
                   </>
                 ) : hoseBuilds.length > 0 ? (
@@ -145,6 +146,16 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
                       }))}
                       cartHref={cartPath}
                       quoteBase={quoteHref(quoteLabel(product))}
+                    />
+                  </div>
+                ) : product.sizes.length > 0 ? (
+                  <div className="mt-4">
+                    <OptionPicker
+                      options={product.variants
+                        .filter((variant) => offerBySku.has(variant.sku))
+                        .map((variant) => ({ sku: variant.sku, label: variant.option, unitAmount: offerBySku.get(variant.sku)!.unitAmount }))}
+                      sizes={product.sizes}
+                      cartHref={cartPath}
                     />
                   </div>
                 ) : (
@@ -228,7 +239,7 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
                             </td>
                           )}
                           <td className="whitespace-nowrap px-3 py-3 text-right">
-                            {offerBySku.get(variant.sku) ? (
+                            {offerBySku.get(variant.sku) && product.sizes.length > 0 ? null : offerBySku.get(variant.sku) ? (
                               <AddToCart sku={variant.sku} cartHref={cartPath} compact />
                             ) : (
                               <Link href={quoteHref(quoteLabel(product, variant))} className="font-semibold text-accent underline underline-offset-4">
@@ -241,6 +252,21 @@ export default async function ProductPage({ params }: PageProps<"/engine-bay/pro
                     </tbody>
                   </table>
                 </div>
+              </section>
+            )}
+
+            {product.sizes.length > 0 && (
+              <section aria-labelledby="sizes" className="mt-10">
+                <h2 id="sizes" className="font-display text-2xl font-bold uppercase">
+                  Sizes
+                </h2>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {product.sizes.map((size) => (
+                    <li key={size} className="rounded-lg border border-line-2 bg-card px-3 py-1.5 text-sm">
+                      {size}
+                    </li>
+                  ))}
+                </ul>
               </section>
             )}
 

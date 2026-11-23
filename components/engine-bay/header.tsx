@@ -55,7 +55,7 @@ export function EbHeader() {
             <ul className="flex items-center gap-7">
               <li>
                 <NavMenu label="Equipment" activePrefix={equipmentPath} align="center">
-                  <div className="grid gap-x-6 gap-y-6 p-4 md:grid-cols-5">
+                  <div className="grid gap-x-6 gap-y-6 p-4 md:grid-cols-3 xl:grid-cols-6">
                     {equipmentAreas.map((area) => (
                       <div key={area.slug}>
                         <Link
